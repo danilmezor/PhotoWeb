@@ -44,7 +44,6 @@ const Lightbox = ({ photo, onClose, onNext, onPrev }) => {
                     <img src={photo.src} alt={photo.title} className="lightbox-image" />
                     <div className="lightbox-info">
                         <h3>{photo.title}</h3>
-                        <p>ISO 100 • f/2.8 • 1/125s</p> {/* Placeholder EXIF */}
                     </div>
                     <button className="lightbox-close" onClick={onClose}>
                         &times;
