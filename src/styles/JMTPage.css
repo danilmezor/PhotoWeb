@@ -1,0 +1,237 @@
+.jmt-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #050505;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.jmt-sidebar {
+    width: 20%;
+    min-width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #222;
+    background-color: #050505;
+    z-index: 10;
+}
+
+.jmt-map-container {
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jmt-map-svg {
+    height: 60vh;
+    /* Taller map */
+    width: auto;
+    max-width: 100%;
+    /* Prevent overflow */
+    margin: 2rem 0;
+    overflow: visible;
+}
+
+.jmt-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.jmt-content-wrapper {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+    margin-left: 20%;
+    background-color: #fff;
+    /* Match image background */
+}
+
+.jmt-images-sticky {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #fff;
+    /* Ensure background is white */
+}
+
+.jmt-sticky-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Fit image without cropping */
+    pointer-events: none;
+    background-color: #fff;
+    /* White "mat" */
+    padding: 2rem;
+    /* White border effect */
+    box-sizing: border-box;
+}
+
+.jmt-text-scroll {
+    position: relative;
+    z-index: 2;
+}
+
+.jmt-text-section {
+    height: 100vh;
+    position: relative;
+    pointer-events: none;
+    /* Allow clicks to pass through to images if needed, though images are background */
+}
+
+.jmt-text-content {
+    position: fixed;
+    bottom: 4rem;
+    left: 22%;
+    /* 20% sidebar + padding */
+    max-width: 600px;
+    z-index: 3;
+    text-align: left;
+    background: #ffffff;
+    /* Solid white background */
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.jmt-text-section h2 {
+    font-size: 3.5rem;
+    margin: 0 0 1rem 0;
+    color: #111;
+    /* Dark text */
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.jmt-text-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #444;
+    /* Dark grey text */
+    max-width: 500px;
+}
+
+.jmt-inline-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    pointer-events: auto;
+    /* Re-enable pointer events for gallery images */
+}
+
+.jmt-inline-image {
+    height: 150px;
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.jmt-inline-image:hover {
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Switch to mobile layout earlier to avoid awkward intermediate states */
+@media (max-width: 1000px) {
+    .jmt-page {
+        flex-direction: column;
+    }
+
+    .jmt-sidebar {
+        width: 100%;
+        min-width: 0;
+        /* Reset min-width */
+        height: auto;
+        min-height: 40vh;
+        position: relative;
+        /* Force static to disable sticky */
+        border-right: none;
+        border-bottom: 1px solid #222;
+        padding: 2rem 0;
+        z-index: 2;
+        /* Keep above images if they overlap */
+    }
+
+    .jmt-map-svg {
+        height: 40vh;
+    }
+
+    .jmt-content-wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .jmt-images-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .jmt-sticky-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        /* Smaller border on mobile */
+    }
+
+    .jmt-text-scroll {
+        position: relative;
+        z-index: 2;
+    }
+
+    .jmt-text-section {
+        height: 100vh;
+    }
+
+    .jmt-text-content {
+        left: 1rem;
+        bottom: 2rem;
+        right: 1rem;
+        width: auto;
+        max-width: none;
+        padding: 1.5rem;
+    }
+
+    .jmt-text-section h2 {
+        font-size: 2rem;
+    }
+
+    .jmt-text-section p {
+        font-size: 1rem;
+    }
+
+    .jmt-inline-image {
+        height: 100px;
+    }
+}

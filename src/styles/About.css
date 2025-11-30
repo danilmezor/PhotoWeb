@@ -1,0 +1,165 @@
+.about-page {
+    padding-top: 120px;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.about-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-md);
+    letter-spacing: -1px;
+}
+
+.bio-intro {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 4px;
+    filter: grayscale(100%);
+    transition: filter var(--transition-medium);
+}
+
+.about-image img:hover {
+    filter: grayscale(0%);
+}
+
+.contact-section {
+    margin-top: var(--space-lg);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid #333;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.submit-btn:hover {
+    background: #ccc;
+    transform: translateY(-2px);
+}
+
+.donation-section {
+    margin-top: var(--space-xl);
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.donation-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-secondary);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.donation-intro {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-md);
+    opacity: 0.7;
+}
+
+.crypto-addresses {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.crypto-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.crypto-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.crypto-address {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border: 1px solid #333;
+    color: var(--text-primary);
+    border-radius: 2px;
+    word-break: break-all;
+    transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.crypto-address:hover {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .about-text h1 {
+        font-size: 2.5rem;
+    }
+}
