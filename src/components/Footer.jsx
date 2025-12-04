@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="social-links">
                     <a
-                        href="https://instagram.com/your-instagram"
+                        href="https://www.instagram.com/muscrue/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"
@@ -18,7 +18,7 @@ const Footer = () => {
                         </svg>
                     </a>
                     <a
-                        href="https://linkedin.com/in/your-profile"
+                        href="https://www.linkedin.com/in/danil-zanozin-603878199/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"
@@ -29,7 +29,7 @@ const Footer = () => {
                         </svg>
                     </a>
                     <a
-                        href="https://github.com/your-username"
+                        href="https://github.com/danilmezor"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"

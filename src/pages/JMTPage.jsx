@@ -8,6 +8,7 @@ const JMTPage = () => {
     const containerRef = useRef(null);
     const [svgPath, setSvgPath] = useState("");
     const [activeSlide, setActiveSlide] = useState(0);
+    const [hiddenTexts, setHiddenTexts] = useState(new Set());
 
     // Flatten data so every image is a "slide"
     const slides = useMemo(() => {
@@ -88,16 +89,27 @@ const JMTPage = () => {
                             onViewportEnter={() => setActiveSlide(index)}
                             viewport={{ amount: 0.5 }}
                         >
-                            {slide.isFirstOfDay && (
+                            {slide.isFirstOfDay && !hiddenTexts.has(slide.uniqueId) && activeSlide === index && (
                                 <motion.div
                                     className="jmt-text-content"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{
-                                        opacity: activeSlide === index ? 1 : 0,
-                                        y: activeSlide === index ? 0 : 20
+                                        opacity: 1,
+                                        y: 0
                                     }}
                                     transition={{ duration: 0.5 }}
                                 >
+                                    <button
+                                        className="jmt-text-close"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            e.preventDefault();
+                                            setHiddenTexts(prev => new Set([...prev, slide.uniqueId]));
+                                        }}
+                                        aria-label="Close description"
+                                    >
+                                        ✕
+                                    </button>
                                     <h2>{slide.title}</h2>
                                     <p>{slide.text}</p>
                                 </motion.div>
