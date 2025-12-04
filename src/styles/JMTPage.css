@@ -83,6 +83,7 @@
     background-color: #fff;
     /* White "mat" */
     padding: 2rem;
+    padding-top: calc(2rem + 80px);
     /* White border effect */
     box-sizing: border-box;
 }
@@ -163,23 +164,10 @@
     }
 
     .jmt-sidebar {
-        width: 100%;
-        min-width: 0;
-        /* Reset min-width */
-        height: auto;
-        min-height: 40vh;
-        position: relative;
-        /* Force static to disable sticky */
-        border-right: none;
-        border-bottom: 1px solid #222;
-        padding: 2rem 0;
-        z-index: 2;
-        /* Keep above images if they overlap */
+        display: none;
     }
 
-    .jmt-map-svg {
-        height: 40vh;
-    }
+
 
     .jmt-content-wrapper {
         width: 100%;
@@ -202,6 +190,7 @@
         height: 100%;
         width: 100%;
         padding: 1rem;
+        padding-top: calc(1rem + 80px);
         /* Smaller border on mobile */
     }
 

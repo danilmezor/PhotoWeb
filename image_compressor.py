@@ -146,7 +146,7 @@ def compress_folder_total(input_folder, output_folder, total_target_mb=9.5):
 if __name__ == "__main__":
     # Configuration
     INPUT_FOLDER = "/Users/danil/Pictures/to_compress"  # Change this to your folder path
-    OUTPUT_FOLDER = "compressed_imagess"
+    OUTPUT_FOLDER = "compressed_imagesss"
     
     # Choose compression mode:
     # Mode 1: Each image compressed to X MB

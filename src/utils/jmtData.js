@@ -170,7 +170,7 @@ export const jmtData = [
         id: 4,
         day: "Day 2",
         title: "The 99 Switchbacks",
-        text: "Alpine start at 3:30 AM, headlamps cutting through darkness. The 99 switchbacks carved into the mountainside like a staircase to the sky. At 13,500 feet, we reached Trail Crest and saw the western Sierra for the first time - an endless sea of peaks.",
+        text: "Alpine start at 4:00 AM, headlamps cutting through darkness. The 99 switchbacks carved into the mountainside like a staircase to the sky. At 13,500 feet, we reached Trail Crest and saw the western Sierra for the first time - an endless sea of peaks.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879630/_DSC1581_compressed_qelcks.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879621/_DSC1583_compressed_rxvipg.jpg"
@@ -192,16 +192,17 @@ export const jmtData = [
         title: "Descent to Timberlane Lake",
         text: "The western descent was a revelation - dropping 3,000 feet through Guitar Lake basin. The landscape transformed from barren alpine to lush meadows dotted with lakes. My knees ached, but the real adventure had finally begun.",
         images: [
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879647/_DSC1648_compressed_eoddpr.jpg"
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879647/_DSC1648_compressed_eoddpr.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879655/_DSC1771_compressed_bwcuo5.jpg",
         ]
     },
     {
         id: 7,
         day: "Day 3",
         title: "Approaching Forester Pass",
-        text: "The JMT crosses seven major passes, each above 11,000 feet. Forester Pass, at 13,153 feet, is the highest point on the entire trail. I woke to clear skies and felt my confidence growing with each step.",
+        text: "The JMT crosses seven major passes, each above 11,000 feet. Forester Pass, at 13,153 feet, is the highest point on the entire trail.",
         images: [
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879655/_DSC1771_compressed_bwcuo5.jpg",
+
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879658/_DSC1804_compressed_retsk7.jpg"
         ]
     },
@@ -230,46 +231,41 @@ export const jmtData = [
         id: 10,
         day: "Day 4",
         title: "Kearsarge Pass Trail Junction",
-        text: "After the hailstorm, I reached the junction for Kearsarge Pass - a popular resupply point 7 miles off the JMT. Most hikers take a zero day in the nearby town, but I needed to get my supplies and return to the trail the same day. The detour climbs to 11,760 feet before descending to Onion Valley.",
+        text: "On the next day after the hailstorm, I reached the junction for Kearsarge Pass - a popular resupply point 7 miles off the JMT. Most hikers take a zero day in the nearby town, but I needed to get my supplies and return to the trail the same day. The detour climbs to 11,760 feet before descending to Onion Valley.",
         images: [
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879681/_DSC2014_compressed_u5dpra.jpg"
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879681/_DSC2014_compressed_u5dpra.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879688/_DSC2013-Pano_compressed_tvmrty.jpg"
         ]
     },
     {
         id: 11,
-        day: "Day 4",
+        day: "Day 5",
         title: "Kearsarge Lakes",
-        text: "On the return to the JMT, I camped at Kearsarge Lakes - one of my favorite spots in the high Sierra. The basin sits in pristine alpine terrain with crystal clear water reflecting the surrounding peaks. That night, stars filled the sky like I'd never seen before.",
+        text: "On the return to the JMT, I camped at Kearsarge Lakes - one of my favorite spots in the high Sierra. The basin sits in pristine alpine terrain with crystal clear water reflecting the surrounding peaks.",
         images: [
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879688/_DSC2013-Pano_compressed_tvmrty.jpg",
+
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879689/_DSC2054-HDR_compressed_w1a9px.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879711/_DSC2074_compressed_mucv8l.jpg"
-        ]
-    },
-    {
-        id: 12,
-        day: "Day 5",
-        title: "Approaching Glen Pass",
-        text: "Glen Pass sits at 11,978 feet and marks the boundary of Kings Canyon National Park. The approach takes you through the Rae Lakes basin, one of the most photographed areas on the JMT. The trail wound through meadows and alongside pristine alpine lakes.",
-        images: [
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879692/_DSC2137_compressed_ckv6tz.jpg"
         ]
     },
     {
         id: 13,
         day: "Day 5",
         title: "Meeting Robert at Mirror Lake",
-        text: "Just before reaching my planned camp spot, I met Robert. We struck up a conversation that would last the next week - from that day forward, we hiked together until the very end. Sometimes the trail gives you exactly what you need at exactly the right moment.",
+        text: "Just before reaching my planned camp spot, I met Robert. We started a conversation that would last the next 2 weeks - from that day forward, we hiked together until the very end. Sometimes the trail gives you exactly what you need at exactly the right moment.",
         images: [
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1764888614/_DSC2102_compressed_ruttvo.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879692/_DSC2137_compressed_ckv6tz.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879711/_DSC2304_compressed_smxq7f.jpg",
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879704/_DSC2446_compressed_exrfiy.jpg"
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879704/_DSC2446_compressed_exrfiy.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1764888609/_DSC2491-HDR_compressed_d2lsvx.jpg",
         ]
     },
     {
         id: 14,
         day: "Day 6",
         title: "Climbing to Muir Pass",
-        text: "At 11,955 feet, Muir Pass is home to the historic Muir Hut, built in 1930 as an emergency shelter. The pass marks the halfway point of the JMT. Robert and I climbed together, finding our rhythm matching perfectly on the granite switchbacks.",
+        text: "At 11,955 feet, Muir Pass is home to the historic Muir Hut, built in 1930 as an emergency shelter.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879714/_DSC2810_compressed_akcyy5.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879721/_DSC2799_compressed_pas70p.jpg"
@@ -279,8 +275,9 @@ export const jmtData = [
         id: 15,
         day: "Day 6",
         title: "The International Dream Team",
-        text: "At Muir Pass, we joined a group of PCT hikers from around the world - America, Europe, Japan, and beyond. We shared stories, food, and laughter at 12,000 feet. I started to realize that this trail was about more than just the mountains - it was about the connections we make.",
+        text: "At Muir Pass, we joined a group of PCT hikers from around the world - America, Europe, Japan, and beyond. We shared stories, food, and laughter at 12,000 feet. I started to realize that this trail was about more than just the mountains - it was about the connections we make on this journey.",
         images: [
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1764888617/_DSC2779_compressed_pvdrjq.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1764471881/_DSC2813-HDR_di25zx.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879735/_DSC2848_compressed_zhxago.jpg"
         ]
@@ -292,14 +289,15 @@ export const jmtData = [
         text: "Descending from Muir Pass into Evolution Basin felt like entering another world. Named by Theodore Solomons for Darwin, Huxley, Spencer, and other evolution theorists, these peaks tower over sapphire lakes. The golden hour light painted everything in impossible colors.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879734/_DSC2907_compressed_w1omnd.jpg",
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879736/_DSC2975-HDR_compressed_gprfy7.jpg"
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879736/_DSC2975-HDR_compressed_gprfy7.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1764888615/_DSC3065_compressed_cvvahq.jpg"
         ]
     },
     {
         id: 17,
         day: "Day 7",
         title: "VVR - A Zero Day",
-        text: "Vermilion Valley Resort (VVR) is a backcountry oasis accessible only by boat, trail, or floatplane. After nearly a week of hiking, our group decided to take a zero day - hiker terminology for a day with zero miles hiked. We needed to rest our bodies and enjoy each other's company away from the demands of the trail.",
+        text: "Vermilion Valley Resort (VVR) is a backcountry oasis accessible only by boat, trail, or floatplane. After nearly two weeks of hiking, our group decided to take a zero day - hiker terminology for a day with zero miles hiked. We needed to rest our bodies and enjoy each other's company away from the demands of the trail.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879726/_DSC3109_compressed_bi5fp5.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879736/_DSC3111_compressed_xxpiys.jpg"
@@ -309,7 +307,7 @@ export const jmtData = [
         id: 18,
         day: "Day 7",
         title: "Rest and Recovery",
-        text: "We ate real food, took actual showers, and swapped stories with other hikers. The break reminded us why we were out here. Tomorrow, we'd return to the trail refreshed and ready for the second half of our journey.",
+        text: "We ate real food, took actual showers, and swapped stories with other hikers. The break reminded us why we were out here. Tomorrow, we'd return to the trail refreshed and ready for the rest of our journey.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879751/_DSC3151-HDR_compressed_rqh0wu.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879755/_DSC3155_compressed_shknuc.jpg"
@@ -322,7 +320,8 @@ export const jmtData = [
         text: "Back on the trail, something had shifted. Our bodies had adapted to the elevation and the daily grind. The packs that once felt crushing now felt manageable. Everyone in our group knew we were going to finish - it was no longer a question of if, but when.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879753/_DSC3170_compressed_prxseu.jpg",
-            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879758/_DSC3249_compressed_mupdfd.jpg"
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879758/_DSC3249_compressed_mupdfd.jpg",
+            "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879775/_DSC3355_compressed_iwahcy.jpg"
         ]
     },
     {
@@ -379,7 +378,7 @@ export const jmtData = [
         id: 25,
         day: "Day 10",
         title: "The Final Miles",
-        text: "The last miles to Happy Isles in Yosemite Valley passed in a blur of emotions. We descended through forests, crossed bridges over rushing water, and felt civilization creeping back in. After 211 miles and 10 days, our group walked those final steps together, united by something deeper than just a shared trail.",
+        text: "The last miles to Happy Isles in Yosemite Valley passed in a blur of emotions. We descended through forests, crossed bridges over rushing water, and felt civilization creeping back in. After 211 miles and 21 days, me and Robert walked those final steps together, united by something deeper than just a shared trail.",
         images: [
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879805/_DSC3931_compressed_advrlg.jpg",
             "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879805/_DSC4039_compressed_mxj3xc.jpg",

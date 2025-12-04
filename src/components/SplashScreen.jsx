@@ -19,16 +19,65 @@ const SplashScreen = () => {
     }, [location]);
 
     useEffect(() => {
+        if (isVisible) {
+            // Lock scrolling immediately
+            window.scrollTo(0, 0); // Reset to top immediately
+            document.body.classList.add('splash-active');
+            document.documentElement.classList.add('splash-active');
+        } else {
+            // Unlock scrolling and reset position
+            window.scrollTo(0, 0);
+            document.body.classList.remove('splash-active');
+            document.documentElement.classList.remove('splash-active');
+        }
+
+        return () => {
+            document.body.classList.remove('splash-active');
+            document.documentElement.classList.remove('splash-active');
+        };
+    }, [isVisible]);
+
+    useEffect(() => {
         if (!isVisible) return;
 
-        const handleScroll = () => {
-            if (window.scrollY > 300) {
+        const handleWheel = (e) => {
+            if (e.deltaY > 0) {
+                // Prevent the actual scroll
+                e.preventDefault(); // Note: wheel event might be passive, so preventDefault might not work unless listener is non-passive
                 setIsVisible(false);
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        let touchStartY = 0;
+        const handleTouchStart = (e) => {
+            touchStartY = e.touches[0].clientY;
+        };
+
+        const handleTouchMove = (e) => {
+            const touchEndY = e.touches[0].clientY;
+            const diff = touchStartY - touchEndY;
+
+            // If swiping up (scrolling down)
+            if (diff > 50) {
+                e.preventDefault(); // Prevent default touch scroll
+                setIsVisible(false);
+            }
+        };
+
+        // Add non-passive listener for wheel to allow preventDefault if needed, 
+        // but for now just relying on overflow: hidden should be enough if it works.
+        // However, if overflow: hidden is working, the page shouldn't scroll anyway.
+        // The issue might be that the scroll happens *after* we unlock.
+
+        window.addEventListener('wheel', handleWheel, { passive: false });
+        window.addEventListener('touchstart', handleTouchStart, { passive: false });
+        window.addEventListener('touchmove', handleTouchMove, { passive: false });
+
+        return () => {
+            window.removeEventListener('wheel', handleWheel);
+            window.removeEventListener('touchstart', handleTouchStart);
+            window.removeEventListener('touchmove', handleTouchMove);
+        };
     }, [isVisible]);
 
     return (
