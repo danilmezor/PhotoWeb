@@ -57,9 +57,7 @@ const About = () => {
                     <p>
                         Today, I work as a Data Science and Machine Learning Engineer, but photography remains my passion. This website is a personal collection of work I've created over the years in my free time—a way to share my journey with the world. These days, my focus has shifted toward landscapes and visual storytelling, exploring the quiet moments and vast spaces that inspire me.
                     </p>
-                    <p>
-                        I'm still available for freelance projects and collaborations, and I'd be incredibly grateful for any support of my work here.
-                    </p>
+
 
                     <div className="contact-section">
                         <h2>Get in Touch</h2>
@@ -82,8 +80,7 @@ const About = () => {
                     </div>
 
                     <div className="donation-section">
-                        <h3>Support My Work</h3>
-                        <p className="donation-intro">If you enjoy my photography and would like to support my work, you can send a donation via cryptocurrency.</p>
+                        <h3>Buy Me a Coffee</h3>
                         <div className="crypto-addresses">
                             <div className="crypto-item">
                                 <span className="crypto-label">ETH (ERC20, L2):</span>
