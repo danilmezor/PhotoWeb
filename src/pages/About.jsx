@@ -101,7 +101,7 @@ const About = () => {
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
                     <img
-                        src="https://res.cloudinary.com/dmqhswybd/image/upload/v1764465263/000245650034_dxxma4.jpg"
+                        src="/photos/000245650034.jpg"
                         alt="Portrait of photographer"
                     />
                 </motion.div>

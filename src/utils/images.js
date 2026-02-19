@@ -1,79 +1,139 @@
-export const images = {
-  hero: [
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763866832/_AC16368-Pano_mjacgm.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879735/_DSC2848_compressed_zhxago.jpg",
-    // "https://res.cloudinary.com/dmqhswybd/image/upload/v1763866850/_AC15233-Pano_oq5flt.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763879798/_DSC3788-Enhanced-NR_compressed_tbbcq4.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763887773/_DSC1471-Enhanced-NR_compressed_xkc3tu.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867005/H53-idjr5hk_cyzxaw.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763880038/_DSC4063-Enhanced-NR_compressed_jehhkn.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1763866905/_AC16126_ert5hb.jpg",
-    "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295529/maeFu04bpDfQQha6lMZdKnOGrySUbpQnt2PlEtSiOFeJkt8VnYZi3Fcz8TnyS-p7G_JGkfl1_edihck.jpg"
-  ],
-  landscapes: [
-    { id: 1, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868419/_AC11398-Edit_dpzhgh.jpg", title: "Italy_001" },
-    { id: 2, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763966018/_AC16368-Pano_kvdgr4.jpg", title: "California_005" },
-    { id: 3, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868497/_AC16128-HDR_iistvf.jpg", title: "BigSur_001" },
-    { id: 4, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868718/uFZYpJ8oVJQ_d8bqvn.jpg", title: "Izhevsk_001" },
-    { id: 5, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763966027/_AC16108_mva43h.jpg", title: "California_009" },
-    { id: 6, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965546/_DSC1471-Enhanced-NR_compressed_wlfmgu.jpg", title: "California_001" },
-    // { id: 7, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868466/_AC11346-Edit_j2qtvd.jpg", title: "Italy_003" },
-    { id: 8, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763966085/_AC16669_oe6bhw.jpg", title: "California_008" },
-    { id: 9, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965517/_DSC0519_compressed_htlajv.jpg", title: "California_002" },
-    { id: 10, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965807/_DSC1504-Edit_compressed_zz0qxv.jpg", title: "California_003" },
-    { id: 9, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763967002/JAym8AYN2ug_igl0kf.jpg", title: "Crimea_001" },
-    { id: 9, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764466052/_AC15790-HDR-2_k2blz3.jpg", title: "Utah_001" },
-    { id: 10, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965979/_AC16126_qeh7gk.jpg", title: "California_006" },
-    { id: 11, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965960/_AC16617_compressed_dexln5.jpg", title: "California_005" },
-    { id: 12, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764466531/_DSC4277-Edit_compressed_dmmnw5.jpg", title: "California_007" },
-    { id: 13, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965945/_DSC0869_compressed_okrg2c.jpg", title: "California_009" },
-    // { id: 13, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763966023/_AC16043_mdtujd.jpg", title: "California_010" },
-    { id: 14, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763965498/_DSC0871_compressed_g7wvly.jpg", title: "California_011" },
-  ],
-  cities: [
-    { id: 6, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863652/_sGN2QO7P6c_mvwpci.jpg", title: "Moscow_001" },
-    { id: 7, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863581/WruL2-cDbDk_bzpypw.jpg", title: "Roma_001" },
-    { id: 8, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863572/xHImx8XxQZs_rgadcm.jpg", title: "Paris_001" },
-    { id: 9, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863598/s_9N2ACzGmE_w4yc4s.jpg", title: "Moscow_002" },
-    { id: 10, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863572/v6TW68bhNDE_qihext.jpg", title: "Ischia_001" },
-    { id: 11, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863625/exUs-HsNCdA_buhkvc.jpg", title: "Roma_002" },
-    { id: 12, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763863522/H53-idjr5hk_wncbrn.jpg", title: "Moscow_003" },
-    { id: 13, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295367/fyCOWS2l5JI_unfepf.jpg", title: "Beijing_001" },
-    { id: 14, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295318/_AC16232-HDR-2_lbvskb.jpg", title: "SanFran_001" },
-    { id: 15, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764462724/_AC15366_vdfzje.jpg", title: "NewYork_001" },
-    // { id: 16, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764463614/F9530005_fkpcqi.jpg", title: "Roma_002" },
-    // { id: 17, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764462719/_AC15369_iwx5hd.jpg", title: "NewYork_002" },
-  ],
-  people: [
-    { id: 9, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867382/81dJdwzh6qQ_copy_zeml4b.jpg", title: "S" },
-    { id: 10, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867398/iP_Efdxg24s_spvzih.jpg", title: "N" },
-    { id: 12, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867431/UfI6nxbJFDQ_vnwvrb.jpg", title: "NN" },
-    { id: 11, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867400/HYYPRzv6ytQ_pvbmev.jpg", title: "A" },
-    { id: 13, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867477/_AC13561_pftvbz.jpg", title: "L" },
-    { id: 14, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867437/zVkEZWxRSrU_fkmckx.jpg", title: "D" },
-    { id: 15, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763967148/SD6tb-jvVtA_hjwwni.jpg", title: "L" },
-    { id: 19, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764466482/_AC10892_compressed_vdxhma.jpg", title: "M" },
-    { id: 17, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867475/_AC12324_zbd4ir.jpg", title: "SV" },
-    // { id: 17, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867475/_AC12324_zbd4ir.jpg", title: "K" },
-  ],
-  events: [
-    { id: 12, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867935/mZv5pHSXO0g_xtjvr8.jpg", title: "BRB_001" },
-    { id: 13, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867993/ZYRyh9_pilg_suxgfq.jpg", title: "Zakat_991" },
-    { id: 14, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868086/_AC17413_s23eaw.jpg", title: "RTF_001" },
-    { id: 15, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295501/MindTapCourseList_SaeedMoaveni-EngineeringFundamentals_AnIntroductiontoEngineering_SIEdition_2019_CengageLearning_-libgen.li_wnumb5.jpg", title: "Obla_001" },
-    { id: 16, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763867965/GTZvJobrj1U_kbj3ad.jpg", title: "Nervi_001" },
-    { id: 24, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295917/q829e7ACjBw_jgoctf.jpg", title: "Face_003" },
-    { id: 17, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764466554/_DSC4611_compressed_w5pdud.jpg", title: "BTD_001" },
-    { id: 19, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763968431/29HT3aKoeG8_jyyere.jpg", title: "Zakat_992" },
-    { id: 21, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763968438/CdeDKw2W1iU_rst67f.jpg", title: "Zakat_993" },
-    { id: 24, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764466489/_DSC5014_compressed_rmvahk.jpg", title: "K" },
-    { id: 20, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763968413/6OHgrzMQ7vU_ovgccq.jpg", title: "Face_001" },
-    { id: 18, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295529/maeFu04bpDfQQha6lMZdKnOGrySUbpQnt2PlEtSiOFeJkt8VnYZi3Fcz8TnyS-p7G_JGkfl1_edihck.jpg", title: "Nervi_002" },
-    { id: 23, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295503/u4tziqkdOsqo0UNp9Lf9P9X9Ny8TT-yMRbpuk6rdX1zB5vlkYpkYaqVsWRGfux3llsUQYg_w6swos.jpg", title: "Obla_002" },
-    { id: 22, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1764295502/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp_wxjeu5.jpg", title: "Face_002" },
+const buildPhotoSrc = (category, fileName) => (
+  `/photos/${category}/${encodeURIComponent(fileName)}`
+);
 
-  ],
+const formatTitle = (fileName) => (
+  fileName
+    .replace(/\.[^.]+$/, '')
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+);
+
+const mapCategoryFiles = (category, files) => (
+  files.map((fileName, index) => ({
+    id: index + 1,
+    src: buildPhotoSrc(category, fileName),
+    title: formatTitle(fileName),
+  }))
+);
+
+const heroFiles = [
+  "_AC14997.jpg",
+  "_AC15233-Pano.jpg",
+  "_AC16232-HDR-2.jpg",
+  "_AC16368-Pano.jpg",
+  "_DSC1471-Enhanced-NR.jpg",
+  "_DSC2014.jpg",
+  "_DSC3788-Enhanced-NR.jpg",
+  "_DSC4063-Enhanced-NR.jpg",
+  "_DSC4277-Edit.jpg",
+  "_DSC4592.jpg",
+  "_DSC5428.jpg",
+  "_DSC5570.jpg",
+  "_DSC6099.jpg",
+  "_DSC6193.jpg",
+  "H53-idjr5hk.jpg"
+];
+const landscapeFiles = [
+  "_AC11346-Edit.JPG",
+  "_AC11398-Edit.JPG",
+  "_AC14997.jpg",
+  "_AC16043.jpg",
+  "_AC16126.jpg",
+  "_AC16128-HDR.jpg",
+  "_AC16158-HDR.jpg",
+  "_AC16437-HDR.jpg",
+  "_AC16617.jpg",
+  "_AC16640-HDR.jpg",
+  "_AC16669.jpg",
+  "_AC16711.jpg",
+  "_DSC0273.jpg",
+  "_DSC0519.jpg",
+  "_DSC0869.jpg",
+  "_DSC0871.jpg",
+  "_DSC1471-Enhanced-NR.jpg",
+  "_DSC4277-Edit.jpg",
+  "_DSC5121-HDR.jpg",
+  "_DSC5226.jpg",
+  "_DSC5401.jpg",
+  "_DSC5428.jpg",
+  "_DSC5599.jpg",
+  "_DSC5697.jpg",
+  "_DSC6087.jpg",
+  "_DSC6099.jpg",
+  "njcRmx4hCQA.jpg",
+  "photo_2025-05-18 16.54.39.jpeg",
+  "uFZYpJ8oVJQ.jpg"
+];
+const cityFiles = [
+  "_AC10425.jpg",
+  "_AC15366.jpg",
+  "_AC15369.jpg",
+  "_AC16232-HDR-2.jpg",
+  "_AC16368-Pano.jpg",
+  "_DSC5033.jpg",
+  "_DSC5344.jpg",
+  "_DSC5364.jpg",
+  "_sGN2QO7P6c.jpg",
+  "0ijyGqzFXDE.jpg",
+  "CHHBd8lS8RY.jpg",
+  "Ekkr8JiDBIc.jpg",
+  "fyCOWS2l5JI.jpg",
+  "image.jpg",
+  "K8gJ8Fc1M-I.jpg",
+  "s_9N2ACzGmE.jpg",
+  "v6TW68bhNDE.jpg",
+  "WruL2-cDbDk.jpg",
+  "xHImx8XxQZs.jpg"
+];
+const peopleFiles = [
+  "_AC10892.jpg",
+  "_AC12324.jpg",
+  "_AC13561.jpg",
+  "_DSC4773.jpg",
+  "81dJdwzh6qQ.jpg",
+  "89BLwDYfYxc.jpg",
+  "F5010006.JPG",
+  "HYYPRzv6ytQ.jpg",
+  "iP_Efdxg24s.jpg",
+  "mZv5pHSXO0g.jpg",
+  "N4UZxbKEieM.jpg",
+  "Nk0OWd6YWM0.jpg",
+  "RtAe1QpNR0A.jpg",
+  "SD6tb-jvVtA.jpg",
+  "UfI6nxbJFDQ.jpg",
+  "zVkEZWxRSrU.jpg"
+];
+const eventFiles = [
+  "_AC10955.jpg",
+  "_AC16015.jpg",
+  "_AC17221.jpg",
+  "_AC17417.jpg",
+  "_DSC4592.jpg",
+  "_DSC4611.jpg",
+  "_DSC5014.jpg",
+  "_MiBemNLXsM.jpg",
+  "6OHgrzMQ7vU.jpg",
+  "7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.jpg",
+  "8IB8HnJL2yk.jpg",
+  "CdeDKw2W1iU.jpg",
+  "GTZvJobrj1U.jpg",
+  "Idu8L57IO_o.jpg",
+  "ZYRyh9_pilg.jpg"
+];
+
+export const images = {
+  hero: heroFiles.map((fileName) => buildPhotoSrc('hero', fileName)),
+  landscapes: mapCategoryFiles('landscapes', landscapeFiles),
+  cities: mapCategoryFiles('cities', cityFiles),
+  people: mapCategoryFiles('people', peopleFiles),
+  events: mapCategoryFiles('events', eventFiles),
   jmt: [
-    { id: 14, src: "https://res.cloudinary.com/dmqhswybd/image/upload/v1763868274/Screenshot_2025-11-22_at_7.24.16_PM_qktszy.png", title: "John Muir Trail" },
-  ]
+    {
+      id: 1,
+      src: buildPhotoSrc('JMT', "_DSC4039.jpg"),
+      title: 'John Muir Trail',
+    },
+  ],
 };
