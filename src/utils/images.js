@@ -10,13 +10,26 @@ const formatTitle = (fileName) => (
     .trim()
 );
 
-const mapCategoryFiles = (category, files) => (
-  files.map((fileName, index) => ({
-    id: index + 1,
-    src: buildPhotoSrc(category, fileName),
-    title: formatTitle(fileName),
-  }))
+const formatCategoryLabel = (category) => (
+  category
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (letter) => letter.toUpperCase())
 );
+
+const mapCategoryFiles = (category, files) =>
+  files.map((fileName, index) => {
+    const title = formatTitle(fileName);
+    const categoryLabel = formatCategoryLabel(category);
+
+    return {
+      id: index + 1,
+      src: buildPhotoSrc(category, fileName),
+      title,
+      alt: `${categoryLabel} photo: ${title}`,
+    };
+  });
 
 const heroFiles = [
   "_AC14997.jpg",
@@ -134,6 +147,7 @@ export const images = {
       id: 1,
       src: buildPhotoSrc('JMT', "_DSC4039.jpg"),
       title: 'John Muir Trail',
+      alt: 'John Muir Trail landscape photo',
     },
   ],
 };

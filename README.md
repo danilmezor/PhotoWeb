@@ -105,6 +105,16 @@ npm run build
 
 The optimized build will be in the `dist/` directory.
 
+### SEO Configuration
+
+Set your production domain so generated sitemap/robots URLs are correct:
+
+```bash
+VITE_SITE_URL=https://your-domain.com
+```
+
+On Vercel, add `VITE_SITE_URL` in Project Settings -> Environment Variables.
+
 ### Preview Production Build
 
 ```bash

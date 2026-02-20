@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState, useMemo } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import SEO from '../components/SEO';
 import { parseGeoJSON, generateSVGPath } from '../utils/geojsonParser';
 import { jmtData } from '../utils/jmtData';
+import { SITE_AUTHOR, SITE_NAME, toAbsoluteUrl } from '../utils/site';
 import '../styles/JMTPage.css';
 
 const JMTPage = () => {
@@ -21,6 +23,30 @@ const JMTPage = () => {
             }))
         );
     }, []);
+    const jmtDescription = 'A multi-day visual story of hiking the 211-mile John Muir Trail through the Sierra Nevada, with daily notes and photography.';
+    const leadImage = slides[0]?.image || '/photos/JMT/_DSC4039.jpg';
+    const jmtJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'John Muir Trail Photography Story',
+        description: jmtDescription,
+        url: toAbsoluteUrl('/jmt'),
+        isPartOf: {
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            url: toAbsoluteUrl('/'),
+        },
+        author: {
+            '@type': 'Person',
+            name: SITE_AUTHOR,
+            url: toAbsoluteUrl('/about'),
+        },
+        about: {
+            '@type': 'Thing',
+            name: 'John Muir Trail',
+        },
+        primaryImageOfPage: toAbsoluteUrl(leadImage),
+    };
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -40,9 +66,19 @@ const JMTPage = () => {
 
     return (
         <div className="jmt-page" ref={containerRef}>
+            <SEO
+                title="John Muir Trail Photography"
+                description={jmtDescription}
+                path="/jmt"
+                image={leadImage}
+                jsonLd={jmtJsonLd}
+            />
             <div className="jmt-sidebar">
                 <div className="jmt-map-container">
                     <h2>John Muir Trail</h2>
+                    <p style={{ lineHeight: '1.6', opacity: 0.85 }}>
+                        A 21-day photo diary from Whitney Portal to Yosemite Valley, combining trail notes with daily images.
+                    </p>
                     <svg viewBox="0 0 300 600" className="jmt-map-svg">
                         <path
                             d={svgPath}

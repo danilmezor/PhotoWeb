@@ -29,7 +29,11 @@ const Gallery = ({ photos }) => {
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                         onClick={() => setSelectedIndex(index)}
                     >
-                        <img src={photo.src} alt={photo.title} loading="lazy" />
+                        <img
+                            src={photo.src}
+                            alt={photo.alt || `${photo.title} photo by Danil Zanozin`}
+                            loading="lazy"
+                        />
                         <div className="gallery-overlay">
                             <h3 className="gallery-title">{photo.title}</h3>
                         </div>

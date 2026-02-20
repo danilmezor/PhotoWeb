@@ -2,7 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
+import SEO from '../components/SEO';
 import { images } from '../utils/images';
+import {
+    SITE_AUTHOR,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SOCIAL_PROFILES,
+    toAbsoluteUrl,
+} from '../utils/site';
 import '../styles/Home.css';
 
 const collections = [
@@ -14,8 +22,47 @@ const collections = [
 ];
 
 const Home = () => {
+    const homeDescription = 'Explore Danil Zanozin photography collections featuring landscapes, cities, people, events, and a visual diary from the John Muir Trail.';
+    const socialImage = images.hero[0];
+    const siteUrl = toAbsoluteUrl('/');
+    const homeJsonLd = [
+        {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            url: siteUrl,
+            description: SITE_DESCRIPTION,
+            inLanguage: 'en',
+        },
+        {
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: SITE_AUTHOR,
+            url: toAbsoluteUrl('/about'),
+            sameAs: SOCIAL_PROFILES,
+        },
+        {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Photography Collections',
+            itemListElement: collections.map((collection, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                name: collection.title,
+                url: toAbsoluteUrl(collection.link),
+            })),
+        },
+    ];
+
     return (
         <div>
+            <SEO
+                title="Photography Portfolio"
+                description={homeDescription}
+                path="/"
+                image={socialImage}
+                jsonLd={homeJsonLd}
+            />
             <Hero />
             <div className="container home-container">
                 <motion.div
@@ -25,7 +72,7 @@ const Home = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    {collections.map((collection, index) => (
+                    {collections.map((collection) => (
                         <Link
                             to={collection.link}
                             key={collection.id}
@@ -38,7 +85,7 @@ const Home = () => {
                             >
                                 <img
                                     src={collection.image}
-                                    alt={collection.title}
+                                    alt={`${collection.title} photography gallery preview`}
                                     className="collection-image"
                                 />
                                 <div className="collection-overlay">

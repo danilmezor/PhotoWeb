@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import SEO from '../components/SEO';
+import { SITE_AUTHOR, SITE_NAME, SOCIAL_PROFILES, toAbsoluteUrl } from '../utils/site';
 import '../styles/About.css';
 
 const About = () => {
@@ -8,6 +10,21 @@ const About = () => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+    const portraitImage = '/photos/000245650034.jpg';
+    const aboutDescription = 'Learn more about Danil Zanozin, a photographer and machine learning engineer sharing personal work across landscapes, cities, events, and people.';
+    const personJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: SITE_AUTHOR,
+        description: aboutDescription,
+        url: toAbsoluteUrl('/about'),
+        image: toAbsoluteUrl(portraitImage),
+        sameAs: SOCIAL_PROFILES,
+        worksFor: {
+            '@type': 'Organization',
+            name: SITE_NAME,
+        },
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -21,7 +38,7 @@ const About = () => {
         const PUBLIC_KEY = 'cdSKJ_oUwCU1ORaor';
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-            .then((result) => {
+            .then(() => {
                 setSuccess(true);
                 setLoading(false);
                 form.current.reset();
@@ -40,6 +57,13 @@ const About = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
         >
+            <SEO
+                title="About Danil Zanozin"
+                description={aboutDescription}
+                path="/about"
+                image={portraitImage}
+                jsonLd={personJsonLd}
+            />
             <div className="about-content">
                 <motion.div
                     className="about-text"
@@ -101,8 +125,8 @@ const About = () => {
                     transition={{ delay: 0.4, duration: 0.8 }}
                 >
                     <img
-                        src="/photos/000245650034.jpg"
-                        alt="Portrait of photographer"
+                        src={portraitImage}
+                        alt="Portrait of photographer Danil Zanozin"
                     />
                 </motion.div>
             </div>

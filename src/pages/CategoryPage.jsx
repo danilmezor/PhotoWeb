@@ -1,10 +1,66 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Gallery from '../components/Gallery';
 import { images } from '../utils/images';
+import { SITE_AUTHOR, SITE_NAME, toAbsoluteUrl } from '../utils/site';
+
+const categoryMetadata = {
+    landscapes: {
+        path: '/landscapes',
+        description: 'Landscape photography collection featuring mountain scenes, coastlines, and natural light studies from different places and seasons.',
+    },
+    cities: {
+        path: '/cities',
+        description: 'City photography collection with street moments, architecture, and urban atmosphere captured in different countries.',
+    },
+    people: {
+        path: '/people',
+        description: 'Portrait and people photography collection focused on expression, light, and candid moments.',
+    },
+    events: {
+        path: '/events',
+        description: 'Event photography collection documenting concerts, gatherings, and high-energy moments with a documentary style.',
+    },
+};
 
 const CategoryPage = ({ category, title }) => {
     const photos = images[category] || [];
+    const metadata = categoryMetadata[category] || {
+        path: `/${category}`,
+        description: `${title} photography collection by ${SITE_AUTHOR}.`,
+    };
+    const pageImage = photos[0]?.src || images.hero[0];
+    const imageItemList = photos.slice(0, 20).map((photo, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+            '@type': 'ImageObject',
+            name: photo.title,
+            contentUrl: toAbsoluteUrl(photo.src),
+            creator: {
+                '@type': 'Person',
+                name: SITE_AUTHOR,
+            },
+        },
+    }));
+    const collectionJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: `${title} Photography`,
+        description: metadata.description,
+        url: toAbsoluteUrl(metadata.path),
+        isPartOf: {
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            url: toAbsoluteUrl('/'),
+        },
+        primaryImageOfPage: toAbsoluteUrl(pageImage),
+        hasPart: {
+            '@type': 'ItemList',
+            itemListElement: imageItemList,
+        },
+    };
 
     return (
         <motion.div
@@ -15,6 +71,13 @@ const CategoryPage = ({ category, title }) => {
             className="container"
             style={{ paddingTop: '100px', paddingBottom: '50px' }}
         >
+            <SEO
+                title={`${title} Photography`}
+                description={metadata.description}
+                path={metadata.path}
+                image={pageImage}
+                jsonLd={collectionJsonLd}
+            />
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -29,6 +92,17 @@ const CategoryPage = ({ category, title }) => {
             >
                 {title}
             </motion.h1>
+            <p
+                style={{
+                    maxWidth: '760px',
+                    margin: '0 auto 2.5rem',
+                    textAlign: 'center',
+                    lineHeight: '1.7',
+                    opacity: 0.85,
+                }}
+            >
+                {metadata.description}
+            </p>
             <Gallery photos={photos} />
         </motion.div>
     );
