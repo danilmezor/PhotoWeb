@@ -8,19 +8,19 @@ import { SITE_AUTHOR, SITE_NAME, toAbsoluteUrl } from '../utils/site';
 const categoryMetadata = {
     landscapes: {
         path: '/landscapes',
-        description: 'Landscape photography collection featuring mountain scenes, coastlines, and natural light studies from different places and seasons.',
+        description: 'Desert night skies, alpine rivers, and granite valleys across the American West, photographed for light, scale, and quiet atmosphere.',
     },
     cities: {
         path: '/cities',
-        description: 'City photography collection with street moments, architecture, and urban atmosphere captured in different countries.',
+        description: 'City studies from San Francisco, Paris, Rome, and beyond: bridges, riverfronts, architecture, and twilight street light.',
     },
     people: {
         path: '/people',
-        description: 'Portrait and people photography collection focused on expression, light, and candid moments.',
+        description: 'Portraits focused on character and mood, from clean low-key setups to candid black-and-white moments.',
     },
     events: {
         path: '/events',
-        description: 'Event photography collection documenting concerts, gatherings, and high-energy moments with a documentary style.',
+        description: 'Live music and nightlife photography with crowd energy, stage movement, and neon-lit performances captured in real time.',
     },
 };
 

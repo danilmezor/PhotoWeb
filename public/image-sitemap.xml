@@ -168,9 +168,6 @@
       <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/0ijyGqzFXDE.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/CHHBd8lS8RY.jpg</image:loc>
     </image:image>
     <image:image>
@@ -178,9 +175,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/fyCOWS2l5JI.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/image.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/K8gJ8Fc1M-I.jpg</image:loc>
@@ -210,16 +204,10 @@
       <image:loc>https://danilzanozin.com/photos/people/_AC13561.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/people/_DSC4773.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/people/81dJdwzh6qQ.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/89BLwDYfYxc.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/people/F5010006.JPG</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/HYYPRzv6ytQ.jpg</image:loc>
@@ -235,9 +223,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/Nk0OWd6YWM0.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/people/RtAe1QpNR0A.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/SD6tb-jvVtA.jpg</image:loc>
@@ -268,6 +253,9 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/events/_DSC4611.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/events/_DSC4773.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/events/_DSC5014.jpg</image:loc>
