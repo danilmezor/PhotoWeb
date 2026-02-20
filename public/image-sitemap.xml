@@ -1,444 +1,444 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://danilzanozin.com/</loc>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_AC14997.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_AC14997.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_AC15233-Pano.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_AC15233-Pano.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_AC16232-HDR-2.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_AC16232-HDR-2.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_AC16368-Pano.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_AC16368-Pano.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_DSC1471-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_DSC1471-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_DSC2014.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_DSC2014.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_DSC3788-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_DSC3788-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/hero/_DSC4063-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/hero/_DSC4063-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC10425.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC10425.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/_AC10892.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/_AC10892.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_AC10955.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_AC10955.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC4039.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://example.com/about</loc>
-    <image:image>
-      <image:loc>https://example.com/photos/000245650034.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC4039.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://example.com/landscapes</loc>
+    <loc>https://danilzanozin.com/about</loc>
     <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC14997.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16043.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16126.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16158-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16437-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16617.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16640-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16669.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_AC16711.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC0273.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC0519.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC0869.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC0871.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC1471-Enhanced-NR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC4277-Edit.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5121-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5226.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5401.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5428.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5599.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC5697.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC6087.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/_DSC6099.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/njcRmx4hCQA.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/photo_2025-05-18%2016.54.39.jpeg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/landscapes/uFZYpJ8oVJQ.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/000245650034.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://example.com/cities</loc>
+    <loc>https://danilzanozin.com/landscapes</loc>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC10425.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC15366.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC15369.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC14997.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC16232-HDR-2.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16043.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_AC16368-Pano.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16126.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_DSC5033.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_DSC5344.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16158-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_DSC5364.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16437-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16617.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/0ijyGqzFXDE.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16640-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/CHHBd8lS8RY.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16669.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/Ekkr8JiDBIc.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16711.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/fyCOWS2l5JI.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0273.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/image.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0519.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/K8gJ8Fc1M-I.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0869.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/s_9N2ACzGmE.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0871.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/v6TW68bhNDE.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC1471-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/WruL2-cDbDk.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC4277-Edit.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/cities/xHImx8XxQZs.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://example.com/people</loc>
-    <image:image>
-      <image:loc>https://example.com/photos/people/_AC10892.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5121-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/_AC12324.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5226.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/_AC13561.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/_DSC4773.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5428.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/81dJdwzh6qQ.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5599.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/89BLwDYfYxc.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5697.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/F5010006.JPG</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC6087.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/HYYPRzv6ytQ.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC6099.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/iP_Efdxg24s.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/njcRmx4hCQA.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/mZv5pHSXO0g.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/photo_2025-05-18%2016.54.39.jpeg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/people/N4UZxbKEieM.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/people/Nk0OWd6YWM0.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/people/RtAe1QpNR0A.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/people/SD6tb-jvVtA.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/people/UfI6nxbJFDQ.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://example.com/photos/people/zVkEZWxRSrU.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/uFZYpJ8oVJQ.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://example.com/events</loc>
+    <loc>https://danilzanozin.com/cities</loc>
     <image:image>
-      <image:loc>https://example.com/photos/events/_AC10955.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC10425.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_AC16015.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC15366.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_AC17221.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC15369.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_AC17417.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC16232-HDR-2.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_DSC4592.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC16368-Pano.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_DSC4611.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_DSC5033.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_DSC5014.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_DSC5344.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/_MiBemNLXsM.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_DSC5364.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/6OHgrzMQ7vU.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/0ijyGqzFXDE.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/8IB8HnJL2yk.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/CHHBd8lS8RY.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/CdeDKw2W1iU.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/Ekkr8JiDBIc.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/GTZvJobrj1U.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/fyCOWS2l5JI.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/Idu8L57IO_o.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/image.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/events/ZYRyh9_pilg.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/K8gJ8Fc1M-I.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/s_9N2ACzGmE.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/v6TW68bhNDE.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/WruL2-cDbDk.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/xHImx8XxQZs.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://example.com/jmt</loc>
+    <loc>https://danilzanozin.com/people</loc>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1510.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/_AC10892.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1514.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/_AC12324.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1529.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/_AC13561.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1535-Edit.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/_DSC4773.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1554.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/81dJdwzh6qQ.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1562.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/89BLwDYfYxc.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1581.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/F5010006.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1583.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/HYYPRzv6ytQ.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1616.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/iP_Efdxg24s.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1636.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/mZv5pHSXO0g.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1648.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/N4UZxbKEieM.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1804.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/Nk0OWd6YWM0.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1827.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/RtAe1QpNR0A.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1865.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/SD6tb-jvVtA.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1878-Edit.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/UfI6nxbJFDQ.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC1939.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/people/zVkEZWxRSrU.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/events</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/events/_AC10955.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2021.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_AC16015.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2074.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_AC17221.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2137.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_AC17417.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2304.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_DSC4592.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2446.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_DSC4611.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2779.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_DSC5014.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2799.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_MiBemNLXsM.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2810.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/6OHgrzMQ7vU.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2813-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2848.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/8IB8HnJL2yk.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2907.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/CdeDKw2W1iU.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC2975-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/GTZvJobrj1U.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3065.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/Idu8L57IO_o.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3111.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/ZYRyh9_pilg.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/jmt</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1510.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3151-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1514.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3155.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1529.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3166.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1535-Edit.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3257.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1554.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3272-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1562.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3370.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1581.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3446-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1583.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3457.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1616.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3592.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1636.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3649-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1648.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3751.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1804.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3788-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1827.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3804-Edit.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1865.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3832.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1878-Edit.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC3921-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1939.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC4039.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2021.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://example.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2074.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2137.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2304.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2446.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2779.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2799.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2810.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2813-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2848.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2907.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2975-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3065.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3111.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3151-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3155.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3166.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3257.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3272-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3370.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3446-Enhanced-NR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3457.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3592.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3649-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3751.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3788-Enhanced-NR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3804-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3832.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3921-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC4039.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

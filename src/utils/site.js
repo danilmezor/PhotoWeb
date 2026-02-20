@@ -13,12 +13,13 @@ export const SOCIAL_PROFILES = [
 export const DEFAULT_SOCIAL_IMAGE = '/photos/hero/_DSC3788-Enhanced-NR.jpg';
 
 const trimTrailingSlash = (value) => value.replace(/\/+$/, '');
+const withProtocol = (value) => (value && !/^https?:\/\//i.test(value) ? `https://${value}` : value);
 
 export const getSiteOrigin = () => {
   const configured = import.meta.env.VITE_SITE_URL;
 
   if (configured && configured.trim()) {
-    return trimTrailingSlash(configured.trim());
+    return trimTrailingSlash(withProtocol(configured.trim()));
   }
 
   if (typeof window !== 'undefined' && window.location?.origin) {

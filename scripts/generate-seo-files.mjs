@@ -9,10 +9,28 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const publicDir = path.join(projectRoot, 'public');
 
+const normalizeOrigin = (value) => {
+  if (!value) {
+    return '';
+  }
+
+  const trimmed = value.trim().replace(/\/+$/, '');
+
+  if (!trimmed) {
+    return '';
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return `https://${trimmed}`;
+};
+
 const resolveSiteUrl = () => {
   const candidates = [
-    process.env.SITE_URL,
-    process.env.VITE_SITE_URL,
+    normalizeOrigin(process.env.SITE_URL),
+    normalizeOrigin(process.env.VITE_SITE_URL),
     process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : '',
@@ -25,7 +43,7 @@ const resolveSiteUrl = () => {
     return 'https://example.com';
   }
 
-  return firstNonEmpty.trim().replace(/\/+$/, '');
+  return normalizeOrigin(firstNonEmpty);
 };
 
 const siteUrl = resolveSiteUrl();
