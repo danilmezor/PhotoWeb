@@ -103,19 +103,6 @@ const About = () => {
                         </form>
                     </div>
 
-                    <div className="donation-section">
-                        <h3>Buy Me a Coffee</h3>
-                        <div className="crypto-addresses">
-                            <div className="crypto-item">
-                                <span className="crypto-label">ETH (ERC20, L2):</span>
-                                <code className="crypto-address">0x148f3798672dba6f647d079722cdcb956e5ac8d7</code>
-                            </div>
-                            <div className="crypto-item">
-                                <span className="crypto-label">Bitcoin:</span>
-                                <code className="crypto-address">bc1qy7fr7g0ruhw32x8fevj5u2540379te0ur9qaj2</code>
-                            </div>
-                        </div>
-                    </div>
                 </motion.div>
 
                 <motion.div
