@@ -49,13 +49,12 @@ const heroFiles = [
   "H53-idjr5hk.jpg"
 ];
 const landscapeFiles = [
-  "_AC11346-Edit.JPG",
   "_AC11398-Edit.JPG",
   "_AC14997.jpg",
+  "_AC15794-HDR-2.jpg",
   "_AC16043.jpg",
   "_AC16126.jpg",
   "_AC16128-HDR.jpg",
-  "_AC16158-HDR.jpg",
   "_AC16437-HDR.jpg",
   "_AC16617.jpg",
   "_AC16640-HDR.jpg",

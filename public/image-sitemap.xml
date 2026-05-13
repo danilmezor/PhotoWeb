@@ -27,7 +27,7 @@
       <image:loc>https://danilzanozin.com/photos/hero/_DSC4063-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/_AC10425.jpg</image:loc>
@@ -51,13 +51,13 @@
   <url>
     <loc>https://danilzanozin.com/landscapes</loc>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11346-Edit.JPG</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC14997.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC15794-HDR-2.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16043.jpg</image:loc>
@@ -67,9 +67,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16158-HDR.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16437-HDR.jpg</image:loc>
