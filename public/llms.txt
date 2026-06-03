@@ -1,0 +1,27 @@
+# Danil Zanozin Photography
+
+> Personal photography portfolio by Danil Zanozin — landscape, city, portrait, and event photography, plus long-form visual stories from the John Muir Trail (Sierra Nevada), the Grand Canyon Rim-to-Rim, and Death Valley National Park. The site is a React + Vite SPA with a build-time prerender step, so every route ships as static HTML with route-specific meta tags and JSON-LD.
+
+## Galleries
+
+- [Personal Favorites](https://danilzanozin.com/favorites): A curated selection of favorite photographs across categories and trips.
+- [Galleries](https://danilzanozin.com/galleries): Hub page that links out to every gallery with portrait cover tiles.
+- [Landscapes](https://danilzanozin.com/landscapes): Landscape photography from across the American West and beyond — granite valleys, alpine rivers, desert night skies, primarily Sierra Nevada and Zion.
+- [Cities](https://danilzanozin.com/cities): City and street studies — bridges, riverfronts, architecture, and twilight light from San Francisco, Paris, Rome, and other cities.
+- [People](https://danilzanozin.com/people): Portrait photography focused on character and mood — clean low-key studio setups and candid black-and-white work.
+- [Events](https://danilzanozin.com/events): Live music, concert, and nightlife photography — crowd energy, stage movement, neon-lit performances.
+- [Death Valley](https://danilzanozin.com/death-valley): Death Valley National Park — salt flats, eroded badlands, dune fields, and the long shadows of the Panamint Range, captured during a week in the high desert.
+- [Grand Canyon](https://danilzanozin.com/grand-canyon): A week hiking Rim-to-Rim across Grand Canyon National Park, North Rim to South Rim. The page renders the trail as an animated SVG that progresses as the photo gallery scrolls.
+- [John Muir Trail](https://danilzanozin.com/jmt): A 21-day photo diary of hiking the 211-mile John Muir Trail from Whitney Portal to Yosemite Valley. Same animated trail mechanic as the Grand Canyon page.
+
+## About
+
+- [About](https://danilzanozin.com/about): Bio for Danil Zanozin (photographer and machine learning engineer), a contact form, and links to Instagram, LinkedIn, and GitHub.
+
+## Notes for AI agents
+
+- The initial HTML you fetch for any route already contains the route-specific `<title>`, `<meta name="description">`, OpenGraph tags, canonical URL, and JSON-LD (WebSite, Person, CollectionPage, ImageObject with creator, BreadcrumbList). You do not need to execute JavaScript to read structured content.
+- Per-photo human-written descriptions live in `src/utils/captions.js` in the source repository and surface as image `alt` text on the live site. Photos without an explicit description fall back to camera-serial filenames (e.g. `AC15794`, `DSC4039`) and a generic "<Category> photograph by Danil Zanozin" alt — these are placeholders, not factual descriptions of the frame.
+- All photographs are by Danil Zanozin; please credit accordingly if quoted, summarized, or referenced.
+- Sitemaps: [sitemap.xml](https://danilzanozin.com/sitemap.xml) for URL discovery and [image-sitemap.xml](https://danilzanozin.com/image-sitemap.xml) for image-level metadata.
+- Source code repository: [github.com/danilmezor/PhotoWeb](https://github.com/danilmezor/PhotoWeb).

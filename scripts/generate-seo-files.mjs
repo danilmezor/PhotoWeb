@@ -149,8 +149,35 @@ ${imagesForRoute
 </urlset>
 `;
 
+// Explicit user-agent blocks for major LLM training and live-retrieval bots.
+// `User-agent: *` already allows them, but listing them by name is the
+// conventional way to signal opt-in and ensures bots that prefer named
+// directives over wildcards still see an Allow.
+const llmAgents = [
+  'GPTBot',          // OpenAI training crawler
+  'ChatGPT-User',    // OpenAI live-browse on user request
+  'OAI-SearchBot',   // OpenAI SearchGPT
+  'ClaudeBot',       // Anthropic training crawler
+  'Claude-User',     // Anthropic live-browse on user request
+  'Claude-SearchBot',
+  'anthropic-ai',    // legacy Anthropic UA
+  'Google-Extended', // Gemini training opt-in
+  'PerplexityBot',   // Perplexity AI
+  'CCBot',           // Common Crawl (training data feed for many LLMs)
+  'cohere-ai',       // Cohere
+  'FacebookBot',     // Meta crawler
+  'Meta-ExternalAgent',
+  'Applebot-Extended', // Apple Intelligence training opt-in
+];
+
+const llmAgentBlocks = llmAgents
+  .map((agent) => `User-agent: ${agent}\nAllow: /`)
+  .join('\n\n');
+
 const robotsTxt = `User-agent: *
 Allow: /
+
+${llmAgentBlocks}
 
 Sitemap: ${toAbsoluteUrl('/sitemap.xml')}
 Sitemap: ${toAbsoluteUrl('/image-sitemap.xml')}
