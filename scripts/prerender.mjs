@@ -21,7 +21,7 @@ import path from 'node:path';
 import http from 'node:http';
 import { fileURLToPath } from 'node:url';
 import handler from 'serve-handler';
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 import { NESTED_ROUTES } from './routes.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -99,6 +99,30 @@ const prerenderRoute = async (browser, route) => {
     }
 };
 
+// Pick a Chromium launch config that works in both environments:
+//   - Vercel / Lambda / Linux CI: @sparticuz/chromium ships a binary with the
+//     right shared libraries bundled.
+//   - Local dev: use the developer's installed Chrome / Chromium / Edge so we
+//     don't ship a 150 MB browser in node_modules.
+const resolveLaunchOptions = async () => {
+    const isServerless = !!(process.env.VERCEL || process.env.AWS_REGION || process.env.AWS_LAMBDA_FUNCTION_NAME);
+    if (isServerless) {
+        const chromium = (await import('@sparticuz/chromium')).default;
+        return {
+            args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
+            executablePath: await chromium.executablePath(),
+            headless: chromium.headless,
+        };
+    }
+
+    const macChrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    return {
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || macChrome,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        headless: 'new',
+    };
+};
+
 const main = async () => {
     console.log(`[prerender] Serving ${distDir} on ${LOCAL_ORIGIN}`);
     if (productionOrigin) {
@@ -107,10 +131,8 @@ const main = async () => {
         console.log('[prerender] No production origin set; URLs will reference the local prerender server.');
     }
     const server = await startStaticServer();
-    const browser = await puppeteer.launch({
-        headless: 'new',
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    });
+    const launchOptions = await resolveLaunchOptions();
+    const browser = await puppeteer.launch(launchOptions);
 
     try {
         for (const route of NESTED_ROUTES) {
