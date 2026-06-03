@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import { images } from '../utils/images';
+import { heroPhotos } from '../utils/hero';
 import {
     SITE_AUTHOR,
     SITE_DESCRIPTION,
@@ -14,16 +15,18 @@ import {
 import '../styles/Home.css';
 
 const collections = [
-    { id: 'landscapes', title: 'Landscapes', image: images.landscapes[0].src, link: '/landscapes' },
-    { id: 'cities', title: 'Cities', image: images.cities[0].src, link: '/cities' },
-    { id: 'people', title: 'People', image: images.people[0].src, link: '/people' },
-    { id: 'events', title: 'Events', image: images.events[0].src, link: '/events' },
-    { id: 'jmt', title: 'JMT', image: images.jmt[0].src, link: '/jmt', fullWidth: true },
+    { id: 'landscapes', title: 'Landscapes', image: '/photos/landscapes/_AC11398-Edit.JPG', link: '/landscapes' },
+    { id: 'cities', title: 'Cities', image: '/photos/cities/_AC15369.jpg', link: '/cities' },
+    { id: 'people', title: 'People', image: '/photos/people/81dJdwzh6qQ.jpg', link: '/people' },
+    { id: 'events', title: 'Events', image: '/photos/events/_AC17417.jpg', link: '/events' },
+    { id: 'jmt', title: 'JMT', image: '/photos/JMT/_DSC3151-HDR.jpg', link: '/jmt', fullWidth: true },
+    { id: 'grand-canyon', title: 'Grand Canyon', image: '/photos/grand-canyon/_DSC7748.jpg', link: '/grand-canyon', fullWidth: true },
+    { id: 'death-valley', title: 'Death Valley', image: '/photos/death-valley/_DSC5828.jpg', link: '/death-valley', fullWidth: true },
 ];
 
 const Home = () => {
     const homeDescription = 'Explore Danil Zanozin photography collections featuring landscapes, cities, people, events, and a visual diary from the John Muir Trail.';
-    const socialImage = images.hero[0];
+    const socialImage = heroPhotos[0];
     const siteUrl = toAbsoluteUrl('/');
     const homeJsonLd = [
         {

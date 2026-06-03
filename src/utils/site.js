@@ -10,7 +10,7 @@ export const SOCIAL_PROFILES = [
   'https://github.com/danilmezor',
 ];
 
-export const DEFAULT_SOCIAL_IMAGE = '/photos/hero/_DSC3788-Enhanced-NR.jpg';
+export const DEFAULT_SOCIAL_IMAGE = '/photos/landscapes/_AC11398-Edit.JPG';
 
 const trimTrailingSlash = (value) => value.replace(/\/+$/, '');
 const withProtocol = (value) => (value && !/^https?:\/\//i.test(value) ? `https://${value}` : value);
@@ -50,3 +50,17 @@ export const toAbsoluteUrl = (pathOrUrl) => {
 
   return `${origin}/${pathOrUrl}`;
 };
+
+// Build a BreadcrumbList JSON-LD object from an ordered list of crumbs.
+// Each crumb is { name: 'Galleries', path: '/galleries' }. The leaf crumb
+// (last item) typically points at the current page.
+export const buildBreadcrumbs = (items) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: toAbsoluteUrl(item.path),
+  })),
+});

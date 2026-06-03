@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import SEO from '../components/SEO';
-import { SITE_AUTHOR, SITE_NAME, SOCIAL_PROFILES, toAbsoluteUrl } from '../utils/site';
+import { SITE_AUTHOR, SITE_NAME, SOCIAL_PROFILES, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/About.css';
 
 const About = () => {
@@ -25,6 +25,10 @@ const About = () => {
             name: SITE_NAME,
         },
     };
+    const breadcrumbsJsonLd = buildBreadcrumbs([
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+    ]);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -58,11 +62,11 @@ const About = () => {
             transition={{ duration: 0.5 }}
         >
             <SEO
-                title="About Danil Zanozin"
+                title="About"
                 description={aboutDescription}
                 path="/about"
                 image={portraitImage}
-                jsonLd={personJsonLd}
+                jsonLd={[personJsonLd, breadcrumbsJsonLd]}
             />
             <div className="about-content">
                 <motion.div

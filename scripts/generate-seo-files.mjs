@@ -3,6 +3,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { images } from '../src/utils/images.js';
 import { jmtData } from '../src/utils/jmtData.js';
+import { heroPhotos } from '../src/utils/hero.js';
+import { favorites } from '../src/utils/favorites.js';
+import { galleries } from '../src/utils/galleries.js';
+import { ALL_ROUTES } from './routes.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -49,32 +53,30 @@ const resolveSiteUrl = () => {
 const siteUrl = resolveSiteUrl();
 const isoDate = new Date().toISOString();
 
-const routes = [
-  { path: '/', changefreq: 'weekly', priority: '1.0' },
-  { path: '/about', changefreq: 'monthly', priority: '0.7' },
-  { path: '/landscapes', changefreq: 'weekly', priority: '0.9' },
-  { path: '/cities', changefreq: 'weekly', priority: '0.9' },
-  { path: '/people', changefreq: 'weekly', priority: '0.8' },
-  { path: '/events', changefreq: 'weekly', priority: '0.8' },
-  { path: '/jmt', changefreq: 'weekly', priority: '0.9' },
-];
+const routes = ALL_ROUTES;
 
 const aboutImage = '/photos/000245650034.jpg';
 
 const routeImageMap = {
   '/': [
-    ...images.hero.slice(0, 8),
+    ...heroPhotos.slice(0, 8),
     images.landscapes[0]?.src,
     images.cities[0]?.src,
     images.people[0]?.src,
     images.events[0]?.src,
+    images['death-valley'][0]?.src,
+    images['grand-canyon'][0]?.src,
     images.jmt[0]?.src,
   ],
   '/about': [aboutImage],
+  '/favorites': favorites.map((photo) => photo.src),
+  '/galleries': galleries.map((gallery) => gallery.cover).filter(Boolean),
   '/landscapes': images.landscapes.map((photo) => photo.src),
   '/cities': images.cities.map((photo) => photo.src),
   '/people': images.people.map((photo) => photo.src),
   '/events': images.events.map((photo) => photo.src),
+  '/death-valley': images['death-valley'].map((photo) => photo.src),
+  '/grand-canyon': images['grand-canyon'].map((photo) => photo.src),
   '/jmt': jmtData.flatMap((day) => day.images),
 };
 

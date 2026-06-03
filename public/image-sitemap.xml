@@ -3,34 +3,34 @@
   <url>
     <loc>https://danilzanozin.com/</loc>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_AC14997.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC14997.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_AC15233-Pano.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_AC16368-Pano.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_AC16232-HDR-2.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC1471-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_AC16368-Pano.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC2014.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_DSC1471-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3788-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_DSC2014.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_DSC3788-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC4277-Edit.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/hero/_DSC4063-Enhanced-NR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/events/_DSC4592.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/_AC10425.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/_AC10892.jpg</image:loc>
@@ -39,13 +39,79 @@
       <image:loc>https://danilzanozin.com/photos/events/_AC10955.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5570.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6639.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC4039.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://danilzanozin.com/about</loc>
+    <loc>https://danilzanozin.com/favorites</loc>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/000245650034.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16711.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6068.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6099.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6639.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6767.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6976.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7793.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC2021.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3649-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3788-Enhanced-NR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC3804-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/galleries</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/people/_AC10892.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/events/_AC10955.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5570.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6639.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/JMT/_DSC1510.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -69,9 +135,6 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16437-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16617.jpg</image:loc>
     </image:image>
     <image:image>
@@ -93,43 +156,16 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0869.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0871.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC1471-Enhanced-NR.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC4277-Edit.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5121-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5226.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5428.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5599.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5697.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC6087.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC6099.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/njcRmx4hCQA.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/photo_2025-05-18%2016.54.39.jpeg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/uFZYpJ8oVJQ.jpg</image:loc>
@@ -137,6 +173,9 @@
   </url>
   <url>
     <loc>https://danilzanozin.com/cities</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
+    </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/_AC10425.jpg</image:loc>
     </image:image>
@@ -159,12 +198,6 @@
       <image:loc>https://danilzanozin.com/photos/cities/_DSC5344.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/_DSC5364.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/_sGN2QO7P6c.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/CHHBd8lS8RY.jpg</image:loc>
     </image:image>
     <image:image>
@@ -172,9 +205,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/fyCOWS2l5JI.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/cities/K8gJ8Fc1M-I.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/s_9N2ACzGmE.jpg</image:loc>
@@ -188,6 +218,9 @@
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/xHImx8XxQZs.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/photo_2025-05-18%2016.54.39.jpeg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://danilzanozin.com/people</loc>
@@ -196,9 +229,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/_AC12324.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/people/_AC13561.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/people/81dJdwzh6qQ.jpg</image:loc>
@@ -280,6 +310,81 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/events/ZYRyh9_pilg.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/death-valley</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5570.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5599-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5707.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5808.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5828.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC5865.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6007.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6068.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6099.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6135.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/grand-canyon</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6639.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6767.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6792.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6882.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6909.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6976.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7101.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7356.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7438.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7592.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7696.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7748.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC7793.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -424,6 +529,12 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/about</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/000245650034.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

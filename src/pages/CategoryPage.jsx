@@ -3,24 +3,29 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import Gallery from '../components/Gallery';
 import { images } from '../utils/images';
-import { SITE_AUTHOR, SITE_NAME, toAbsoluteUrl } from '../utils/site';
+import { heroPhotos } from '../utils/hero';
+import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 
 const categoryMetadata = {
     landscapes: {
         path: '/landscapes',
-        description: 'Desert night skies, alpine rivers, and granite valleys across the American West, photographed for light, scale, and quiet atmosphere.',
+        description: 'Landscape photography from across the American West and beyond — granite valleys, alpine rivers, desert night skies, and quiet light in the Sierra Nevada, Zion, and the open Southwest.',
     },
     cities: {
         path: '/cities',
-        description: 'City studies from San Francisco, Paris, Rome, and beyond: bridges, riverfronts, architecture, and twilight street light.',
+        description: 'City and street photography studies — bridges, riverfronts, architecture, and twilight street light from San Francisco, Paris, Rome, and other cities photographed by Danil Zanozin.',
     },
     people: {
         path: '/people',
-        description: 'Portraits focused on character and mood, from clean low-key setups to candid black-and-white moments.',
+        description: 'Portrait photography focused on character and mood — clean low-key studio setups, candid black-and-white moments, and editorial lighting work.',
     },
     events: {
         path: '/events',
-        description: 'Live music and nightlife photography with crowd energy, stage movement, and neon-lit performances captured in real time.',
+        description: 'Live music, concert, and nightlife photography — crowd energy, stage movement, and neon-lit performances captured in real time at venues across the country.',
+    },
+    'death-valley': {
+        path: '/death-valley',
+        description: 'Death Valley National Park photography — salt flats, eroded badlands, dune fields, and the long shadows of the Panamint Range, captured during a week in the high desert.',
     },
 };
 
@@ -30,7 +35,7 @@ const CategoryPage = ({ category, title }) => {
         path: `/${category}`,
         description: `${title} photography collection by ${SITE_AUTHOR}.`,
     };
-    const pageImage = photos[0]?.src || images.hero[0];
+    const pageImage = photos[0]?.src || heroPhotos[0];
     const imageItemList = photos.slice(0, 20).map((photo, index) => ({
         '@type': 'ListItem',
         position: index + 1,
@@ -61,6 +66,11 @@ const CategoryPage = ({ category, title }) => {
             itemListElement: imageItemList,
         },
     };
+    const breadcrumbsJsonLd = buildBreadcrumbs([
+        { name: 'Home', path: '/' },
+        { name: 'Galleries', path: '/galleries' },
+        { name: title, path: metadata.path },
+    ]);
 
     return (
         <motion.div
@@ -69,14 +79,14 @@ const CategoryPage = ({ category, title }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             className="container"
-            style={{ paddingTop: '100px', paddingBottom: '50px' }}
+            style={{ paddingTop: 'var(--navbar-height)', paddingBottom: '50px' }}
         >
             <SEO
-                title={`${title} Photography`}
+                title={title}
                 description={metadata.description}
                 path={metadata.path}
                 image={pageImage}
-                jsonLd={collectionJsonLd}
+                jsonLd={[collectionJsonLd, breadcrumbsJsonLd]}
             />
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}

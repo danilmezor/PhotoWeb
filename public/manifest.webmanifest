@@ -1,0 +1,20 @@
+{
+  "name": "Danil Zanozin Photography",
+  "short_name": "DZ Photo",
+  "description": "Personal photography portfolio by Danil Zanozin featuring landscapes, cities, people, events, Death Valley, the Grand Canyon Rim-to-Rim, and a John Muir Trail visual story.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#050505",
+  "background_color": "#050505",
+  "lang": "en",
+  "categories": ["photography", "portfolio", "travel"],
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

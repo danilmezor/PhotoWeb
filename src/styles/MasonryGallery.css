@@ -1,0 +1,31 @@
+.masonry {
+    display: flex;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+}
+
+.masonry-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    min-width: 0;
+}
+
+.masonry-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-medium);
+}
+
+.masonry-item:hover img {
+    transform: scale(1.03);
+}

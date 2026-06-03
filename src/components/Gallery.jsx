@@ -6,16 +6,6 @@ import '../styles/Gallery.css';
 const Gallery = ({ photos }) => {
     const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const handleNext = () => {
-        setSelectedIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    };
-
-    const handlePrev = () => {
-        setSelectedIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
-    };
-
-    const selectedPhoto = selectedIndex !== null ? photos[selectedIndex] : null;
-
     return (
         <>
             <div className="gallery-container">
@@ -34,18 +24,15 @@ const Gallery = ({ photos }) => {
                             alt={photo.alt || `${photo.title} photo by Danil Zanozin`}
                             loading="lazy"
                         />
-                        <div className="gallery-overlay">
-                            <h3 className="gallery-title">{photo.title}</h3>
-                        </div>
                     </motion.div>
                 ))}
             </div>
-            {selectedPhoto && (
+            {selectedIndex !== null && (
                 <Lightbox
-                    photo={selectedPhoto}
+                    photos={photos}
+                    selectedIndex={selectedIndex}
                     onClose={() => setSelectedIndex(null)}
-                    onNext={handleNext}
-                    onPrev={handlePrev}
+                    onSelect={setSelectedIndex}
                 />
             )}
         </>

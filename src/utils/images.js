@@ -1,14 +1,22 @@
+import { captionFor } from './captions.js';
+
 const buildPhotoSrc = (category, fileName) => (
   `/photos/${category}/${encodeURIComponent(fileName)}`
 );
 
-const formatTitle = (fileName) => (
-  fileName
-    .replace(/\.[^.]+$/, '')
-    .replace(/[_-]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-);
+// Extract a clean display title from a filename.
+// Camera-serial names like _AC15794-HDR-2.jpg, _DSC1471-Enhanced-NR.jpg,
+// _AC16368-Pano.jpg, _DSC4277-Edit.jpg all reduce to just AC15794 / DSC1471 /
+// AC16368 / DSC4277. Anything else (random hashes, timestamped phone uploads)
+// becomes "Untitled".
+export const formatTitle = (fileName) => {
+  const base = fileName.replace(/\.[^.]+$/, '');
+  const match = base.match(/^_?((?:DSC|AC)\d+)/i);
+  return match ? match[1].toUpperCase() : 'Untitled';
+};
+
+// Same, but accepts a full src like /photos/landscapes/_AC15794-HDR-2.jpg.
+export const titleFromSrc = (src) => formatTitle(src.split('/').pop() || '');
 
 const formatCategoryLabel = (category) => (
   category
@@ -22,32 +30,18 @@ const mapCategoryFiles = (category, files) =>
   files.map((fileName, index) => {
     const title = formatTitle(fileName);
     const categoryLabel = formatCategoryLabel(category);
+    const src = buildPhotoSrc(category, fileName);
+    const caption = captionFor(src);
 
     return {
       id: index + 1,
-      src: buildPhotoSrc(category, fileName),
+      src,
       title,
-      alt: `${categoryLabel} photo: ${title}`,
+      caption,
+      alt: caption || `${categoryLabel} photograph by Danil Zanozin (${title})`,
     };
   });
 
-const heroFiles = [
-  "_AC14997.jpg",
-  "_AC15233-Pano.jpg",
-  "_AC16232-HDR-2.jpg",
-  "_AC16368-Pano.jpg",
-  "_DSC1471-Enhanced-NR.jpg",
-  "_DSC2014.jpg",
-  "_DSC3788-Enhanced-NR.jpg",
-  "_DSC4063-Enhanced-NR.jpg",
-  "_DSC4277-Edit.jpg",
-  "_DSC4592.jpg",
-  "_DSC5428.jpg",
-  "_DSC5570.jpg",
-  "_DSC6099.jpg",
-  "_DSC6193.jpg",
-  "H53-idjr5hk.jpg"
-];
 const landscapeFiles = [
   "_AC11398-Edit.JPG",
   "_AC14997.jpg",
@@ -55,7 +49,6 @@ const landscapeFiles = [
   "_AC16043.jpg",
   "_AC16126.jpg",
   "_AC16128-HDR.jpg",
-  "_AC16437-HDR.jpg",
   "_AC16617.jpg",
   "_AC16640-HDR.jpg",
   "_AC16669.jpg",
@@ -63,22 +56,14 @@ const landscapeFiles = [
   "_DSC0273.jpg",
   "_DSC0519.jpg",
   "_DSC0869.jpg",
-  "_DSC0871.jpg",
   "_DSC1471-Enhanced-NR.jpg",
   "_DSC4277-Edit.jpg",
-  "_DSC5121-HDR.jpg",
-  "_DSC5226.jpg",
   "_DSC5401.jpg",
-  "_DSC5428.jpg",
-  "_DSC5599.jpg",
-  "_DSC5697.jpg",
-  "_DSC6087.jpg",
-  "_DSC6099.jpg",
   "njcRmx4hCQA.jpg",
-  "photo_2025-05-18 16.54.39.jpeg",
   "uFZYpJ8oVJQ.jpg"
 ];
 const cityFiles = [
+  "_sGN2QO7P6c.jpg",
   "_AC10425.jpg",
   "_AC15366.jpg",
   "_AC15369.jpg",
@@ -86,21 +71,18 @@ const cityFiles = [
   "_AC16368-Pano.jpg",
   "_DSC5033.jpg",
   "_DSC5344.jpg",
-  "_DSC5364.jpg",
-  "_sGN2QO7P6c.jpg",
   "CHHBd8lS8RY.jpg",
   "Ekkr8JiDBIc.jpg",
   "fyCOWS2l5JI.jpg",
-  "K8gJ8Fc1M-I.jpg",
   "s_9N2ACzGmE.jpg",
   "v6TW68bhNDE.jpg",
   "WruL2-cDbDk.jpg",
-  "xHImx8XxQZs.jpg"
+  "xHImx8XxQZs.jpg",
+  "photo_2025-05-18 16.54.39.jpeg"
 ];
 const peopleFiles = [
   "_AC10892.jpg",
   "_AC12324.jpg",
-  "_AC13561.jpg",
   "81dJdwzh6qQ.jpg",
   "89BLwDYfYxc.jpg",
   "HYYPRzv6ytQ.jpg",
@@ -130,13 +112,41 @@ const eventFiles = [
   "Idu8L57IO_o.jpg",
   "ZYRyh9_pilg.jpg"
 ];
+const deathValleyFiles = [
+  "_DSC5570.jpg",
+  "_DSC5599-Edit.jpg",
+  "_DSC5707.jpg",
+  "_DSC5808.jpg",
+  "_DSC5828.jpg",
+  "_DSC5865.jpg",
+  "_DSC6007.jpg",
+  "_DSC6068.jpg",
+  "_DSC6099.jpg",
+  "_DSC6135.jpg"
+];
+const grandCanyonFiles = [
+  "_DSC6639.jpg",
+  "_DSC6767.jpg",
+  "_DSC6792.jpg",
+  "_DSC6882.jpg",
+  "_DSC6909.jpg",
+  "_DSC6976.jpg",
+  "_DSC7101.jpg",
+  "_DSC7356.jpg",
+  "_DSC7438.jpg",
+  "_DSC7592.jpg",
+  "_DSC7696.jpg",
+  "_DSC7748.jpg",
+  "_DSC7793.jpg"
+];
 
 export const images = {
-  hero: heroFiles.map((fileName) => buildPhotoSrc('hero', fileName)),
   landscapes: mapCategoryFiles('landscapes', landscapeFiles),
   cities: mapCategoryFiles('cities', cityFiles),
   people: mapCategoryFiles('people', peopleFiles),
   events: mapCategoryFiles('events', eventFiles),
+  'death-valley': mapCategoryFiles('death-valley', deathValleyFiles),
+  'grand-canyon': mapCategoryFiles('grand-canyon', grandCanyonFiles),
   jmt: [
     {
       id: 1,

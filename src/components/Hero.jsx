@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { images } from '../utils/images';
+import { heroPhotos } from '../utils/hero';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImageIndex((prev) => (prev + 1) % images.hero.length);
+            setCurrentImageIndex((prev) => (prev + 1) % heroPhotos.length);
         }, 5000);
         return () => clearInterval(interval);
     }, []);
@@ -23,7 +23,7 @@ const Hero = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    style={{ backgroundImage: `url(${images.hero[currentImageIndex]})` }}
+                    style={{ backgroundImage: `url(${heroPhotos[currentImageIndex]})` }}
                 />
             </AnimatePresence>
 

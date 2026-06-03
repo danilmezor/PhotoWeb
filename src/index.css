@@ -24,6 +24,11 @@
   --transition-fast: 0.2s ease;
   --transition-medium: 0.4s ease;
   --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Top clearance for the fixed navbar — use on any page whose content
+     starts at the top of the viewport. Home is intentionally exempt
+     (Hero is full-bleed behind the transparent navbar). */
+  --navbar-height: 100px;
 }
 
 * {

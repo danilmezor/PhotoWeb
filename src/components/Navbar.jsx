@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { galleries } from '../utils/galleries';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isIdle, setIsIdle] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isGalleriesOpen, setIsGalleriesOpen] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -18,7 +20,6 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Idle detection
     useEffect(() => {
         let timeoutId;
 
@@ -32,9 +33,7 @@ const Navbar = () => {
             }, 5000);
         };
 
-        const handleActivity = () => {
-            resetTimer();
-        };
+        const handleActivity = () => resetTimer();
 
         window.addEventListener('mousemove', handleActivity);
         window.addEventListener('scroll', handleActivity);
@@ -42,7 +41,7 @@ const Navbar = () => {
         window.addEventListener('click', handleActivity);
         window.addEventListener('touchstart', handleActivity);
 
-        resetTimer(); // Start timer initially
+        resetTimer();
 
         return () => {
             clearTimeout(timeoutId);
@@ -55,13 +54,13 @@ const Navbar = () => {
     }, []);
 
     const links = [
-        { name: 'Landscapes', path: '/landscapes' },
-        { name: 'Cities', path: '/cities' },
-        { name: 'People', path: '/people' },
-        { name: 'Events', path: '/events' },
-        { name: 'JMT', path: '/jmt' },
+        { name: 'Personal Favorites', path: '/favorites' },
+        { name: 'Galleries', path: '/galleries', hasDropdown: true },
         { name: 'About', path: '/about' },
     ];
+
+    const isGalleryRoute = (pathname) =>
+        pathname === '/galleries' || galleries.some(g => g.path === pathname);
 
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isScrolled && isIdle ? 'idle-hidden' : ''}`}>
@@ -72,21 +71,73 @@ const Navbar = () => {
 
                 {/* Desktop Links */}
                 <div className="navbar-links desktop-only">
-                    {links.map((link) => (
-                        <Link
-                            key={link.path}
-                            to={link.path}
-                            className={`navbar-link ${location.pathname === link.path ? 'active' : ''}`}
-                        >
-                            {link.name}
-                            {location.pathname === link.path && (
-                                <motion.div
-                                    layoutId="underline"
-                                    className="active-underline"
-                                />
-                            )}
-                        </Link>
-                    ))}
+                    {links.map((link) => {
+                        const isActive = link.hasDropdown
+                            ? isGalleryRoute(location.pathname)
+                            : location.pathname === link.path;
+
+                        if (link.hasDropdown) {
+                            return (
+                                <div
+                                    key={link.path}
+                                    className="navbar-dropdown"
+                                    onMouseEnter={() => setIsGalleriesOpen(true)}
+                                    onMouseLeave={() => setIsGalleriesOpen(false)}
+                                >
+                                    <Link
+                                        to={link.path}
+                                        className={`navbar-link ${isActive ? 'active' : ''}`}
+                                    >
+                                        {link.name}
+                                        {isActive && (
+                                            <motion.div
+                                                layoutId="underline"
+                                                className="active-underline"
+                                            />
+                                        )}
+                                    </Link>
+                                    <AnimatePresence>
+                                        {isGalleriesOpen && (
+                                            <motion.div
+                                                className="navbar-dropdown-menu"
+                                                initial={{ opacity: 0, y: -8 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -8 }}
+                                                transition={{ duration: 0.15 }}
+                                            >
+                                                {galleries.map((g) => (
+                                                    <Link
+                                                        key={g.slug}
+                                                        to={g.path}
+                                                        className={`navbar-dropdown-item ${location.pathname === g.path ? 'active' : ''}`}
+                                                        onClick={() => setIsGalleriesOpen(false)}
+                                                    >
+                                                        {g.title}
+                                                    </Link>
+                                                ))}
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </div>
+                            );
+                        }
+
+                        return (
+                            <Link
+                                key={link.path}
+                                to={link.path}
+                                className={`navbar-link ${isActive ? 'active' : ''}`}
+                            >
+                                {link.name}
+                                {isActive && (
+                                    <motion.div
+                                        layoutId="underline"
+                                        className="active-underline"
+                                    />
+                                )}
+                            </Link>
+                        );
+                    })}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -113,22 +164,27 @@ const Navbar = () => {
                             transition={{ duration: 0.3 }}
                         >
                             <div className="mobile-menu-links">
-                                {links.map((link, index) => (
-                                    <motion.div
-                                        key={link.path}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: index * 0.1 }}
-                                    >
-                                        <Link
-                                            to={link.path}
-                                            className={`mobile-link ${location.pathname === link.path ? 'active' : ''}`}
-                                            onClick={() => setIsMenuOpen(false)}
+                                {links.map((link, index) => {
+                                    const isActive = link.hasDropdown
+                                        ? isGalleryRoute(location.pathname)
+                                        : location.pathname === link.path;
+                                    return (
+                                        <motion.div
+                                            key={link.path}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ delay: index * 0.1 }}
                                         >
-                                            {link.name}
-                                        </Link>
-                                    </motion.div>
-                                ))}
+                                            <Link
+                                                to={link.path}
+                                                className={`mobile-link ${isActive ? 'active' : ''}`}
+                                                onClick={() => setIsMenuOpen(false)}
+                                            >
+                                                {link.name}
+                                            </Link>
+                                        </motion.div>
+                                    );
+                                })}
                             </div>
                         </motion.div>
                     )}

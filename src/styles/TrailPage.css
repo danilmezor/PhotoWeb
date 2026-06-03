@@ -1,0 +1,74 @@
+.trail-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    overflow-x: hidden;
+}
+
+.trail-sidebar {
+    width: 20%;
+    min-width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--navbar-height);
+    border-right: 1px solid #222;
+    background-color: var(--bg-primary);
+    z-index: 10;
+}
+
+.trail-map-container {
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trail-map-svg {
+    height: 60vh;
+    width: auto;
+    max-width: 100%;
+    margin: 2rem 0;
+    overflow: visible;
+}
+
+.trail-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.trail-content-wrapper {
+    flex: 1;
+    min-width: 0;
+    margin-left: max(20%, 280px);
+    padding: var(--navbar-height) var(--space-md) var(--space-md);
+    background-color: var(--bg-primary);
+}
+
+@media (max-width: 1000px) {
+    .trail-page {
+        flex-direction: column;
+    }
+
+    .trail-sidebar {
+        display: none;
+    }
+
+    .trail-content-wrapper {
+        width: 100%;
+        margin-left: 0;
+        padding: var(--navbar-height) var(--space-sm) var(--space-sm);
+    }
+}

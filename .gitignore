@@ -13,6 +13,9 @@ dist-ssr
 *.local
 __pycache__
 
+# Raw uncompressed photo archive (working copies — only compressed versions in public/photos/ ship)
+pictures/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
