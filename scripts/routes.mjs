@@ -21,3 +21,16 @@ export const NESTED_ROUTES = [
 ];
 
 export const ALL_ROUTES = [ROOT_ROUTE, ...NESTED_ROUTES];
+
+// Per-photo permalinks derived from the registry. Each photo gets its own
+// indexable URL — these expand the sitemap and the prerender pass.
+const { allPhotos } = await import('../src/utils/photoRegistry.js');
+
+export const PHOTO_ROUTES = allPhotos.map((photo) => ({
+    path: `/photo/${photo.slug}`,
+    changefreq: 'monthly',
+    priority: '0.6',
+    image: photo.src,
+}));
+
+export const ALL_ROUTES_WITH_PHOTOS = [...ALL_ROUTES, ...PHOTO_ROUTES];

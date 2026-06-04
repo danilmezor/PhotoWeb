@@ -51,7 +51,7 @@ const CategoryPage = ({ category, title }) => {
     }));
     const collectionJsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'CollectionPage',
+        '@type': ['CollectionPage', 'ImageGallery'],
         name: `${title} Photography`,
         description: metadata.description,
         url: toAbsoluteUrl(metadata.path),
@@ -61,6 +61,16 @@ const CategoryPage = ({ category, title }) => {
             url: toAbsoluteUrl('/'),
         },
         primaryImageOfPage: toAbsoluteUrl(pageImage),
+        author: {
+            '@type': 'Person',
+            name: SITE_AUTHOR,
+            url: toAbsoluteUrl('/about'),
+        },
+        copyrightHolder: {
+            '@type': 'Person',
+            name: SITE_AUTHOR,
+        },
+        license: toAbsoluteUrl('/about'),
         hasPart: {
             '@type': 'ItemList',
             itemListElement: imageItemList,

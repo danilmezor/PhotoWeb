@@ -1,7 +1,7 @@
 import React from 'react';
 import TrailPage from '../components/TrailPage';
 import { images } from '../utils/images';
-import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
+import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, buildPlace, buildTouristTrip, toAbsoluteUrl } from '../utils/site';
 
 const GrandCanyonPage = () => {
     const photos = images['grand-canyon'] || [];
@@ -35,6 +35,19 @@ const GrandCanyonPage = () => {
         { name: 'Galleries', path: '/galleries' },
         { name: 'Grand Canyon', path: '/grand-canyon' },
     ]);
+    const parkPlace = buildPlace({
+        name: 'Grand Canyon National Park',
+        description: 'A 277-mile-long canyon carved by the Colorado River through the Colorado Plateau, in northern Arizona.',
+        geo: { latitude: 36.0544, longitude: -112.1401 },
+    });
+    const touristTripJsonLd = buildTouristTrip({
+        name: 'Grand Canyon Rim-to-Rim Photo Diary',
+        description,
+        path: '/grand-canyon',
+        place: parkPlace,
+        itinerary: ['North Rim', 'North Kaibab Trail', 'Cottonwood Campground', 'Phantom Ranch', 'Bright Angel Trail', 'South Rim'],
+        image: leadImage,
+    });
 
     return (
         <TrailPage
@@ -48,7 +61,7 @@ const GrandCanyonPage = () => {
                 description,
                 path: '/grand-canyon',
                 image: leadImage,
-                jsonLd: [jsonLd, breadcrumbsJsonLd],
+                jsonLd: [jsonLd, touristTripJsonLd, breadcrumbsJsonLd],
             }}
         />
     );

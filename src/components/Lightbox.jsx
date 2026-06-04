@@ -1,6 +1,11 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import PhotoImage from './PhotoImage';
+import { allPhotos, photoUrl } from '../utils/photoRegistry';
 import '../styles/Lightbox.css';
+
+const slugBySrc = new Map(allPhotos.map((p) => [p.src, p.slug]));
 
 const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
     const stripRef = useRef(null);
@@ -56,19 +61,35 @@ const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
                     onClick={(e) => e.stopPropagation()}
                 >
                     <div className="lightbox-mat">
-                        <img
+                        <PhotoImage
                             src={photo.src}
                             alt={photo.alt || photo.title}
                             className="lightbox-image"
+                            loading="eager"
                         />
                     </div>
 
-                    {(photo.title || photo.caption) && (
-                        <div className="lightbox-caption">
-                            {photo.title && <div className="lightbox-caption-title">{photo.title}</div>}
-                            {photo.caption && <div className="lightbox-caption-description">{photo.caption}</div>}
-                        </div>
-                    )}
+                    {(photo.title || photo.caption) && (() => {
+                        const slug = slugBySrc.get(photo.src);
+                        const inner = (
+                            <>
+                                {photo.title && <div className="lightbox-caption-title">{photo.title}</div>}
+                                {photo.caption && <div className="lightbox-caption-description">{photo.caption}</div>}
+                                {slug && <div className="lightbox-caption-permalink">View photo page →</div>}
+                            </>
+                        );
+                        return slug ? (
+                            <Link
+                                to={photoUrl(slug)}
+                                className="lightbox-caption lightbox-caption-link"
+                                onClick={onClose}
+                            >
+                                {inner}
+                            </Link>
+                        ) : (
+                            <div className="lightbox-caption">{inner}</div>
+                        );
+                    })()}
 
                     <div className="lightbox-strip-row">
                         <button
@@ -90,7 +111,7 @@ const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
                                     onClick={(e) => { e.stopPropagation(); onSelect(i); }}
                                     aria-label={`Show photo ${i + 1} of ${total}`}
                                 >
-                                    <img src={p.src} alt="" loading="lazy" />
+                                    <PhotoImage src={p.src} alt="" />
                                 </button>
                             ))}
                         </div>

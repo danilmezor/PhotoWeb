@@ -37,6 +37,12 @@
   box-sizing: border-box;
 }
 
+/* <picture> is a wrapper for <source>/<img> — let layout pass through to the
+   inner <img> so existing img-targeted CSS keeps working unchanged. */
+picture {
+  display: contents;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);

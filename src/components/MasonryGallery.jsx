@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Lightbox from './Lightbox';
+import PhotoImage from './PhotoImage';
 import '../styles/MasonryGallery.css';
 
 const getColumnCount = () => {
@@ -38,7 +39,7 @@ const MasonryGallery = ({ photos }) => {
                                 className="masonry-item"
                                 onClick={() => setSelectedIndex(globalIndex)}
                             >
-                                <img src={photo.src} alt={photo.alt} loading="lazy" />
+                                <PhotoImage src={photo.src} alt={photo.alt} />
                             </div>
                         ))}
                     </div>

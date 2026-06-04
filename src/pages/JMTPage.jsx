@@ -3,7 +3,7 @@ import TrailPage from '../components/TrailPage';
 import { jmtData } from '../utils/jmtData';
 import { titleFromSrc } from '../utils/images';
 import { captionFor } from '../utils/captions';
-import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
+import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, buildPlace, buildTouristTrip, toAbsoluteUrl } from '../utils/site';
 
 const JMTPage = () => {
     const photos = useMemo(() => (
@@ -50,6 +50,20 @@ const JMTPage = () => {
         { name: 'Galleries', path: '/galleries' },
         { name: 'JMT', path: '/jmt' },
     ]);
+    const trailPlace = buildPlace({
+        name: 'John Muir Trail',
+        description: 'A 211-mile long-distance hiking trail through the Sierra Nevada, running from Whitney Portal to Yosemite Valley.',
+        geo: { latitude: 36.8158, longitude: -118.7917 },
+    });
+    const touristTripJsonLd = buildTouristTrip({
+        name: 'John Muir Trail Photo Diary',
+        description,
+        path: '/jmt',
+        place: trailPlace,
+        itinerary: ['Whitney Portal', 'Trail Camp', 'Mount Whitney', 'Crabtree Meadow', 'Forester Pass', 'Glen Pass', 'Pinchot Pass', 'Mather Pass', 'Muir Pass', 'Selden Pass', 'Silver Pass', 'Lake Edison', 'Donohue Pass', 'Tuolumne Meadows', 'Yosemite Valley'],
+        image: leadImage,
+        datePublished: '2025-07-20',
+    });
 
     return (
         <TrailPage
@@ -63,7 +77,7 @@ const JMTPage = () => {
                 description,
                 path: '/jmt',
                 image: leadImage,
-                jsonLd: [jsonLd, breadcrumbsJsonLd],
+                jsonLd: [jsonLd, touristTripJsonLd, breadcrumbsJsonLd],
             }}
         />
     );

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
+import PhotoImage from '../components/PhotoImage';
 import SEO from '../components/SEO';
-import { images } from '../utils/images';
 import { heroPhotos } from '../utils/hero';
 import {
     SITE_AUTHOR,
@@ -86,7 +86,7 @@ const Home = () => {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.4 }}
                             >
-                                <img
+                                <PhotoImage
                                     src={collection.image}
                                     alt={`${collection.title} photography gallery preview`}
                                     className="collection-image"

@@ -6,7 +6,7 @@ import { jmtData } from '../src/utils/jmtData.js';
 import { heroPhotos } from '../src/utils/hero.js';
 import { favorites } from '../src/utils/favorites.js';
 import { galleries } from '../src/utils/galleries.js';
-import { ALL_ROUTES } from './routes.mjs';
+import { ALL_ROUTES, PHOTO_ROUTES } from './routes.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -53,7 +53,7 @@ const resolveSiteUrl = () => {
 const siteUrl = resolveSiteUrl();
 const isoDate = new Date().toISOString();
 
-const routes = ALL_ROUTES;
+const routes = [...ALL_ROUTES, ...PHOTO_ROUTES];
 
 const aboutImage = '/photos/000245650034.jpg';
 
@@ -79,6 +79,11 @@ const routeImageMap = {
   '/grand-canyon': images['grand-canyon'].map((photo) => photo.src),
   '/jmt': jmtData.flatMap((day) => day.images),
 };
+
+// Each photo permalink lists only its own image.
+for (const route of PHOTO_ROUTES) {
+  routeImageMap[route.path] = [route.image];
+}
 
 const toAbsoluteUrl = (pathname) => {
   if (!pathname) {

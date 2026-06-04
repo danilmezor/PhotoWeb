@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Lightbox from './Lightbox';
+import PhotoImage from './PhotoImage';
 import '../styles/Gallery.css';
 
 const Gallery = ({ photos }) => {
@@ -19,10 +20,9 @@ const Gallery = ({ photos }) => {
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                         onClick={() => setSelectedIndex(index)}
                     >
-                        <img
+                        <PhotoImage
                             src={photo.src}
                             alt={photo.alt || `${photo.title} photo by Danil Zanozin`}
-                            loading="lazy"
                         />
                     </motion.div>
                 ))}

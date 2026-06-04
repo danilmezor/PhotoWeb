@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
+import PhotoImage from '../components/PhotoImage';
 import { galleries } from '../utils/galleries';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/Galleries.css';
@@ -81,10 +82,9 @@ const Galleries = () => {
                     >
                         <Link to={gallery.path} className="gallery-tile">
                             <div className="gallery-tile-image-wrap">
-                                <img
+                                <PhotoImage
                                     src={gallery.cover}
                                     alt={`${gallery.title} gallery cover`}
-                                    loading="lazy"
                                 />
                             </div>
                             <h2 className="gallery-tile-title">{gallery.title}</h2>

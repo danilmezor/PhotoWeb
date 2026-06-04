@@ -68,6 +68,30 @@
     line-height: 1.5;
 }
 
+.lightbox-caption-link {
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.lightbox-caption-link:hover .lightbox-caption-title {
+    color: var(--text-secondary);
+}
+
+.lightbox-caption-permalink {
+    margin-top: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    transition: opacity var(--transition-fast);
+}
+
+.lightbox-caption-link:hover .lightbox-caption-permalink {
+    opacity: 1;
+}
+
 .lightbox-strip-row {
     display: flex;
     align-items: center;

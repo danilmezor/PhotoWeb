@@ -11,6 +11,7 @@ import JMTPage from './pages/JMTPage';
 import GrandCanyonPage from './pages/GrandCanyonPage';
 import Favorites from './pages/Favorites';
 import Galleries from './pages/Galleries';
+import PhotoPage from './pages/PhotoPage';
 
 const TRAIL_PAGES = ['/jmt', '/grand-canyon'];
 
@@ -30,6 +31,7 @@ const AnimatedRoutes = () => {
         <Route path="/death-valley" element={<CategoryPage category="death-valley" title="Death Valley" />} />
         <Route path="/grand-canyon" element={<GrandCanyonPage />} />
         <Route path="/jmt" element={<JMTPage />} />
+        <Route path="/photo/:slug" element={<PhotoPage />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </AnimatePresence>
