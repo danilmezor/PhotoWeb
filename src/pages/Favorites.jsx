@@ -42,7 +42,7 @@ const Favorites = () => {
             style={{ paddingTop: 'var(--navbar-height)', paddingBottom: '50px' }}
         >
             <SEO
-                title="Personal Favorites"
+                title="Personal Favorites — Selected Photographs by Danil Zanozin"
                 description={description}
                 path="/favorites"
                 image={leadImage}

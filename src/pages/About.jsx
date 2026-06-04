@@ -62,7 +62,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
         >
             <SEO
-                title="About"
+                title="About Danil Zanozin — Photographer & ML Engineer"
                 description={aboutDescription}
                 path="/about"
                 image={portraitImage}

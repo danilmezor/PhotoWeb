@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
@@ -48,6 +50,8 @@ const AppContent = () => {
       <Navbar />
       <AnimatedRoutes />
       {!hideFooter && <Footer />}
+      <SpeedInsights />
+      <Analytics />
     </>
   );
 };

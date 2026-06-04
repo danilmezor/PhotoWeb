@@ -57,7 +57,7 @@ const GrandCanyonPage = () => {
             mapDataUrl="/R2R_full.json"
             photos={photos}
             seo={{
-                title: 'Grand Canyon Rim-to-Rim',
+                title: 'Grand Canyon Rim-to-Rim Hike — Photo Story',
                 description,
                 path: '/grand-canyon',
                 image: leadImage,

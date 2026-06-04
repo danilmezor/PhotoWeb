@@ -48,7 +48,7 @@ const Galleries = () => {
             style={{ paddingTop: 'var(--navbar-height)', paddingBottom: '50px' }}
         >
             <SEO
-                title="Galleries"
+                title="Photo Galleries — Landscape, Travel, Portrait"
                 description={description}
                 path="/galleries"
                 image={leadImage}

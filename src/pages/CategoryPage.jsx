@@ -9,22 +9,27 @@ import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../util
 const categoryMetadata = {
     landscapes: {
         path: '/landscapes',
+        seoTitle: 'Landscape Photography — Sierra Nevada, Zion & the American West',
         description: 'Landscape photography from across the American West and beyond — granite valleys, alpine rivers, desert night skies, and quiet light in the Sierra Nevada, Zion, and the open Southwest.',
     },
     cities: {
         path: '/cities',
+        seoTitle: 'City Photography — San Francisco, Paris, Rome Travel Shots',
         description: 'City and street photography studies — bridges, riverfronts, architecture, and twilight street light from San Francisco, Paris, Rome, and other cities photographed by Danil Zanozin.',
     },
     people: {
         path: '/people',
+        seoTitle: 'Portrait Photography — Studio & Black-and-White Work',
         description: 'Portrait photography focused on character and mood — clean low-key studio setups, candid black-and-white moments, and editorial lighting work.',
     },
     events: {
         path: '/events',
+        seoTitle: 'Live Music & Concert Photography',
         description: 'Live music, concert, and nightlife photography — crowd energy, stage movement, and neon-lit performances captured in real time at venues across the country.',
     },
     'death-valley': {
         path: '/death-valley',
+        seoTitle: 'Death Valley National Park Photography',
         description: 'Death Valley National Park photography — salt flats, eroded badlands, dune fields, and the long shadows of the Panamint Range, captured during a week in the high desert.',
     },
 };
@@ -92,7 +97,7 @@ const CategoryPage = ({ category, title }) => {
             style={{ paddingTop: 'var(--navbar-height)', paddingBottom: '50px' }}
         >
             <SEO
-                title={title}
+                title={metadata.seoTitle || title}
                 description={metadata.description}
                 path={metadata.path}
                 image={pageImage}

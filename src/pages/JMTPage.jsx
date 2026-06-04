@@ -73,7 +73,7 @@ const JMTPage = () => {
             mapDataUrl="/JMT_2025.json"
             photos={photos}
             seo={{
-                title: 'John Muir Trail',
+                title: 'John Muir Trail Photo Diary — 211 Miles in the Sierra Nevada',
                 description,
                 path: '/jmt',
                 image: leadImage,
