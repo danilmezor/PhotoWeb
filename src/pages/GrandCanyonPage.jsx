@@ -56,6 +56,12 @@ const GrandCanyonPage = () => {
             stats={['Rim to Rim', '~24 Miles', '11,000ft Elevation Change']}
             mapDataUrl="/R2R_full.json"
             photos={photos}
+            breadcrumbs={[
+                { name: 'Home', path: '/' },
+                { name: 'Galleries', path: '/galleries' },
+                { name: 'Grand Canyon' },
+            ]}
+            relatedSlug="grand-canyon"
             seo={{
                 title: 'Grand Canyon Rim-to-Rim Hike — Photo Story',
                 description,

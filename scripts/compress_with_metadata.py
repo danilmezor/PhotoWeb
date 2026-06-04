@@ -27,6 +27,7 @@ from __future__ import annotations
 import datetime
 import json
 import os
+import re
 import sys
 from fractions import Fraction
 from pathlib import Path
@@ -61,6 +62,11 @@ ARTIST = 'Danil Zanozin'
 WEBSTATEMENT_URL = 'https://danilzanozin.com/about'
 WEBP_QUALITY = 80
 EXIF_JSON_PATH = PROJECT_ROOT / 'src/utils/exifData.generated.json'
+
+# Responsive image widths (pixels). For each photo, we emit a -<width>w.jpg
+# and -<width>w.webp sibling at each target width that is smaller than the
+# source. Browsers pick the right one via <img srcset> / <source srcset>.
+RESPONSIVE_WIDTHS = [480, 1080, 1920]
 
 
 def find_original(category: str, filename: str) -> Path | None:
@@ -143,6 +149,38 @@ def write_webp_variant(jpg_path: Path, exif_bytes: bytes) -> None:
     img.save(out, 'WEBP', quality=WEBP_QUALITY, method=6, exif=exif_bytes)
 
 
+def resize_to_width(img: Image.Image, target_width: int) -> Image.Image:
+    """Lanczos-resize to target_width preserving aspect ratio."""
+    w, h = img.size
+    if target_width >= w:
+        return img
+    new_h = round(h * target_width / w)
+    return img.resize((target_width, new_h), Image.LANCZOS)
+
+
+def write_responsive_variants(jpg_path: Path, exif_bytes: bytes) -> int:
+    """Emit -<width>w.jpg and -<width>w.webp variants for each target width
+    that is smaller than the source. Returns the number of files written."""
+    img = Image.open(jpg_path)
+    src_w = img.size[0]
+    written = 0
+    base = jpg_path.with_suffix('')  # strip .jpg / .JPG / .jpeg
+    src_ext = jpg_path.suffix  # preserve original case for the JPEG variant
+    for target in RESPONSIVE_WIDTHS:
+        if target >= src_w:
+            continue
+        resized = resize_to_width(img, target)
+        jpg_out = base.with_name(f'{base.name}-{target}w{src_ext}')
+        webp_out = base.with_name(f'{base.name}-{target}w.webp')
+        # Convert to RGB if needed (rare; our sources are already RGB JPEGs)
+        if resized.mode != 'RGB':
+            resized = resized.convert('RGB')
+        resized.save(jpg_out, 'JPEG', quality=85, optimize=True, exif=exif_bytes)
+        resized.save(webp_out, 'WEBP', quality=WEBP_QUALITY, method=6, exif=exif_bytes)
+        written += 2
+    return written
+
+
 def _decode(value):
     if isinstance(value, bytes):
         return value.decode('utf-8', errors='replace').strip('\x00').strip()
@@ -216,6 +254,9 @@ def extract_display_exif(exif_dict: dict) -> dict:
     return out
 
 
+RESPONSIVE_SUFFIX_RE = re.compile(r'-(\d+)w$')
+
+
 def list_served_photos() -> list[Path]:
     photos_root = PROJECT_ROOT / 'public/photos'
     exts = {'.jpg', '.jpeg'}
@@ -227,6 +268,9 @@ def list_served_photos() -> list[Path]:
             continue
         if path.parent == photos_root:
             # Root-level oddballs like 000245650034.jpg
+            continue
+        # Skip our own responsive variants — they match *-480w.jpg etc.
+        if RESPONSIVE_SUFFIX_RE.search(path.stem):
             continue
         out.append(path)
     return out
@@ -244,6 +288,7 @@ def main(args: list[str]) -> None:
     matched_count = 0
     unmatched_count = 0
     webp_count = 0
+    responsive_count = 0
     exif_index: dict[str, dict] = {}
 
     for served in photos:
@@ -282,6 +327,12 @@ def main(args: list[str]) -> None:
         except Exception as e:
             print(f'  ! {served.name}: WebP failed ({e})')
 
+        # Responsive size variants (-480w.jpg, -480w.webp, -1080w.*, -1920w.*).
+        try:
+            responsive_count += write_responsive_variants(served, exif_bytes)
+        except Exception as e:
+            print(f'  ! {served.name}: responsive variants failed ({e})')
+
         # Capture human-display EXIF for the photo registry.
         display = extract_display_exif(exif_dict)
         if display:
@@ -309,6 +360,7 @@ def main(args: list[str]) -> None:
     print(f'[metadata]   with original EXIF: {matched_count}')
     print(f'[metadata]   credit-only:        {unmatched_count}')
     print(f'[metadata] WebP variants:        {webp_count}')
+    print(f'[metadata] Responsive variants:  {responsive_count} (jpg + webp at 480w/1080w/1920w)')
     print(f'[metadata] EXIF index written:   {EXIF_JSON_PATH.relative_to(PROJECT_ROOT)} ({len(final_index)} entries)')
 
 

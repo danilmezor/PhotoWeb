@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import SEO from './SEO';
 import MasonryGallery from './MasonryGallery';
+import Breadcrumb from './Breadcrumb';
+import RelatedGalleries from './RelatedGalleries';
 import { parseGeoJSON, generateSVGPath } from '../utils/geojsonParser';
 import '../styles/TrailPage.css';
 
@@ -13,6 +15,8 @@ const TrailPage = ({
     mapViewBox = { width: 300, height: 600 },
     photos,
     seo,
+    breadcrumbs,
+    relatedSlug,
 }) => {
     const containerRef = useRef(null);
     const [svgPath, setSvgPath] = useState("");
@@ -75,7 +79,9 @@ const TrailPage = ({
             </div>
 
             <div className="trail-content-wrapper">
+                {breadcrumbs && <Breadcrumb items={breadcrumbs} />}
                 <MasonryGallery photos={photos} />
+                {relatedSlug && <RelatedGalleries currentSlug={relatedSlug} />}
             </div>
         </div>
     );

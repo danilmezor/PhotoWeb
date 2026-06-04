@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import Gallery from '../components/Gallery';
+import Breadcrumb from '../components/Breadcrumb';
+import RelatedGalleries from '../components/RelatedGalleries';
 import { images } from '../utils/images';
 import { heroPhotos } from '../utils/hero';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
@@ -103,6 +105,11 @@ const CategoryPage = ({ category, title }) => {
                 image={pageImage}
                 jsonLd={[collectionJsonLd, breadcrumbsJsonLd]}
             />
+            <Breadcrumb items={[
+                { name: 'Home', path: '/' },
+                { name: 'Galleries', path: '/galleries' },
+                { name: title },
+            ]} />
             <motion.h1
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -129,6 +136,7 @@ const CategoryPage = ({ category, title }) => {
                 {metadata.description}
             </p>
             <Gallery photos={photos} />
+            <RelatedGalleries currentSlug={category} />
         </motion.div>
     );
 };

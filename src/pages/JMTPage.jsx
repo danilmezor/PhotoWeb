@@ -72,6 +72,12 @@ const JMTPage = () => {
             stats={['211 Miles', '21 Days', '47,000ft Elevation']}
             mapDataUrl="/JMT_2025.json"
             photos={photos}
+            breadcrumbs={[
+                { name: 'Home', path: '/' },
+                { name: 'Galleries', path: '/galleries' },
+                { name: 'JMT' },
+            ]}
+            relatedSlug="jmt"
             seo={{
                 title: 'John Muir Trail Photo Diary — 211 Miles in the Sierra Nevada',
                 description,

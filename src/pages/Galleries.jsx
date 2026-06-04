@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import PhotoImage from '../components/PhotoImage';
+import Breadcrumb from '../components/Breadcrumb';
 import { galleries } from '../utils/galleries';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/Galleries.css';
@@ -54,6 +55,10 @@ const Galleries = () => {
                 image={leadImage}
                 jsonLd={[jsonLd, breadcrumbsJsonLd]}
             />
+            <Breadcrumb items={[
+                { name: 'Home', path: '/' },
+                { name: 'Galleries' },
+            ]} />
             <h1 style={{
                 fontSize: '3rem',
                 marginBottom: '1.5rem',

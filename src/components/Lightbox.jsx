@@ -66,6 +66,7 @@ const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
                             alt={photo.alt || photo.title}
                             className="lightbox-image"
                             loading="eager"
+                            sizes="(max-width: 600px) 95vw, 80vw"
                         />
                     </div>
 
@@ -111,7 +112,7 @@ const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
                                     onClick={(e) => { e.stopPropagation(); onSelect(i); }}
                                     aria-label={`Show photo ${i + 1} of ${total}`}
                                 >
-                                    <PhotoImage src={p.src} alt="" />
+                                    <PhotoImage src={p.src} alt="" sizes="96px" />
                                 </button>
                             ))}
                         </div>

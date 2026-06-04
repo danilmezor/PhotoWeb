@@ -121,4 +121,37 @@ export const getNeighbors = (slug) => {
     return { prev, next };
 };
 
+// Return a window of up to `count` photos centered on the given slug within
+// its gallery. Wraps around at the edges so we always get exactly `count`
+// items when the gallery is large enough. The current photo is NOT included
+// in the returned list (it's the page subject).
+export const getNearbyPhotos = (slug, count = 6) => {
+    const photo = bySlug.get(slug);
+    if (!photo) return [];
+    const galleryList = byGallery.get(photo.gallery.slug) || [];
+    if (galleryList.length <= 1) return [];
+    const idx = galleryList.findIndex((p) => p.slug === slug);
+    if (idx < 0) return [];
+    const total = galleryList.length;
+    const wanted = Math.min(count, total - 1);
+    const half = Math.floor(wanted / 2);
+    const out = [];
+    // Walk outward, alternating after and before the current photo.
+    let after = idx + 1;
+    let before = idx - 1;
+    while (out.length < wanted) {
+        if (out.length < wanted) {
+            out.push(galleryList[((after % total) + total) % total]);
+            after += 1;
+        }
+        if (out.length < wanted && before !== idx) {
+            out.unshift(galleryList[((before % total) + total) % total]);
+            before -= 1;
+        }
+        // Safety: prevent infinite loop on very small galleries
+        if (out.length >= total - 1) break;
+    }
+    return out.slice(0, wanted);
+};
+
 export const photoUrl = (slug) => `/photo/${slug}`;

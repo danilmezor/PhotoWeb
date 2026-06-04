@@ -3,7 +3,8 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import PhotoImage from '../components/PhotoImage';
-import { getPhotoBySlug, getNeighbors, photoUrl } from '../utils/photoRegistry';
+import Breadcrumb from '../components/Breadcrumb';
+import { getPhotoBySlug, getNeighbors, getNearbyPhotos, photoUrl } from '../utils/photoRegistry';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/PhotoPage.css';
 
@@ -38,6 +39,7 @@ const PhotoPage = () => {
     }
 
     const { prev, next } = getNeighbors(slug);
+    const nearby = getNearbyPhotos(slug, 6);
 
     const description = photo.caption || `${photo.gallery.title} photograph by ${SITE_AUTHOR}: ${photo.title}.`;
     const exifLine = formatExifLine(photo.exif);
@@ -97,15 +99,12 @@ const PhotoPage = () => {
                 jsonLd={[imageObjectJsonLd, breadcrumbsJsonLd]}
             />
 
-            <nav className="photo-breadcrumb" aria-label="Breadcrumb">
-                <Link to="/">Home</Link>
-                <span className="photo-breadcrumb-sep">/</span>
-                <Link to="/galleries">Galleries</Link>
-                <span className="photo-breadcrumb-sep">/</span>
-                <Link to={photo.gallery.path}>{photo.gallery.title}</Link>
-                <span className="photo-breadcrumb-sep">/</span>
-                <span className="photo-breadcrumb-current">{photo.title}</span>
-            </nav>
+            <Breadcrumb items={[
+                { name: 'Home', path: '/' },
+                { name: 'Galleries', path: '/galleries' },
+                { name: photo.gallery.title, path: photo.gallery.path },
+                { name: photo.title },
+            ]} />
 
             <div className="photo-stage">
                 <div className="photo-mat">
@@ -141,6 +140,24 @@ const PhotoPage = () => {
                         </Link>
                     )}
                 </div>
+
+                {nearby.length > 0 && (
+                    <section className="photo-nearby" aria-label={`More from ${photo.gallery.title}`}>
+                        <h2 className="photo-nearby-heading">More from {photo.gallery.title}</h2>
+                        <div className="photo-nearby-strip">
+                            {nearby.map((p) => (
+                                <Link
+                                    key={p.slug}
+                                    to={photoUrl(p.slug)}
+                                    className="photo-nearby-thumb"
+                                    aria-label={p.title}
+                                >
+                                    <PhotoImage src={p.src} alt={p.alt || p.title} />
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+                )}
             </div>
         </motion.div>
     );

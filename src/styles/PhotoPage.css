@@ -8,38 +8,6 @@
     gap: var(--space-md);
 }
 
-.photo-breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    margin-bottom: var(--space-sm);
-    max-width: 1400px;
-    width: 100%;
-}
-
-.photo-breadcrumb a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color var(--transition-fast);
-}
-
-.photo-breadcrumb a:hover {
-    color: var(--text-primary);
-}
-
-.photo-breadcrumb-sep {
-    opacity: 0.4;
-}
-
-.photo-breadcrumb-current {
-    color: var(--text-primary);
-}
-
 .photo-stage {
     display: flex;
     flex-direction: column;
@@ -143,6 +111,55 @@
     line-height: 1;
 }
 
+.photo-nearby {
+    width: 100%;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid #1a1a1a;
+}
+
+.photo-nearby-heading {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.photo-nearby-strip {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-sm);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-nearby-thumb {
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: var(--bg-secondary);
+    text-decoration: none;
+}
+
+.photo-nearby-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.7;
+    transition: opacity var(--transition-fast), transform var(--transition-medium);
+}
+
+.photo-nearby-thumb:hover img {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
 @media (max-width: 768px) {
     .photo-page {
         padding: var(--navbar-height) var(--space-sm) var(--space-md);
@@ -163,5 +180,9 @@
     .photo-nav-link {
         padding: 0.5rem 0.9rem;
         font-size: 0.75rem;
+    }
+
+    .photo-nearby-strip {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

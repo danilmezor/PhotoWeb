@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import MasonryGallery from '../components/MasonryGallery';
+import Breadcrumb from '../components/Breadcrumb';
 import { favorites } from '../utils/favorites';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 
@@ -48,6 +49,10 @@ const Favorites = () => {
                 image={leadImage}
                 jsonLd={[jsonLd, breadcrumbsJsonLd]}
             />
+            <Breadcrumb items={[
+                { name: 'Home', path: '/' },
+                { name: 'Personal Favorites' },
+            ]} />
             <h1 style={{
                 fontSize: '3rem',
                 marginBottom: '1.5rem',
