@@ -1,10 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { heroPhotos } from '../utils/hero';
 import '../styles/Hero.css';
 
+// Build an image-set() value that lets the browser pick a WebP variant
+// at the right size for the viewport. Falls back to the original JPG so
+// modern browsers without WebP (very rare now) still see the photo.
+const heroBackgroundImage = (src) => {
+    const dotIndex = src.lastIndexOf('.');
+    if (dotIndex < 0) return `url(${src})`;
+    const base = src.slice(0, dotIndex);
+    const webp1080 = `${base}-1080w.webp`;
+    const webp1920 = `${base}-1920w.webp`;
+    return `image-set(url("${webp1920}") type("image/webp") 1x, url("${webp1080}") type("image/webp") 0.5x, url("${src}") type("image/jpeg"))`;
+};
+
 const Hero = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const backgrounds = useMemo(() => heroPhotos.map(heroBackgroundImage), []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -23,17 +36,20 @@ const Hero = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    style={{ backgroundImage: `url(${heroPhotos[currentImageIndex]})` }}
+                    style={{ backgroundImage: backgrounds[currentImageIndex] }}
                 />
             </AnimatePresence>
 
             <div className="hero-overlay" />
 
             <div className="hero-content container">
+                {/* Title is rendered at full opacity from the first paint so it
+                    counts as Lighthouse LCP immediately. Only the slide-in
+                    transform is animated for polish. */}
                 <motion.h1
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.5, duration: 0.8 }}
+                    initial={{ y: 30 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.6 }}
                     className="hero-title"
                 >
                     CAPTURING <br />
@@ -41,9 +57,9 @@ const Hero = () => {
                 </motion.h1>
 
                 <motion.p
-                    initial={{ y: 30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.8, duration: 0.8 }}
+                    initial={{ y: 20 }}
+                    animate={{ y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.15 }}
                     className="hero-subtitle"
                 >
                     since 2011
