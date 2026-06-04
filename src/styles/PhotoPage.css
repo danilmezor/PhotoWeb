@@ -1,20 +1,20 @@
 .photo-page {
     min-height: 100vh;
     background-color: var(--bg-primary);
-    padding: var(--navbar-height) var(--space-md) var(--space-lg);
+    padding: var(--navbar-height) var(--space-md) var(--space-md);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-sm);
 }
 
 .photo-stage {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-md);
+    gap: var(--space-sm);
     width: 100%;
-    max-width: 1400px;
+    max-width: 1800px;
 }
 
 .photo-mat {
@@ -24,13 +24,21 @@
     max-width: 100%;
 }
 
+/* The image, the title/EXIF block, and the prev/back/next row must all
+   stay within the viewport. The calc reserves room for navbar + breadcrumb
+   above and the info + nav row below; "More from <gallery>" lives below
+   the fold by design. */
 .photo-image {
     display: block;
     max-width: 100%;
-    max-height: 78vh;
+    max-height: calc(100vh - 22rem);
     width: auto;
     height: auto;
     object-fit: contain;
+}
+
+.photo-page .breadcrumb {
+    margin-bottom: 0;
 }
 
 .photo-info {
@@ -166,7 +174,9 @@
     }
 
     .photo-image {
-        max-height: 70vh;
+        /* On mobile, "above the fold" matters less and the supporting
+           controls are smaller too — give the photo more room. */
+        max-height: calc(100vh - 20rem);
     }
 
     .photo-title {
