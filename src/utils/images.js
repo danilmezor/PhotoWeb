@@ -1,4 +1,4 @@
-import { captionFor } from './captions.js';
+import { captionFor } from './photoMeta.js';
 
 const buildPhotoSrc = (category, fileName) => (
   `/photos/${category}/${encodeURIComponent(fileName)}`

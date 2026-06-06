@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import PhotoImage from '../components/PhotoImage';
 import Breadcrumb from '../components/Breadcrumb';
-import { getPhotoBySlug, getNeighbors, getNearbyPhotos, photoUrl } from '../utils/photoRegistry';
+import { getPhotoBySlug, getNeighbors, getNearbyPhotos, getSameLocationPhotos, photoUrl } from '../utils/photoRegistry';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/PhotoPage.css';
 
@@ -39,9 +39,17 @@ const PhotoPage = () => {
     }
 
     const { prev, next } = getNeighbors(slug);
-    const nearby = getNearbyPhotos(slug, 6);
+    // Location strip takes precedence; the gallery strip drops any photo the
+    // location strip already shows so the two never duplicate a thumb.
+    const sameLocation = getSameLocationPhotos(slug, 6);
+    const sameLocationSlugs = new Set(sameLocation.map((p) => p.slug));
+    const nearby = getNearbyPhotos(slug, 6).filter((p) => !sameLocationSlugs.has(p.slug));
 
     const description = photo.caption || `${photo.gallery.title} photograph by ${SITE_AUTHOR}: ${photo.title}.`;
+    // SERP title: curated location beats caption — "Title — Landmark, City".
+    const seoTitle = photo.location
+        ? `${photo.title} — ${photo.location}`
+        : photo.caption ? `${photo.title} — ${photo.caption}` : photo.title;
     const exifLine = formatExifLine(photo.exif);
     const captureDate = formatCaptureDate(photo.exif?.capturedAt);
     const path = photoUrl(slug);
@@ -53,7 +61,11 @@ const PhotoPage = () => {
         url: toAbsoluteUrl(path),
         name: photo.title,
         caption: photo.caption || undefined,
-        description,
+        description: photo.story || description,
+        contentLocation: photo.location
+            ? { '@type': 'Place', name: photo.location }
+            : undefined,
+        keywords: photo.keywords?.length ? photo.keywords.join(', ') : undefined,
         creditText: `Photo by ${SITE_AUTHOR}`,
         creator: {
             '@type': 'Person',
@@ -91,7 +103,7 @@ const PhotoPage = () => {
             transition={{ duration: 0.4 }}
         >
             <SEO
-                title={photo.caption ? `${photo.title} — ${photo.caption}` : photo.title}
+                title={seoTitle}
                 description={description}
                 path={path}
                 image={photo.src}
@@ -118,7 +130,12 @@ const PhotoPage = () => {
 
                 <div className="photo-info">
                     <h1 className="photo-title">{photo.title}</h1>
-                    {photo.caption && <p className="photo-caption">{photo.caption}</p>}
+                    {photo.location && <p className="photo-location">{photo.location}</p>}
+                    {/* Story is the long-form prose; the short caption only
+                        shows when there's no story (it duplicates alt text). */}
+                    {photo.story
+                        ? <p className="photo-story">{photo.story}</p>
+                        : photo.caption && <p className="photo-caption">{photo.caption}</p>}
                     {exifLine && <p className="photo-exif">{exifLine}</p>}
                     {captureDate && <p className="photo-date">{captureDate}</p>}
                 </div>
@@ -140,6 +157,24 @@ const PhotoPage = () => {
                         </Link>
                     )}
                 </div>
+
+                {sameLocation.length > 0 && (
+                    <section className="photo-nearby" aria-label={`More photos from ${photo.location}`}>
+                        <h2 className="photo-nearby-heading">More from {photo.location}</h2>
+                        <div className="photo-nearby-strip">
+                            {sameLocation.map((p) => (
+                                <Link
+                                    key={p.slug}
+                                    to={photoUrl(p.slug)}
+                                    className="photo-nearby-thumb"
+                                    aria-label={p.title}
+                                >
+                                    <PhotoImage src={p.src} alt={p.alt || p.title} />
+                                </Link>
+                            ))}
+                        </div>
+                    </section>
+                )}
 
                 {nearby.length > 0 && (
                     <section className="photo-nearby" aria-label={`More from ${photo.gallery.title}`}>

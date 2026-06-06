@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import { TRAIL_PAGES } from './utils/site';
 
 // Routes other than Home are lazy-loaded so the initial bundle stays small.
 // Each route becomes its own JS chunk fetched only when the user navigates.
@@ -18,7 +19,9 @@ const Favorites = lazy(() => import('./pages/Favorites'));
 const Galleries = lazy(() => import('./pages/Galleries'));
 const PhotoPage = lazy(() => import('./pages/PhotoPage'));
 
-const TRAIL_PAGES = ['/jmt', '/grand-canyon'];
+// Dev-only photo annotation tool. import.meta.env.DEV is statically false in
+// production builds, so the route and its chunk are eliminated entirely.
+const Annotate = import.meta.env.DEV ? lazy(() => import('./pages/Annotate')) : null;
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -39,6 +42,7 @@ const AnimatedRoutes = () => {
           <Route path="/jmt" element={<JMTPage />} />
           <Route path="/photo/:slug" element={<PhotoPage />} />
           <Route path="/about" element={<About />} />
+          {Annotate && <Route path="/annotate" element={<Annotate />} />}
         </Routes>
       </Suspense>
     </AnimatePresence>

@@ -9,7 +9,7 @@
 
 import { images, formatTitle } from './images.js';
 import { jmtData } from './jmtData.js';
-import { captionFor } from './captions.js';
+import { metaFor } from './photoMeta.js';
 import exifIndex from './exifData.generated.json' with { type: 'json' };
 
 // Galleries that live under category routes (Gallery component).
@@ -36,13 +36,20 @@ const slugFor = (gallerySlug, src) => {
 };
 
 const buildEntry = ({ slug, src, title, gallery }) => {
-    const caption = captionFor(src);
+    const meta = metaFor(src);
     const exif = exifIndex[src] || null;
+    const caption = meta?.alt || null;
     return {
         slug,
         src,
-        title,
+        // Curated title (e.g. "Enshrined Forever") wins over the camera
+        // serial; `serial` keeps the original for display/debugging.
+        title: meta?.title || title,
+        serial: title,
         caption,
+        story: meta?.story || null,
+        location: meta?.location || null,
+        keywords: meta?.keywords || null,
         alt: caption || `${gallery.title} photograph by Danil Zanozin (${title})`,
         gallery,
         exif,
@@ -108,7 +115,27 @@ for (const photo of allPhotos) {
     byGallery.set(photo.gallery.slug, list);
 }
 
+// Index by curated location string so photo pages can cross-link "More from
+// <location>" — these links work across galleries (e.g. a Death Valley shot
+// that lives in /landscapes still links to the death-valley set).
+const byLocation = new Map();
+for (const photo of allPhotos) {
+    if (!photo.location) continue;
+    const key = photo.location.toLowerCase();
+    const list = byLocation.get(key) || [];
+    list.push(photo);
+    byLocation.set(key, list);
+}
+
 export const getPhotoBySlug = (slug) => bySlug.get(slug) || null;
+
+// Other photos sharing the same curated location (excludes the photo itself).
+export const getSameLocationPhotos = (slug, count = 6) => {
+    const photo = bySlug.get(slug);
+    if (!photo?.location) return [];
+    const list = byLocation.get(photo.location.toLowerCase()) || [];
+    return list.filter((p) => p.slug !== slug).slice(0, count);
+};
 
 export const getNeighbors = (slug) => {
     const photo = bySlug.get(slug);

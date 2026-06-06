@@ -1,0 +1,261 @@
+/* Dev-only annotation tool — utilitarian, dark, keyboard-first. */
+
+.annotate-page {
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    padding: calc(var(--navbar-height) + var(--space-sm)) var(--space-md) var(--space-lg);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+}
+
+.annotate-error {
+    max-width: 60ch;
+    margin: var(--space-lg) auto;
+    color: #e07a7a;
+}
+
+.annotate-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto var(--space-md);
+}
+
+.annotate-header h1 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.annotate-progress {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.annotate-progress-bar {
+    display: inline-block;
+    width: 160px;
+    height: 4px;
+    background: #222;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.annotate-progress-bar span {
+    display: block;
+    height: 100%;
+    background: #7aa86f;
+    transition: width 0.3s ease;
+}
+
+.annotate-filters {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: auto;
+    font-size: 0.85rem;
+}
+
+.annotate-filters select {
+    background: var(--bg-secondary, #161616);
+    color: var(--text-primary);
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+.annotate-filter-pos {
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.annotate-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(360px, 5fr);
+    gap: var(--space-md);
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.annotate-photo {
+    position: sticky;
+    top: calc(var(--navbar-height) + var(--space-sm));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.annotate-photo img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 14rem);
+    object-fit: contain;
+    background: #0a0a0a;
+    border-radius: 3px;
+}
+
+.annotate-photo-meta {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.annotate-serial {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+.annotate-exif {
+    opacity: 0.7;
+}
+
+.annotate-photo-meta code {
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+.annotate-photo-meta a {
+    color: #8fb3d9;
+    text-decoration: none;
+}
+
+.annotate-photo-meta a:hover {
+    text-decoration: underline;
+}
+
+.annotate-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.annotate-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.annotate-label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.annotate-label em {
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    font-size: 0.75rem;
+    flex: 1;
+}
+
+.annotate-counter {
+    font-size: 0.75rem;
+    text-transform: none;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.annotate-counter.idle { color: #555; }
+.annotate-counter.warn { color: #cfa75a; }
+.annotate-counter.ok { color: #7aa86f; }
+.annotate-counter.over { color: #e07a7a; }
+
+.annotate-form input,
+.annotate-form textarea {
+    background: var(--bg-secondary, #161616);
+    color: var(--text-primary);
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.95rem;
+    font-family: var(--font-sans);
+    line-height: 1.5;
+}
+
+.annotate-form input:focus,
+.annotate-form textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.annotate-form textarea {
+    resize: vertical;
+}
+
+.annotate-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    margin-top: var(--space-sm);
+}
+
+.annotate-actions button {
+    background: none;
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    color: var(--text-primary);
+    padding: 0.55rem 1.2rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: border-color var(--transition-fast, 0.15s);
+}
+
+.annotate-actions button:hover {
+    border-color: #666;
+}
+
+.annotate-actions button.primary {
+    border-color: #555;
+}
+
+.annotate-save-state {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.annotate-save-state.saved { color: #7aa86f; }
+.annotate-save-state.saving,
+.annotate-save-state.dirty { color: #cfa75a; }
+.annotate-save-state.error { color: #e07a7a; }
+
+.annotate-hint {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .annotate-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .annotate-photo {
+        position: static;
+    }
+
+    .annotate-photo img {
+        max-height: 50vh;
+    }
+}

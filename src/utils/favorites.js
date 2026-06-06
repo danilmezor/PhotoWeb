@@ -5,7 +5,7 @@
 // Each entry is just { src, alt }. Add or remove rows anytime.
 
 import { titleFromSrc } from './images.js';
-import { captionFor } from './captions.js';
+import { captionFor } from './photoMeta.js';
 
 export const favorites = [
     { src: '/photos/landscapes/_AC16711.jpg' },

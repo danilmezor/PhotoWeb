@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import TrailPage from '../components/TrailPage';
 import { jmtData } from '../utils/jmtData';
 import { titleFromSrc } from '../utils/images';
-import { captionFor } from '../utils/captions';
+import { captionFor } from '../utils/photoMeta';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, buildPlace, buildTouristTrip, toAbsoluteUrl } from '../utils/site';
 
 const JMTPage = () => {

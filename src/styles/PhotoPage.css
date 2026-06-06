@@ -67,6 +67,24 @@
     margin-top: 0.25rem;
 }
 
+.photo-location {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    opacity: 0.85;
+}
+
+.photo-story {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    max-width: 60ch;
+    margin-top: 0.35rem;
+}
+
 .photo-exif,
 .photo-date {
     font-family: var(--font-sans);
