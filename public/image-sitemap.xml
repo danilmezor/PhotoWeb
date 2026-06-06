@@ -165,6 +165,9 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC7946-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/njcRmx4hCQA.jpg</image:loc>
     </image:image>
     <image:image>
@@ -631,6 +634,12 @@
     <loc>https://danilzanozin.com/photo/landscapes-dsc5401</loc>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc7946</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC7946-Edit.jpg</image:loc>
     </image:image>
   </url>
   <url>
