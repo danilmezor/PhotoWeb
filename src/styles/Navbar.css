@@ -39,6 +39,26 @@
     font-weight: 300;
 }
 
+/* Trail pages (/jmt, /grand-canyon) show a fixed left sidebar that is
+   20vw wide (min 280px) and hidden at <= 1000px — see TrailPage.css.
+   Center the logo over that column so it lines up with the trail title
+   and blurb rendered beneath it. */
+@media (min-width: 1001px) {
+    .navbar.trail-layout .navbar-logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: max(20vw, 280px);
+        text-align: center;
+    }
+
+    /* With the logo out of the flow, keep the links pinned right. */
+    .navbar.trail-layout .navbar-container {
+        justify-content: flex-end;
+    }
+}
+
 .navbar-links {
     display: flex;
     gap: var(--space-md);

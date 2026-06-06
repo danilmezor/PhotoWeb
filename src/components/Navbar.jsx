@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { galleries } from '../utils/galleries';
+import { TRAIL_PAGES } from '../utils/site';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -63,7 +64,7 @@ const Navbar = () => {
         pathname === '/galleries' || galleries.some(g => g.path === pathname);
 
     return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isScrolled && isIdle ? 'idle-hidden' : ''}`}>
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isScrolled && isIdle ? 'idle-hidden' : ''} ${TRAIL_PAGES.includes(location.pathname) ? 'trail-layout' : ''}`}>
             <div className="navbar-container container">
                 <Link to="/" className="navbar-logo" onClick={() => setIsMenuOpen(false)}>
                     DANIL<span className="logo-accent">.ZANOZIN</span>
