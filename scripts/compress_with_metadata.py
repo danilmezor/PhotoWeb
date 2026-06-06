@@ -19,7 +19,18 @@ Files whose originals can't be located still get the Artist + Copyright
 patch over their existing EXIF tail (or a fresh tail if there was none) —
 better than nothing, just no camera/lens/date.
 
+Also writes src/utils/photoManifest.generated.json mapping each served
+photo's src path to its native dimensions and the responsive variant
+widths that actually exist on disk — the frontend builds srcsets from
+this so it never references a variant that was skipped (targets >= the
+source width are never generated).
+
 Run from project root:  python3 scripts/compress_with_metadata.py
+
+Pass --manifest-only to regenerate just the manifest from whatever is
+currently on disk (header reads only — no EXIF injection, no variant
+re-encoding, no image bytes touched). Rerun this whenever photos are
+added, removed, or resized.
 """
 
 from __future__ import annotations
@@ -62,6 +73,7 @@ ARTIST = 'Danil Zanozin'
 WEBSTATEMENT_URL = 'https://danilzanozin.com/about'
 WEBP_QUALITY = 80
 EXIF_JSON_PATH = PROJECT_ROOT / 'src/utils/exifData.generated.json'
+MANIFEST_JSON_PATH = PROJECT_ROOT / 'src/utils/photoManifest.generated.json'
 
 # Responsive image widths (pixels). For each photo, we emit a -<width>w.jpg
 # and -<width>w.webp sibling at each target width that is smaller than the
@@ -254,6 +266,45 @@ def extract_display_exif(exif_dict: dict) -> dict:
     return out
 
 
+def existing_variant_widths(served: Path) -> list[int]:
+    """Responsive widths whose -<N>w.webp AND -<N>w<ext> siblings exist on
+    disk. Checked against the filesystem (not recomputed from the source
+    width) so the manifest reflects reality even after a partial run."""
+    base = served.with_suffix('')
+    ext = served.suffix
+    widths = []
+    for w in RESPONSIVE_WIDTHS:
+        jpg = base.with_name(f'{base.name}-{w}w{ext}')
+        webp = base.with_name(f'{base.name}-{w}w.webp')
+        if jpg.exists() and webp.exists():
+            widths.append(w)
+    return sorted(widths)
+
+
+def manifest_entry(served: Path) -> dict:
+    """Native dimensions + available variant widths for one served photo.
+    Image.open only reads the header — no pixel decode."""
+    with Image.open(served) as img:
+        w, h = img.size
+    return {'w': w, 'h': h, 'variants': existing_variant_widths(served)}
+
+
+def merge_write_json(path: Path, index: dict, merge: bool) -> dict:
+    """Write index as pretty JSON; if merge, update into the existing file
+    first so partial runs don't drop other entries. Returns what was written."""
+    final = index
+    if merge and path.exists():
+        try:
+            existing = json.loads(path.read_text())
+            existing.update(index)
+            final = existing
+        except Exception:
+            pass
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(final, indent=2, sort_keys=True) + '\n')
+    return final
+
+
 RESPONSIVE_SUFFIX_RE = re.compile(r'-(\d+)w$')
 
 
@@ -277,11 +328,26 @@ def list_served_photos() -> list[Path]:
 
 
 def main(args: list[str]) -> None:
-    only = set(args[1:]) if len(args) > 1 else None  # optional file-name filter for dry-runs
+    flags = set(args[1:])
+    manifest_only = '--manifest-only' in flags
+    names = flags - {'--manifest-only'}
+    only = names or None  # optional file-name filter for dry-runs
 
     photos = list_served_photos()
     if only is not None:
         photos = [p for p in photos if p.name in only]
+
+    if manifest_only:
+        # Fast path: regenerate the manifest from whatever is on disk.
+        # Header reads only — no EXIF injection, no variant encoding.
+        manifest_index = {}
+        for served in photos:
+            src = '/' + str(served.relative_to(PROJECT_ROOT / 'public')).replace(os.sep, '/')
+            manifest_index[src] = manifest_entry(served)
+        final = merge_write_json(MANIFEST_JSON_PATH, manifest_index, merge=only is not None)
+        print(f'[manifest] {len(manifest_index)} photos scanned')
+        print(f'[manifest] written: {MANIFEST_JSON_PATH.relative_to(PROJECT_ROOT)} ({len(final)} entries)')
+        return
 
     print(f'[metadata] {len(photos)} files to process')
 
@@ -290,6 +356,7 @@ def main(args: list[str]) -> None:
     webp_count = 0
     responsive_count = 0
     exif_index: dict[str, dict] = {}
+    manifest_index: dict[str, dict] = {}
 
     for served in photos:
         category = served.parent.name
@@ -334,26 +401,20 @@ def main(args: list[str]) -> None:
             print(f'  ! {served.name}: responsive variants failed ({e})')
 
         # Capture human-display EXIF for the photo registry.
+        src = '/' + str(served.relative_to(PROJECT_ROOT / 'public')).replace(os.sep, '/')
         display = extract_display_exif(exif_dict)
         if display:
-            src = '/' + str(served.relative_to(PROJECT_ROOT / 'public')).replace(os.sep, '/')
             exif_index[src] = display
+
+        # Record native dimensions + variants now on disk for the frontend.
+        manifest_index[src] = manifest_entry(served)
 
         print(f'  ✓ {category}/{served.name}: {status}')
 
-    # Always write the EXIF index even if we only ran on a subset — but in
+    # Always write both indexes even if we only ran on a subset — but in
     # that case, merge into any existing file so we don't lose other entries.
-    final_index = exif_index
-    if only is not None and EXIF_JSON_PATH.exists():
-        try:
-            existing = json.loads(EXIF_JSON_PATH.read_text())
-            existing.update(exif_index)
-            final_index = existing
-        except Exception:
-            pass
-
-    EXIF_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
-    EXIF_JSON_PATH.write_text(json.dumps(final_index, indent=2, sort_keys=True) + '\n')
+    final_index = merge_write_json(EXIF_JSON_PATH, exif_index, merge=only is not None)
+    final_manifest = merge_write_json(MANIFEST_JSON_PATH, manifest_index, merge=only is not None)
 
     print()
     print(f'[metadata] EXIF injected:        {matched_count + unmatched_count} files')
@@ -362,6 +423,7 @@ def main(args: list[str]) -> None:
     print(f'[metadata] WebP variants:        {webp_count}')
     print(f'[metadata] Responsive variants:  {responsive_count} (jpg + webp at 480w/1080w/1920w)')
     print(f'[metadata] EXIF index written:   {EXIF_JSON_PATH.relative_to(PROJECT_ROOT)} ({len(final_index)} entries)')
+    print(f'[metadata] Manifest written:     {MANIFEST_JSON_PATH.relative_to(PROJECT_ROOT)} ({len(final_manifest)} entries)')
 
 
 if __name__ == '__main__':

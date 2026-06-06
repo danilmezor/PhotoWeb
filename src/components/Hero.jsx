@@ -1,18 +1,30 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { heroPhotos } from '../utils/hero';
+import manifest from '../utils/photoManifest.generated.json' with { type: 'json' };
 import '../styles/Hero.css';
 
 // Build an image-set() value that lets the browser pick a WebP variant
 // at the right size for the viewport. Falls back to the original JPG so
 // modern browsers without WebP (very rare now) still see the photo.
+// Variant URLs come from photoManifest.generated.json — variants wider
+// than the source are never generated, so referencing fixed widths
+// blindly would 404 (and CSS image-set, like srcset, does not fall back).
 const heroBackgroundImage = (src) => {
+    const entry = manifest[src];
     const dotIndex = src.lastIndexOf('.');
-    if (dotIndex < 0) return `url(${src})`;
+    if (!entry || dotIndex < 0) return `url("${src}")`;
     const base = src.slice(0, dotIndex);
-    const webp1080 = `${base}-1080w.webp`;
-    const webp1920 = `${base}-1920w.webp`;
-    return `image-set(url("${webp1920}") type("image/webp") 1x, url("${webp1080}") type("image/webp") 0.5x, url("${src}") type("image/jpeg"))`;
+    const variants = entry.variants || [];
+    // 1x slot: largest available variant (capped at 1920w — never the
+    // multi-MB full-size original); a photo with no variants is itself
+    // small, so its full-size webp is fine.
+    const largeWidth = variants[variants.length - 1];
+    const largeWebp = largeWidth ? `${base}-${largeWidth}w.webp` : `${base}.webp`;
+    // 0.5x slot: largest variant <= 1080, else whatever the 1x slot uses.
+    const midWidth = [...variants].reverse().find((w) => w <= 1080);
+    const midWebp = midWidth ? `${base}-${midWidth}w.webp` : largeWebp;
+    return `image-set(url("${largeWebp}") type("image/webp") 1x, url("${midWebp}") type("image/webp") 0.5x, url("${src}") type("image/jpeg"))`;
 };
 
 const Hero = () => {
