@@ -1,0 +1,19 @@
+/* Base styles for the depth-parallax tile + its shared hover canvas.
+   Imported by ParallaxImage.jsx itself so the rules ship with every chunk
+   that renders parallax tiles (Gallery AND MasonryGallery pages) — the
+   per-gallery pre-zoom overrides live in Gallery.css / MasonryGallery.css. */
+
+.parallax-tile {
+    position: relative;
+    display: block;
+}
+
+.parallax-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}

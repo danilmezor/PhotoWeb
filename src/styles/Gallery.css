@@ -24,6 +24,16 @@
     transform: scale(1.05);
 }
 
+/* Depth-parallax tiles (ParallaxImage): the image sits statically pre-zoomed
+   to match the shader's EDGE_ZOOM crop, so the hover canvas fades in with no
+   zoom jump — the WebGL parallax provides all the motion. Base .parallax-tile
+   and .parallax-canvas rules live in ParallaxImage.css. */
+.gallery-item .parallax-tile img,
+.gallery-item:hover .parallax-tile img {
+    transform: scale(1.06);
+    transition: none;
+}
+
 @media (max-width: 1024px) {
     .gallery-container {
         column-count: 2;

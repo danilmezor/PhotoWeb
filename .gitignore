@@ -26,3 +26,4 @@ pictures/
 *.njsproj
 *.sln
 *.sw?
+scripts/3d-pipeline.log

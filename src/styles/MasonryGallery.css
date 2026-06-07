@@ -29,3 +29,11 @@
 .masonry-item:hover img {
     transform: scale(1.03);
 }
+
+/* Depth-parallax tiles: static pre-zoom matches the shader's EDGE_ZOOM —
+   base .parallax-tile / .parallax-canvas rules live in ParallaxImage.css. */
+.masonry-item .parallax-tile img,
+.masonry-item:hover .parallax-tile img {
+    transform: scale(1.06);
+    transition: none;
+}

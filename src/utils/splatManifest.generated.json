@@ -1,0 +1,896 @@
+{
+  "/photos/JMT/_DSC1510.jpg": {
+    "bytes": 7000790,
+    "depth": "/depth/JMT/_DSC1510.png",
+    "fov": 69.4,
+    "sog": "/splats/JMT/_DSC1510.sog"
+  },
+  "/photos/JMT/_DSC1514.jpg": {
+    "bytes": 6609799,
+    "depth": "/depth/JMT/_DSC1514.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC1514.sog"
+  },
+  "/photos/JMT/_DSC1529.jpg": {
+    "bytes": 6346217,
+    "depth": "/depth/JMT/_DSC1529.png",
+    "fov": 67.3,
+    "sog": "/splats/JMT/_DSC1529.sog"
+  },
+  "/photos/JMT/_DSC1535-Edit.jpg": {
+    "bytes": 6537277,
+    "depth": "/depth/JMT/_DSC1535-Edit.png",
+    "fov": 92.9,
+    "sog": "/splats/JMT/_DSC1535-Edit.sog"
+  },
+  "/photos/JMT/_DSC1554.jpg": {
+    "bytes": 6283345,
+    "depth": "/depth/JMT/_DSC1554.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC1554.sog"
+  },
+  "/photos/JMT/_DSC1562.jpg": {
+    "bytes": 6415289,
+    "depth": "/depth/JMT/_DSC1562.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC1562.sog"
+  },
+  "/photos/JMT/_DSC1581.jpg": {
+    "bytes": 6610209,
+    "depth": "/depth/JMT/_DSC1581.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC1581.sog"
+  },
+  "/photos/JMT/_DSC1583.jpg": {
+    "bytes": 6297402,
+    "depth": "/depth/JMT/_DSC1583.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC1583.sog"
+  },
+  "/photos/JMT/_DSC1616.jpg": {
+    "bytes": 6280488,
+    "depth": "/depth/JMT/_DSC1616.png",
+    "fov": 37.9,
+    "sog": "/splats/JMT/_DSC1616.sog"
+  },
+  "/photos/JMT/_DSC1636.jpg": {
+    "bytes": 6536444,
+    "depth": "/depth/JMT/_DSC1636.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC1636.sog"
+  },
+  "/photos/JMT/_DSC1648.jpg": {
+    "bytes": 6660254,
+    "depth": "/depth/JMT/_DSC1648.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC1648.sog"
+  },
+  "/photos/JMT/_DSC1804.jpg": {
+    "bytes": 6178255,
+    "depth": "/depth/JMT/_DSC1804.png",
+    "fov": 91.0,
+    "sog": "/splats/JMT/_DSC1804.sog"
+  },
+  "/photos/JMT/_DSC1827.jpg": {
+    "bytes": 6408617,
+    "depth": "/depth/JMT/_DSC1827.png",
+    "fov": 58.3,
+    "sog": "/splats/JMT/_DSC1827.sog"
+  },
+  "/photos/JMT/_DSC1865.jpg": {
+    "bytes": 6166140,
+    "depth": "/depth/JMT/_DSC1865.png",
+    "fov": 86.9,
+    "sog": "/splats/JMT/_DSC1865.sog"
+  },
+  "/photos/JMT/_DSC1878-Edit.jpg": {
+    "bytes": 6475712,
+    "depth": "/depth/JMT/_DSC1878-Edit.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC1878-Edit.sog"
+  },
+  "/photos/JMT/_DSC1939.jpg": {
+    "bytes": 6455480,
+    "depth": "/depth/JMT/_DSC1939.png",
+    "fov": 84.0,
+    "sog": "/splats/JMT/_DSC1939.sog"
+  },
+  "/photos/JMT/_DSC2021.jpg": {
+    "bytes": 6353243,
+    "depth": "/depth/JMT/_DSC2021.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC2021.sog"
+  },
+  "/photos/JMT/_DSC2074.jpg": {
+    "bytes": 6571658,
+    "depth": "/depth/JMT/_DSC2074.png",
+    "fov": 91.0,
+    "sog": "/splats/JMT/_DSC2074.sog"
+  },
+  "/photos/JMT/_DSC2137.jpg": {
+    "bytes": 6290577,
+    "depth": "/depth/JMT/_DSC2137.png",
+    "fov": 59.6,
+    "sog": "/splats/JMT/_DSC2137.sog"
+  },
+  "/photos/JMT/_DSC2304.jpg": {
+    "bytes": 6166059,
+    "depth": "/depth/JMT/_DSC2304.png",
+    "fov": 76.4,
+    "sog": "/splats/JMT/_DSC2304.sog"
+  },
+  "/photos/JMT/_DSC2446.jpg": {
+    "bytes": 6312718,
+    "depth": "/depth/JMT/_DSC2446.png",
+    "fov": 84.7,
+    "sog": "/splats/JMT/_DSC2446.sog"
+  },
+  "/photos/JMT/_DSC2779.jpg": {
+    "bytes": 6457934,
+    "depth": "/depth/JMT/_DSC2779.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC2779.sog"
+  },
+  "/photos/JMT/_DSC2799.jpg": {
+    "bytes": 6228164,
+    "depth": "/depth/JMT/_DSC2799.png",
+    "fov": 52.6,
+    "sog": "/splats/JMT/_DSC2799.sog"
+  },
+  "/photos/JMT/_DSC2810.jpg": {
+    "bytes": 6301232,
+    "depth": "/depth/JMT/_DSC2810.png",
+    "fov": 57.2,
+    "sog": "/splats/JMT/_DSC2810.sog"
+  },
+  "/photos/JMT/_DSC2813-HDR.jpg": {
+    "bytes": 5526261,
+    "depth": "/depth/JMT/_DSC2813-HDR.png",
+    "fov": 84.0,
+    "sog": "/splats/JMT/_DSC2813-HDR.sog"
+  },
+  "/photos/JMT/_DSC2848.jpg": {
+    "bytes": 6255229,
+    "depth": "/depth/JMT/_DSC2848.png",
+    "fov": 68.0,
+    "sog": "/splats/JMT/_DSC2848.sog"
+  },
+  "/photos/JMT/_DSC2907.jpg": {
+    "bytes": 6181038,
+    "depth": "/depth/JMT/_DSC2907.png",
+    "fov": 92.3,
+    "sog": "/splats/JMT/_DSC2907.sog"
+  },
+  "/photos/JMT/_DSC2975-HDR.jpg": {
+    "bytes": 6391576,
+    "depth": "/depth/JMT/_DSC2975-HDR.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC2975-HDR.sog"
+  },
+  "/photos/JMT/_DSC3065.jpg": {
+    "bytes": 6900181,
+    "depth": "/depth/JMT/_DSC3065.png",
+    "fov": 46.4,
+    "sog": "/splats/JMT/_DSC3065.sog"
+  },
+  "/photos/JMT/_DSC3111.jpg": {
+    "bytes": 6117524,
+    "depth": "/depth/JMT/_DSC3111.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC3111.sog"
+  },
+  "/photos/JMT/_DSC3151-HDR.jpg": {
+    "bytes": 6819648,
+    "depth": "/depth/JMT/_DSC3151-HDR.png",
+    "fov": 37.8,
+    "sog": "/splats/JMT/_DSC3151-HDR.sog"
+  },
+  "/photos/JMT/_DSC3155.jpg": {
+    "bytes": 5970127,
+    "depth": "/depth/JMT/_DSC3155.png",
+    "fov": 68.0,
+    "sog": "/splats/JMT/_DSC3155.sog"
+  },
+  "/photos/JMT/_DSC3166.jpg": {
+    "bytes": 6818820,
+    "depth": "/depth/JMT/_DSC3166.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC3166.sog"
+  },
+  "/photos/JMT/_DSC3257.jpg": {
+    "bytes": 6084500,
+    "depth": "/depth/JMT/_DSC3257.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC3257.sog"
+  },
+  "/photos/JMT/_DSC3272-HDR.jpg": {
+    "bytes": 6642753,
+    "depth": "/depth/JMT/_DSC3272-HDR.png",
+    "fov": 36.3,
+    "sog": "/splats/JMT/_DSC3272-HDR.sog"
+  },
+  "/photos/JMT/_DSC3370.jpg": {
+    "bytes": 6723862,
+    "depth": "/depth/JMT/_DSC3370.png",
+    "fov": 73.7,
+    "sog": "/splats/JMT/_DSC3370.sog"
+  },
+  "/photos/JMT/_DSC3446-Enhanced-NR.jpg": {
+    "bytes": 6665994,
+    "depth": "/depth/JMT/_DSC3446-Enhanced-NR.png",
+    "fov": 64.5,
+    "sog": "/splats/JMT/_DSC3446-Enhanced-NR.sog"
+  },
+  "/photos/JMT/_DSC3457.jpg": {
+    "bytes": 6189516,
+    "depth": "/depth/JMT/_DSC3457.png",
+    "fov": 54.4,
+    "sog": "/splats/JMT/_DSC3457.sog"
+  },
+  "/photos/JMT/_DSC3592.jpg": {
+    "bytes": 6004851,
+    "depth": "/depth/JMT/_DSC3592.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC3592.sog"
+  },
+  "/photos/JMT/_DSC3649-HDR.jpg": {
+    "bytes": 6337971,
+    "depth": "/depth/JMT/_DSC3649-HDR.png",
+    "fov": 93.3,
+    "sog": "/splats/JMT/_DSC3649-HDR.sog"
+  },
+  "/photos/JMT/_DSC3751.jpg": {
+    "bytes": 6634252,
+    "depth": "/depth/JMT/_DSC3751.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC3751.sog"
+  },
+  "/photos/JMT/_DSC3788-Enhanced-NR.jpg": {
+    "bytes": 6902816,
+    "depth": "/depth/JMT/_DSC3788-Enhanced-NR.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC3788-Enhanced-NR.sog"
+  },
+  "/photos/JMT/_DSC3804-Edit.jpg": {
+    "bytes": 6418868,
+    "depth": "/depth/JMT/_DSC3804-Edit.png",
+    "fov": 52.6,
+    "sog": "/splats/JMT/_DSC3804-Edit.sog"
+  },
+  "/photos/JMT/_DSC3832.jpg": {
+    "bytes": 6757696,
+    "depth": "/depth/JMT/_DSC3832.png",
+    "fov": 53.1,
+    "sog": "/splats/JMT/_DSC3832.sog"
+  },
+  "/photos/JMT/_DSC3921-HDR.jpg": {
+    "bytes": 6369231,
+    "depth": "/depth/JMT/_DSC3921-HDR.png",
+    "fov": 60.0,
+    "sog": "/splats/JMT/_DSC3921-HDR.sog"
+  },
+  "/photos/JMT/_DSC4039.jpg": {
+    "bytes": 6546385,
+    "depth": "/depth/JMT/_DSC4039.png",
+    "fov": 54.4,
+    "sog": "/splats/JMT/_DSC4039.sog"
+  },
+  "/photos/JMT/_DSC4063-Enhanced-NR.jpg": {
+    "bytes": 6866717,
+    "depth": "/depth/JMT/_DSC4063-Enhanced-NR.png",
+    "fov": 70.4,
+    "sog": "/splats/JMT/_DSC4063-Enhanced-NR.sog"
+  },
+  "/photos/cities/0ijyGqzFXDE.jpg": {
+    "bytes": 6339844,
+    "depth": "/depth/cities/0ijyGqzFXDE.png",
+    "fov": 46.8,
+    "sog": "/splats/cities/0ijyGqzFXDE.sog"
+  },
+  "/photos/cities/CHHBd8lS8RY.jpg": {
+    "bytes": 6578832,
+    "depth": "/depth/cities/CHHBd8lS8RY.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/CHHBd8lS8RY.sog"
+  },
+  "/photos/cities/Ekkr8JiDBIc.jpg": {
+    "bytes": 6675318,
+    "depth": "/depth/cities/Ekkr8JiDBIc.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/Ekkr8JiDBIc.sog"
+  },
+  "/photos/cities/K8gJ8Fc1M-I.jpg": {
+    "bytes": 6398104,
+    "depth": "/depth/cities/K8gJ8Fc1M-I.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/K8gJ8Fc1M-I.sog"
+  },
+  "/photos/cities/WruL2-cDbDk.jpg": {
+    "bytes": 6611307,
+    "depth": "/depth/cities/WruL2-cDbDk.png",
+    "fov": 62.0,
+    "sog": "/splats/cities/WruL2-cDbDk.sog"
+  },
+  "/photos/cities/_AC10425.jpg": {
+    "bytes": 6642103,
+    "depth": "/depth/cities/_AC10425.png",
+    "fov": 70.4,
+    "sog": "/splats/cities/_AC10425.sog"
+  },
+  "/photos/cities/_AC15366.jpg": {
+    "bytes": 6955087,
+    "depth": "/depth/cities/_AC15366.png",
+    "fov": 38.2,
+    "sog": "/splats/cities/_AC15366.sog"
+  },
+  "/photos/cities/_AC15369.jpg": {
+    "bytes": 6950868,
+    "depth": "/depth/cities/_AC15369.png",
+    "fov": 37.8,
+    "sog": "/splats/cities/_AC15369.sog"
+  },
+  "/photos/cities/_AC16232-HDR-2.jpg": {
+    "bytes": 6631894,
+    "depth": "/depth/cities/_AC16232-HDR-2.png",
+    "fov": 37.8,
+    "sog": "/splats/cities/_AC16232-HDR-2.sog"
+  },
+  "/photos/cities/_AC16368-Pano.jpg": {
+    "bytes": 6627001,
+    "depth": "/depth/cities/_AC16368-Pano.png",
+    "fov": 33.7,
+    "sog": "/splats/cities/_AC16368-Pano.sog"
+  },
+  "/photos/cities/_DSC5033.jpg": {
+    "bytes": 7061276,
+    "depth": "/depth/cities/_DSC5033.png",
+    "fov": 28.2,
+    "sog": "/splats/cities/_DSC5033.sog"
+  },
+  "/photos/cities/_DSC5344.jpg": {
+    "bytes": 6288309,
+    "depth": "/depth/cities/_DSC5344.png",
+    "fov": 61.9,
+    "sog": "/splats/cities/_DSC5344.sog"
+  },
+  "/photos/cities/_DSC5364.jpg": {
+    "bytes": 6681389,
+    "depth": "/depth/cities/_DSC5364.png",
+    "fov": 53.1,
+    "sog": "/splats/cities/_DSC5364.sog"
+  },
+  "/photos/cities/_sGN2QO7P6c.jpg": {
+    "bytes": 5821601,
+    "depth": "/depth/cities/_sGN2QO7P6c.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/_sGN2QO7P6c.sog"
+  },
+  "/photos/cities/fyCOWS2l5JI.jpg": {
+    "bytes": 6257893,
+    "depth": "/depth/cities/fyCOWS2l5JI.png",
+    "fov": 60.0,
+    "sog": "/splats/cities/fyCOWS2l5JI.sog"
+  },
+  "/photos/cities/image.jpg": {
+    "bytes": 5899202,
+    "depth": "/depth/cities/image.png",
+    "fov": 38.9,
+    "sog": "/splats/cities/image.sog"
+  },
+  "/photos/cities/photo_2025-05-18 16.54.39.jpeg": {
+    "bytes": 6667814,
+    "depth": "/depth/cities/photo_2025-05-18 16.54.39.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/photo_2025-05-18 16.54.39.sog"
+  },
+  "/photos/cities/s_9N2ACzGmE.jpg": {
+    "bytes": 6454309,
+    "depth": "/depth/cities/s_9N2ACzGmE.png",
+    "fov": 43.6,
+    "sog": "/splats/cities/s_9N2ACzGmE.sog"
+  },
+  "/photos/cities/v6TW68bhNDE.jpg": {
+    "bytes": 6501237,
+    "depth": "/depth/cities/v6TW68bhNDE.png",
+    "fov": 62.0,
+    "sog": "/splats/cities/v6TW68bhNDE.sog"
+  },
+  "/photos/cities/xHImx8XxQZs.jpg": {
+    "bytes": 6731921,
+    "depth": "/depth/cities/xHImx8XxQZs.png",
+    "fov": 43.5,
+    "sog": "/splats/cities/xHImx8XxQZs.sog"
+  },
+  "/photos/death-valley/_DSC5570.jpg": {
+    "bytes": 6640602,
+    "depth": "/depth/death-valley/_DSC5570.png",
+    "fov": 16.1,
+    "sog": "/splats/death-valley/_DSC5570.sog"
+  },
+  "/photos/death-valley/_DSC5599-Edit.jpg": {
+    "bytes": 6062342,
+    "depth": "/depth/death-valley/_DSC5599-Edit.png",
+    "fov": 89.6,
+    "sog": "/splats/death-valley/_DSC5599-Edit.sog"
+  },
+  "/photos/death-valley/_DSC5707.jpg": {
+    "bytes": 6555111,
+    "depth": "/depth/death-valley/_DSC5707.png",
+    "fov": 15.5,
+    "sog": "/splats/death-valley/_DSC5707.sog"
+  },
+  "/photos/death-valley/_DSC5808.jpg": {
+    "bytes": 6615770,
+    "depth": "/depth/death-valley/_DSC5808.png",
+    "fov": 65.3,
+    "sog": "/splats/death-valley/_DSC5808.sog"
+  },
+  "/photos/death-valley/_DSC5828.jpg": {
+    "bytes": 6142294,
+    "depth": "/depth/death-valley/_DSC5828.png",
+    "fov": 11.4,
+    "sog": "/splats/death-valley/_DSC5828.sog"
+  },
+  "/photos/death-valley/_DSC5865.jpg": {
+    "bytes": 6391765,
+    "depth": "/depth/death-valley/_DSC5865.png",
+    "fov": 38.8,
+    "sog": "/splats/death-valley/_DSC5865.sog"
+  },
+  "/photos/death-valley/_DSC6007.jpg": {
+    "bytes": 6449278,
+    "depth": "/depth/death-valley/_DSC6007.png",
+    "fov": 22.7,
+    "sog": "/splats/death-valley/_DSC6007.sog"
+  },
+  "/photos/death-valley/_DSC6068.jpg": {
+    "bytes": 6105691,
+    "depth": "/depth/death-valley/_DSC6068.png",
+    "fov": 71.6,
+    "sog": "/splats/death-valley/_DSC6068.sog"
+  },
+  "/photos/death-valley/_DSC6099.jpg": {
+    "bytes": 6336626,
+    "depth": "/depth/death-valley/_DSC6099.png",
+    "fov": 53.1,
+    "sog": "/splats/death-valley/_DSC6099.sog"
+  },
+  "/photos/death-valley/_DSC6135.jpg": {
+    "bytes": 6441007,
+    "depth": "/depth/death-valley/_DSC6135.png",
+    "fov": 56.8,
+    "sog": "/splats/death-valley/_DSC6135.sog"
+  },
+  "/photos/events/6OHgrzMQ7vU.jpg": {
+    "bytes": 6000782,
+    "depth": "/depth/events/6OHgrzMQ7vU.png",
+    "fov": 43.5,
+    "sog": "/splats/events/6OHgrzMQ7vU.sog"
+  },
+  "/photos/events/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.jpg": {
+    "bytes": 6122864,
+    "depth": "/depth/events/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.png",
+    "fov": 43.5,
+    "sog": "/splats/events/7bCcFgOofyk8Sd6OHHQtk1gTAyWZ2nf2sSqCwV6b_ds8H-sgK7GV_WbRG0upQXzlVWVYCGfp.sog"
+  },
+  "/photos/events/8IB8HnJL2yk.jpg": {
+    "bytes": 6226109,
+    "depth": "/depth/events/8IB8HnJL2yk.png",
+    "fov": 43.5,
+    "sog": "/splats/events/8IB8HnJL2yk.sog"
+  },
+  "/photos/events/CdeDKw2W1iU.jpg": {
+    "bytes": 6086500,
+    "depth": "/depth/events/CdeDKw2W1iU.png",
+    "fov": 43.5,
+    "sog": "/splats/events/CdeDKw2W1iU.sog"
+  },
+  "/photos/events/GTZvJobrj1U.jpg": {
+    "bytes": 6476928,
+    "depth": "/depth/events/GTZvJobrj1U.png",
+    "fov": 43.5,
+    "sog": "/splats/events/GTZvJobrj1U.sog"
+  },
+  "/photos/events/Idu8L57IO_o.jpg": {
+    "bytes": 5250486,
+    "depth": "/depth/events/Idu8L57IO_o.png",
+    "fov": 62.0,
+    "sog": "/splats/events/Idu8L57IO_o.sog"
+  },
+  "/photos/events/ZYRyh9_pilg.jpg": {
+    "bytes": 5941963,
+    "depth": "/depth/events/ZYRyh9_pilg.png",
+    "fov": 43.5,
+    "sog": "/splats/events/ZYRyh9_pilg.sog"
+  },
+  "/photos/events/_AC10955.jpg": {
+    "bytes": 6561846,
+    "depth": "/depth/events/_AC10955.png",
+    "fov": 70.4,
+    "sog": "/splats/events/_AC10955.sog"
+  },
+  "/photos/events/_AC16015.jpg": {
+    "bytes": 6224912,
+    "depth": "/depth/events/_AC16015.png",
+    "fov": 70.4,
+    "sog": "/splats/events/_AC16015.sog"
+  },
+  "/photos/events/_AC17221.jpg": {
+    "bytes": 6631941,
+    "depth": "/depth/events/_AC17221.png",
+    "fov": 73.8,
+    "sog": "/splats/events/_AC17221.sog"
+  },
+  "/photos/events/_AC17417.jpg": {
+    "bytes": 6592566,
+    "depth": "/depth/events/_AC17417.png",
+    "fov": 93.3,
+    "sog": "/splats/events/_AC17417.sog"
+  },
+  "/photos/events/_DSC4592.jpg": {
+    "bytes": 6233874,
+    "depth": "/depth/events/_DSC4592.png",
+    "fov": 53.1,
+    "sog": "/splats/events/_DSC4592.sog"
+  },
+  "/photos/events/_DSC4611.jpg": {
+    "bytes": 6692755,
+    "depth": "/depth/events/_DSC4611.png",
+    "fov": 53.1,
+    "sog": "/splats/events/_DSC4611.sog"
+  },
+  "/photos/events/_DSC4773.jpg": {
+    "bytes": 6183070,
+    "depth": "/depth/events/_DSC4773.png",
+    "fov": 57.2,
+    "sog": "/splats/events/_DSC4773.sog"
+  },
+  "/photos/events/_DSC5014.jpg": {
+    "bytes": 6708741,
+    "depth": "/depth/events/_DSC5014.png",
+    "fov": 93.3,
+    "sog": "/splats/events/_DSC5014.sog"
+  },
+  "/photos/events/_MiBemNLXsM.jpg": {
+    "bytes": 6470257,
+    "depth": "/depth/events/_MiBemNLXsM.png",
+    "fov": 43.5,
+    "sog": "/splats/events/_MiBemNLXsM.sog"
+  },
+  "/photos/grand-canyon/_DSC6639.jpg": {
+    "bytes": 6669706,
+    "depth": "/depth/grand-canyon/_DSC6639.png",
+    "fov": 55.3,
+    "sog": "/splats/grand-canyon/_DSC6639.sog"
+  },
+  "/photos/grand-canyon/_DSC6767.jpg": {
+    "bytes": 6489239,
+    "depth": "/depth/grand-canyon/_DSC6767.png",
+    "fov": 100.7,
+    "sog": "/splats/grand-canyon/_DSC6767.sog"
+  },
+  "/photos/grand-canyon/_DSC6792.jpg": {
+    "bytes": 6584834,
+    "depth": "/depth/grand-canyon/_DSC6792.png",
+    "fov": 78.6,
+    "sog": "/splats/grand-canyon/_DSC6792.sog"
+  },
+  "/photos/grand-canyon/_DSC6882.jpg": {
+    "bytes": 6568962,
+    "depth": "/depth/grand-canyon/_DSC6882.png",
+    "fov": 21.2,
+    "sog": "/splats/grand-canyon/_DSC6882.sog"
+  },
+  "/photos/grand-canyon/_DSC6909.jpg": {
+    "bytes": 6654308,
+    "depth": "/depth/grand-canyon/_DSC6909.png",
+    "fov": 55.9,
+    "sog": "/splats/grand-canyon/_DSC6909.sog"
+  },
+  "/photos/grand-canyon/_DSC6976.jpg": {
+    "bytes": 6456577,
+    "depth": "/depth/grand-canyon/_DSC6976.png",
+    "fov": 19.1,
+    "sog": "/splats/grand-canyon/_DSC6976.sog"
+  },
+  "/photos/grand-canyon/_DSC7101.jpg": {
+    "bytes": 6741984,
+    "depth": "/depth/grand-canyon/_DSC7101.png",
+    "fov": 18.6,
+    "sog": "/splats/grand-canyon/_DSC7101.sog"
+  },
+  "/photos/grand-canyon/_DSC7356.jpg": {
+    "bytes": 6545858,
+    "depth": "/depth/grand-canyon/_DSC7356.png",
+    "fov": 81.2,
+    "sog": "/splats/grand-canyon/_DSC7356.sog"
+  },
+  "/photos/grand-canyon/_DSC7438.jpg": {
+    "bytes": 6761152,
+    "depth": "/depth/grand-canyon/_DSC7438.png",
+    "fov": 81.2,
+    "sog": "/splats/grand-canyon/_DSC7438.sog"
+  },
+  "/photos/grand-canyon/_DSC7592.jpg": {
+    "bytes": 6568928,
+    "depth": "/depth/grand-canyon/_DSC7592.png",
+    "fov": 71.6,
+    "sog": "/splats/grand-canyon/_DSC7592.sog"
+  },
+  "/photos/grand-canyon/_DSC7696.jpg": {
+    "bytes": 5800078,
+    "depth": "/depth/grand-canyon/_DSC7696.png",
+    "fov": 78.6,
+    "sog": "/splats/grand-canyon/_DSC7696.sog"
+  },
+  "/photos/grand-canyon/_DSC7748.jpg": {
+    "bytes": 6536375,
+    "depth": "/depth/grand-canyon/_DSC7748.png",
+    "fov": 60.0,
+    "sog": "/splats/grand-canyon/_DSC7748.sog"
+  },
+  "/photos/grand-canyon/_DSC7793.jpg": {
+    "bytes": 6880707,
+    "depth": "/depth/grand-canyon/_DSC7793.png",
+    "fov": 37.3,
+    "sog": "/splats/grand-canyon/_DSC7793.sog"
+  },
+  "/photos/landscapes/_AC11398-Edit.JPG": {
+    "bytes": 6684338,
+    "depth": "/depth/landscapes/_AC11398-Edit.png",
+    "fov": 65.5,
+    "sog": "/splats/landscapes/_AC11398-Edit.sog"
+  },
+  "/photos/landscapes/_AC14997.jpg": {
+    "bytes": 6425114,
+    "depth": "/depth/landscapes/_AC14997.png",
+    "fov": 25.8,
+    "sog": "/splats/landscapes/_AC14997.sog"
+  },
+  "/photos/landscapes/_AC15794-HDR-2.jpg": {
+    "bytes": 6763802,
+    "depth": "/depth/landscapes/_AC15794-HDR-2.png",
+    "fov": 57.2,
+    "sog": "/splats/landscapes/_AC15794-HDR-2.sog"
+  },
+  "/photos/landscapes/_AC16043.jpg": {
+    "bytes": 6575758,
+    "depth": "/depth/landscapes/_AC16043.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_AC16043.sog"
+  },
+  "/photos/landscapes/_AC16126.jpg": {
+    "bytes": 6461661,
+    "depth": "/depth/landscapes/_AC16126.png",
+    "fov": 49.5,
+    "sog": "/splats/landscapes/_AC16126.sog"
+  },
+  "/photos/landscapes/_AC16128-HDR.jpg": {
+    "bytes": 6606977,
+    "depth": "/depth/landscapes/_AC16128-HDR.png",
+    "fov": 69.4,
+    "sog": "/splats/landscapes/_AC16128-HDR.sog"
+  },
+  "/photos/landscapes/_AC16437-HDR.jpg": {
+    "bytes": 6624508,
+    "depth": "/depth/landscapes/_AC16437-HDR.png",
+    "fov": 54.5,
+    "sog": "/splats/landscapes/_AC16437-HDR.sog"
+  },
+  "/photos/landscapes/_AC16617.jpg": {
+    "bytes": 6508772,
+    "depth": "/depth/landscapes/_AC16617.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_AC16617.sog"
+  },
+  "/photos/landscapes/_AC16640-HDR.jpg": {
+    "bytes": 6564126,
+    "depth": "/depth/landscapes/_AC16640-HDR.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_AC16640-HDR.sog"
+  },
+  "/photos/landscapes/_AC16669.jpg": {
+    "bytes": 6456055,
+    "depth": "/depth/landscapes/_AC16669.png",
+    "fov": 70.4,
+    "sog": "/splats/landscapes/_AC16669.sog"
+  },
+  "/photos/landscapes/_AC16711.jpg": {
+    "bytes": 6111791,
+    "depth": "/depth/landscapes/_AC16711.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_AC16711.sog"
+  },
+  "/photos/landscapes/_DSC0273.jpg": {
+    "bytes": 6971166,
+    "depth": "/depth/landscapes/_DSC0273.png",
+    "fov": 27.0,
+    "sog": "/splats/landscapes/_DSC0273.sog"
+  },
+  "/photos/landscapes/_DSC0519.jpg": {
+    "bytes": 6175827,
+    "depth": "/depth/landscapes/_DSC0519.png",
+    "fov": 91.0,
+    "sog": "/splats/landscapes/_DSC0519.sog"
+  },
+  "/photos/landscapes/_DSC0869.jpg": {
+    "bytes": 6574674,
+    "depth": "/depth/landscapes/_DSC0869.png",
+    "fov": 76.4,
+    "sog": "/splats/landscapes/_DSC0869.sog"
+  },
+  "/photos/landscapes/_DSC0871.jpg": {
+    "bytes": 6469641,
+    "depth": "/depth/landscapes/_DSC0871.png",
+    "fov": 57.2,
+    "sog": "/splats/landscapes/_DSC0871.sog"
+  },
+  "/photos/landscapes/_DSC1471-Enhanced-NR.jpg": {
+    "bytes": 6450122,
+    "depth": "/depth/landscapes/_DSC1471-Enhanced-NR.png",
+    "fov": 61.9,
+    "sog": "/splats/landscapes/_DSC1471-Enhanced-NR.sog"
+  },
+  "/photos/landscapes/_DSC2014.jpg": {
+    "bytes": 6669739,
+    "depth": "/depth/landscapes/_DSC2014.png",
+    "fov": 68.0,
+    "sog": "/splats/landscapes/_DSC2014.sog"
+  },
+  "/photos/landscapes/_DSC4277-Edit.jpg": {
+    "bytes": 6638587,
+    "depth": "/depth/landscapes/_DSC4277-Edit.png",
+    "fov": 29.2,
+    "sog": "/splats/landscapes/_DSC4277-Edit.sog"
+  },
+  "/photos/landscapes/_DSC5121-HDR.jpg": {
+    "bytes": 6153555,
+    "depth": "/depth/landscapes/_DSC5121-HDR.png",
+    "fov": 91.0,
+    "sog": "/splats/landscapes/_DSC5121-HDR.sog"
+  },
+  "/photos/landscapes/_DSC5226.jpg": {
+    "bytes": 6658261,
+    "depth": "/depth/landscapes/_DSC5226.png",
+    "fov": 17.1,
+    "sog": "/splats/landscapes/_DSC5226.sog"
+  },
+  "/photos/landscapes/_DSC5401.jpg": {
+    "bytes": 6333070,
+    "depth": "/depth/landscapes/_DSC5401.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_DSC5401.sog"
+  },
+  "/photos/landscapes/_DSC5428.jpg": {
+    "bytes": 6683500,
+    "depth": "/depth/landscapes/_DSC5428.png",
+    "fov": 64.6,
+    "sog": "/splats/landscapes/_DSC5428.sog"
+  },
+  "/photos/landscapes/_DSC5599.jpg": {
+    "bytes": 6292566,
+    "depth": "/depth/landscapes/_DSC5599.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_DSC5599.sog"
+  },
+  "/photos/landscapes/_DSC5697.jpg": {
+    "bytes": 6629543,
+    "depth": "/depth/landscapes/_DSC5697.png",
+    "fov": 93.3,
+    "sog": "/splats/landscapes/_DSC5697.sog"
+  },
+  "/photos/landscapes/_DSC6087.jpg": {
+    "bytes": 6016126,
+    "depth": "/depth/landscapes/_DSC6087.png",
+    "fov": 65.0,
+    "sog": "/splats/landscapes/_DSC6087.sog"
+  },
+  "/photos/landscapes/_DSC6099.jpg": {
+    "bytes": 6352443,
+    "depth": "/depth/landscapes/_DSC6099.png",
+    "fov": 53.1,
+    "sog": "/splats/landscapes/_DSC6099.sog"
+  },
+  "/photos/landscapes/_DSC7946-Edit.jpg": {
+    "bytes": 5695919,
+    "depth": "/depth/landscapes/_DSC7946-Edit.png",
+    "fov": 71.6,
+    "sog": "/splats/landscapes/_DSC7946-Edit.sog"
+  },
+  "/photos/landscapes/njcRmx4hCQA.jpg": {
+    "bytes": 6526180,
+    "depth": "/depth/landscapes/njcRmx4hCQA.png",
+    "fov": 62.0,
+    "sog": "/splats/landscapes/njcRmx4hCQA.sog"
+  },
+  "/photos/landscapes/uFZYpJ8oVJQ.jpg": {
+    "bytes": 6575531,
+    "depth": "/depth/landscapes/uFZYpJ8oVJQ.png",
+    "fov": 43.5,
+    "sog": "/splats/landscapes/uFZYpJ8oVJQ.sog"
+  },
+  "/photos/people/81dJdwzh6qQ.jpg": {
+    "bytes": 6307347,
+    "depth": "/depth/people/81dJdwzh6qQ.png",
+    "fov": 62.0,
+    "sog": "/splats/people/81dJdwzh6qQ.sog"
+  },
+  "/photos/people/89BLwDYfYxc.jpg": {
+    "bytes": 6392127,
+    "depth": "/depth/people/89BLwDYfYxc.png",
+    "fov": 62.0,
+    "sog": "/splats/people/89BLwDYfYxc.sog"
+  },
+  "/photos/people/F5010006.JPG": {
+    "bytes": 6081625,
+    "depth": "/depth/people/F5010006.png",
+    "fov": 61.9,
+    "sog": "/splats/people/F5010006.sog"
+  },
+  "/photos/people/HYYPRzv6ytQ.jpg": {
+    "bytes": 5719691,
+    "depth": "/depth/people/HYYPRzv6ytQ.png",
+    "fov": 62.0,
+    "sog": "/splats/people/HYYPRzv6ytQ.sog"
+  },
+  "/photos/people/N4UZxbKEieM.jpg": {
+    "bytes": 6195395,
+    "depth": "/depth/people/N4UZxbKEieM.png",
+    "fov": 62.0,
+    "sog": "/splats/people/N4UZxbKEieM.sog"
+  },
+  "/photos/people/Nk0OWd6YWM0.jpg": {
+    "bytes": 5729203,
+    "depth": "/depth/people/Nk0OWd6YWM0.png",
+    "fov": 62.0,
+    "sog": "/splats/people/Nk0OWd6YWM0.sog"
+  },
+  "/photos/people/SD6tb-jvVtA.jpg": {
+    "bytes": 5714411,
+    "depth": "/depth/people/SD6tb-jvVtA.png",
+    "fov": 61.9,
+    "sog": "/splats/people/SD6tb-jvVtA.sog"
+  },
+  "/photos/people/UfI6nxbJFDQ.jpg": {
+    "bytes": 5905761,
+    "depth": "/depth/people/UfI6nxbJFDQ.png",
+    "fov": 62.0,
+    "sog": "/splats/people/UfI6nxbJFDQ.sog"
+  },
+  "/photos/people/_AC10892.jpg": {
+    "bytes": 6408293,
+    "depth": "/depth/people/_AC10892.png",
+    "fov": 93.3,
+    "sog": "/splats/people/_AC10892.sog"
+  },
+  "/photos/people/_AC12324.jpg": {
+    "bytes": 5860805,
+    "depth": "/depth/people/_AC12324.png",
+    "fov": 39.6,
+    "sog": "/splats/people/_AC12324.sog"
+  },
+  "/photos/people/_AC13561.jpg": {
+    "bytes": 6089157,
+    "depth": "/depth/people/_AC13561.png",
+    "fov": 73.8,
+    "sog": "/splats/people/_AC13561.sog"
+  },
+  "/photos/people/iP_Efdxg24s.jpg": {
+    "bytes": 6034800,
+    "depth": "/depth/people/iP_Efdxg24s.png",
+    "fov": 62.0,
+    "sog": "/splats/people/iP_Efdxg24s.sog"
+  },
+  "/photos/people/mZv5pHSXO0g.jpg": {
+    "bytes": 5613810,
+    "depth": "/depth/people/mZv5pHSXO0g.png",
+    "fov": 61.9,
+    "sog": "/splats/people/mZv5pHSXO0g.sog"
+  },
+  "/photos/people/zVkEZWxRSrU.jpg": {
+    "bytes": 5406374,
+    "depth": "/depth/people/zVkEZWxRSrU.png",
+    "fov": 62.0,
+    "sog": "/splats/people/zVkEZWxRSrU.sog"
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Lightbox from './Lightbox';
-import PhotoImage from './PhotoImage';
+import ParallaxImage from './ParallaxImage';
 import '../styles/MasonryGallery.css';
 
 const getColumnCount = () => {
@@ -39,7 +39,7 @@ const MasonryGallery = ({ photos }) => {
                                 className="masonry-item"
                                 onClick={() => setSelectedIndex(globalIndex)}
                             >
-                                <PhotoImage src={photo.src} alt={photo.alt} />
+                                <ParallaxImage src={photo.src} alt={photo.alt} />
                             </div>
                         ))}
                     </div>

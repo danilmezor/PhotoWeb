@@ -9,7 +9,9 @@
     "prerender": "node scripts/prerender.mjs",
     "build": "npm run seo:generate && vite build && npm run prerender",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "3d:generate": "python3 scripts/generate_3d_assets.py",
+    "3d:overhaul": "python3 scripts/generate_3d_assets.py --overhaul --log scripts/3d-pipeline.log"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -20,6 +22,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "framer-motion": "^12.23.24",
+    "playcanvas": "^2.11.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6"
