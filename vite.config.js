@@ -54,6 +54,12 @@ const photoMetaEditor = () => ({
             Object.keys(all).sort().map((key) => [key, all[key]])
           )
           fs.writeFileSync(META_PATH, `${JSON.stringify(sorted, null, 4)}\n`)
+          // The watcher ignores this file (see server.watch below), so
+          // Vite's module cache would otherwise serve the stale JSON until
+          // a dev-server restart. Invalidate it manually so a plain browser
+          // refresh of any /photo page picks up the new annotations.
+          const mods = server.moduleGraph.getModulesByFile(META_PATH)
+          if (mods) for (const mod of mods) server.moduleGraph.invalidateModule(mod)
           res.end(JSON.stringify({ ok: true, annotated: Object.keys(sorted).length }))
         } catch (error) {
           res.statusCode = 400

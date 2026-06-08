@@ -266,6 +266,34 @@ const Annotate = () => {
                             Open photo page ↗
                         </Link>
                     </div>
+
+                    {/* Live preview — mirrors PhotoPage's info block and SEO
+                        title/description logic so what you type is what
+                        ships. Keep in sync with PhotoPage.jsx. */}
+                    <div className="annotate-preview">
+                        <div className="annotate-preview-page">
+                            <h2 className="annotate-preview-title">{form.title.trim() || current.serial}</h2>
+                            {form.location.trim() && (
+                                <p className="annotate-preview-location">{form.location.trim()}</p>
+                            )}
+                            {(form.story.trim() || form.alt.trim()) && (
+                                <p className="annotate-preview-story">{form.story.trim() || form.alt.trim()}</p>
+                            )}
+                        </div>
+                        <div className="annotate-preview-serp">
+                            <span className="annotate-serp-url">danilzanozin.com › photo › {current.slug}</span>
+                            <span className="annotate-serp-title">
+                                {(() => {
+                                    const title = form.title.trim() || current.serial;
+                                    const tail = form.location.trim() || form.alt.trim();
+                                    return `${tail ? `${title} — ${tail}` : title} | Danil Zanozin Photography`;
+                                })()}
+                            </span>
+                            <span className="annotate-serp-desc">
+                                {form.alt.trim() || `${current.gallery.title} photograph by Danil Zanozin: ${form.title.trim() || current.serial}.`}
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 <form className="annotate-form" onSubmit={(e) => e.preventDefault()}>
