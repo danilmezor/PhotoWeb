@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
-import PhotoImage from '../components/PhotoImage';
+import ParallaxImage from '../components/ParallaxImage';
 import SEO from '../components/SEO';
 import { heroPhotos } from '../utils/hero';
 import {
@@ -81,20 +81,17 @@ const Home = () => {
                             key={collection.id}
                             className={`collection-item ${collection.fullWidth ? 'full-width' : ''}`}
                         >
-                            <motion.div
-                                className="collection-content"
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.4 }}
-                            >
-                                <PhotoImage
+                            <div className="collection-content">
+                                <ParallaxImage
                                     src={collection.image}
                                     alt={`${collection.title} photography gallery preview`}
                                     className="collection-image"
+                                    sizes="(max-width: 1024px) 85vw, 25vw"
                                 />
                                 <div className="collection-overlay">
                                     <h3 className="collection-title">{collection.title}</h3>
                                 </div>
-                            </motion.div>
+                            </div>
                         </Link>
                     ))}
                 </motion.div>

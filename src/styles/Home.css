@@ -48,6 +48,9 @@
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease;
+    /* Let hover/pointer events reach the parallax tile underneath; the whole
+       card is the link, so the overlay never needs to capture clicks. */
+    pointer-events: none;
 }
 
 .collection-title {
@@ -60,12 +63,31 @@
 }
 
 /* Hover Effects */
+/* Non-parallax fallback (touch / reduced-motion / SSR): classic hover zoom. */
 .collection-item:hover .collection-image {
     transform: scale(1.05);
 }
 
 .collection-item:hover .collection-overlay {
     background: rgba(0, 0, 0, 0.2);
+}
+
+/* Depth-parallax tiles (ParallaxImage on desktop): the wrapper and its
+   <picture> fill the fixed-height card so object-fit cover and the hover
+   canvas size correctly. The image sits pre-zoomed to match the shader's
+   EDGE_ZOOM crop; the WebGL parallax supplies the motion (no zoom jump). The
+   title overlay is a later sibling, so it stays above the parallax canvas. */
+.collection-content .parallax-tile,
+.collection-content .parallax-tile picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.collection-item .parallax-tile .collection-image,
+.collection-item:hover .parallax-tile .collection-image {
+    transform: scale(1.06);
+    transition: none;
 }
 
 /* Mobile Styles */

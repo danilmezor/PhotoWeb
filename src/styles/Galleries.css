@@ -29,8 +29,27 @@
     transition: transform var(--transition-medium);
 }
 
+/* Non-parallax fallback (touch / reduced-motion / SSR): classic hover zoom. */
 .gallery-tile:hover .gallery-tile-image-wrap img {
     transform: scale(1.04);
+}
+
+/* Depth-parallax tiles (ParallaxImage on desktop): the parallax wrapper and
+   its <picture> must fill the fixed-aspect frame so object-fit cover and the
+   hover canvas size correctly. The static image sits pre-zoomed to match the
+   shader's EDGE_ZOOM crop, so the WebGL parallax provides all the motion with
+   no zoom jump on hover. */
+.gallery-tile-image-wrap .parallax-tile,
+.gallery-tile-image-wrap .parallax-tile picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-tile-image-wrap .parallax-tile img,
+.gallery-tile:hover .gallery-tile-image-wrap .parallax-tile img {
+    transform: scale(1.06);
+    transition: none;
 }
 
 .gallery-tile-title {
