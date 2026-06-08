@@ -5,7 +5,7 @@
 // Each entry is just { src, alt }. Add or remove rows anytime.
 
 import { titleFromSrc } from './images.js';
-import { captionFor } from './photoMeta.js';
+import { metaFor } from './photoMeta.js';
 
 export const favorites = [
     { src: '/photos/landscapes/_AC16711.jpg' },
@@ -22,12 +22,16 @@ export const favorites = [
     { src: '/photos/JMT/_DSC3804-Edit.jpg' },
     { src: '/photos/JMT/_DSC4063-Enhanced-NR.jpg' },
 ].map((photo, index) => {
-    const caption = captionFor(photo.src);
+    const meta = metaFor(photo.src);
+    const serial = titleFromSrc(photo.src);
+    const caption = meta?.alt || null;
     return {
         id: `fav-${index + 1}`,
         src: photo.src,
-        title: titleFromSrc(photo.src),
+        title: meta?.title || serial,
+        serial,
+        location: meta?.location || null,
         caption,
-        alt: caption || `Photograph by Danil Zanozin (${titleFromSrc(photo.src)})`,
+        alt: caption || `Photograph by Danil Zanozin (${serial})`,
     };
 });

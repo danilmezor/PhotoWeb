@@ -7,7 +7,7 @@
 // a new permalink; the photo's permalink always points back to its primary
 // gallery's slot.
 
-import { images, formatTitle } from './images.js';
+import { images, formatTitle, titleFromSrc } from './images.js';
 import { jmtData } from './jmtData.js';
 import { metaFor } from './photoMeta.js';
 import exifIndex from './exifData.generated.json' with { type: 'json' };
@@ -43,9 +43,11 @@ const buildEntry = ({ slug, src, title, gallery }) => {
         slug,
         src,
         // Curated title (e.g. "Enshrined Forever") wins over the camera
-        // serial; `serial` keeps the original for display/debugging.
+        // serial; `serial` keeps the original for display/debugging. It's
+        // derived from the src because the incoming `title` may itself
+        // already be the curated one (images.js merges meta too).
         title: meta?.title || title,
-        serial: title,
+        serial: titleFromSrc(src),
         caption,
         story: meta?.story || null,
         location: meta?.location || null,

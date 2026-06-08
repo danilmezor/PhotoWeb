@@ -142,6 +142,7 @@ const Lightbox = ({ photos, selectedIndex, onClose, onSelect }) => {
                         const slug = slugBySrc.get(photo.src);
                         const inner = (
                             <>
+                                {photo.location && <div className="lightbox-caption-location">{photo.location}</div>}
                                 {photo.caption && <div className="lightbox-caption-description">{photo.caption}</div>}
                                 {slug && <div className="lightbox-caption-permalink">View photo page →</div>}
                             </>

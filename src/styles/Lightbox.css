@@ -36,7 +36,12 @@
 .lightbox-image {
     display: block;
     max-width: 100%;
-    max-height: 72vh;
+    /* The whole stage (mat + caption + thumb strip) must fit the viewport.
+       ~20rem covers the vertical chrome: overlay padding (4rem), stage gaps
+       (2rem), mat padding (1.5rem), caption with title/location/2-line
+       description/permalink (~7rem), thumb strip row (~5.5rem). The 72vh
+       cap keeps photos from growing oversized on very tall screens. */
+    max-height: min(72vh, calc(100vh - 20rem));
     width: auto;
     height: auto;
     object-fit: contain;
@@ -57,6 +62,15 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--text-primary);
+}
+
+.lightbox-caption-location {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    opacity: 0.85;
 }
 
 .lightbox-caption-description {
@@ -281,7 +295,9 @@
     }
 
     .lightbox-image {
-        max-height: 80vh;
+        /* Thumb strip is hidden on mobile, so less chrome to budget for —
+           but the caption can wrap to more lines on a narrow screen. */
+        max-height: min(80vh, calc(100vh - 16rem));
     }
 
     .lightbox-strip {

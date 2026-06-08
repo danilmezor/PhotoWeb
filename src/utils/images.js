@@ -1,4 +1,4 @@
-import { captionFor } from './photoMeta.js';
+import { metaFor } from './photoMeta.js';
 
 const buildPhotoSrc = (category, fileName) => (
   `/photos/${category}/${encodeURIComponent(fileName)}`
@@ -28,17 +28,22 @@ const formatCategoryLabel = (category) => (
 
 const mapCategoryFiles = (category, files) =>
   files.map((fileName, index) => {
-    const title = formatTitle(fileName);
+    const serial = formatTitle(fileName);
     const categoryLabel = formatCategoryLabel(category);
     const src = buildPhotoSrc(category, fileName);
-    const caption = captionFor(src);
+    const meta = metaFor(src);
+    const caption = meta?.alt || null;
 
     return {
       id: index + 1,
       src,
-      title,
+      // Curated title wins over the camera serial everywhere photos are
+      // displayed (galleries, lightbox); `serial` keeps the original.
+      title: meta?.title || serial,
+      serial,
+      location: meta?.location || null,
       caption,
-      alt: caption || `${categoryLabel} photograph by Danil Zanozin (${title})`,
+      alt: caption || `${categoryLabel} photograph by Danil Zanozin (${serial})`,
     };
   });
 
