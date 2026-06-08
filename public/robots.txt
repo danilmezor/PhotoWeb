@@ -43,5 +43,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
-Sitemap: https://example.com/image-sitemap.xml
+Sitemap: https://danilzanozin.com/sitemap.xml
+Sitemap: https://danilzanozin.com/image-sitemap.xml

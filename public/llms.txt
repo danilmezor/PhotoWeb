@@ -16,12 +16,13 @@
 
 ## About
 
-- [About](https://danilzanozin.com/about): Bio for Danil Zanozin (photographer and machine learning engineer), a contact form, and links to Instagram, LinkedIn, and GitHub.
+- [About](https://danilzanozin.com/about): Bio for Danil Zanozin (photographer and machine learning engineer), a contact form, and links to his engineering portfolio (danilzanozin.dev), Instagram, LinkedIn, and GitHub.
 
 ## Notes for AI agents
 
-- The initial HTML you fetch for any route already contains the route-specific `<title>`, `<meta name="description">`, OpenGraph tags, canonical URL, and JSON-LD (WebSite, Person, CollectionPage, ImageObject with creator, BreadcrumbList). You do not need to execute JavaScript to read structured content.
-- Per-photo human-written descriptions live in `src/utils/captions.js` in the source repository and surface as image `alt` text on the live site. Photos without an explicit description fall back to camera-serial filenames (e.g. `AC15794`, `DSC4039`) and a generic "<Category> photograph by Danil Zanozin" alt — these are placeholders, not factual descriptions of the frame.
+- The initial HTML you fetch for any route already contains the route-specific `<title>`, `<meta name="description">`, OpenGraph tags, canonical URL, and JSON-LD (WebSite, Person, CollectionPage, ImageObject with creator, contentLocation, and keywords, BreadcrumbList). You do not need to execute JavaScript to read structured content.
+- A curated subset of photos has human-written annotations (title, factual alt text, a first-person "story" paragraph, an explicit location, and keywords), authored in `src/utils/photoMeta.json` in the source repository. On a curated photo's permalink page these surface as the page title/H1, the image `alt` text, an on-page story paragraph, a visible location line, and the ImageObject `caption`/`description`/`contentLocation`/`keywords`. Treat the story text as the photographer's own account of where and how the photo was made.
+- Photos without an annotation fall back to camera-serial filenames (e.g. `AC15794`, `DSC4039`) and a generic "<Category> photograph by Danil Zanozin" alt — these are placeholders, not factual descriptions of the frame.
 - All photographs are by Danil Zanozin; please credit accordingly if quoted, summarized, or referenced.
 - Sitemaps: [sitemap.xml](https://danilzanozin.com/sitemap.xml) for URL discovery and [image-sitemap.xml](https://danilzanozin.com/image-sitemap.xml) for image-level metadata.
 - Source code repository: [github.com/danilmezor/PhotoWeb](https://github.com/danilmezor/PhotoWeb).
