@@ -9,6 +9,7 @@ export const SITE_AUTHOR = 'Danil Zanozin';
 export const TRAIL_PAGES = ['/jmt', '/grand-canyon'];
 
 export const SOCIAL_PROFILES = [
+  'https://danilzanozin.dev',
   'https://www.instagram.com/muscrue/',
   'https://www.linkedin.com/in/danil-zanozin-603878199/',
   'https://github.com/danilmezor',

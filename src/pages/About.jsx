@@ -85,6 +85,16 @@ const About = () => {
                     <p>
                         Today, I work as a Data Science and Machine Learning Engineer, but photography remains my passion. This website is a personal collection of work I've created over the years in my free time—a way to share my journey with the world. These days, my focus has shifted toward landscapes and visual storytelling, exploring the quiet moments and vast spaces that inspire me.
                     </p>
+                    <p>
+                        Curious about my engineering work? You can find it on my{' '}
+                        <a
+                            href="https://danilzanozin.dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            personal portfolio at danilzanozin.dev
+                        </a>.
+                    </p>
 
 
                     <div className="contact-section">

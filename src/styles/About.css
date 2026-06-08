@@ -30,6 +30,17 @@
     line-height: 1.8;
 }
 
+.about-text p a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-secondary);
+    transition: border-color var(--transition-fast);
+}
+
+.about-text p a:hover {
+    border-color: var(--text-primary);
+}
+
 .about-image img {
     width: 100%;
     border-radius: 4px;
