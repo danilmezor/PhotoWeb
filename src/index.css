@@ -53,6 +53,18 @@ body {
   overflow-x: hidden;
 }
 
+/* Reserve full viewport height for the app root. Every route except Home is
+   lazy-loaded (React.lazy + Suspense fallback={null}); without a reserved
+   height, the brief blank while a route chunk loads — and the moment React
+   mounts over the prerendered HTML — collapses the document to zero height,
+   shifting BODY by a full viewport. That was the dominant CLS source
+   (measured CLS ~1.0 on lazy routes). Reserving the height keeps layout
+   stable across the blank. */
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 html.splash-active,
 body.splash-active {
   overflow: hidden !important;

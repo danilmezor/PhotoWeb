@@ -7,17 +7,23 @@ import Navbar from './components/Navbar';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import CategoryPage from './pages/CategoryPage';
+import About from './pages/About';
+import JMTPage from './pages/JMTPage';
+import GrandCanyonPage from './pages/GrandCanyonPage';
+import Favorites from './pages/Favorites';
+import Galleries from './pages/Galleries';
+import PhotoPage from './pages/PhotoPage';
 import { TRAIL_PAGES } from './utils/site';
 
-// Routes other than Home are lazy-loaded so the initial bundle stays small.
-// Each route becomes its own JS chunk fetched only when the user navigates.
-const CategoryPage = lazy(() => import('./pages/CategoryPage'));
-const About = lazy(() => import('./pages/About'));
-const JMTPage = lazy(() => import('./pages/JMTPage'));
-const GrandCanyonPage = lazy(() => import('./pages/GrandCanyonPage'));
-const Favorites = lazy(() => import('./pages/Favorites'));
-const Galleries = lazy(() => import('./pages/Galleries'));
-const PhotoPage = lazy(() => import('./pages/PhotoPage'));
+// Page components are imported eagerly (not React.lazy). The site ships
+// prerendered HTML for every route; lazy-loading meant React replaced that
+// HTML on mount, hit the Suspense fallback, and blanked the page for the
+// chunk-fetch gap — a content vanish/reappear that measured as a full-
+// viewport layout shift (CLS ~1.0 on every route except the eagerly-imported
+// Home). Eager imports remove the async gap so the prerendered content is
+// re-rendered in a single commit. The page modules are small (2–9 KB each);
+// the genuinely heavy code (3D splat viewer) stays lazy where it's used.
 
 // Dev-only photo annotation tool. import.meta.env.DEV is statically false in
 // production builds, so the route and its chunk are eliminated entirely.
