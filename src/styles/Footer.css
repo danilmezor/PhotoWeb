@@ -14,6 +14,19 @@
     gap: 1.5rem;
 }
 
+.footer-subscribe {
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+}
+
+.footer-subscribe-label {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
 .social-links {
     display: flex;
     gap: 2rem;

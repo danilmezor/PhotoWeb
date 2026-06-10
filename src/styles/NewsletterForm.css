@@ -1,0 +1,141 @@
+/* Subscribe form — two variants: inline (footer) and card (end of post). */
+
+.newsletter {
+    width: 100%;
+}
+
+.newsletter-label {
+    /* Accessible label, visually hidden — the placeholder + context carry it. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.newsletter-row {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.newsletter-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0.85rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid #333;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.newsletter-input::placeholder {
+    color: var(--text-secondary);
+}
+
+.newsletter-btn {
+    flex: 0 0 auto;
+    padding: 0.85rem 1.6rem;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.newsletter-btn:hover:not(:disabled) {
+    background: #ccc;
+    transform: translateY(-2px);
+}
+
+.newsletter-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.newsletter-status {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.newsletter-status.success {
+    color: #7bd88f;
+}
+
+.newsletter-status.error {
+    color: #ff8a8a;
+}
+
+/* ---- Inline variant (footer) ---- */
+
+.newsletter--inline {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter--inline .newsletter-status {
+    text-align: center;
+}
+
+.newsletter--done.newsletter--inline {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* ---- Card variant (end of post) ---- */
+
+.newsletter--card {
+    max-width: 760px;
+    margin: var(--space-lg) auto 0;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+.newsletter--card .newsletter-input {
+    background: var(--bg-primary);
+}
+
+.newsletter-pitch {
+    margin-bottom: var(--space-sm);
+}
+
+.newsletter-heading {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.newsletter-sub {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 520px) {
+    .newsletter-row {
+        flex-direction: column;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+    }
+}
