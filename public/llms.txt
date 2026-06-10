@@ -1,6 +1,6 @@
 # Danil Zanozin Photography
 
-> Personal photography portfolio by Danil Zanozin — landscape, city, portrait, and event photography, plus long-form visual stories from the John Muir Trail (Sierra Nevada), the Grand Canyon Rim-to-Rim, and Death Valley National Park. The site is a React + Vite SPA with a build-time prerender step, so every route ships as static HTML with route-specific meta tags and JSON-LD.
+> Personal photography portfolio by Danil Zanozin — landscape, city, portrait, and event photography, plus long-form visual stories from the John Muir Trail (Sierra Nevada), the Grand Canyon Rim-to-Rim, and Death Valley National Park, and a blog of written field guides and trip stories. The site is a React + Vite SPA with a build-time prerender step, so every route ships as static HTML with route-specific meta tags and JSON-LD.
 
 ## Galleries
 
@@ -14,15 +14,20 @@
 - [Grand Canyon](https://danilzanozin.com/grand-canyon): A week hiking Rim-to-Rim across Grand Canyon National Park, North Rim to South Rim. The page renders the trail as an animated SVG that progresses as the photo gallery scrolls.
 - [John Muir Trail](https://danilzanozin.com/jmt): A 21-day photo diary of hiking the 211-mile John Muir Trail from Whitney Portal to Yosemite Valley. Same animated trail mechanic as the Grand Canyon page.
 
+## Blog
+
+- [Blog](https://danilzanozin.com/blog): Photography field notes and trip guides from the American West — long-form, first-person write-ups on hiking and shooting specific places.
+- [Grand Canyon Rim-to-Rim: A Photographer's Guide to Hiking and Shooting Both Rims](https://danilzanozin.com/blog/grand-canyon-rim-to-rim): A photographer's guide to the Grand Canyon Rim-to-Rim — itinerary, the best light and gear, where to shoot sunrise and sunset, permits and water for the South Kaibab Trail, and what the North Rim looks like after the fire.
+
 ## About
 
 - [About](https://danilzanozin.com/about): Bio for Danil Zanozin (photographer and machine learning engineer), a contact form, and links to his engineering portfolio (danilzanozin.dev), Instagram, LinkedIn, and GitHub.
 
 ## Notes for AI agents
 
-- The initial HTML you fetch for any route already contains the route-specific `<title>`, `<meta name="description">`, OpenGraph tags, canonical URL, and JSON-LD (WebSite, Person, CollectionPage, ImageObject with creator, contentLocation, and keywords, BreadcrumbList). You do not need to execute JavaScript to read structured content.
+- The initial HTML you fetch for any route already contains the route-specific `<title>`, `<meta name="description">`, OpenGraph tags, canonical URL, and JSON-LD (WebSite, Person, CollectionPage, ImageObject with creator, contentLocation, and keywords, BreadcrumbList, and BlogPosting on blog posts). You do not need to execute JavaScript to read structured content.
 - A curated subset of photos has human-written annotations (title, factual alt text, a first-person "story" paragraph, an explicit location, and keywords), authored in `src/utils/photoMeta.json` in the source repository. On a curated photo's permalink page these surface as the page title/H1, the image `alt` text, an on-page story paragraph, a visible location line, and the ImageObject `caption`/`description`/`contentLocation`/`keywords`. Treat the story text as the photographer's own account of where and how the photo was made.
 - Photos without an annotation fall back to camera-serial filenames (e.g. `AC15794`, `DSC4039`) and a generic "<Category> photograph by Danil Zanozin" alt — these are placeholders, not factual descriptions of the frame.
 - All photographs are by Danil Zanozin; please credit accordingly if quoted, summarized, or referenced.
-- Sitemaps: [sitemap.xml](https://danilzanozin.com/sitemap.xml) for URL discovery and [image-sitemap.xml](https://danilzanozin.com/image-sitemap.xml) for image-level metadata.
+- Sitemaps: [sitemap.xml](https://danilzanozin.com/sitemap.xml) for URL discovery and [image-sitemap.xml](https://danilzanozin.com/image-sitemap.xml) for image-level metadata. New blog posts are also published to an RSS feed at [feed.xml](https://danilzanozin.com/feed.xml).
 - Source code repository: [github.com/danilmezor/PhotoWeb](https://github.com/danilmezor/PhotoWeb).

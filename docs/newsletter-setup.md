@@ -27,13 +27,13 @@ Added under `danilzanozin.com` DNS in Vercel (from MailerLite's "Connect your do
 - **CNAME** — Name `litesrv._domainkey`, Value `litesrv._domainkey.mlsend.com`
 - **TXT** — SPF/sending record (from MailerLite)
 - **TXT** — domain verification record (from MailerLite)
-Status: verify in MailerLite via **Check records** (DNS can take up to ~24h; usually minutes–hours). MailerLite emails when authenticated.
+Status: ✅ **Authenticated (2026-06-09)** — all three records resolve publicly; confirmation emails now land in the inbox. (Note: the Vercel zone was stuck for hours before it finally pushed.)
 
 ## Remaining one-time checklist (MailerLite dashboard)
-- [ ] Domain shows **Authenticated** (Check records).
-- [ ] **Double opt-in** enabled for the form/group.
-- [ ] Sender defaults: From name `Danil Zanozin Photography`, From `newsletter@danilzanozin.com`, Reply-To the @traciora.com inbox.
-- [ ] Add `VITE_MAILERLITE_ACCOUNT_ID` + `VITE_MAILERLITE_FORM_ID` to **Vercel** env and redeploy.
+- [x] Domain shows **Authenticated** (Check records).
+- [x] Add `VITE_MAILERLITE_ACCOUNT_ID` + `VITE_MAILERLITE_FORM_ID` to **Vercel** env and redeploy.
+- [ ] **Double opt-in** enabled for the form/group. *(confirm)*
+- [ ] Sender defaults: From name `Danil Zanozin Photography`, From `newsletter@danilzanozin.com`, Reply-To the @traciora.com inbox. *(confirm)*
 
 ## Sending a new post/gallery announcement
 Write a **broadcast** (campaign) in MailerLite to the Newsletter group when you publish. Personal note + a few images. (Optional later: enable an RSS campaign pointed at `https://danilzanozin.com/feed.xml` to auto-send on new blog posts — code already emits the feed.)
