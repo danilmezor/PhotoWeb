@@ -1,4 +1,83 @@
 {
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-blue-hour-lens-pov.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-hikers-below-butte.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1364
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-north-rim-cabins-fire-damage.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-north-rim-trail-closed-fire.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-pack-weight-scale-heat-warning.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-redwall-footbridge-hikers.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1537
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-route-map.jpg": {
+    "h": 2016,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-south-kaibab-switchbacks.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/grand-canyon-rim-to-rim/grand-canyon-sunrise-tripod-grandview-point.jpg": {
+    "h": 1152,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
   "/photos/JMT/_DSC1510.jpg": {
     "h": 7096,
     "variants": [
@@ -606,11 +685,6 @@
       1920
     ],
     "w": 8123
-  },
-  "/photos/death-valley/_DSC5599-Edit 2.jpg": {
-    "h": 5871,
-    "variants": [],
-    "w": 4697
   },
   "/photos/death-valley/_DSC5599-Edit.jpg": {
     "h": 5871,

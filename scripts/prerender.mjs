@@ -22,7 +22,7 @@ import http from 'node:http';
 import { fileURLToPath } from 'node:url';
 import handler from 'serve-handler';
 import puppeteer from 'puppeteer-core';
-import { NESTED_ROUTES, PHOTO_ROUTES } from './routes.mjs';
+import { NESTED_ROUTES, BLOG_ROUTES, PHOTO_ROUTES } from './routes.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -134,12 +134,12 @@ const main = async () => {
     const launchOptions = await resolveLaunchOptions();
     const browser = await puppeteer.launch(launchOptions);
 
-    const allRoutes = [...NESTED_ROUTES, ...PHOTO_ROUTES];
+    const allRoutes = [...NESTED_ROUTES, ...BLOG_ROUTES, ...PHOTO_ROUTES];
     try {
         for (const route of allRoutes) {
             await prerenderRoute(browser, route);
         }
-        console.log(`[prerender] Done. ${allRoutes.length} routes prerendered (${NESTED_ROUTES.length} pages + ${PHOTO_ROUTES.length} photo permalinks).`);
+        console.log(`[prerender] Done. ${allRoutes.length} routes prerendered (${NESTED_ROUTES.length} pages + ${BLOG_ROUTES.length} blog + ${PHOTO_ROUTES.length} photo permalinks).`);
     } finally {
         await browser.close();
         await new Promise((resolve) => server.close(resolve));

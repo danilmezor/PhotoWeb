@@ -1,0 +1,83 @@
+/* Blog index — visual card grid, mirrors the Galleries aesthetic. */
+
+.blog-index-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blog-index-intro {
+    max-width: 760px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.blog-card-image-wrap {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.blog-card-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card-body {
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.blog-card-date {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.blog-card-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.blog-card-excerpt {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}

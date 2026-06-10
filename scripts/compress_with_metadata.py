@@ -309,21 +309,26 @@ RESPONSIVE_SUFFIX_RE = re.compile(r'-(\d+)w$')
 
 
 def list_served_photos() -> list[Path]:
-    photos_root = PROJECT_ROOT / 'public/photos'
+    # Gallery photos live under public/photos/<category>/; blog-local images
+    # (phone shots, documentary frames) live under public/blog/<post-slug>/.
+    roots = [PROJECT_ROOT / 'public/photos', PROJECT_ROOT / 'public/blog']
     exts = {'.jpg', '.jpeg'}
     out: list[Path] = []
-    for path in sorted(photos_root.rglob('*')):
-        if not path.is_file():
+    for root in roots:
+        if not root.exists():
             continue
-        if path.suffix.lower() not in exts:
-            continue
-        if path.parent == photos_root:
-            # Root-level oddballs like 000245650034.jpg
-            continue
-        # Skip our own responsive variants — they match *-480w.jpg etc.
-        if RESPONSIVE_SUFFIX_RE.search(path.stem):
-            continue
-        out.append(path)
+        for path in sorted(root.rglob('*')):
+            if not path.is_file():
+                continue
+            if path.suffix.lower() not in exts:
+                continue
+            if path.parent == root:
+                # Root-level oddballs (e.g. public/photos/000245650034.jpg)
+                continue
+            # Skip our own responsive variants — they match *-480w.jpg etc.
+            if RESPONSIVE_SUFFIX_RE.search(path.stem):
+                continue
+            out.append(path)
     return out
 
 
@@ -359,8 +364,12 @@ def main(args: list[str]) -> None:
     manifest_index: dict[str, dict] = {}
 
     for served in photos:
+        section = served.relative_to(PROJECT_ROOT / 'public').parts[0]
         category = served.parent.name
-        original = find_original(category, served.name)
+        # Blog-local images ARE their own originals (no public/photos-style
+        # served-vs-original split), so don't search ~/Pictures for them —
+        # that could wrongly match a same-named file. Use their own EXIF.
+        original = None if section == 'blog' else find_original(category, served.name)
 
         if original is not None:
             exif_dict = load_exif_or_empty(original)

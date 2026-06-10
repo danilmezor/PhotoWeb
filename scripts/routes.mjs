@@ -20,7 +20,21 @@ export const NESTED_ROUTES = [
     { path: '/about', changefreq: 'monthly', priority: '0.7' },
 ];
 
-export const ALL_ROUTES = [ROOT_ROUTE, ...NESTED_ROUTES];
+// Blog: the index plus one route per post, derived from the post registry.
+const { getAllPosts } = await import('../src/utils/blogPosts.js');
+const blogPosts = getAllPosts();
+
+export const BLOG_ROUTES = [
+    { path: '/blog', changefreq: 'weekly', priority: '0.8', images: blogPosts.map((p) => p.heroImage) },
+    ...blogPosts.map((post) => ({
+        path: `/blog/${post.slug}`,
+        changefreq: 'monthly',
+        priority: '0.7',
+        images: post.images,
+    })),
+];
+
+export const ALL_ROUTES = [ROOT_ROUTE, ...NESTED_ROUTES, ...BLOG_ROUTES];
 
 // Per-photo permalinks derived from the registry. Each photo gets its own
 // indexable URL — these expand the sitemap and the prerender pass.

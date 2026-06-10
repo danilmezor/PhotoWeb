@@ -14,6 +14,8 @@ import GrandCanyonPage from './pages/GrandCanyonPage';
 import Favorites from './pages/Favorites';
 import Galleries from './pages/Galleries';
 import PhotoPage from './pages/PhotoPage';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import { TRAIL_PAGES } from './utils/site';
 
 // Page components are imported eagerly (not React.lazy). The site ships
@@ -47,6 +49,8 @@ const AnimatedRoutes = () => {
           <Route path="/grand-canyon" element={<GrandCanyonPage />} />
           <Route path="/jmt" element={<JMTPage />} />
           <Route path="/photo/:slug" element={<PhotoPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about" element={<About />} />
           {Annotate && <Route path="/annotate" element={<Annotate />} />}
         </Routes>

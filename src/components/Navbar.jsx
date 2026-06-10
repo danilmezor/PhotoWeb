@@ -57,6 +57,7 @@ const Navbar = () => {
     const links = [
         { name: 'Personal Favorites', path: '/favorites' },
         { name: 'Galleries', path: '/galleries', hasDropdown: true },
+        { name: 'Blog', path: '/blog' },
         { name: 'About', path: '/about' },
     ];
 

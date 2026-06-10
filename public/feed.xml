@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Danil Zanozin Photography</title>
+    <link>https://danilzanozin.com/blog</link>
+    <description>Photography field notes and trip guides from the American West.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jun 2026 00:21:28 GMT</lastBuildDate>
+    <atom:link href="https://danilzanozin.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grand Canyon Rim-to-Rim: A Photographer’s Guide to Hiking and Shooting Both Rims</title>
+      <link>https://danilzanozin.com/blog/grand-canyon-rim-to-rim</link>
+      <guid isPermaLink="true">https://danilzanozin.com/blog/grand-canyon-rim-to-rim</guid>
+      <description>A week hiking from the North Rim to the South Rim with a camera on my back — itinerary, the best light and gear, where to shoot sunrise and sunset, rim-to-rim permits and water, and what the fire left on the North Rim.</description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Grand Canyon</category>
+      <category>Rim to Rim</category>
+      <category>landscape photography</category>
+      <category>hiking</category>
+      <category>American West</category>
+    </item>
+  </channel>
+</rss>
