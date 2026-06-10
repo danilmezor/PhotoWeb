@@ -142,7 +142,7 @@ const PhotoPage = () => {
 
                 <div className="photo-nav">
                     {prev && (
-                        <Link to={photoUrl(prev.slug)} className="photo-nav-link prev" rel="prev">
+                        <Link to={photoUrl(prev.slug)} className="photo-nav-link prev" rel="prev" aria-label={`Previous photo: ${prev.title}`}>
                             <span className="photo-nav-arrow" aria-hidden="true">←</span>
                             <span className="photo-nav-label">Previous</span>
                         </Link>
@@ -151,7 +151,7 @@ const PhotoPage = () => {
                         Back to {photo.gallery.title}
                     </Link>
                     {next && (
-                        <Link to={photoUrl(next.slug)} className="photo-nav-link next" rel="next">
+                        <Link to={photoUrl(next.slug)} className="photo-nav-link next" rel="next" aria-label={`Next photo: ${next.title}`}>
                             <span className="photo-nav-label">Next</span>
                             <span className="photo-nav-arrow" aria-hidden="true">→</span>
                         </Link>

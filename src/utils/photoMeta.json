@@ -11,6 +11,86 @@
             "washington"
         ]
     },
+    "/photos/grand-canyon/_DSC6639.jpg": {
+        "title": "The Sheer Scale of It",
+        "alt": "The Grand Canyon seen from Pima Point, a shaft of sunlight on red buttes above the distant Colorado River.",
+        "story": "This was one of the first scenes the Grand Canyon showed me. What pulled me in was a single streak of light raking across the buttes and reflecting off the Colorado far below. That warm rock against the cool, hazy blue was the shot.",
+        "location": "Pima Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Pima Point",
+            "Colorado River",
+            "Arizona",
+            "landscape photography"
+        ]
+    },
+    "/photos/grand-canyon/_DSC6767.jpg": {
+        "title": "The Day's Last Ember",
+        "alt": "The Grand Canyon at blue hour from Mojave Point, last light on the red buttes fading into cool twilight.",
+        "story": "Blue hour on my first evening in the canyon. I'd waited all day at Mojave Point for exactly this light - and then the last shuttle honked for me. I fired the shutter, ran over to ask the driver for two minutes to pack, and grabbed a few more frames while I had them. Each was an 8-second exposure at f/11, so every shot felt like forever in the fading light. I had no idea I'd just made one of my favorite Grand Canyon photographs.",
+        "location": "Mojave Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Mojave Point",
+            "blue hour",
+            "long exposure",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC6792.jpg": {
+        "title": "The Sentinel",
+        "alt": "A lone juniper at the rim of the Grand Canyon at sunrise, first light striking the cliffs at Moran Point.",
+        "story": "I'd planned to shoot Lipan Point that morning, but I left too late - the sun was already breaking the horizon as I drove. Rather than gamble on making it, I pulled into the first overlook, Moran Point, and started hunting for a composition. Another photographer there was working a telephoto; I wanted to go wide. I found this lone juniper clinging to the edge and waited for the light to reach it.",
+        "location": "Moran Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Moran Point",
+            "sunrise",
+            "juniper tree",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC6882.jpg": {
+        "title": "An Island of Light",
+        "alt": "Sunlight on Berry Butte, rising from the hazy blue ridges of the Grand Canyon at Grandview Point.",
+        "story": "I was scouting a sunset composition at Grandview Point when streaks of light began falling across Berry Butte, while the ridges behind it dissolved into haze. The depth was already there - I just had to isolate it. I reached for 64mm to compress the layers and let the lit rock separate from the cool, hazy background. Sometimes the canyon hands you the shot; you just have to recognize it and frame it.",
+        "location": "Grandview Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Grandview Point",
+            "Berry Butte",
+            "sunset",
+            "atmospheric haze",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC6909.jpg": {
+        "title": "Where the Sun Pours In",
+        "alt": "A wide golden-hour view of the Grand Canyon from Grandview Point, the low sun glowing through haze above a dead tree.",
+        "story": "Once I'd found the right spot at Grandview Point, I wanted to keep it simple — a wide, near-panoramic frame with the low golden-hour sun pouring straight through the canyon. I used this lone dead tree to anchor the middle of the composition and shot into the light at 20mm, stopping down to f/11 so the sun held a clean shape. Some frames are less about a story and more about being there when the light is this good.",
+        "location": "Grandview Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Grandview Point",
+            "golden hour",
+            "panorama",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC6976.jpg": {
+        "title": "Where Ridges Dissolve",
+        "alt": "Layered ridgelines of the Grand Canyon fading into morning haze, with O'Neill Butte seen from Hopi Point at sunrise.",
+        "story": "I stopped at Hopi Point on a morning hike to catch the sun coming up over O'Neill Butte. The light was doing the thing I love - stacking the ridgelines into receding layers as the haze separated each one. I reached for 77mm to compress those layers and let the butte sit as the anchor among them. It's a quiet, almost abstract way to photograph a place most people shoot wide.",
+        "location": "Hopi Point, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Hopi Point",
+            "O'Neill Butte",
+            "sunrise",
+            "atmospheric layers",
+            "Arizona"
+        ]
+    },
     "/photos/people/81dJdwzh6qQ.jpg": {
         "alt": "Studio portrait with metallic foil backdrop and dramatic lighting"
     }
