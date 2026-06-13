@@ -46,7 +46,7 @@ const TrailPage = ({
             {seo && <SEO {...seo} />}
             <div className="trail-sidebar">
                 <div className="trail-map-container">
-                    <h2>{title}</h2>
+                    <h1 className="trail-title">{title}</h1>
                     {blurb && (
                         <p style={{ lineHeight: '1.6', opacity: 0.85 }}>{blurb}</p>
                     )}

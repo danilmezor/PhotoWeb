@@ -21,6 +21,12 @@
     z-index: 10;
 }
 
+.trail-title {
+    /* Promoted from <h2> to <h1> for one-h1-per-page; keep the old visual size. */
+    font-size: 1.5rem;
+    margin: 0 0 0.83em;
+}
+
 .trail-map-container {
     text-align: center;
     width: 90%;

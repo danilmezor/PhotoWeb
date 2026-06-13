@@ -4,7 +4,6 @@ import { AnimatePresence } from 'framer-motion';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
-import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
@@ -65,7 +64,6 @@ const AppContent = () => {
 
   return (
     <>
-      <SplashScreen />
       <Navbar />
       <AnimatedRoutes />
       {!hideFooter && <Footer />}
