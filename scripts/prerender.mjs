@@ -1,6 +1,7 @@
 // Post-build prerender: takes the SPA bundle in dist/ and produces a
-// route-specific dist/<route>/index.html for every nested route. The root
-// '/' keeps Vite's original dist/index.html.
+// route-specific dist/<route>/index.html for every route, INCLUDING the root
+// '/' (overwriting Vite's bare shell so the homepage ships static internal
+// links — essential for crawler discovery of the rest of the site).
 //
 // Why: the site is a client-rendered React app. Without this, social
 // crawlers (Facebook, Twitter, Discord, iMessage) and slow-to-execute
@@ -22,7 +23,7 @@ import http from 'node:http';
 import { fileURLToPath } from 'node:url';
 import handler from 'serve-handler';
 import puppeteer from 'puppeteer-core';
-import { NESTED_ROUTES, BLOG_ROUTES, PHOTO_ROUTES } from './routes.mjs';
+import { ROOT_ROUTE, NESTED_ROUTES, BLOG_ROUTES, PHOTO_ROUTES } from './routes.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -134,12 +135,17 @@ const main = async () => {
     const launchOptions = await resolveLaunchOptions();
     const browser = await puppeteer.launch(launchOptions);
 
-    const allRoutes = [...NESTED_ROUTES, ...BLOG_ROUTES, ...PHOTO_ROUTES];
+    // The homepage ('/') is prerendered too: it overwrites Vite's bare SPA
+    // shell (dist/index.html) with the rendered DOM so the navbar + collection
+    // links are present as static <a href> tags. Without this the homepage is a
+    // dead end for crawlers — Googlebot's first-wave crawl sees no links out,
+    // so it can't discover /galleries, /blog, /photo/*, etc. from the entry page.
+    const allRoutes = [ROOT_ROUTE, ...NESTED_ROUTES, ...BLOG_ROUTES, ...PHOTO_ROUTES];
     try {
         for (const route of allRoutes) {
             await prerenderRoute(browser, route);
         }
-        console.log(`[prerender] Done. ${allRoutes.length} routes prerendered (${NESTED_ROUTES.length} pages + ${BLOG_ROUTES.length} blog + ${PHOTO_ROUTES.length} photo permalinks).`);
+        console.log(`[prerender] Done. ${allRoutes.length} routes prerendered (home + ${NESTED_ROUTES.length} pages + ${BLOG_ROUTES.length} blog + ${PHOTO_ROUTES.length} photo permalinks).`);
     } finally {
         await browser.close();
         await new Promise((resolve) => server.close(resolve));

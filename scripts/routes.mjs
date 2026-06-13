@@ -2,8 +2,9 @@
 // Consumed by scripts/generate-seo-files.mjs (sitemap) and
 // scripts/prerender.mjs (per-route static HTML generation).
 //
-// The root '/' is intentionally NOT in this list — Vite emits dist/index.html
-// for it; nested routes get their own dist/<route>/index.html via prerender.
+// The root '/' lives in ROOT_ROUTE (kept separate from NESTED_ROUTES for the
+// sitemap's priority/changefreq); prerender renders it too, overwriting Vite's
+// bare dist/index.html so the homepage ships static internal links.
 
 export const ROOT_ROUTE = { path: '/', changefreq: 'weekly', priority: '1.0' };
 
