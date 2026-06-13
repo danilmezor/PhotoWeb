@@ -109,6 +109,7 @@ const PhotoPage = () => {
                 image={photo.src}
                 type="article"
                 jsonLd={[imageObjectJsonLd, breadcrumbsJsonLd]}
+                noindex={!photo.curated}
             />
 
             <Breadcrumb items={[

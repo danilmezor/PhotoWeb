@@ -6,7 +6,7 @@ import { jmtData } from '../src/utils/jmtData.js';
 import { heroPhotos } from '../src/utils/hero.js';
 import { favorites } from '../src/utils/favorites.js';
 import { galleries } from '../src/utils/galleries.js';
-import { ALL_ROUTES, BLOG_ROUTES, PHOTO_ROUTES } from './routes.mjs';
+import { ALL_ROUTES, BLOG_ROUTES, INDEXABLE_PHOTO_ROUTES } from './routes.mjs';
 import { getAllPosts } from '../src/utils/blogPosts.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -54,7 +54,7 @@ const resolveSiteUrl = () => {
 const siteUrl = resolveSiteUrl();
 const isoDate = new Date().toISOString();
 
-const routes = [...ALL_ROUTES, ...PHOTO_ROUTES];
+const routes = [...ALL_ROUTES, ...INDEXABLE_PHOTO_ROUTES];
 
 const aboutImage = '/photos/000245650034.jpg';
 
@@ -81,8 +81,10 @@ const routeImageMap = {
   '/jmt': jmtData.flatMap((day) => day.images),
 };
 
-// Each photo permalink lists only its own image.
-for (const route of PHOTO_ROUTES) {
+// Each curated photo permalink lists only its own image. (Un-curated photo
+// pages are noindex and excluded from the sitemap; their images remain in the
+// image-sitemap via their gallery/category page entries above.)
+for (const route of INDEXABLE_PHOTO_ROUTES) {
   routeImageMap[route.path] = [route.image];
 }
 

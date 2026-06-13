@@ -47,6 +47,7 @@ const SEO = ({
   image = DEFAULT_SOCIAL_IMAGE,
   type = 'website',
   jsonLd,
+  noindex = false,
 }) => {
   const jsonLdKey = JSON.stringify(normalizeJsonLd(jsonLd));
 
@@ -61,7 +62,9 @@ const SEO = ({
     upsertMetaTag(
       'name',
       'robots',
-      'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'
+      noindex
+        ? 'noindex, follow'
+        : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'
     );
 
     upsertMetaTag('property', 'og:type', type);
@@ -90,7 +93,7 @@ const SEO = ({
       script.textContent = JSON.stringify(entry);
       document.head.appendChild(script);
     });
-  }, [title, description, path, image, type, jsonLdKey]);
+  }, [title, description, path, image, type, jsonLdKey, noindex]);
 
   return null;
 };

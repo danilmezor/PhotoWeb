@@ -41,11 +41,19 @@ export const ALL_ROUTES = [ROOT_ROUTE, ...NESTED_ROUTES, ...BLOG_ROUTES];
 // indexable URL — these expand the sitemap and the prerender pass.
 const { allPhotos } = await import('../src/utils/photoRegistry.js');
 
+// All photo permalinks — prerendered (so each ships its static HTML, including
+// the noindex tag for un-curated/thin photos).
 export const PHOTO_ROUTES = allPhotos.map((photo) => ({
     path: `/photo/${photo.slug}`,
     changefreq: 'monthly',
     priority: '0.6',
     image: photo.src,
+    curated: photo.curated,
 }));
+
+// Only curated photo pages belong in the sitemap — un-curated ones are noindex,
+// and submitting noindex URLs is contradictory (GSC flags them). Their images
+// stay discoverable via their gallery/category page's image-sitemap entries.
+export const INDEXABLE_PHOTO_ROUTES = PHOTO_ROUTES.filter((route) => route.curated);
 
 export const ALL_ROUTES_WITH_PHOTOS = [...ALL_ROUTES, ...PHOTO_ROUTES];

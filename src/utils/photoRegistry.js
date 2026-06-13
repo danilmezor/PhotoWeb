@@ -39,9 +39,14 @@ const buildEntry = ({ slug, src, title, gallery }) => {
     const meta = metaFor(src);
     const exif = exifIndex[src] || null;
     const caption = meta?.alt || null;
+    // A photo is "curated" when it has real human-written metadata. Un-curated
+    // photos are thin pages (serial title + generic alt, no story) and get
+    // noindex'd until annotated, so crawl budget concentrates on real content.
+    const curated = Boolean(meta && (meta.title || meta.alt || meta.story));
     return {
         slug,
         src,
+        curated,
         // Curated title (e.g. "Enshrined Forever") wins over the camera
         // serial; `serial` keeps the original for display/debugging. It's
         // derived from the src because the incoming `title` may itself
