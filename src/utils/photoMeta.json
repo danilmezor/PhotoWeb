@@ -2,7 +2,7 @@
     "/photos/cities/_DSC5344.jpg": {
         "title": "Enshrined Forever",
         "alt": "Long-exposure black-and-white photo of the Lincoln Memorial statue with constantly passing visitors",
-        "story": "I set up inside a chamber with no one paying attention to me. People were passing by all the time while Lincoln sat there for decades. This gave me an idea of this still monument vs flowing crowd contrast",
+        "story": "I set up inside the chamber, and with everyone too busy to notice me, I had time to work the shot. People streamed past the whole time, while Lincoln has sat there for decades — that contrast, the still monument against the flowing crowd, was the whole idea. I held a five-second exposure so the visitors blurred into ghosts while the statue stayed perfectly sharp.",
         "location": "Lincoln Memorial, Washington, D.C.",
         "keywords": [
             "long exposure",
@@ -91,7 +91,112 @@
             "Arizona"
         ]
     },
+    "/photos/grand-canyon/_DSC7101.jpg": {
+        "title": "First light below the rim",
+        "alt": "Warm morning light on a canyon wall seen from Coconino Overlook on the North Kaibab Trail",
+        "story": "This was my first stop on the rim-to-rim journey I'd been wanting to do. I waited an hour for first light to come into the canyon as the clouds rolled in.",
+        "location": "Coconino Overlook, Grand Canyon, AZ",
+        "keywords": [
+            "sunrise",
+            "golden hour",
+            "grand canyon",
+            "arizona",
+            "coconino",
+            "north rim"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7356.jpg": {
+        "title": "Before the Sky Broke",
+        "alt": "Wide-angle long-exposure view of Split Rock Falls, with storm clouds streaking across the sky above the canyon walls.",
+        "story": "After reaching Cottonwood Camp I doubled back toward the Manzanita rest area, where a small thunderstorm was rolling in. It felt like the perfect chance for a long exposure — something to play the falling water against the fast-moving clouds.",
+        "location": "Split Rock Falls, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Split Rock Falls",
+            "North Kaibab Trail",
+            "long exposure",
+            "waterfall",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7438.jpg": {
+        "title": "Desert's Garden",
+        "alt": "A view from inside the alcove behind Ribbon Falls, a moss-covered rock in the foreground framed by the cave mouth.",
+        "story": "After a long day of hiking, I decided to visit Ribbon Falls. Getting the shot meant climbing up into a small alcove with all my gear, but it was worth it — sitting near the waterfall was refreshing on such a hot day. To handle the enormous dynamic range, from the shaded alcove to the bright canyon beyond, I blended two exposures together.",
+        "location": "Ribbon Falls, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Ribbon Falls",
+            "North Kaibab Trail",
+            "oasis",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7592.jpg": {
+        "title": "Leaving the River Behind",
+        "alt": "A barrel cactus in the foreground above the Colorado River, with the Black Bridge and soft evening light on the canyon walls.",
+        "story": "On my last evening in the canyon, I decided to photograph the Colorado River — this shot almost felt like the place saying goodbye to me. Once the light turned soft, I chose this barrel cactus to be the hero of the frame. To keep everything sharp from the spines at my feet to the bridge in the distance, I focus-stacked several frames together. Everything came together at once: the color in the river, the bridge, the light on the canyon walls, and its reflection in the water.",
+        "location": "Black Bridge, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Black Bridge",
+            "Colorado River",
+            "barrel cactus",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7696.jpg": {
+        "title": "An Older Rhythm of the Canyon",
+        "alt": "Black-and-white photo of a mule pack train backlit by the rising sun on the South Kaibab Trail",
+        "story": "While climbing back up to the South Rim, I had to stop and wait for a big mule train heading down to Phantom Ranch. I took the chance to photograph them against the canyon with the morning sun rising behind them. I shot straight into the low light and let the scene fall toward silhouette, working it in black and white so the long shadows became part of the frame.",
+        "location": "South Kaibab, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "South Kaibab Trail",
+            "mule train",
+            "Phantom Ranch",
+            "sunrise",
+            "black and white"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7748.jpg": {
+        "title": "Light Letting Go",
+        "alt": "Telephoto view of layered Grand Canyon ridgelines receding into golden sunset haze, seen from Desert View.",
+        "story": "On my last sunset in the park, I wanted to photograph the canyon from one of the South Rim's iconic spots, Desert View. I reached for my telephoto lens and found this almost abstract composition — the golden-hour light gradually giving out from the top of the frame to the bottom, the ridges flattening into one another the longer I looked.",
+        "location": "Desert View, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Desert View",
+            "golden hour",
+            "sunset",
+            "telephoto",
+            "Arizona"
+        ]
+    },
+    "/photos/grand-canyon/_DSC7793.jpg": {
+        "title": "Purple Gold",
+        "alt": "Wide view from Desert View, last light catching the far rim beneath a purple sky.",
+        "story": "As the sun had almost disappeared, I caught this last light hitting the far rim and its final reflections on the Colorado River. I waited until the sun was nearly gone so the sky would shift into that band of purple above the warm rim. The purple-and-gold contrast, set against the green trees in the foreground, makes this one of my favorite shots from the whole Grand Canyon trip.",
+        "location": "Desert View, Grand Canyon, AZ",
+        "keywords": [
+            "Grand Canyon",
+            "Desert View",
+            "Colorado River",
+            "dusk",
+            "Arizona"
+        ]
+    },
     "/photos/people/81dJdwzh6qQ.jpg": {
-        "alt": "Studio portrait with metallic foil backdrop and dramatic lighting"
+        "title": "The Calm in the Glare",
+        "alt": "studio portrait, foil backdrop, colored lighting, fashion portrait, Izhevsk",
+        "story": "I made this studio portrait of a friend in Izhevsk, Russia. The whole image is built on contrast — colored light raking across both her face and the crumpled foil behind her, and her smooth skin set against the hard, wrinkled metal. I gelled the lights warm and magenta so the foil would catch and throw color rather than sit flat.",
+        "location": "Studio, Izhevsk, Russia",
+        "keywords": [
+            "studio portrait",
+            "foil backdrop",
+            "colored lighting",
+            "fashion portrait",
+            "Izhevsk"
+        ]
     }
 }
