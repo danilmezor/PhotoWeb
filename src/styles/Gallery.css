@@ -5,6 +5,9 @@
 }
 
 .gallery-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     position: relative;
     break-inside: avoid;
     margin-bottom: var(--space-sm);

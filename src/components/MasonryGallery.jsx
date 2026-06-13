@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Lightbox from './Lightbox';
 import ParallaxImage from './ParallaxImage';
+import { getPhotoUrlBySrc } from '../utils/photoRegistry';
 import '../styles/MasonryGallery.css';
 
 const getColumnCount = () => {
@@ -34,13 +35,17 @@ const MasonryGallery = ({ photos }) => {
                 {columns.map((col, colIndex) => (
                     <div className="masonry-column" key={colIndex}>
                         {col.map(({ photo, globalIndex }) => (
-                            <div
+                            <a
                                 key={photo.id}
                                 className="masonry-item"
-                                onClick={() => setSelectedIndex(globalIndex)}
+                                href={getPhotoUrlBySrc(photo.src) || undefined}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setSelectedIndex(globalIndex);
+                                }}
                             >
                                 <ParallaxImage src={photo.src} alt={photo.alt} />
-                            </div>
+                            </a>
                         ))}
                     </div>
                 ))}

@@ -189,3 +189,13 @@ export const getNearbyPhotos = (slug, count = 6) => {
 };
 
 export const photoUrl = (slug) => `/photo/${slug}`;
+
+// Resolve a photo's permalink from its image src. Galleries store photos by
+// src (not slug), so this lets gallery thumbnails render a crawlable <a href>
+// to the photo page while keeping the lightbox on click — the only internal
+// link path crawlers have into the /photo/* graph.
+const bySrc = new Map(allPhotos.map((p) => [p.src, p]));
+export const getPhotoUrlBySrc = (src) => {
+    const p = bySrc.get(src);
+    return p ? photoUrl(p.slug) : null;
+};

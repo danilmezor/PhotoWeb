@@ -13,6 +13,9 @@
 }
 
 .masonry-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     position: relative;
     cursor: pointer;
     overflow: hidden;
