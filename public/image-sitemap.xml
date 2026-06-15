@@ -201,6 +201,9 @@
       <image:loc>https://danilzanozin.com/photos/cities/_DSC5344.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/_DSC8037.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/CHHBd8lS8RY.jpg</image:loc>
     </image:image>
     <image:image>
@@ -601,6 +604,12 @@
     <loc>https://danilzanozin.com/photo/cities-dsc5344</loc>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/_DSC5344.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/cities-dsc8037</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/cities/_DSC8037.jpg</image:loc>
     </image:image>
   </url>
   <url>

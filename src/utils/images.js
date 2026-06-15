@@ -77,6 +77,7 @@ const cityFiles = [
   "_AC16368-Pano.jpg",
   "_DSC5033.jpg",
   "_DSC5344.jpg",
+  "_DSC8037.jpg",
   "CHHBd8lS8RY.jpg",
   "Ekkr8JiDBIc.jpg",
   "fyCOWS2l5JI.jpg",

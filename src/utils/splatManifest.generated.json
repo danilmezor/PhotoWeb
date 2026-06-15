@@ -359,6 +359,12 @@
     "fov": 53.1,
     "sog": "/splats/cities/_DSC5364.sog"
   },
+  "/photos/cities/_DSC8037.jpg": {
+    "bytes": 6495827,
+    "depth": "/depth/cities/_DSC8037.png",
+    "fov": 44.4,
+    "sog": "/splats/cities/_DSC8037.sog"
+  },
   "/photos/cities/_sGN2QO7P6c.jpg": {
     "bytes": 5821601,
     "depth": "/depth/cities/_sGN2QO7P6c.png",
