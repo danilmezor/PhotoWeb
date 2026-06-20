@@ -9,6 +9,7 @@ import { metaFor } from './photoMeta.js';
 
 export const favorites = [
     { src: '/photos/landscapes/_AC16711.jpg' },
+    { src: '/photos/landscapes/_DSC8109-Edit.jpg' },
     { src: '/photos/landscapes/_DSC5401.jpg' },
     { src: '/photos/death-valley/_DSC6068.jpg' },
     { src: '/photos/death-valley/_DSC6099.jpg' },

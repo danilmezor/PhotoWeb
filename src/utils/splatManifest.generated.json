@@ -803,6 +803,12 @@
     "fov": 71.6,
     "sog": "/splats/landscapes/_DSC7946-Edit.sog"
   },
+  "/photos/landscapes/_DSC8109-Edit.jpg": {
+    "bytes": 6255497,
+    "depth": "/depth/landscapes/_DSC8109-Edit.png",
+    "fov": 96.7,
+    "sog": "/splats/landscapes/_DSC8109-Edit.sog"
+  },
   "/photos/landscapes/njcRmx4hCQA.jpg": {
     "bytes": 6526180,
     "depth": "/depth/landscapes/njcRmx4hCQA.png",
