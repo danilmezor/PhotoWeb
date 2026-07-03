@@ -61,6 +61,7 @@ SOURCE_DIRS_BY_CATEGORY: dict[str, list[Path]] = {
     'JMT':          [PROJECT_ROOT / 'pictures/JMT'],
     'death-valley': [Path.home() / 'Pictures/DeathValley'],
     'grand-canyon': [Path.home() / 'Pictures/GrandCanyon'],
+    'lassen-volcanic': [Path.home() / 'Pictures/LassenVolcanic'],
 }
 
 # Final fallback sweep — looked at last if the per-category dirs miss.

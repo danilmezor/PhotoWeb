@@ -45,6 +45,7 @@ const AnimatedRoutes = () => {
           <Route path="/people" element={<CategoryPage category="people" title="People" />} />
           <Route path="/events" element={<CategoryPage category="events" title="Events" />} />
           <Route path="/death-valley" element={<CategoryPage category="death-valley" title="Death Valley" />} />
+          <Route path="/lassen-volcanic" element={<CategoryPage category="lassen-volcanic" title="Lassen Volcanic" />} />
           <Route path="/grand-canyon" element={<GrandCanyonPage />} />
           <Route path="/jmt" element={<JMTPage />} />
           <Route path="/photo/:slug" element={<PhotoPage />} />

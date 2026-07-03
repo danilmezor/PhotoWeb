@@ -147,6 +147,17 @@ const grandCanyonFiles = [
   "_DSC7748.jpg",
   "_DSC7793.jpg"
 ];
+const lassenVolcanicFiles = [
+  "_DSC8357-Edit.jpg",
+  "_DSC8392.jpg",
+  "_DSC8413-Edit.jpg",
+  "_DSC8450-Edit.jpg",
+  "_DSC8632-HDR-Edit.jpg",
+  "_DSC8756-Edit.jpg",
+  "_DSC8791-Edit.jpg",
+  "_DSC8970-Edit.jpg",
+  "_DSC9002-HDR-Edit.jpg"
+];
 
 export const images = {
   landscapes: mapCategoryFiles('landscapes', landscapeFiles),
@@ -155,6 +166,7 @@ export const images = {
   events: mapCategoryFiles('events', eventFiles),
   'death-valley': mapCategoryFiles('death-valley', deathValleyFiles),
   'grand-canyon': mapCategoryFiles('grand-canyon', grandCanyonFiles),
+  'lassen-volcanic': mapCategoryFiles('lassen-volcanic', lassenVolcanicFiles),
   jmt: [
     {
       id: 1,

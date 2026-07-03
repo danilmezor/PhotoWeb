@@ -44,14 +44,21 @@ export const galleries = [
         title: 'Grand Canyon',
         path: '/grand-canyon',
         cover: images['grand-canyon'][0]?.src,
-        relatedSlugs: ['jmt', 'death-valley', 'landscapes'],
+        relatedSlugs: ['jmt', 'death-valley', 'lassen-volcanic'],
+    },
+    {
+        slug: 'lassen-volcanic',
+        title: 'Lassen Volcanic',
+        path: '/lassen-volcanic',
+        cover: images['lassen-volcanic'][0]?.src,
+        relatedSlugs: ['death-valley', 'grand-canyon', 'jmt'],
     },
     {
         slug: 'jmt',
         title: 'JMT',
         path: '/jmt',
         cover: jmtCover,
-        relatedSlugs: ['grand-canyon', 'death-valley', 'landscapes'],
+        relatedSlugs: ['grand-canyon', 'death-valley', 'lassen-volcanic'],
     },
 ];
 

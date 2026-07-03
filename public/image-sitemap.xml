@@ -54,6 +54,9 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16711.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC8109-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
     </image:image>
     <image:image>
@@ -89,6 +92,9 @@
     <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://danilzanozin.com/galleries</loc>
@@ -109,6 +115,9 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6639.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8357-Edit.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC1510.jpg</image:loc>
@@ -166,6 +175,9 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC7946-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC8109-Edit.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/njcRmx4hCQA.jpg</image:loc>
@@ -598,6 +610,12 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/blog/grand-canyon-rim-to-rim/grand-canyon-hikers-below-butte.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc8109</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC8109-Edit.jpg</image:loc>
     </image:image>
   </url>
   <url>

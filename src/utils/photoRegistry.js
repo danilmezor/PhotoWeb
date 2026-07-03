@@ -20,6 +20,7 @@ const CATEGORY_GALLERIES = [
     { slug: 'events', title: 'Events', path: '/events', key: 'events' },
     { slug: 'death-valley', title: 'Death Valley', path: '/death-valley', key: 'death-valley' },
     { slug: 'grand-canyon', title: 'Grand Canyon', path: '/grand-canyon', key: 'grand-canyon' },
+    { slug: 'lassen-volcanic', title: 'Lassen Volcanic', path: '/lassen-volcanic', key: 'lassen-volcanic' },
 ];
 
 // Build a slug for a single photo within a gallery.

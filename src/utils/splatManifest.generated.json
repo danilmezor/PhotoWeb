@@ -821,6 +821,60 @@
     "fov": 43.5,
     "sog": "/splats/landscapes/uFZYpJ8oVJQ.sog"
   },
+  "/photos/lassen-volcanic/_DSC8357-Edit.jpg": {
+    "bytes": 6494714,
+    "depth": "/depth/lassen-volcanic/_DSC8357-Edit.png",
+    "fov": 13.2,
+    "sog": "/splats/lassen-volcanic/_DSC8357-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8392.jpg": {
+    "bytes": 6008901,
+    "depth": "/depth/lassen-volcanic/_DSC8392.png",
+    "fov": 21.6,
+    "sog": "/splats/lassen-volcanic/_DSC8392.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8413-Edit.jpg": {
+    "bytes": 6510507,
+    "depth": "/depth/lassen-volcanic/_DSC8413-Edit.png",
+    "fov": 60.0,
+    "sog": "/splats/lassen-volcanic/_DSC8413-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8450-Edit.jpg": {
+    "bytes": 6601063,
+    "depth": "/depth/lassen-volcanic/_DSC8450-Edit.png",
+    "fov": 16.4,
+    "sog": "/splats/lassen-volcanic/_DSC8450-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8632-HDR-Edit.jpg": {
+    "bytes": 6250650,
+    "depth": "/depth/lassen-volcanic/_DSC8632-HDR-Edit.png",
+    "fov": 104.3,
+    "sog": "/splats/lassen-volcanic/_DSC8632-HDR-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8756-Edit.jpg": {
+    "bytes": 6405097,
+    "depth": "/depth/lassen-volcanic/_DSC8756-Edit.png",
+    "fov": 71.6,
+    "sog": "/splats/lassen-volcanic/_DSC8756-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8791-Edit.jpg": {
+    "bytes": 6656296,
+    "depth": "/depth/lassen-volcanic/_DSC8791-Edit.png",
+    "fov": 60.0,
+    "sog": "/splats/lassen-volcanic/_DSC8791-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC8970-Edit.jpg": {
+    "bytes": 6859897,
+    "depth": "/depth/lassen-volcanic/_DSC8970-Edit.png",
+    "fov": 60.0,
+    "sog": "/splats/lassen-volcanic/_DSC8970-Edit.sog"
+  },
+  "/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg": {
+    "bytes": 6909013,
+    "depth": "/depth/lassen-volcanic/_DSC9002-HDR-Edit.png",
+    "fov": 16.4,
+    "sog": "/splats/lassen-volcanic/_DSC9002-HDR-Edit.sog"
+  },
   "/photos/people/81dJdwzh6qQ.jpg": {
     "bytes": 6307347,
     "depth": "/depth/people/81dJdwzh6qQ.png",

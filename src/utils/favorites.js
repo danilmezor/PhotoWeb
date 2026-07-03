@@ -22,6 +22,7 @@ export const favorites = [
     { src: '/photos/JMT/_DSC3788-Enhanced-NR.jpg' },
     { src: '/photos/JMT/_DSC3804-Edit.jpg' },
     { src: '/photos/JMT/_DSC4063-Enhanced-NR.jpg' },
+    { src: '/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg' },
 ].map((photo, index) => {
     const meta = metaFor(photo.src);
     const serial = titleFromSrc(photo.src);

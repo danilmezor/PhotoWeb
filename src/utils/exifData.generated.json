@@ -1133,6 +1133,87 @@
     "lens": "NIKKOR Z 14-24mm f/2.8 S",
     "shutter": "1.0s"
   },
+  "/photos/lassen-volcanic/_DSC8357-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-28",
+    "focalLength": "150mm",
+    "iso": 1000,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/3200"
+  },
+  "/photos/lassen-volcanic/_DSC8392.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-28",
+    "focalLength": "63mm",
+    "iso": 100,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/125"
+  },
+  "/photos/lassen-volcanic/_DSC8413-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-28",
+    "focalLength": "490mm",
+    "iso": 160,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/50"
+  },
+  "/photos/lassen-volcanic/_DSC8450-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-28",
+    "focalLength": "120mm",
+    "iso": 64,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/3"
+  },
+  "/photos/lassen-volcanic/_DSC8632-HDR-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-29",
+    "focalLength": "14mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "1/10"
+  },
+  "/photos/lassen-volcanic/_DSC8756-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-29",
+    "focalLength": "24mm",
+    "iso": 100,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "300s"
+  },
+  "/photos/lassen-volcanic/_DSC8791-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-30",
+    "focalLength": "280mm",
+    "iso": 400,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/2000"
+  },
+  "/photos/lassen-volcanic/_DSC8970-Edit.jpg": {
+    "aperture": "f/7.1",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-30",
+    "focalLength": "273mm",
+    "iso": 1600,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/1000"
+  },
+  "/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-07-01",
+    "focalLength": "120mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/160"
+  },
   "/photos/people/F5010006.JPG": {
     "camera": "Fuji Photo Film SP-3000"
   },

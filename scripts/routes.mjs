@@ -17,6 +17,7 @@ export const NESTED_ROUTES = [
     { path: '/events', changefreq: 'weekly', priority: '0.8' },
     { path: '/death-valley', changefreq: 'monthly', priority: '0.8' },
     { path: '/grand-canyon', changefreq: 'monthly', priority: '0.8' },
+    { path: '/lassen-volcanic', changefreq: 'monthly', priority: '0.8' },
     { path: '/jmt', changefreq: 'monthly', priority: '0.9' },
     { path: '/about', changefreq: 'monthly', priority: '0.7' },
 ];

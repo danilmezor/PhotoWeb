@@ -34,6 +34,11 @@ const categoryMetadata = {
         seoTitle: 'Death Valley National Park Photography',
         description: 'Death Valley National Park photography — salt flats, eroded badlands, dune fields, and the long shadows of the Panamint Range, captured during a week in the high desert.',
     },
+    'lassen-volcanic': {
+        path: '/lassen-volcanic',
+        seoTitle: 'Lassen Volcanic National Park Photography',
+        description: 'Lassen Volcanic National Park photography — steaming hydrothermal basins, the bulk of Lassen Peak, alpine lakes, and volcanic terrain in California\'s southern Cascades.',
+    },
 };
 
 const CategoryPage = ({ category, title }) => {
