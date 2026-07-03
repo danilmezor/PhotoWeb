@@ -162,7 +162,10 @@ def extract_fov(trailer: bytes) -> float:
     except (struct.error, ValueError) as e:
         print(f'  ! intrinsics parse failed ({e}); fov fallback {FOV_FALLBACK}')
         return FOV_FALLBACK
-    if not 10 < fov < 120:
+    # Admit the full photographic range: ~1° (super-telephoto, 500mm+) up to
+    # ultrawide. A narrower window wrongly clamps legit telephoto captures to
+    # the 60° fallback, which shrinks the splat to a dot in the viewer.
+    if not 1 < fov < 150:
         print(f'  ! fov {fov:.1f} out of sane range; fallback {FOV_FALLBACK}')
         return FOV_FALLBACK
     return round(fov, 1)

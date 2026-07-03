@@ -632,7 +632,7 @@
   "/photos/grand-canyon/_DSC7748.jpg": {
     "bytes": 6536375,
     "depth": "/depth/grand-canyon/_DSC7748.png",
-    "fov": 60.0,
+    "fov": 5.0,
     "sog": "/splats/grand-canyon/_DSC7748.sog"
   },
   "/photos/grand-canyon/_DSC7793.jpg": {
@@ -836,7 +836,7 @@
   "/photos/lassen-volcanic/_DSC8413-Edit.jpg": {
     "bytes": 6510507,
     "depth": "/depth/lassen-volcanic/_DSC8413-Edit.png",
-    "fov": 60.0,
+    "fov": 4.2,
     "sog": "/splats/lassen-volcanic/_DSC8413-Edit.sog"
   },
   "/photos/lassen-volcanic/_DSC8450-Edit.jpg": {
@@ -860,13 +860,13 @@
   "/photos/lassen-volcanic/_DSC8791-Edit.jpg": {
     "bytes": 6656296,
     "depth": "/depth/lassen-volcanic/_DSC8791-Edit.png",
-    "fov": 60.0,
+    "fov": 6.3,
     "sog": "/splats/lassen-volcanic/_DSC8791-Edit.sog"
   },
   "/photos/lassen-volcanic/_DSC8970-Edit.jpg": {
     "bytes": 6859897,
     "depth": "/depth/lassen-volcanic/_DSC8970-Edit.png",
-    "fov": 60.0,
+    "fov": 7.1,
     "sog": "/splats/lassen-volcanic/_DSC8970-Edit.sog"
   },
   "/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg": {
