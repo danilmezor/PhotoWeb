@@ -115,8 +115,9 @@ Validation performed after compression:
 Set:
 
 - `VITE_SITE_URL=https://danilzanozin.com`
+- `VERCEL_DEEP_CLONE=true`
 
-This ensures generated sitemap and robots files use the real production domain.
+`VITE_SITE_URL` ensures generated sitemap and robots files use the real production domain. `VERCEL_DEEP_CLONE` gives the build full git history so `generate-seo-files.mjs` can derive real per-URL `<lastmod>` dates; without it every URL falls back to the build timestamp (the script warns when this happens).
 
 Related local template:
 
@@ -154,6 +155,18 @@ In Search Console -> Sitemaps, submit:
 - `image-sitemap.xml`
 
 Expected status: `Success`.
+
+### GSC API access (for benchmarks)
+
+One-time setup so `scripts/seo/gsc-pull.mjs` can pull query/position data and index coverage into `docs/seo-benchmarks/`:
+
+1. [console.cloud.google.com](https://console.cloud.google.com) -> new project (e.g. `danilzanozin-seo`).
+2. Enable the **Google Search Console API** (and optionally **PageSpeed Insights API** + an API key, for CWV pulls).
+3. IAM -> Service Accounts -> create (e.g. `gsc-reader`) -> Keys -> Add key (JSON) -> save as `~/.config/gsc/danilzanozin-gsc.json` (`chmod 600`; never commit).
+4. Search Console -> Settings -> Users and permissions -> Add user -> the service account email -> permission **Full** (needed for URL inspection).
+5. Run `node scripts/seo/gsc-pull.mjs` — writes `docs/seo-benchmarks/<date>/{snapshot.json,summary.md}`. Re-run monthly and after each annotate->deploy batch.
+
+Env overrides: `GSC_KEY_FILE`, `GSC_SITE` (default `sc-domain:danilzanozin.com`), `GSC_DAYS` (default 90), `GSC_SKIP_INSPECTION=1`.
 
 ## Troubleshooting
 
