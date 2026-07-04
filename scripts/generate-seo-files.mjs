@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { execSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -148,22 +148,45 @@ const lastmodFor = (route) => {
 };
 
 // Normalize date-only strings (blog registry) to full ISO; leave git's
-// ISO-with-offset untouched. Anything missing falls back to build time.
-const lastmodValue = (route) => {
-  const raw = lastmodFor(route);
-  if (!raw) {
-    return isoDate;
-  }
-  return /^\d{4}-\d{2}-\d{2}$/.test(raw) ? `${raw}T00:00:00Z` : raw;
-};
-
-if (!fullHistoryAvailable) {
-  console.warn(
-    '[seo] Full git history unavailable (shallow clone?) — sitemap lastmod falls back to build time. On Vercel set VERCEL_DEEP_CLONE=true.'
-  );
-}
+// ISO-with-offset untouched.
+const normalizeLastmod = (raw) =>
+  /^\d{4}-\d{2}-\d{2}$/.test(raw) ? `${raw}T00:00:00Z` : raw;
 
 const routes = [...ALL_ROUTES, ...INDEXABLE_PHOTO_ROUTES];
+
+// Vercel clones shallowly (VERCEL_DEEP_CLONE is not reliably honored), so git
+// dates are computed on local builds — where full history exists — and
+// persisted to a committed snapshot that CI builds read back. Local builds
+// refresh the snapshot automatically as part of `npm run build`.
+const SNAPSHOT_PATH = path.join(__dirname, 'seo', 'lastmod.generated.json');
+
+let lastmodByPath = {};
+if (fullHistoryAvailable) {
+  for (const route of routes) {
+    const raw = lastmodFor(route);
+    if (raw) {
+      lastmodByPath[route.path] = normalizeLastmod(raw);
+    }
+  }
+  await mkdir(path.dirname(SNAPSHOT_PATH), { recursive: true });
+  await writeFile(SNAPSHOT_PATH, `${JSON.stringify(lastmodByPath, null, 2)}\n`, 'utf8');
+} else {
+  try {
+    lastmodByPath = JSON.parse(await readFile(SNAPSHOT_PATH, 'utf8'));
+    console.warn('[seo] No full git history (shallow clone) — using committed lastmod snapshot.');
+  } catch {
+    console.warn('[seo] No git history and no lastmod snapshot — sitemap lastmod falls back to build time.');
+  }
+  // Registry-derived dates (blog) need no git; they win over a stale snapshot.
+  for (const route of routes) {
+    const raw = lastmodFor(route);
+    if (raw) {
+      lastmodByPath[route.path] = normalizeLastmod(raw);
+    }
+  }
+}
+
+const lastmodValue = (route) => lastmodByPath[route.path] || isoDate;
 
 const aboutImage = '/photos/000245650034.jpg';
 
