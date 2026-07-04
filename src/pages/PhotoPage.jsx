@@ -3,7 +3,9 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import PhotoImage from '../components/PhotoImage';
+import RelatedReading from '../components/RelatedReading';
 import { buildVariantUrls } from '../utils/imageVariants';
+import { getPostsForPhoto, getPostsForGallery } from '../utils/blogPosts';
 import Breadcrumb from '../components/Breadcrumb';
 import { getPhotoBySlug, getNeighbors, getNearbyPhotos, getSameLocationPhotos, photoUrl } from '../utils/photoRegistry';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
@@ -65,6 +67,14 @@ const PhotoPage = () => {
     const heroPreloadHref = heroVariants
         ? heroVariants.webp.split(', ').pop().split(' ')[0]
         : photo.src;
+
+    // Cluster link back to the blog: "Featured in" when this exact photo is
+    // embedded in a post; otherwise any guide drawing on this photo's gallery.
+    const featuredIn = getPostsForPhoto(photo.src);
+    const galleryPosts = featuredIn.length
+        ? featuredIn
+        : getPostsForGallery(photo.gallery.path.slice(1));
+    const relatedHeading = featuredIn.length ? 'Featured in' : 'Related reading';
 
     const imageObjectJsonLd = {
         '@context': 'https://schema.org',
@@ -158,6 +168,7 @@ const PhotoPage = () => {
                         : photo.caption && <p className="photo-caption">{photo.caption}</p>}
                     {exifLine && <p className="photo-exif">{exifLine}</p>}
                     {captureDate && <p className="photo-date">{captureDate}</p>}
+                    <RelatedReading posts={galleryPosts} heading={relatedHeading} />
                 </div>
 
                 <div className="photo-nav">

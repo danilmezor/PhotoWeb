@@ -211,3 +211,19 @@
         display: none;
     }
 }
+
+.blog-post-gallery-link {
+    margin: 2rem 0;
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+}
+
+.blog-post-gallery-link a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-secondary);
+}
+
+.blog-post-gallery-link a:hover {
+    border-bottom-color: var(--text-primary);
+}

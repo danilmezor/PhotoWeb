@@ -6,7 +6,8 @@ import Breadcrumb from '../components/Breadcrumb';
 import PhotoImage from '../components/PhotoImage';
 import MarkdownRenderer from '../components/MarkdownRenderer';
 import NewsletterForm from '../components/NewsletterForm';
-import { getPostBySlug } from '../utils/blogPosts';
+import { getPostBySlug, getGalleriesForPost } from '../utils/blogPosts';
+import { galleries } from '../utils/galleries';
 import { photoUrl } from '../utils/photoRegistry';
 import { SITE_AUTHOR, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/BlogPost.css';
@@ -131,6 +132,20 @@ const BlogPost = () => {
             <article className="blog-post-body">
                 <MarkdownRenderer content={body} assetBase={post.assetBase} />
             </article>
+
+            {/* Cluster link back to the gallery hub(s) this post's photos
+                come from — closes the blog → gallery → photo loop. */}
+            {getGalleriesForPost(post).map((slug) => {
+                const gallery = galleries.find((g) => g.slug === slug);
+                if (!gallery) return null;
+                return (
+                    <p key={slug} className="blog-post-gallery-link">
+                        <Link to={`/${slug}`}>
+                            See the full {gallery.title} photo gallery →
+                        </Link>
+                    </p>
+                );
+            })}
 
             <NewsletterForm variant="card" />
         </motion.div>

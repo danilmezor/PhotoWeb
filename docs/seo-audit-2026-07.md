@@ -118,6 +118,7 @@ Each post: named locations, practical logistics (light, access, timing), `:photo
 - ✅ Homepage title/description rewritten (this audit).
 - Homepage h1/prose — see technical backlog #4.
 - After GSC data arrives: rewrite titles of any page with impressions but position >20 toward the actual query phrasing (that's the highest-ROI title work; do it from data, not guesses).
+- ✅ **Topic-cluster cross-links** (implemented 2026-07-04): photo pages link their blog guide ("Featured in" when embedded, "Related reading" gallery-wide), gallery/trail pages surface their guides, posts link back to their gallery hub, and the homepage intro links all seven galleries + blog with descriptive anchors. All derived from the blog registry's `images` list (`getPostsForGallery`/`getPostsForPhoto`/`getGalleriesForPost` in `src/utils/blogPosts.js`) — future posts and annotations cross-link automatically.
 
 ## Off-site (sequenced, per existing strategy doc)
 

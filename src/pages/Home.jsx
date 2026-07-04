@@ -72,10 +72,14 @@ const Home = () => {
                 <section className="home-intro">
                     <h2 className="home-intro-title">Landscape &amp; travel photography of the American West</h2>
                     <p className="home-intro-text">
-                        I photograph the American West — the Grand Canyon from rim to river, Death Valley&apos;s
-                        salt flats and dunes, Lassen Volcanic&apos;s quiet corners, and a day-by-day photo diary
-                        from 24 days on the John Muir Trail. Alongside the wilderness work: cities at night,
-                        portraits, and live events. Every photo here was shot, edited, and written up by me.
+                        I photograph the American West — the <Link to="/grand-canyon">Grand Canyon</Link> from
+                        rim to river, <Link to="/death-valley">Death Valley</Link>&apos;s salt flats and dunes,{' '}
+                        <Link to="/lassen-volcanic">Lassen Volcanic</Link>&apos;s quiet corners, and a day-by-day
+                        photo diary from 24 days on the <Link to="/jmt">John Muir Trail</Link>. Alongside the
+                        wilderness work: <Link to="/cities">cities at night</Link>,{' '}
+                        <Link to="/people">portraits</Link>, and <Link to="/events">live events</Link>. Every
+                        photo here was shot, edited, and written up by me — field notes live on{' '}
+                        <Link to="/blog">the blog</Link>.
                     </p>
                 </section>
                 <motion.div

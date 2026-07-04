@@ -1,0 +1,29 @@
+.related-reading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 2px solid var(--text-secondary);
+    background: var(--bg-secondary);
+}
+
+.related-reading-heading {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.related-reading-link {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.related-reading-link:hover {
+    text-decoration: underline;
+}

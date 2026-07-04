@@ -4,6 +4,8 @@ import SEO from './SEO';
 import MasonryGallery from './MasonryGallery';
 import Breadcrumb from './Breadcrumb';
 import RelatedGalleries from './RelatedGalleries';
+import RelatedReading from './RelatedReading';
+import { getPostsForGallery } from '../utils/blogPosts';
 import { parseGeoJSON, generateSVGPath } from '../utils/geojsonParser';
 import '../styles/TrailPage.css';
 
@@ -49,6 +51,12 @@ const TrailPage = ({
                     <h1 className="trail-title">{title}</h1>
                     {blurb && (
                         <p style={{ lineHeight: '1.6', opacity: 0.85 }}>{blurb}</p>
+                    )}
+                    {relatedSlug && (
+                        <RelatedReading
+                            posts={getPostsForGallery(relatedSlug)}
+                            heading="Trail guide"
+                        />
                     )}
                     <svg
                         viewBox={`0 0 ${mapViewBox.width} ${mapViewBox.height}`}

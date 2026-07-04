@@ -52,3 +52,27 @@ const byDateDesc = (a, b) => (a.datePublished < b.datePublished ? 1 : a.datePubl
 export const getAllPosts = () => [...blogPosts].sort(byDateDesc);
 
 export const getPostBySlug = (slug) => blogPosts.find((post) => post.slug === slug) || null;
+
+// --- Cross-link derivation (topic clusters) ---------------------------------
+// A post's embedded gallery photos define which galleries and photo pages it
+// relates to — so photo pages, gallery pages, and posts cross-link
+// automatically as content is added, with no hand-maintained mapping.
+
+const galleryOfImage = (src) => {
+    const match = /^\/photos\/([^/]+)\//.exec(src || '');
+    return match ? match[1].toLowerCase() : null;
+};
+
+// Posts that embed at least one photo from the given gallery slug.
+export const getPostsForGallery = (slug) =>
+    getAllPosts().filter((post) =>
+        (post.images || []).some((src) => galleryOfImage(src) === slug)
+    );
+
+// Posts that embed this exact photo (for "Featured in" links on photo pages).
+export const getPostsForPhoto = (src) =>
+    getAllPosts().filter((post) => (post.images || []).includes(src));
+
+// Unique gallery slugs a post draws photos from (for post → gallery links).
+export const getGalleriesForPost = (post) =>
+    [...new Set((post.images || []).map(galleryOfImage).filter(Boolean))];

@@ -4,6 +4,8 @@ import SEO from '../components/SEO';
 import Gallery from '../components/Gallery';
 import Breadcrumb from '../components/Breadcrumb';
 import RelatedGalleries from '../components/RelatedGalleries';
+import RelatedReading from '../components/RelatedReading';
+import { getPostsForGallery } from '../utils/blogPosts';
 import { images } from '../utils/images';
 import { heroPhotos } from '../utils/hero';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
@@ -140,6 +142,9 @@ const CategoryPage = ({ category, title }) => {
             >
                 {metadata.description}
             </p>
+            <div style={{ maxWidth: '760px', margin: '0 auto' }}>
+                <RelatedReading posts={getPostsForGallery(category)} heading="Guides & field notes" />
+            </div>
             <Gallery photos={photos} />
             <RelatedGalleries currentSlug={category} />
         </motion.div>
