@@ -115,9 +115,10 @@ Validation performed after compression:
 Set:
 
 - `VITE_SITE_URL=https://danilzanozin.com`
-- `VERCEL_DEEP_CLONE=true`
 
-`VITE_SITE_URL` ensures generated sitemap and robots files use the real production domain. `VERCEL_DEEP_CLONE` gives the build full git history so `generate-seo-files.mjs` can derive real per-URL `<lastmod>` dates; without it every URL falls back to the build timestamp (the script warns when this happens).
+This ensures generated sitemap and robots files use the real production domain.
+
+Sitemap `<lastmod>` dates are git-derived and need full history, which Vercel's shallow clone lacks (`VERCEL_DEEP_CLONE` is not honored). Local builds compute them and write `scripts/seo/lastmod.generated.json` (committed); Vercel builds read that snapshot back. Consequence: run `npm run build` (or `npm run seo:generate`) locally and commit the refreshed snapshot as part of each content batch — which the batch workflow already does via the committed sitemap files.
 
 Related local template:
 
