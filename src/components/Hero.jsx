@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { heroPhotos } from '../utils/hero';
+import { largestWebp } from '../utils/imageVariants';
 import manifest from '../utils/photoManifest.generated.json' with { type: 'json' };
 import '../styles/Hero.css';
 
@@ -19,8 +20,7 @@ const heroBackgroundImage = (src) => {
     // 1x slot: largest available variant (capped at 1920w — never the
     // multi-MB full-size original); a photo with no variants is itself
     // small, so its full-size webp is fine.
-    const largeWidth = variants[variants.length - 1];
-    const largeWebp = largeWidth ? `${base}-${largeWidth}w.webp` : `${base}.webp`;
+    const largeWebp = largestWebp(src) || `${base}.webp`;
     // 0.5x slot: largest variant <= 1080, else whatever the 1x slot uses.
     const midWidth = [...variants].reverse().find((w) => w <= 1080);
     const midWebp = midWidth ? `${base}-${midWidth}w.webp` : largeWebp;

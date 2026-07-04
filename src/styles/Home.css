@@ -4,6 +4,25 @@
     margin-top: 20vh;
 }
 
+.home-intro {
+    max-width: 46rem;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.home-intro-title {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.home-intro-text {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
 .collections-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

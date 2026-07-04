@@ -1,5 +1,6 @@
-/* Google Fonts moved to index.html so it loads in parallel with this CSS,
-   not serialized behind it. See <link rel="stylesheet"> in <head>. */
+/* Fonts are self-hosted (public/fonts/) — no fonts.googleapis.com round
+   trips blocking first paint. Key faces are preloaded in index.html. */
+@import './styles/fonts.css';
 
 :root {
   /* Colors */

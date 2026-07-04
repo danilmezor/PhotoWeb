@@ -3,6 +3,7 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import PhotoImage from '../components/PhotoImage';
+import { buildVariantUrls } from '../utils/imageVariants';
 import Breadcrumb from '../components/Breadcrumb';
 import { getPhotoBySlug, getNeighbors, getNearbyPhotos, getSameLocationPhotos, photoUrl } from '../utils/photoRegistry';
 import { SITE_AUTHOR, SITE_NAME, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
@@ -54,6 +55,17 @@ const PhotoPage = () => {
     const captureDate = formatCaptureDate(photo.exif?.capturedAt);
     const path = photoUrl(slug);
 
+    // The photo is the LCP element and renders near full container width on
+    // every breakpoint (.photo-image is max-width:100% in an up-to-1800px
+    // stage) — the PhotoImage default of "33vw on desktop" undersizes it.
+    const heroSizes = '(max-width: 1024px) 95vw, 90vw';
+    const heroVariants = buildVariantUrls(photo.src);
+    // Preload href is the fallback for browsers without imagesrcset support —
+    // use the largest capped WebP, never the multi-MB original.
+    const heroPreloadHref = heroVariants
+        ? heroVariants.webp.split(', ').pop().split(' ')[0]
+        : photo.src;
+
     const imageObjectJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'ImageObject',
@@ -76,6 +88,7 @@ const PhotoPage = () => {
             '@type': 'Person',
             name: SITE_AUTHOR,
         },
+        dateCreated: photo.exif?.capturedAt || undefined,
         copyrightYear: photo.exif?.capturedAt?.slice(0, 4),
         copyrightNotice: `© ${photo.exif?.capturedAt?.slice(0, 4) || new Date().getFullYear()} ${SITE_AUTHOR}. All rights reserved.`,
         license: toAbsoluteUrl('/about'),
@@ -110,6 +123,11 @@ const PhotoPage = () => {
                 type="article"
                 jsonLd={[imageObjectJsonLd, breadcrumbsJsonLd]}
                 noindex={!photo.curated}
+                preload={{
+                    href: heroPreloadHref,
+                    imageSrcSet: heroVariants?.webp,
+                    imageSizes: heroVariants ? heroSizes : undefined,
+                }}
             />
 
             <Breadcrumb items={[
@@ -126,6 +144,7 @@ const PhotoPage = () => {
                         alt={photo.alt}
                         className="photo-image"
                         loading="eager"
+                        sizes={heroSizes}
                     />
                 </div>
 

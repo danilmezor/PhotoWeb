@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import ParallaxImage from '../components/ParallaxImage';
 import SEO from '../components/SEO';
-import { heroPhotos } from '../utils/hero';
+import { heroPhotos, firstHeroImage } from '../utils/hero';
 import {
     SITE_AUTHOR,
     SITE_DESCRIPTION,
@@ -25,7 +25,7 @@ const collections = [
 ];
 
 const Home = () => {
-    const homeDescription = 'Explore Danil Zanozin photography collections featuring landscapes, cities, people, events, and a visual diary from the John Muir Trail.';
+    const homeDescription = 'Landscape and travel photography of the American West by Danil Zanozin — the Grand Canyon, Death Valley, Lassen Volcanic, the Sierra Nevada, and a day-by-day John Muir Trail photo diary.';
     const socialImage = heroPhotos[0];
     const siteUrl = toAbsoluteUrl('/');
     const homeJsonLd = [
@@ -60,14 +60,24 @@ const Home = () => {
     return (
         <div>
             <SEO
-                title="Photography Portfolio"
+                title="Landscape & Travel Photography of the American West"
                 description={homeDescription}
                 path="/"
                 image={socialImage}
                 jsonLd={homeJsonLd}
+                preload={{ href: firstHeroImage() }}
             />
             <Hero />
             <div className="container home-container">
+                <section className="home-intro">
+                    <h2 className="home-intro-title">Landscape &amp; travel photography of the American West</h2>
+                    <p className="home-intro-text">
+                        I photograph the American West — the Grand Canyon from rim to river, Death Valley&apos;s
+                        salt flats and dunes, Lassen Volcanic&apos;s quiet corners, and a day-by-day photo diary
+                        from 24 days on the John Muir Trail. Alongside the wilderness work: cities at night,
+                        portraits, and live events. Every photo here was shot, edited, and written up by me.
+                    </p>
+                </section>
                 <motion.div
                     className="collections-grid"
                     initial={{ opacity: 0, y: 20 }}

@@ -1,4 +1,5 @@
 import { mkdir, writeFile } from 'node:fs/promises';
+import { execSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { images } from '../src/utils/images.js';
@@ -53,6 +54,114 @@ const resolveSiteUrl = () => {
 
 const siteUrl = resolveSiteUrl();
 const isoDate = new Date().toISOString();
+
+// --- Real per-URL <lastmod> from git history ---------------------------------
+// A single identical build timestamp on every URL teaches Google to ignore
+// lastmod entirely; content-true dates make recrawl prioritization work.
+// Falls back to the build timestamp when history is unavailable (shallow
+// clone) — on Vercel set VERCEL_DEEP_CLONE=true so full history is present.
+
+const fullHistoryAvailable = (() => {
+  try {
+    return (
+      execSync('git rev-parse --is-shallow-repository', { cwd: projectRoot, stdio: ['ignore', 'pipe', 'ignore'] })
+        .toString()
+        .trim() === 'false'
+    );
+  } catch {
+    return false;
+  }
+})();
+
+const gitDateCache = new Map();
+const gitDate = (args) => {
+  if (!fullHistoryAvailable) {
+    return null;
+  }
+  if (gitDateCache.has(args)) {
+    return gitDateCache.get(args);
+  }
+  let result = null;
+  try {
+    result =
+      execSync(`git log -1 --format=%cI ${args}`, { cwd: projectRoot, stdio: ['ignore', 'pipe', 'ignore'] })
+        .toString()
+        .trim() || null;
+  } catch {
+    result = null;
+  }
+  gitDateCache.set(args, result);
+  return result;
+};
+
+const CATEGORY_PATHS = [
+  '/landscapes',
+  '/cities',
+  '/people',
+  '/events',
+  '/death-valley',
+  '/grand-canyon',
+  '/lassen-volcanic',
+];
+
+const blogDates = new Map(
+  getAllPosts().map((post) => [`/blog/${post.slug}`, post.dateModified || post.datePublished])
+);
+const newestBlogDate = [...blogDates.values()].sort().pop();
+
+const lastmodFor = (route) => {
+  // Photo permalinks: the date the photo's annotation was added/last edited.
+  if (route.path.startsWith('/photo/') && route.image) {
+    return gitDate(`-S ${JSON.stringify(route.image)} -- src/utils/photoMeta.json`);
+  }
+  if (blogDates.has(route.path)) {
+    return blogDates.get(route.path);
+  }
+  if (route.path === '/blog') {
+    return newestBlogDate;
+  }
+  // Category galleries: the last time the category's photo files changed
+  // (images.js lists bare filenames, so the directory is the source of truth)
+  // or one of its photos' annotations changed in photoMeta.json.
+  if (CATEGORY_PATHS.includes(route.path)) {
+    const slug = route.path.slice(1);
+    const filesDate = gitDate(`-- ${JSON.stringify(`public/photos/${slug}`)}`);
+    const metaDate = gitDate(`-S ${JSON.stringify(`/photos/${slug}/`)} -- src/utils/photoMeta.json`);
+    return [filesDate, metaDate].filter(Boolean).sort().pop() || null;
+  }
+  if (route.path === '/jmt') {
+    return gitDate('-- src/utils/jmtData.js public/photos/JMT');
+  }
+  if (route.path === '/favorites') {
+    return gitDate('-- src/utils/favorites.js');
+  }
+  if (route.path === '/galleries') {
+    return gitDate('-- src/utils/galleries.js src/utils/images.js');
+  }
+  if (route.path === '/about') {
+    return gitDate('-- src/pages/About.jsx');
+  }
+  if (route.path === '/') {
+    return gitDate('-- src/utils/images.js src/utils/photoMeta.json src/utils/blogPosts.js src/pages/Home.jsx');
+  }
+  return null;
+};
+
+// Normalize date-only strings (blog registry) to full ISO; leave git's
+// ISO-with-offset untouched. Anything missing falls back to build time.
+const lastmodValue = (route) => {
+  const raw = lastmodFor(route);
+  if (!raw) {
+    return isoDate;
+  }
+  return /^\d{4}-\d{2}-\d{2}$/.test(raw) ? `${raw}T00:00:00Z` : raw;
+};
+
+if (!fullHistoryAvailable) {
+  console.warn(
+    '[seo] Full git history unavailable (shallow clone?) — sitemap lastmod falls back to build time. On Vercel set VERCEL_DEEP_CLONE=true.'
+  );
+}
 
 const routes = [...ALL_ROUTES, ...INDEXABLE_PHOTO_ROUTES];
 
@@ -128,7 +237,7 @@ ${routes
   .map(
     (route) => `  <url>
     <loc>${xmlEscape(toAbsoluteUrl(route.path))}</loc>
-    <lastmod>${isoDate}</lastmod>
+    <lastmod>${lastmodValue(route)}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
   </url>`

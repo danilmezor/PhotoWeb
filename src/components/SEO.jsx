@@ -32,6 +32,32 @@ const upsertCanonicalTag = (href) => {
   canonical.setAttribute('href', href);
 };
 
+// One preload link per page for the LCP image. Injected in the same effect
+// as the rest of the head tags, so the prerender bakes it into static HTML —
+// where it matters: on a first (non-SPA) load the browser's preload scanner
+// starts the hero fetch before CSS/JS finish. SPA navigations don't need it.
+const upsertPreloadTag = (preload) => {
+  document.head.querySelectorAll('link[data-seo-preload="true"]').forEach((node) => node.remove());
+
+  if (!preload?.href) {
+    return;
+  }
+
+  const link = document.createElement('link');
+  link.setAttribute('rel', 'preload');
+  link.setAttribute('as', 'image');
+  link.setAttribute('data-seo-preload', 'true');
+  link.setAttribute('fetchpriority', 'high');
+  link.setAttribute('href', preload.href);
+  if (preload.imageSrcSet) {
+    link.setAttribute('imagesrcset', preload.imageSrcSet);
+  }
+  if (preload.imageSizes) {
+    link.setAttribute('imagesizes', preload.imageSizes);
+  }
+  document.head.appendChild(link);
+};
+
 const normalizeJsonLd = (value) => {
   if (!value) {
     return [];
@@ -48,8 +74,10 @@ const SEO = ({
   type = 'website',
   jsonLd,
   noindex = false,
+  preload,
 }) => {
   const jsonLdKey = JSON.stringify(normalizeJsonLd(jsonLd));
+  const preloadKey = JSON.stringify(preload ?? null);
 
   useEffect(() => {
     const canonicalUrl = toAbsoluteUrl(path);
@@ -80,6 +108,7 @@ const SEO = ({
     upsertMetaTag('name', 'twitter:image', imageUrl);
 
     upsertCanonicalTag(canonicalUrl);
+    upsertPreloadTag(JSON.parse(preloadKey));
 
     document.querySelectorAll(JSON_LD_SELECTOR).forEach((node) => node.remove());
 
@@ -93,7 +122,7 @@ const SEO = ({
       script.textContent = JSON.stringify(entry);
       document.head.appendChild(script);
     });
-  }, [title, description, path, image, type, jsonLdKey, noindex]);
+  }, [title, description, path, image, type, jsonLdKey, noindex, preloadKey]);
 
   return null;
 };
