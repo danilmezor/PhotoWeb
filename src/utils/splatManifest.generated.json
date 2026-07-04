@@ -707,12 +707,6 @@
     "fov": 93.3,
     "sog": "/splats/landscapes/_AC16711.sog"
   },
-  "/photos/landscapes/_DSC0273.jpg": {
-    "bytes": 6971166,
-    "depth": "/depth/landscapes/_DSC0273.png",
-    "fov": 27.0,
-    "sog": "/splats/landscapes/_DSC0273.sog"
-  },
   "/photos/landscapes/_DSC0519.jpg": {
     "bytes": 6175827,
     "depth": "/depth/landscapes/_DSC0519.png",
@@ -797,17 +791,35 @@
     "fov": 53.1,
     "sog": "/splats/landscapes/_DSC6099.sog"
   },
+  "/photos/landscapes/_DSC6333-HDR.jpg": {
+    "bytes": 6842249,
+    "depth": "/depth/landscapes/_DSC6333-HDR.png",
+    "fov": 70.4,
+    "sog": "/splats/landscapes/_DSC6333-HDR.sog"
+  },
   "/photos/landscapes/_DSC7946-Edit.jpg": {
     "bytes": 5695919,
     "depth": "/depth/landscapes/_DSC7946-Edit.png",
     "fov": 71.6,
     "sog": "/splats/landscapes/_DSC7946-Edit.sog"
   },
+  "/photos/landscapes/_DSC8049-Edit-2.jpg": {
+    "bytes": 6099251,
+    "depth": "/depth/landscapes/_DSC8049-Edit-2.png",
+    "fov": 71.3,
+    "sog": "/splats/landscapes/_DSC8049-Edit-2.sog"
+  },
   "/photos/landscapes/_DSC8109-Edit.jpg": {
     "bytes": 6255497,
     "depth": "/depth/landscapes/_DSC8109-Edit.png",
     "fov": 96.7,
     "sog": "/splats/landscapes/_DSC8109-Edit.sog"
+  },
+  "/photos/landscapes/_DSC8268-Edit-Edit.jpg": {
+    "bytes": 6718032,
+    "depth": "/depth/landscapes/_DSC8268-Edit-Edit.png",
+    "fov": 53.1,
+    "sog": "/splats/landscapes/_DSC8268-Edit-Edit.sog"
   },
   "/photos/landscapes/njcRmx4hCQA.jpg": {
     "bytes": 6526180,

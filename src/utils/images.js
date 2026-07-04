@@ -58,14 +58,16 @@ const landscapeFiles = [
   "_AC16640-HDR.jpg",
   "_AC16669.jpg",
   "_AC16711.jpg",
-  "_DSC0273.jpg",
   "_DSC0519.jpg",
   "_DSC0869.jpg",
   "_DSC1471-Enhanced-NR.jpg",
   "_DSC4277-Edit.jpg",
   "_DSC5401.jpg",
+  "_DSC6333-HDR.jpg",
   "_DSC7946-Edit.jpg",
+  "_DSC8049-Edit-2.jpg",
   "_DSC8109-Edit.jpg",
+  "_DSC8268-Edit-Edit.jpg",
   "njcRmx4hCQA.jpg",
   "uFZYpJ8oVJQ.jpg"
 ];

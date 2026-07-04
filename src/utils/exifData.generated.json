@@ -980,15 +980,6 @@
     "lens": "17.0-35.0 mm f/2.8",
     "shutter": "2/5"
   },
-  "/photos/landscapes/_DSC0273.jpg": {
-    "aperture": "f/16",
-    "camera": "Nikon Z 7_2",
-    "capturedAt": "2025-05-23",
-    "focalLength": "50mm",
-    "iso": 400,
-    "lens": "50mm f/1.8G",
-    "shutter": "1/200"
-  },
   "/photos/landscapes/_DSC0519.jpg": {
     "aperture": "f/9",
     "camera": "Nikon Z 7_2",
@@ -1115,6 +1106,15 @@
     "lens": "NIKKOR Z 24-120mm f/4 S",
     "shutter": "1.0s"
   },
+  "/photos/landscapes/_DSC6333-HDR.jpg": {
+    "aperture": "f/13",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-03-27",
+    "focalLength": "17mm",
+    "iso": 640,
+    "lens": "17-35mm f/2.8D",
+    "shutter": "8.0s"
+  },
   "/photos/landscapes/_DSC7946-Edit.jpg": {
     "aperture": "f/14",
     "camera": "Nikon Z 7_2",
@@ -1124,6 +1124,15 @@
     "lens": "NIKKOR Z 24-120mm f/4 S",
     "shutter": "3.0s"
   },
+  "/photos/landscapes/_DSC8049-Edit-2.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-20",
+    "focalLength": "16mm",
+    "iso": 160,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "25s"
+  },
   "/photos/landscapes/_DSC8109-Edit.jpg": {
     "aperture": "f/11",
     "camera": "Nikon Z 7_2",
@@ -1132,6 +1141,15 @@
     "iso": 100,
     "lens": "NIKKOR Z 14-24mm f/2.8 S",
     "shutter": "1.0s"
+  },
+  "/photos/landscapes/_DSC8268-Edit-Edit.jpg": {
+    "aperture": "f/9",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-06-26",
+    "focalLength": "24mm",
+    "iso": 50,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "30s"
   },
   "/photos/lassen-volcanic/_DSC8357-Edit.jpg": {
     "aperture": "f/11",

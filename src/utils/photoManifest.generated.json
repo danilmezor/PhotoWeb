@@ -1128,15 +1128,6 @@
     ],
     "w": 2832
   },
-  "/photos/landscapes/_DSC0273.jpg": {
-    "h": 5504,
-    "variants": [
-      480,
-      1080,
-      1920
-    ],
-    "w": 8256
-  },
   "/photos/landscapes/_DSC0519.jpg": {
     "h": 6086,
     "variants": [
@@ -1263,6 +1254,15 @@
     ],
     "w": 7767
   },
+  "/photos/landscapes/_DSC6333-HDR.jpg": {
+    "h": 5363,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 8045
+  },
   "/photos/landscapes/_DSC7946-Edit.jpg": {
     "h": 7168,
     "variants": [
@@ -1272,6 +1272,15 @@
     ],
     "w": 5376
   },
+  "/photos/landscapes/_DSC8049-Edit-2.jpg": {
+    "h": 5106,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 8169
+  },
   "/photos/landscapes/_DSC8109-Edit.jpg": {
     "h": 7809,
     "variants": [
@@ -1280,6 +1289,15 @@
       1920
     ],
     "w": 5206
+  },
+  "/photos/landscapes/_DSC8268-Edit-Edit.jpg": {
+    "h": 5504,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 8256
   },
   "/photos/landscapes/njcRmx4hCQA.jpg": {
     "h": 2160,
