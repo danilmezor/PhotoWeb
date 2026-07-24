@@ -6,6 +6,10 @@
 }
 
 .trail-sidebar {
+    /* Full-height fixed column laid out top → bottom: head (title + blurb)
+       pinned below the navbar, map centered in the flexible middle, foot
+       (stats then guide) pinned at the bottom. Scrolls internally only if a
+       long guide + tall map can't fit. */
     width: 20%;
     min-width: 280px;
     height: 100vh;
@@ -13,42 +17,60 @@
     top: 0;
     left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: var(--navbar-height);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: calc(var(--navbar-height) + 1.5rem) 1.25rem 1.75rem;
     border-right: 1px solid #222;
     background-color: var(--bg-primary);
     z-index: 10;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.trail-head {
+    flex: 0 0 auto;
 }
 
 .trail-title {
     /* Promoted from <h2> to <h1> for one-h1-per-page; keep the old visual size. */
     font-size: 1.5rem;
-    margin: 0 0 0.83em;
+    margin: 0 0 0.6em;
 }
 
-.trail-map-container {
-    text-align: center;
-    width: 90%;
-    padding: 1rem;
+.trail-blurb {
+    line-height: 1.6;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.trail-map-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
 }
 
 .trail-map-svg {
-    height: 60vh;
-    width: auto;
-    max-width: 100%;
-    margin: 2rem 0;
+    /* preserveAspectRatio="xMidYMid meet" fits and centers the route inside
+       this box regardless of orientation — no per-trail sizing needed. */
+    width: 100%;
+    height: 100%;
     overflow: visible;
+}
+
+.trail-foot {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .trail-stats {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 1rem;
     color: #888;
     font-size: 0.8rem;
     text-transform: uppercase;

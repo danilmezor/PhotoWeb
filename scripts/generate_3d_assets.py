@@ -61,7 +61,10 @@ from PIL import Image
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 SHARP_BIN = Path('/opt/anaconda3/envs/sharp-env/bin/sharp')
-SPLAT_TRANSFORM_PKG = '@playcanvas/splat-transform'
+# Pinned: v3.0.0 renamed -F/--decimate to -d and forbids decimating straight
+# to .sog, breaking this pipeline. 2.5.2 matches the CLI syntax below and the
+# SOG format of the already-committed assets (frontend runs playcanvas 2.x).
+SPLAT_TRANSFORM_PKG = '@playcanvas/splat-transform@2.5.2'
 
 SPLATS_DIR = PROJECT_ROOT / 'public/splats'
 DEPTH_DIR = PROJECT_ROOT / 'public/depth'

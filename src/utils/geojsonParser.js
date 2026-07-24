@@ -36,8 +36,13 @@ export const parseGeoJSON = async (url) => {
     }
 };
 
-export const generateSVGPath = (points, width, height) => {
-    if (points.length === 0) return "";
+// Project the trail to an SVG path that preserves the route's real-world
+// proportions. Returns { d, width, height } — the caller sets the SVG viewBox
+// to width×height so the shape is never stretched to fit a fixed aspect box.
+// A wide east-west trail stays wide; a tall north-south trail stays tall.
+export const generateSVGPath = (points, padding = 20) => {
+    const empty = { d: "", width: 0, height: 0 };
+    if (points.length === 0) return empty;
 
     // Find bounds
     let minLat = Infinity, maxLat = -Infinity, minLon = Infinity, maxLon = -Infinity;
@@ -48,21 +53,30 @@ export const generateSVGPath = (points, width, height) => {
         if (p.lon > maxLon) maxLon = p.lon;
     });
 
-    const latRange = maxLat - minLat;
-    const lonRange = maxLon - minLon;
+    // Equirectangular projection: at this latitude a degree of longitude spans
+    // less ground than a degree of latitude, so compress lon by cos(lat) to
+    // keep the aspect ratio true (otherwise an E-W trail looks stretched).
+    const midLat = (minLat + maxLat) / 2;
+    const lonScale = Math.cos((midLat * Math.PI) / 180);
+    const projWidth = (maxLon - minLon) * lonScale;
+    const projHeight = maxLat - minLat;
+    if (projWidth === 0 && projHeight === 0) return empty;
 
-    // Add some padding
-    const padding = 20;
-    const drawWidth = width - padding * 2;
-    const drawHeight = height - padding * 2;
+    // Normalize the longer side to a fixed unit count; the viewBox scales to fit.
+    const SCALE = 1000 / Math.max(projWidth, projHeight);
+    const drawWidth = projWidth * SCALE;
+    const drawHeight = projHeight * SCALE;
 
-    // Normalize points to SVG coordinates
-    // Note: Latitude increases upwards (Y decreases in SVG), Longitude increases rightwards (X increases in SVG)
+    // Latitude increases upwards (Y decreases in SVG); longitude rightwards.
     const svgPoints = points.map(p => {
-        const x = padding + ((p.lon - minLon) / lonRange) * drawWidth;
-        const y = height - (padding + ((p.lat - minLat) / latRange) * drawHeight); // Flip Y for SVG
-        return `${x},${y}`;
+        const x = padding + (p.lon - minLon) * lonScale * SCALE;
+        const y = padding + (maxLat - p.lat) * SCALE; // Flip Y for SVG
+        return `${x.toFixed(2)},${y.toFixed(2)}`;
     });
 
-    return `M ${svgPoints.join(" L ")}`;
+    return {
+        d: `M ${svgPoints.join(" L ")}`,
+        width: +(drawWidth + padding * 2).toFixed(2),
+        height: +(drawHeight + padding * 2).toFixed(2),
+    };
 };

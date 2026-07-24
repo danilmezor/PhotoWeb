@@ -102,6 +102,7 @@ const CATEGORY_PATHS = [
   '/death-valley',
   '/grand-canyon',
   '/lassen-volcanic',
+  '/yosemite',
 ];
 
 const blogDates = new Map(
@@ -131,6 +132,9 @@ const lastmodFor = (route) => {
   }
   if (route.path === '/jmt') {
     return gitDate('-- src/utils/jmtData.js public/photos/JMT');
+  }
+  if (route.path === '/hst') {
+    return gitDate('-- src/utils/images.js public/photos/HST');
   }
   if (route.path === '/favorites') {
     return gitDate('-- src/utils/favorites.js');
@@ -210,7 +214,10 @@ const routeImageMap = {
   '/events': images.events.map((photo) => photo.src),
   '/death-valley': images['death-valley'].map((photo) => photo.src),
   '/grand-canyon': images['grand-canyon'].map((photo) => photo.src),
+  '/lassen-volcanic': images['lassen-volcanic'].map((photo) => photo.src),
+  '/yosemite': images.yosemite.map((photo) => photo.src),
   '/jmt': jmtData.flatMap((day) => day.images),
+  '/hst': images.HST.map((photo) => photo.src),
 };
 
 // Each curated photo permalink lists only its own image. (Un-curated photo

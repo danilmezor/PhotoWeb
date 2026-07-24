@@ -21,6 +21,8 @@ const CATEGORY_GALLERIES = [
     { slug: 'death-valley', title: 'Death Valley', path: '/death-valley', key: 'death-valley' },
     { slug: 'grand-canyon', title: 'Grand Canyon', path: '/grand-canyon', key: 'grand-canyon' },
     { slug: 'lassen-volcanic', title: 'Lassen Volcanic', path: '/lassen-volcanic', key: 'lassen-volcanic' },
+    { slug: 'yosemite', title: 'Yosemite', path: '/yosemite', key: 'yosemite' },
+    { slug: 'hst', title: 'High Sierra Trail', path: '/hst', key: 'HST' },
 ];
 
 // Build a slug for a single photo within a gallery.

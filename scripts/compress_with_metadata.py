@@ -62,6 +62,8 @@ SOURCE_DIRS_BY_CATEGORY: dict[str, list[Path]] = {
     'people':       [PROJECT_ROOT / 'pictures/people'],
     'events':       [PROJECT_ROOT / 'pictures/events'],
     'JMT':          [PROJECT_ROOT / 'pictures/JMT'],
+    'HST':          [Path.home() / 'Pictures/HST'],
+    'yosemite':     [Path.home() / 'Pictures/Yosemite/prod'],
     'death-valley': [Path.home() / 'Pictures/DeathValley'],
     'grand-canyon': [Path.home() / 'Pictures/GrandCanyon'],
     'lassen-volcanic': [Path.home() / 'Pictures/LassenVolcanic'],

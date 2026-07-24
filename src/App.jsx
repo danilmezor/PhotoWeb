@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import About from './pages/About';
 import JMTPage from './pages/JMTPage';
+import HSTPage from './pages/HSTPage';
 import GrandCanyonPage from './pages/GrandCanyonPage';
 import Favorites from './pages/Favorites';
 import Galleries from './pages/Galleries';
@@ -46,8 +47,10 @@ const AnimatedRoutes = () => {
           <Route path="/events" element={<CategoryPage category="events" title="Events" />} />
           <Route path="/death-valley" element={<CategoryPage category="death-valley" title="Death Valley" />} />
           <Route path="/lassen-volcanic" element={<CategoryPage category="lassen-volcanic" title="Lassen Volcanic" />} />
+          <Route path="/yosemite" element={<CategoryPage category="yosemite" title="Yosemite" />} />
           <Route path="/grand-canyon" element={<GrandCanyonPage />} />
           <Route path="/jmt" element={<JMTPage />} />
+          <Route path="/hst" element={<HSTPage />} />
           <Route path="/photo/:slug" element={<PhotoPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />

@@ -54,11 +54,25 @@ export const galleries = [
         relatedSlugs: ['death-valley', 'grand-canyon', 'jmt'],
     },
     {
+        slug: 'yosemite',
+        title: 'Yosemite',
+        path: '/yosemite',
+        cover: images.yosemite[0]?.src,
+        relatedSlugs: ['landscapes', 'jmt', 'hst'],
+    },
+    {
         slug: 'jmt',
         title: 'JMT',
         path: '/jmt',
         cover: jmtCover,
-        relatedSlugs: ['grand-canyon', 'death-valley', 'lassen-volcanic'],
+        relatedSlugs: ['hst', 'grand-canyon', 'death-valley'],
+    },
+    {
+        slug: 'hst',
+        title: 'High Sierra Trail',
+        path: '/hst',
+        cover: images.HST[0]?.src,
+        relatedSlugs: ['jmt', 'grand-canyon', 'landscapes'],
     },
 ];
 

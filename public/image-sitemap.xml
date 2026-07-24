@@ -51,7 +51,7 @@
   <url>
     <loc>https://danilzanozin.com/favorites</loc>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16711.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_AC16711.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC8109-Edit.jpg</image:loc>
@@ -95,6 +95,18 @@
     <image:image>
       <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0054-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0263-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9663-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9497-HDR-Edit-2.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://danilzanozin.com/galleries</loc>
@@ -120,7 +132,13 @@
       <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8357-Edit.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9228.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC1510.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9760-HDR-Edit.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -142,18 +160,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16617.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16640-HDR.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16669.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16711.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0519.jpg</image:loc>
@@ -412,6 +418,66 @@
     </image:image>
   </url>
   <url>
+    <loc>https://danilzanozin.com/lassen-volcanic</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8357-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8392.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8413-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8450-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8632-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8756-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8791-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC8970-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/lassen-volcanic/_DSC9002-HDR-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/yosemite</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9228.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9351.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9410.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9497-HDR-Edit-2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9604-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9663-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_AC16640-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_AC16669.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/yosemite/_AC16711.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://danilzanozin.com/jmt</loc>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC1510.jpg</image:loc>
@@ -553,6 +619,45 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC4063-Enhanced-NR.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/hst</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9760-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9765-HDR.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9825-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9860.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9957.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC9970.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0054-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0181.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0221.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0238-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0263-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/HST/_DSC0293.jpg</image:loc>
     </image:image>
   </url>
   <url>

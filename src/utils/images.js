@@ -26,10 +26,10 @@ const formatCategoryLabel = (category) => (
     .replace(/\b\w/g, (letter) => letter.toUpperCase())
 );
 
-const mapCategoryFiles = (category, files) =>
+const mapCategoryFiles = (category, files, label) =>
   files.map((fileName, index) => {
     const serial = formatTitle(fileName);
-    const categoryLabel = formatCategoryLabel(category);
+    const categoryLabel = label || formatCategoryLabel(category);
     const src = buildPhotoSrc(category, fileName);
     const meta = metaFor(src);
     const caption = meta?.alt || null;
@@ -54,10 +54,6 @@ const landscapeFiles = [
   "_AC16043.jpg",
   "_AC16126.jpg",
   "_AC16128-HDR.jpg",
-  "_AC16617.jpg",
-  "_AC16640-HDR.jpg",
-  "_AC16669.jpg",
-  "_AC16711.jpg",
   "_DSC0519.jpg",
   "_DSC0869.jpg",
   "_DSC1471-Enhanced-NR.jpg",
@@ -161,6 +157,32 @@ const lassenVolcanicFiles = [
   "_DSC9002-HDR-Edit.jpg"
 ];
 
+const yosemiteFiles = [
+  "_DSC9228.jpg",
+  "_DSC9351.jpg",
+  "_DSC9410.jpg",
+  "_DSC9497-HDR-Edit-2.jpg",
+  "_DSC9604-HDR-Edit.jpg",
+  "_DSC9663-HDR-Edit.jpg",
+  "_AC16640-HDR.jpg",
+  "_AC16669.jpg",
+  "_AC16711.jpg"
+];
+const hstFiles = [
+  "_DSC9760-HDR-Edit.jpg",
+  "_DSC9765-HDR.jpg",
+  "_DSC9825-Edit.jpg",
+  "_DSC9860.jpg",
+  "_DSC9957.jpg",
+  "_DSC9970.jpg",
+  "_DSC0054-Edit.jpg",
+  "_DSC0181.jpg",
+  "_DSC0221.jpg",
+  "_DSC0238-Edit.jpg",
+  "_DSC0263-Edit.jpg",
+  "_DSC0293.jpg"
+];
+
 export const images = {
   landscapes: mapCategoryFiles('landscapes', landscapeFiles),
   cities: mapCategoryFiles('cities', cityFiles),
@@ -169,6 +191,8 @@ export const images = {
   'death-valley': mapCategoryFiles('death-valley', deathValleyFiles),
   'grand-canyon': mapCategoryFiles('grand-canyon', grandCanyonFiles),
   'lassen-volcanic': mapCategoryFiles('lassen-volcanic', lassenVolcanicFiles),
+  yosemite: mapCategoryFiles('yosemite', yosemiteFiles),
+  HST: mapCategoryFiles('HST', hstFiles, 'High Sierra Trail'),
   jmt: [
     {
       id: 1,

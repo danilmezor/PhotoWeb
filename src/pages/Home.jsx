@@ -20,8 +20,10 @@ const collections = [
     { id: 'people', title: 'People', image: '/photos/people/81dJdwzh6qQ.jpg', link: '/people' },
     { id: 'events', title: 'Events', image: '/photos/events/_AC17417.jpg', link: '/events' },
     { id: 'jmt', title: 'JMT', image: '/photos/JMT/_DSC3151-HDR.jpg', link: '/jmt', fullWidth: true },
+    { id: 'hst', title: 'High Sierra Trail', image: '/photos/HST/_DSC9760-HDR-Edit.jpg', link: '/hst', fullWidth: true },
     { id: 'grand-canyon', title: 'Grand Canyon', image: '/photos/grand-canyon/_DSC7748.jpg', link: '/grand-canyon', fullWidth: true },
     { id: 'death-valley', title: 'Death Valley', image: '/photos/death-valley/_DSC5828.jpg', link: '/death-valley', fullWidth: true },
+    { id: 'yosemite', title: 'Yosemite', image: '/photos/yosemite/_DSC9663-HDR-Edit.jpg', link: '/yosemite', fullWidth: true },
 ];
 
 const Home = () => {

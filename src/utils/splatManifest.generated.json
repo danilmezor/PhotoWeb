@@ -1,4 +1,76 @@
 {
+  "/photos/HST/_DSC0054-Edit.jpg": {
+    "bytes": 6441330,
+    "depth": "/depth/HST/_DSC0054-Edit.png",
+    "fov": 77.6,
+    "sog": "/splats/HST/_DSC0054-Edit.sog"
+  },
+  "/photos/HST/_DSC0181.jpg": {
+    "bytes": 6226896,
+    "depth": "/depth/HST/_DSC0181.png",
+    "fov": 27.1,
+    "sog": "/splats/HST/_DSC0181.sog"
+  },
+  "/photos/HST/_DSC0221.jpg": {
+    "bytes": 6640195,
+    "depth": "/depth/HST/_DSC0221.png",
+    "fov": 30.0,
+    "sog": "/splats/HST/_DSC0221.sog"
+  },
+  "/photos/HST/_DSC0238-Edit.jpg": {
+    "bytes": 6819524,
+    "depth": "/depth/HST/_DSC0238-Edit.png",
+    "fov": 11.2,
+    "sog": "/splats/HST/_DSC0238-Edit.sog"
+  },
+  "/photos/HST/_DSC0263-Edit.jpg": {
+    "bytes": 6348987,
+    "depth": "/depth/HST/_DSC0263-Edit.png",
+    "fov": 65.3,
+    "sog": "/splats/HST/_DSC0263-Edit.sog"
+  },
+  "/photos/HST/_DSC0293.jpg": {
+    "bytes": 6153173,
+    "depth": "/depth/HST/_DSC0293.png",
+    "fov": 71.6,
+    "sog": "/splats/HST/_DSC0293.sog"
+  },
+  "/photos/HST/_DSC9760-HDR-Edit.jpg": {
+    "bytes": 6595361,
+    "depth": "/depth/HST/_DSC9760-HDR-Edit.png",
+    "fov": 102.1,
+    "sog": "/splats/HST/_DSC9760-HDR-Edit.sog"
+  },
+  "/photos/HST/_DSC9765-HDR.jpg": {
+    "bytes": 6636295,
+    "depth": "/depth/HST/_DSC9765-HDR.png",
+    "fov": 71.6,
+    "sog": "/splats/HST/_DSC9765-HDR.sog"
+  },
+  "/photos/HST/_DSC9825-Edit.jpg": {
+    "bytes": 6544887,
+    "depth": "/depth/HST/_DSC9825-Edit.png",
+    "fov": 81.3,
+    "sog": "/splats/HST/_DSC9825-Edit.sog"
+  },
+  "/photos/HST/_DSC9860.jpg": {
+    "bytes": 6299742,
+    "depth": "/depth/HST/_DSC9860.png",
+    "fov": 70.3,
+    "sog": "/splats/HST/_DSC9860.sog"
+  },
+  "/photos/HST/_DSC9957.jpg": {
+    "bytes": 6796681,
+    "depth": "/depth/HST/_DSC9957.png",
+    "fov": 3.9,
+    "sog": "/splats/HST/_DSC9957.sog"
+  },
+  "/photos/HST/_DSC9970.jpg": {
+    "bytes": 6047958,
+    "depth": "/depth/HST/_DSC9970.png",
+    "fov": 71.6,
+    "sog": "/splats/HST/_DSC9970.sog"
+  },
   "/photos/JMT/_DSC1510.jpg": {
     "bytes": 7000790,
     "depth": "/depth/JMT/_DSC1510.png",
@@ -683,30 +755,6 @@
     "fov": 54.5,
     "sog": "/splats/landscapes/_AC16437-HDR.sog"
   },
-  "/photos/landscapes/_AC16617.jpg": {
-    "bytes": 6508772,
-    "depth": "/depth/landscapes/_AC16617.png",
-    "fov": 93.3,
-    "sog": "/splats/landscapes/_AC16617.sog"
-  },
-  "/photos/landscapes/_AC16640-HDR.jpg": {
-    "bytes": 6564126,
-    "depth": "/depth/landscapes/_AC16640-HDR.png",
-    "fov": 93.3,
-    "sog": "/splats/landscapes/_AC16640-HDR.sog"
-  },
-  "/photos/landscapes/_AC16669.jpg": {
-    "bytes": 6456055,
-    "depth": "/depth/landscapes/_AC16669.png",
-    "fov": 70.4,
-    "sog": "/splats/landscapes/_AC16669.sog"
-  },
-  "/photos/landscapes/_AC16711.jpg": {
-    "bytes": 6111791,
-    "depth": "/depth/landscapes/_AC16711.png",
-    "fov": 93.3,
-    "sog": "/splats/landscapes/_AC16711.sog"
-  },
   "/photos/landscapes/_DSC0519.jpg": {
     "bytes": 6175827,
     "depth": "/depth/landscapes/_DSC0519.png",
@@ -970,5 +1018,59 @@
     "depth": "/depth/people/zVkEZWxRSrU.png",
     "fov": 62.0,
     "sog": "/splats/people/zVkEZWxRSrU.sog"
+  },
+  "/photos/yosemite/_AC16640-HDR.jpg": {
+    "bytes": 6564126,
+    "depth": "/depth/yosemite/_AC16640-HDR.png",
+    "fov": 93.3,
+    "sog": "/splats/yosemite/_AC16640-HDR.sog"
+  },
+  "/photos/yosemite/_AC16669.jpg": {
+    "bytes": 6479902,
+    "depth": "/depth/yosemite/_AC16669.png",
+    "fov": 70.4,
+    "sog": "/splats/yosemite/_AC16669.sog"
+  },
+  "/photos/yosemite/_AC16711.jpg": {
+    "bytes": 6102145,
+    "depth": "/depth/yosemite/_AC16711.png",
+    "fov": 93.3,
+    "sog": "/splats/yosemite/_AC16711.sog"
+  },
+  "/photos/yosemite/_DSC9228.jpg": {
+    "bytes": 6655861,
+    "depth": "/depth/yosemite/_DSC9228.png",
+    "fov": 13.6,
+    "sog": "/splats/yosemite/_DSC9228.sog"
+  },
+  "/photos/yosemite/_DSC9351.jpg": {
+    "bytes": 6190044,
+    "depth": "/depth/yosemite/_DSC9351.png",
+    "fov": 12.9,
+    "sog": "/splats/yosemite/_DSC9351.sog"
+  },
+  "/photos/yosemite/_DSC9410.jpg": {
+    "bytes": 6253793,
+    "depth": "/depth/yosemite/_DSC9410.png",
+    "fov": 58.3,
+    "sog": "/splats/yosemite/_DSC9410.sog"
+  },
+  "/photos/yosemite/_DSC9497-HDR-Edit-2.jpg": {
+    "bytes": 6761466,
+    "depth": "/depth/yosemite/_DSC9497-HDR-Edit-2.png",
+    "fov": 18.2,
+    "sog": "/splats/yosemite/_DSC9497-HDR-Edit-2.sog"
+  },
+  "/photos/yosemite/_DSC9604-HDR-Edit.jpg": {
+    "bytes": 6441148,
+    "depth": "/depth/yosemite/_DSC9604-HDR-Edit.png",
+    "fov": 53.1,
+    "sog": "/splats/yosemite/_DSC9604-HDR-Edit.sog"
+  },
+  "/photos/yosemite/_DSC9663-HDR-Edit.jpg": {
+    "bytes": 6629936,
+    "depth": "/depth/yosemite/_DSC9663-HDR-Edit.png",
+    "fov": 84.7,
+    "sog": "/splats/yosemite/_DSC9663-HDR-Edit.sog"
   }
 }

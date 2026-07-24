@@ -6,7 +6,7 @@ export const SITE_AUTHOR = 'Danil Zanozin';
 
 // Routes that render TrailPage's fixed left sidebar — these hide the footer
 // (App) and center the navbar logo over the sidebar column (Navbar).
-export const TRAIL_PAGES = ['/jmt', '/grand-canyon'];
+export const TRAIL_PAGES = ['/jmt', '/hst', '/grand-canyon'];
 
 export const SOCIAL_PROFILES = [
   'https://danilzanozin.dev',

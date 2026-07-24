@@ -41,6 +41,11 @@ const categoryMetadata = {
         seoTitle: 'Lassen Volcanic National Park Photography',
         description: 'Lassen Volcanic National Park photography — steaming hydrothermal basins, the bulk of Lassen Peak, alpine lakes, and volcanic terrain in California\'s southern Cascades.',
     },
+    yosemite: {
+        path: '/yosemite',
+        seoTitle: 'Yosemite National Park Photography',
+        description: 'Yosemite National Park photography — granite domes and walls, high-country meadows and lakes, waterfalls, and alpine light across the Sierra Nevada.',
+    },
 };
 
 const CategoryPage = ({ category, title }) => {
