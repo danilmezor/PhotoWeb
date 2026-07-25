@@ -11,6 +11,57 @@
 
 export const blogPosts = [
     {
+        slug: 'high-sierra-trail-photography',
+        title: 'High Sierra Trail: A Photographer’s Guide to Crescent Meadow and Mount Whitney',
+        description:
+            'A photographer’s guide to hiking the High Sierra Trail — our 7-day itinerary from Crescent Meadow to Whitney Portal, how the permits really work, the elevation profile, Hamilton Lake and Kaweah Gap, the Kern canyon, and shooting sunrise from the summit of Mount Whitney.',
+        excerpt:
+            'Seventy-two miles from Crescent Meadow to Mount Whitney with ten pounds of camera gear — our day-by-day itinerary, why walk-up permits beat the online lottery, and why the hardest day wasn’t the one with the mountain on it.',
+        datePublished: '2026-07-25',
+        dateModified: '2026-07-25',
+        heroImage: '/photos/HST/_DSC9825-Edit.jpg',
+        heroSlug: 'hst-dsc9825',
+        ogImage: '/photos/HST/_DSC9825-Edit.jpg',
+        tags: [
+            'High Sierra Trail',
+            'Mount Whitney',
+            'Sequoia National Park',
+            'landscape photography',
+            'backpacking',
+            'Sierra Nevada',
+        ],
+        assetBase: '/blog/high-sierra-trail-photography',
+        images: [
+            // Gallery frames embedded via :photo (link through to their /photo pages)
+            '/photos/HST/_DSC9825-Edit.jpg',
+            '/photos/HST/_DSC9760-HDR-Edit.jpg',
+            '/photos/HST/_DSC9765-HDR.jpg',
+            '/photos/HST/_DSC9860.jpg',
+            '/photos/HST/_DSC9970.jpg',
+            '/photos/HST/_DSC9957.jpg',
+            '/photos/HST/_DSC0054-Edit.jpg',
+            '/photos/HST/_DSC0181.jpg',
+            '/photos/HST/_DSC0221.jpg',
+            '/photos/HST/_DSC0238-Edit.jpg',
+            '/photos/HST/_DSC0263-Edit.jpg',
+            '/photos/HST/_DSC0293.jpg',
+            // Blog-local images (phone shots, documentary frames, route graphics)
+            '/blog/high-sierra-trail-photography/high-sierra-trail-crescent-meadow-trailhead-sign.jpg',
+            '/blog/high-sierra-trail-photography/high-sierra-trail-route-map.jpg',
+            '/blog/high-sierra-trail-photography/high-sierra-trail-elevation-profile.jpg',
+            '/blog/high-sierra-trail-photography/bearpaw-meadow-black-bear.jpg',
+            '/blog/high-sierra-trail-photography/high-sierra-trail-yellow-bellied-marmot.jpg',
+            '/blog/high-sierra-trail-photography/hamilton-lake-camera-tripod-driftwood.jpg',
+            '/blog/high-sierra-trail-photography/precipice-lake-high-sierra-trail.jpg',
+            '/blog/high-sierra-trail-photography/moraine-lake-high-sierra-trail.jpg',
+            '/blog/high-sierra-trail-photography/big-arroyo-camp-tripod-creek.jpg',
+            '/blog/high-sierra-trail-photography/kern-canyon-burned-forest-hiker.jpg',
+            '/blog/high-sierra-trail-photography/kern-river-canyon-burn-scar.jpg',
+            '/blog/high-sierra-trail-photography/kern-canyon-rattlesnake.jpg',
+            '/blog/high-sierra-trail-photography/mount-whitney-summit-sign-sunrise.jpg',
+        ],
+    },
+    {
         slug: 'grand-canyon-rim-to-rim',
         title: 'Grand Canyon Rim-to-Rim: A Photographer’s Guide to Hiking and Shooting Both Rims',
         description:

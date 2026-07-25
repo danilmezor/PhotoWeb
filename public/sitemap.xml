@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danilzanozin.com/</loc>
-    <lastmod>2026-07-04T12:24:43-07:00</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://danilzanozin.com/favorites</loc>
-    <lastmod>2026-07-02T18:39:11-07:00</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://danilzanozin.com/galleries</loc>
-    <lastmod>2026-07-04T12:24:43-07:00</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://danilzanozin.com/landscapes</loc>
-    <lastmod>2026-07-04T12:24:43-07:00</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://danilzanozin.com/yosemite</loc>
-    <lastmod>2026-07-24T21:00:00.184Z</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://danilzanozin.com/hst</loc>
-    <lastmod>2026-07-04T12:24:43-07:00</lastmod>
+    <lastmod>2026-07-24T14:07:54-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -86,9 +86,15 @@
   </url>
   <url>
     <loc>https://danilzanozin.com/blog</loc>
-    <lastmod>2026-06-09T00:00:00Z</lastmod>
+    <lastmod>2026-07-25T00:00:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/blog/high-sierra-trail-photography</loc>
+    <lastmod>2026-07-25T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://danilzanozin.com/blog/grand-canyon-rim-to-rim</loc>
@@ -195,6 +201,78 @@
   <url>
     <loc>https://danilzanozin.com/photo/grand-canyon-dsc7793</loc>
     <lastmod>2026-06-13T13:49:05-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9760</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9765</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9825</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9860</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9957</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc9970</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0054</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0181</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0221</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0238</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0263</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/hst-dsc0293</loc>
+    <lastmod>2026-07-25T23:06:01.305Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

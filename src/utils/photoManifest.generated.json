@@ -78,6 +78,111 @@
     ],
     "w": 2048
   },
+  "/blog/high-sierra-trail-photography/bearpaw-meadow-black-bear.jpg": {
+    "h": 1206,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1206
+  },
+  "/blog/high-sierra-trail-photography/big-arroyo-camp-tripod-creek.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/high-sierra-trail-photography/hamilton-lake-camera-tripod-driftwood.jpg": {
+    "h": 1280,
+    "variants": [
+      480
+    ],
+    "w": 960
+  },
+  "/blog/high-sierra-trail-photography/high-sierra-trail-crescent-meadow-trailhead-sign.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1114
+  },
+  "/blog/high-sierra-trail-photography/high-sierra-trail-elevation-profile.jpg": {
+    "h": 999,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
+  "/blog/high-sierra-trail-photography/high-sierra-trail-route-map.jpg": {
+    "h": 864,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1752
+  },
+  "/blog/high-sierra-trail-photography/high-sierra-trail-yellow-bellied-marmot.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1536
+  },
+  "/blog/high-sierra-trail-photography/kern-canyon-burned-forest-hiker.jpg": {
+    "h": 960,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/high-sierra-trail-photography/kern-canyon-rattlesnake.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/high-sierra-trail-photography/kern-river-canyon-burn-scar.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1365
+  },
+  "/blog/high-sierra-trail-photography/moraine-lake-high-sierra-trail.jpg": {
+    "h": 2048,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1536
+  },
+  "/blog/high-sierra-trail-photography/mount-whitney-summit-sign-sunrise.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/high-sierra-trail-photography/precipice-lake-high-sierra-trail.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 2048
+  },
   "/photos/HST/_DSC0054-Edit.jpg": {
     "h": 5478,
     "variants": [

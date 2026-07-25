@@ -1,19 +1,172 @@
 {
-    "/photos/landscapes/_DSC8109-Edit.jpg": {
-        "title": "Light in the Hollow",
-        "alt": "Early-morning light streaming through the sea cave at El Matador Beach, god rays catching in the fog above a low-tide shoreline.",
-        "story": "I planned this around the conditions — a low tide to expose El Matador's famous sea cave, and fog so the first light would hang in the air as visible streaks. The dynamic range was brutal, the bright cave mouth against the dark rock, so I blended two exposures to hold it all.",
-        "location": "El Matador State Beach, Malibu, California",
+    "/photos/HST/_DSC0054-Edit.jpg": {
+        "title": "Starlight on the Slabs",
+        "alt": "Creek running over granite slabs in the Big Arroyo beneath a deep blue star-lit sky, Sequoia National Park.",
+        "story": "This one took hours and three separate takes — a golden hour version, a blue hour version, and an astro version once it was properly dark. What survived is a time blend: the sky from the astro frame, the foreground and middle ground from blue hour, thirteen seconds at ISO 80 while there was still light enough to hold texture in the granite. Shoot the stars alone and the bottom half of the picture is just black.",
+        "location": "Big Arroyo, Sequoia National Park, California",
         "keywords": [
-            "el matador beach",
-            "malibu",
-            "sea cave",
-            "god rays",
-            "morning fog",
-            "low tide",
+            "big arroyo",
+            "sequoia national park",
+            "night photography",
+            "astrophotography",
+            "time blend",
+            "long exposure"
+        ]
+    },
+    "/photos/HST/_DSC0181.jpg": {
+        "title": "Waiting Out the Weather",
+        "alt": "Black and white photo of two backpackers beside Guitar Lake below Mount Whitney with storm cloud building above.",
+        "story": "Storm light is the one gift of a Sierra afternoon in July — hard directional sun beneath a heavy lid, and gone within minutes. Seventy millimetres compresses the cloud down onto the basin, and the two figures stay tiny at the waterline because that is the honest proportion of the place. Monochrome: the cloud had all of the drama and none of the colour worth keeping.",
+        "location": "Guitar Lake, Sequoia National Park, California",
+        "keywords": [
+            "guitar lake",
+            "mount whitney",
+            "sequoia national park",
+            "black and white",
+            "backpacking"
+        ]
+    },
+    "/photos/HST/_DSC0221.jpg": {
+        "title": "Lenticulars at First Light",
+        "alt": "Lenticular clouds over the Sierra crest at dawn, seen from high on Mount Whitney above the Great Western Divide.",
+        "story": "The colour before sunrise is the good material up here — cool, soft, and finished the instant direct light touches the ridges. Lenticulars mean serious wind aloft, which is bad news for a climb and excellent news for a photograph. Sixty-three millimetres tightened it to the layers I wanted: dark ridge across the bottom, the crest still in shadow, and the whole sky working above it.",
+        "location": "Mount Whitney, California",
+        "keywords": [
+            "mount whitney",
+            "sierra nevada",
             "sunrise",
-            "seascape",
-            "california"
+            "lenticular clouds",
+            "alpenglow"
+        ]
+    },
+    "/photos/HST/_DSC0238-Edit.jpg": {
+        "title": "Rothko's Sierra",
+        "alt": "Pink dawn light on snow-streaked Sierra peaks photographed at 172mm from high on Mount Whitney, California.",
+        "story": "The title is the idea. At 172mm the ridges stop reading as mountains and become horizontal bands of colour stacked one on the next — about as close to a colour field as landscape photography gets. Long lenses do exactly that: they flatten distance into layers. Handheld at ISO 1000 and 1/640, because at that hour and that temperature a tripod was never going to happen.",
+        "location": "Mount Whitney, California",
+        "keywords": [
+            "mount whitney",
+            "sierra nevada",
+            "alpenglow",
+            "sunrise",
+            "telephoto"
+        ]
+    },
+    "/photos/HST/_DSC0263-Edit.jpg": {
+        "title": "Sunrise Through the Windows",
+        "alt": "Sunrise rays through a granite window on the Mount Whitney Trail, looking east over the Owens Valley.",
+        "story": "Shooting into a rising sun is normally how you make a bad photograph. The exception is enough haze in the air to turn the light into visible shafts, and there was a valley full of it. The granite does two jobs — it frames the opening, and it gives the lens something dark to sit against, which keeps flare manageable. Metered for the sky and let the rock fall to silhouette.",
+        "location": "Mount Whitney, California",
+        "keywords": [
+            "mount whitney",
+            "owens valley",
+            "sunrise",
+            "god rays",
+            "sierra nevada"
+        ]
+    },
+    "/photos/HST/_DSC0293.jpg": {
+        "title": "Down from Trail Crest",
+        "alt": "Black and white photo of two hikers descending the switchbacks below Trail Crest above a lake, Mount Whitney.",
+        "story": "Early side light down a long slope is the best thing that can happen to a mountain: it separates each ridge from the next and puts texture into ground that reads flat by noon. The two figures set the scale of the switchbacks — without them this is an abstract. Black and white because the low sun had already gone warm, and the warmth was pulling attention off the structure.",
+        "location": "Mount Whitney, California",
+        "keywords": [
+            "mount whitney",
+            "trail crest",
+            "black and white",
+            "hiking",
+            "sierra nevada"
+        ]
+    },
+    "/photos/HST/_DSC9760-HDR-Edit.jpg": {
+        "title": "Arnica Under the Spires",
+        "alt": "Yellow arnica flowers on granite below the spires of Rowell Tower and Serpent's Tooth, Hamilton Lakes, Sequoia.",
+        "story": "A near-far composition lives or dies on how close you are willing to get. The 14mm went down almost into the arnica — close enough that depth of field became the whole problem, solved at f/11 with the focus set a third of the way in. The range between shaded petals and sunlit granite needed a bracket. Cloud did the rest; in clear midday light there is no picture here.",
+        "location": "Hamilton Lakes, Sequoia National Park, California",
+        "keywords": [
+            "hamilton lakes",
+            "sequoia national park",
+            "high sierra trail",
+            "wildflowers",
+            "wide angle"
+        ]
+    },
+    "/photos/HST/_DSC9765-HDR.jpg": {
+        "title": "Lower Hamilton",
+        "alt": "Lower Hamilton Lake in a bowl of polished granite on the High Sierra Trail, Sequoia National Park, under building cloud.",
+        "story": "Twenty past twelve is the hour most landscape photographers are asleep or eating, and usually they are right. Moving cloud saved it — every few minutes the sun went behind, the granite stopped blowing out and the pool turned from glare to green. I bracketed and waited for those windows. The rock handles the composition on its own here: the trail climbs in the same lines the water falls.",
+        "location": "Hamilton Lakes, Sequoia National Park, California",
+        "keywords": [
+            "hamilton lakes",
+            "sequoia national park",
+            "high sierra trail",
+            "alpine lake",
+            "granite"
+        ]
+    },
+    "/photos/HST/_DSC9825-Edit.jpg": {
+        "title": "Thirty Seconds",
+        "alt": "Long exposure of Hamilton Lake at dusk with a bleached driftwood log in the foreground, Sequoia National Park.",
+        "story": "I worked this one for an entire evening, waiting on cloud that would actually do something. The log was the reason to be there — bleached, half-sunk, pointing straight into the frame — so the tripod went into the water beside it and the 14mm went low. Thirty seconds at f/11 turned the surface to slate. The range between the bright sky and the shaded wood was well past what a single frame holds, so it is a blend of brackets.",
+        "location": "Hamilton Lakes, Sequoia National Park, California",
+        "keywords": [
+            "hamilton lakes",
+            "sequoia national park",
+            "high sierra trail",
+            "long exposure",
+            "exposure blending",
+            "dusk"
+        ]
+    },
+    "/photos/HST/_DSC9860.jpg": {
+        "title": "The Climb Out of Hamilton",
+        "alt": "Black and white photo of a hiker on the blasted ledge trail cut into the headwall above Hamilton Lake, Sequoia.",
+        "story": "Scale is the hardest thing to photograph in this range and the only dependable solution is a person. So the frame is built to be mostly wall, with the figure small, high, and standing in the one patch of light on the ledge. Black and white because the rock was already doing everything — in colour it is grey stone under a blue lid, and the eye has nowhere to go.",
+        "location": "Hamilton Lakes, Sequoia National Park, California",
+        "keywords": [
+            "hamilton lakes",
+            "sequoia national park",
+            "high sierra trail",
+            "black and white",
+            "hiking"
+        ]
+    },
+    "/photos/HST/_DSC9957.jpg": {
+        "title": "The Life Of a Foxtail",
+        "alt": "Backlit foxtail pine growing out of granite in the Big Arroyo, Sequoia National Park, photographed at 500mm.",
+        "story": "Late sun raked the tree from behind, lighting the needles while the rock stayed in shadow — a separation that lasts about twenty minutes a day. At 500mm from across the basin the background compresses to a flat wash and everything competing simply falls outside the frame. Backlight at that focal length is unforgiving about flare, so I shaded the front element by hood and shot into it anyway.",
+        "location": "Big Arroyo, Sequoia National Park, California",
+        "keywords": [
+            "big arroyo",
+            "sequoia national park",
+            "high sierra trail",
+            "foxtail pine",
+            "telephoto"
+        ]
+    },
+    "/photos/HST/_DSC9970.jpg": {
+        "title": "Glaciated Ground",
+        "alt": "Black and white photo of glacier-polished granite slabs and peaks in the Big Arroyo, Sequoia National Park.",
+        "story": "A flat grey afternoon over bare, glacier-scoured rock — in colour it is worth nothing at all. Monochrome turns the slabs structural: fracture lines become leading lines, and the separation between polished stone and shadowed cracks carries what colour could not. I set the horizon high and gave the foreground two thirds of the frame, because here the ground is the subject and the peaks are only the backstop.",
+        "location": "Big Arroyo, Sequoia National Park, California",
+        "keywords": [
+            "big arroyo",
+            "kaweah gap",
+            "sequoia national park",
+            "black and white",
+            "granite"
+        ]
+    },
+    "/photos/cities/_DSC5344.jpg": {
+        "title": "Enshrined Forever",
+        "alt": "Long-exposure black-and-white photo of the Lincoln Memorial statue with constantly passing visitors",
+        "story": "I set up inside the chamber, and with everyone too busy to notice me, I had time to work the shot. People streamed past the whole time, while Lincoln has sat there for decades — that contrast, the still monument against the flowing crowd, was the whole idea. I held a five-second exposure so the visitors blurred into ghosts while the statue stayed perfectly sharp.",
+        "location": "Lincoln Memorial, Washington, D.C.",
+        "keywords": [
+            "long exposure",
+            "black and white",
+            "lincoln memorial",
+            "washington"
         ]
     },
     "/photos/cities/_DSC8037.jpg": {
@@ -28,18 +181,6 @@
             "long exposure",
             "night photography",
             "california"
-        ]
-    },
-    "/photos/cities/_DSC5344.jpg": {
-        "title": "Enshrined Forever",
-        "alt": "Long-exposure black-and-white photo of the Lincoln Memorial statue with constantly passing visitors",
-        "story": "I set up inside the chamber, and with everyone too busy to notice me, I had time to work the shot. People streamed past the whole time, while Lincoln has sat there for decades — that contrast, the still monument against the flowing crowd, was the whole idea. I held a five-second exposure so the visitors blurred into ghosts while the statue stayed perfectly sharp.",
-        "location": "Lincoln Memorial, Washington, D.C.",
-        "keywords": [
-            "long exposure",
-            "black and white",
-            "lincoln memorial",
-            "washington"
         ]
     },
     "/photos/grand-canyon/_DSC6639.jpg": {
@@ -215,6 +356,23 @@
             "Colorado River",
             "dusk",
             "Arizona"
+        ]
+    },
+    "/photos/landscapes/_DSC8109-Edit.jpg": {
+        "title": "Light in the Hollow",
+        "alt": "Early-morning light streaming through the sea cave at El Matador Beach, god rays catching in the fog above a low-tide shoreline.",
+        "story": "I planned this around the conditions — a low tide to expose El Matador's famous sea cave, and fog so the first light would hang in the air as visible streaks. The dynamic range was brutal, the bright cave mouth against the dark rock, so I blended two exposures to hold it all.",
+        "location": "El Matador State Beach, Malibu, California",
+        "keywords": [
+            "el matador beach",
+            "malibu",
+            "sea cave",
+            "god rays",
+            "morning fog",
+            "low tide",
+            "sunrise",
+            "seascape",
+            "california"
         ]
     },
     "/photos/people/81dJdwzh6qQ.jpg": {

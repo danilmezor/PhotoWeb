@@ -566,33 +566,6 @@
     "lens": "50.0 mm f/1.8",
     "shutter": "1/100"
   },
-  "/photos/cities/_AC15369-1080w.jpg": {
-    "aperture": "f/14",
-    "camera": "Nikon D3",
-    "capturedAt": "2008-09-02",
-    "focalLength": "50mm",
-    "iso": 160,
-    "lens": "50.0 mm f/1.8",
-    "shutter": "1/160"
-  },
-  "/photos/cities/_AC15369-1920w.jpg": {
-    "aperture": "f/14",
-    "camera": "Nikon D3",
-    "capturedAt": "2008-09-02",
-    "focalLength": "50mm",
-    "iso": 160,
-    "lens": "50.0 mm f/1.8",
-    "shutter": "1/160"
-  },
-  "/photos/cities/_AC15369-480w.jpg": {
-    "aperture": "f/14",
-    "camera": "Nikon D3",
-    "capturedAt": "2008-09-02",
-    "focalLength": "50mm",
-    "iso": 160,
-    "lens": "50.0 mm f/1.8",
-    "shutter": "1/160"
-  },
   "/photos/cities/_AC15369.jpg": {
     "aperture": "f/14",
     "camera": "Nikon D3",
@@ -655,33 +628,6 @@
     "iso": 200,
     "lens": "NIKKOR Z 24-120mm f/4 S",
     "shutter": "4.0s"
-  },
-  "/photos/death-valley/_DSC5570-1080w.jpg": {
-    "aperture": "f/8",
-    "camera": "Nikon Z 7_2",
-    "capturedAt": "2026-02-13",
-    "focalLength": "85mm",
-    "iso": 50,
-    "lens": "NIKKOR Z 24-120mm f/4 S",
-    "shutter": "1/500"
-  },
-  "/photos/death-valley/_DSC5570-1920w.jpg": {
-    "aperture": "f/8",
-    "camera": "Nikon Z 7_2",
-    "capturedAt": "2026-02-13",
-    "focalLength": "85mm",
-    "iso": 50,
-    "lens": "NIKKOR Z 24-120mm f/4 S",
-    "shutter": "1/500"
-  },
-  "/photos/death-valley/_DSC5570-480w.jpg": {
-    "aperture": "f/8",
-    "camera": "Nikon Z 7_2",
-    "capturedAt": "2026-02-13",
-    "focalLength": "85mm",
-    "iso": 50,
-    "lens": "NIKKOR Z 24-120mm f/4 S",
-    "shutter": "1/500"
   },
   "/photos/death-valley/_DSC5570.jpg": {
     "aperture": "f/8",
@@ -961,33 +907,6 @@
     "iso": 31,
     "lens": "NIKKOR Z 24-120mm f/4 S",
     "shutter": "1/25"
-  },
-  "/photos/landscapes/_AC11398-Edit-1080w.JPG": {
-    "aperture": "f/22",
-    "camera": "Nikon D3",
-    "capturedAt": "2007-07-16",
-    "focalLength": "28mm",
-    "iso": 200,
-    "lens": "24.0-70.0 mm f/2.8",
-    "shutter": "1/250"
-  },
-  "/photos/landscapes/_AC11398-Edit-1920w.JPG": {
-    "aperture": "f/22",
-    "camera": "Nikon D3",
-    "capturedAt": "2007-07-16",
-    "focalLength": "28mm",
-    "iso": 200,
-    "lens": "24.0-70.0 mm f/2.8",
-    "shutter": "1/250"
-  },
-  "/photos/landscapes/_AC11398-Edit-480w.JPG": {
-    "aperture": "f/22",
-    "camera": "Nikon D3",
-    "capturedAt": "2007-07-16",
-    "focalLength": "28mm",
-    "iso": 200,
-    "lens": "24.0-70.0 mm f/2.8",
-    "shutter": "1/250"
   },
   "/photos/landscapes/_AC11398-Edit.JPG": {
     "aperture": "f/22",
