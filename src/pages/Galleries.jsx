@@ -23,6 +23,7 @@ const Galleries = () => {
             name: SITE_NAME,
             url: toAbsoluteUrl('/'),
         },
+        primaryImageOfPage: leadImage ? toAbsoluteUrl(leadImage) : undefined,
         author: {
             '@type': 'Person',
             name: SITE_AUTHOR,

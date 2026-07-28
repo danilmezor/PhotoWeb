@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import ParallaxImage from '../components/ParallaxImage';
 import SEO from '../components/SEO';
 import { heroPhotos, firstHeroImage } from '../utils/hero';
+import { buildVariantUrls } from '../utils/imageVariants';
 import {
     SITE_AUTHOR,
     SITE_DESCRIPTION,
@@ -28,8 +29,16 @@ const collections = [
 
 const Home = () => {
     const homeDescription = 'Landscape and travel photography of the American West by Danil Zanozin — the Grand Canyon, Death Valley, Lassen Volcanic, the Sierra Nevada, and a day-by-day John Muir Trail photo diary.';
-    const socialImage = heroPhotos[0];
+    // The page's representative image: feeds og:image and primaryImageOfPage,
+    // which is how Google picks the text-result thumbnail and the Discover
+    // preview. Deliberately a wide-orientation frame — Google's image guidance
+    // warns off extreme aspect ratios, which rules out the portrait shots.
+    const socialImage = '/photos/grand-canyon/_DSC6976.jpg';
     const siteUrl = toAbsoluteUrl('/');
+    // Preload the first hero slide. imageSrcSet/imageSizes mirror what the
+    // Hero's <picture> resolves to, so the preload is a cache hit rather than
+    // a second download at a different width.
+    const heroVariants = buildVariantUrls(heroPhotos[0]);
     const homeJsonLd = [
         {
             '@context': 'https://schema.org',
@@ -37,6 +46,15 @@ const Home = () => {
             name: SITE_NAME,
             url: siteUrl,
             description: SITE_DESCRIPTION,
+            inLanguage: 'en',
+        },
+        {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            url: siteUrl,
+            name: SITE_NAME,
+            description: homeDescription,
+            primaryImageOfPage: toAbsoluteUrl(socialImage),
             inLanguage: 'en',
         },
         {
@@ -67,7 +85,11 @@ const Home = () => {
                 path="/"
                 image={socialImage}
                 jsonLd={homeJsonLd}
-                preload={{ href: firstHeroImage() }}
+                preload={{
+                    href: firstHeroImage(),
+                    imageSrcSet: heroVariants?.webp,
+                    imageSizes: heroVariants ? '100vw' : undefined,
+                }}
             />
             <Hero />
             <div className="container home-container">

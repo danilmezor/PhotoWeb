@@ -14,9 +14,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
     z-index: -2;
+}
+
+/* PhotoImage renders <picture><img>; both must fill the slide so the image
+   behaves exactly like the background-image it replaced (cover, centered).
+   The intrinsic width/height PhotoImage sets are for CLS only — CSS wins. */
+.hero-background picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero-overlay {
