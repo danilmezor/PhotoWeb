@@ -183,6 +183,136 @@
             "california"
         ]
     },
+    "/photos/death-valley/_DSC5570.jpg": {
+        "title": "Bloom and Basin",
+        "alt": "Desert gold wildflowers on a slope above the salt flats of Badwater Basin, Death Valley National Park.",
+        "story": "I made this on the way up rather than at the top. From down on the flat the two things never meet, but from the slope the flowers stack into verticals and the basin lays a hard horizontal in behind them, warm against cool. That is the entire picture. I kept the bloom close enough to the lens that it reads as texture instead of as a subject.",
+        "location": "Badwater Basin, Death Valley National Park, California",
+        "keywords": [
+            "badwater basin",
+            "death valley national park",
+            "wildflowers",
+            "desert gold",
+            "salt flats"
+        ]
+    },
+    "/photos/death-valley/_DSC5599-Edit.jpg": {
+        "title": "False Frost",
+        "alt": "Salt crust at Badwater Basin lit low across its ridges during blue hour, Death Valley National Park.",
+        "story": "One of my favourites, and the only frame here that isn't natural light. The camera went as low on the tripod as it would go — salt has no shape at all from standing height. Then a flash off the camera entirely, held out to one side, so the light rakes across the crust instead of flattening it. Blue hour gave me the sky; the flash gave the ground its edges.",
+        "location": "Badwater Basin, Death Valley National Park, California",
+        "keywords": [
+            "badwater basin",
+            "death valley national park",
+            "blue hour",
+            "salt flats",
+            "off-camera flash"
+        ]
+    },
+    "/photos/death-valley/_DSC5707.jpg": {
+        "title": "For Scale",
+        "alt": "A lone figure silhouetted on a badlands ridge at sunrise under a pink and purple sky, Zabriskie Point, Death Valley.",
+        "story": "I was still hunting for a composition when someone walked up onto that hill. Everything I had tried until then failed for the same reason — nothing in the frame told you how big any of it was. They fixed that by existing. I shot it and walked away convinced I had come back with nothing, which turns out to be the least reliable feeling in photography.",
+        "location": "Zabriskie Point, Death Valley National Park, California",
+        "keywords": [
+            "zabriskie point",
+            "death valley national park",
+            "sunrise",
+            "badlands",
+            "silhouette"
+        ]
+    },
+    "/photos/death-valley/_DSC5808.jpg": {
+        "title": "Wrong Colours",
+        "alt": "Hikers on a ridge above the coloured badlands of Golden Canyon with the Panamint Range beyond, Death Valley.",
+        "story": "This is not the desert people picture, and it is not the mountains people picture either. The colours are wrong for both, which is exactly why I wanted it. The hikers on the ridge are walking out of the frame rather than into it, and that felt more honest about the scale of the place — you don't arrive somewhere like this, you cross it and keep going.",
+        "location": "Golden Canyon, Death Valley National Park, California",
+        "keywords": [
+            "golden canyon",
+            "death valley national park",
+            "panamint range",
+            "badlands",
+            "hiking"
+        ]
+    },
+    "/photos/death-valley/_DSC5828.jpg": {
+        "title": "The Committee",
+        "alt": "Black and white photo of four hikers silhouetted on the ridge of a dune at Mesquite Flat Sand Dunes, Death Valley.",
+        "story": "I was out scouting for sunset when this arranged itself above me: four people on the ridge, mid-argument about whether to keep climbing. One pointing, one very obviously finished. It reads like a single panel of a comic. I framed wide and let the dune take most of the picture, because the joke only works while they are still small enough to be figures rather than people.",
+        "location": "Mesquite Flat Sand Dunes, Death Valley National Park, California",
+        "keywords": [
+            "mesquite flat sand dunes",
+            "death valley national park",
+            "black and white",
+            "minimalism",
+            "silhouette"
+        ]
+    },
+    "/photos/death-valley/_DSC5865.jpg": {
+        "title": "Sand to Sky",
+        "alt": "Mesquite Flat Sand Dunes at blue hour, warm sand giving way to blue and pink sky over the distant salt basin.",
+        "story": "Sand holds the last of the warm light for a while after the sky above it has gone cold. That mismatch is the picture — a gradient running the full height of the frame, yellow at your feet, then blue, then pink out over the far basin. I composed around the transition itself rather than around any particular dune, which is why nothing here is the subject.",
+        "location": "Mesquite Flat Sand Dunes, Death Valley National Park, California",
+        "keywords": [
+            "mesquite flat sand dunes",
+            "death valley national park",
+            "blue hour",
+            "sand dunes",
+            "gradient"
+        ]
+    },
+    "/photos/death-valley/_DSC6007.jpg": {
+        "title": "Fallen Sky",
+        "alt": "Clouds reflected in floodwater on the salt flats of Badwater Basin, the Panamint Range beyond, Death Valley.",
+        "story": "Second day of trying to make something work down here. The water changed it — a flooded basin stops being ground and becomes a mirror, and once the sky is underneath you as well as above you the whole thing goes abstract. The mountains end up as the only element still reading as itself. Everything else in the frame is cloud, twice over.",
+        "location": "Badwater Basin, Death Valley National Park, California",
+        "keywords": [
+            "badwater basin",
+            "death valley national park",
+            "reflection",
+            "salt flats",
+            "abstract"
+        ]
+    },
+    "/photos/death-valley/_DSC6068.jpg": {
+        "title": "Telescope Blue",
+        "alt": "Telescope Peak above Badwater Basin at late blue hour, salt formations visible beneath standing water, Death Valley.",
+        "story": "Late blue hour, and salt does something strange with it. White crust throws back almost everything that lands on it, so the colour of the sky ends up spread across the entire basin instead of staying up where it belongs. Telescope Peak anchors the far side. The salt formations still readable under the water are what keep this from tipping over into looking invented.",
+        "location": "Badwater Basin, Death Valley National Park, California",
+        "keywords": [
+            "badwater basin",
+            "telescope peak",
+            "death valley national park",
+            "blue hour",
+            "salt flats"
+        ]
+    },
+    "/photos/death-valley/_DSC6099.jpg": {
+        "title": "Badwater Fire",
+        "alt": "Stacked plates of salt crust leading toward a magenta sunset over Badwater Basin, Death Valley National Park.",
+        "story": "I was back at the car with the bag packed when the light turned, and there is no version of that where you just drive away. Everything came out again. What made the unpacking worth it was the salt — those big stacked plates run in the same direction as the clouds, so the ground and the sky pull the eye the same way instead of fighting each other.",
+        "location": "Badwater Basin, Death Valley National Park, California",
+        "keywords": [
+            "badwater basin",
+            "death valley national park",
+            "sunset",
+            "salt flats",
+            "leading lines"
+        ]
+    },
+    "/photos/death-valley/_DSC6135.jpg": {
+        "title": "Soft Geometry",
+        "alt": "Low-contrast sunrise over the ridges of Mesquite Flat Sand Dunes, Death Valley National Park.",
+        "story": "Sunrise, but barely — the contrast never really arrived, and that turned out to be the mood worth keeping. One dune low in the frame, a second behind it, and a cloud above running the other way, so the eye zigzags up through the picture. There is almost no tonal separation anywhere in it. This one holds together on shape alone, which is rarer than good light.",
+        "location": "Mesquite Flat Sand Dunes, Death Valley National Park, California",
+        "keywords": [
+            "mesquite flat sand dunes",
+            "death valley national park",
+            "sunrise",
+            "sand dunes",
+            "minimalism"
+        ]
+    },
     "/photos/grand-canyon/_DSC6639.jpg": {
         "title": "The Sheer Scale of It",
         "alt": "The Grand Canyon seen from Pima Point, a shaft of sunlight on red buttes above the distant Colorado River.",

@@ -48,12 +48,6 @@ export const heroAlt = {
         'The Malibu coastline at night seen from Point Dume, city lights tracing the shore under a magenta sky.',
     '/photos/events/_DSC4592.jpg':
         'Black-and-white long exposure of a warehouse party, dancers blurred in motion around a neon-lit art installation.',
-    '/photos/death-valley/_DSC5570.jpg':
-        'Desert gold wildflowers blooming above the salt flats of Death Valley National Park, California.',
-    '/photos/death-valley/_DSC6099.jpg':
-        'Magenta sunset light over the cracked salt crust of Badwater Basin, Death Valley National Park.',
-    '/photos/death-valley/_DSC6068.jpg':
-        'Purple twilight over a shallow sheet of water on the salt flats at Badwater Basin, Death Valley.',
     '/photos/JMT/_DSC3151-HDR.jpg':
         'Deep blue twilight over a still alpine lake reflecting the Sierra crest on the John Muir Trail.',
 };
