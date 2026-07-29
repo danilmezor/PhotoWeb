@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danilzanozin.com/</loc>
-    <lastmod>2026-07-25T16:13:01-07:00</lastmod>
+    <lastmod>2026-07-27T19:22:08-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -201,6 +201,60 @@
   <url>
     <loc>https://danilzanozin.com/photo/grand-canyon-dsc7793</loc>
     <lastmod>2026-06-13T13:49:05-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8357</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8392</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8413</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8450</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8632</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8756</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8791</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc8970</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/lassen-volcanic-dsc9002</loc>
+    <lastmod>2026-07-29T00:09:13.684Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
