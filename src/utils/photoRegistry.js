@@ -3,9 +3,9 @@
 // any EXIF metadata that the build-time extractor pulled from the JPEG.
 //
 // "Primary home" means the gallery the photo belongs to in `images`/`jmtData`.
-// The same photo can appear in favorites or hero lists — those don't create
-// a new permalink; the photo's permalink always points back to its primary
-// gallery's slot.
+// The same photo can appear in favorites, hero lists, or as a rented entry in
+// another gallery's grid — those don't create a new permalink; the photo's
+// permalink always points back to its primary gallery's slot.
 
 import { images, formatTitle, titleFromSrc } from './images.js';
 import { jmtData } from './jmtData.js';
@@ -73,6 +73,9 @@ const buildAllPhotos = () => {
     for (const gallery of CATEGORY_GALLERIES) {
         const photos = images[gallery.key] || [];
         for (const photo of photos) {
+            // Rented photos display in this gallery but belong to another —
+            // their permalink lives with the owning gallery's entry.
+            if (photo.rented) continue;
             result.push(
                 buildEntry({
                     slug: slugFor(gallery.slug, photo.src),

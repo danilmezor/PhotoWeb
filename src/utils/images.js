@@ -28,15 +28,21 @@ const formatCategoryLabel = (category) => (
 
 const mapCategoryFiles = (category, files, label) =>
   files.map((fileName, index) => {
-    const serial = formatTitle(fileName);
+    // A full "/photos/..." path rents a photo from another gallery: it shows
+    // in this grid, but its permalink stays with the owning gallery (the
+    // photo registry skips rented entries, so no duplicate photo page).
+    const rented = fileName.startsWith('/photos/');
+    const bareName = rented ? decodeURIComponent(fileName.split('/').pop() || '') : fileName;
+    const serial = formatTitle(bareName);
     const categoryLabel = label || formatCategoryLabel(category);
-    const src = buildPhotoSrc(category, fileName);
+    const src = rented ? fileName : buildPhotoSrc(category, fileName);
     const meta = metaFor(src);
     const caption = meta?.alt || null;
 
     return {
       id: index + 1,
       src,
+      rented,
       // Curated title wins over the camera serial everywhere photos are
       // displayed (galleries, lightbox); `serial` keeps the original.
       title: meta?.title || serial,
@@ -166,7 +172,14 @@ const yosemiteFiles = [
   "_DSC9663-HDR-Edit.jpg",
   "_AC16640-HDR.jpg",
   "_AC16669.jpg",
-  "_AC16711.jpg"
+  "_AC16711.jpg",
+  // Rented from the JMT gallery (Yosemite stretch of the trail) — full paths,
+  // so these keep their JMT permalinks and don't mint duplicate photo pages.
+  "/photos/JMT/_DSC3751.jpg",
+  "/photos/JMT/_DSC3788-Enhanced-NR.jpg",
+  "/photos/JMT/_DSC3804-Edit.jpg",
+  "/photos/JMT/_DSC4039.jpg",
+  "/photos/JMT/_DSC4063-Enhanced-NR.jpg"
 ];
 const hstFiles = [
   "_DSC9760-HDR-Edit.jpg",
