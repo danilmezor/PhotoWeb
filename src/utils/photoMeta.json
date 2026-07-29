@@ -157,6 +157,71 @@
             "granite"
         ]
     },
+    "/photos/JMT/_DSC3751.jpg": {
+        "title": "Midday Break",
+        "alt": "Hikers resting beside the Lyell Fork in Tuolumne Meadows below granite domes, Yosemite National Park.",
+        "story": "Shot from the bridge over the Lyell Fork, which is the only place you get this line of sight down the meadow. The picture is not really about the granite — it is about a group taking their break in the middle of the day, which is what most of a long day on this trail actually consists of. Middle of the day, middle of the hike, nothing dramatic happening.",
+        "location": "Lyell Fork, Tuolumne Meadows, Yosemite National Park, California",
+        "keywords": [
+            "lyell fork",
+            "tuolumne meadows",
+            "yosemite national park",
+            "john muir trail",
+            "hiking"
+        ]
+    },
+    "/photos/JMT/_DSC3788-Enhanced-NR.jpg": {
+        "title": "Oil Painting",
+        "alt": "Cathedral Peak reflected in still water at sunset under textured cloud, Yosemite National Park.",
+        "story": "One of my favourites. Cathedral Peak and its reflection at sunset, and the light that evening did something I have not managed to repeat since — it reads more like an oil painting than a photograph. The cloud is doing at least half the work. Without that texture overhead the top of the frame would be empty and the reflection would have nothing to answer to.",
+        "location": "Cathedral Peak, Yosemite National Park, California",
+        "keywords": [
+            "cathedral peak",
+            "yosemite national park",
+            "sunset",
+            "reflection",
+            "john muir trail"
+        ]
+    },
+    "/photos/JMT/_DSC3804-Edit.jpg": {
+        "title": "Into the Lupine",
+        "alt": "A field of lupine in bloom below Cathedral Peak, Yosemite National Park.",
+        "story": "We were walking down towards the valley when this field stopped me — lupine in a quantity I had not expected, and very close to the violet the sky was already doing. I put the camera low, just under the flowers, and held focus on the peak rather than on them. The point was to place the viewer inside the field instead of looking at it from the edge.",
+        "location": "Cathedral Peak, Yosemite National Park, California",
+        "keywords": [
+            "cathedral peak",
+            "yosemite national park",
+            "lupine",
+            "wildflowers",
+            "john muir trail"
+        ]
+    },
+    "/photos/JMT/_DSC4039.jpg": {
+        "title": "Half Gold",
+        "alt": "Half Dome catching last light above a meadow and the valley road, Yosemite National Park.",
+        "story": "This was after the trail rather than on it. We were wandering the valley with nothing much left to do, which is a strange state to be in when you have spent weeks walking towards somewhere, and this arrangement stopped me: road, meadow, trees, Half Dome, nothing else in it. Minimal to the point of being almost graphic. I did not have to work for this one at all.",
+        "location": "Half Dome, Yosemite National Park, California",
+        "keywords": [
+            "half dome",
+            "yosemite valley",
+            "yosemite national park",
+            "sunset",
+            "minimalism"
+        ]
+    },
+    "/photos/JMT/_DSC4063-Enhanced-NR.jpg": {
+        "title": "The Dry Mirror",
+        "alt": "Star trails circling above Half Dome over the dry bed of Mirror Lake, Yosemite National Park.",
+        "story": "The backpackers' camp sits close to Mirror Lake, so we walked over — and in the middle of July there was almost no lake there at all. We sat down in what should have been the bottom of it. Nine hundred seconds, with Half Dome above and what water was left in the foreground: long enough for the stars to draw their arcs instead of sitting still.",
+        "location": "Mirror Lake, Yosemite National Park, California",
+        "keywords": [
+            "mirror lake",
+            "half dome",
+            "yosemite national park",
+            "star trails",
+            "long exposure"
+        ]
+    },
     "/photos/cities/_DSC5344.jpg": {
         "title": "Enshrined Forever",
         "alt": "Long-exposure black-and-white photo of the Lincoln Memorial statue with constantly passing visitors",
@@ -633,6 +698,110 @@
             "colored lighting",
             "fashion portrait",
             "Izhevsk"
+        ]
+    },
+    "/photos/yosemite/_AC16640-HDR.jpg": {
+        "title": "March Melt",
+        "alt": "Snowmelt surging over granite on the Merced River below Nevada Fall in March, Yosemite National Park.",
+        "story": "March, and the Merced was carrying everything the snowpack could give it. Getting down to this stretch below Nevada Fall was the awkward part — the trail is not built for stopping where I wanted to stop. Worth it, though. At full melt the river does things it does not do for the rest of the year, and there is no substitute for standing level with it.",
+        "location": "Nevada Fall, Yosemite National Park, California",
+        "keywords": [
+            "nevada fall",
+            "merced river",
+            "yosemite national park",
+            "snowmelt",
+            "long exposure"
+        ]
+    },
+    "/photos/yosemite/_AC16669.jpg": {
+        "title": "Untamed",
+        "alt": "Nevada Fall in March seen looking downstream, heavy current below low cloud on the canyon walls, Yosemite National Park.",
+        "story": "Shot looking downstream from Nevada Fall rather than up at it — the less obvious direction, and the more violent one. The current in March is genuinely aggressive, and the cloud was sitting low enough on the walls to close the frame in on itself. I wanted this to feel untamed rather than scenic, so nothing here is soft: no clean horizon, no tidy light.",
+        "location": "Nevada Fall, Yosemite National Park, California",
+        "keywords": [
+            "nevada fall",
+            "merced river",
+            "yosemite national park",
+            "moody",
+            "snowmelt"
+        ]
+    },
+    "/photos/yosemite/_AC16711.jpg": {
+        "title": "White Noise",
+        "alt": "Black and white photo of Yosemite Falls in full March flow pouring over granite, Yosemite National Park.",
+        "story": "Yosemite Falls in March, pushing through more water than the granite looks built for. I converted this one because colour was actively unhelpful — the scene is a grey cliff, white water and dark wet rock, and in colour that reads as a muddy version of itself. In monochrome it becomes a picture about shape and about the direction the water is travelling.",
+        "location": "Yosemite Falls, Yosemite National Park, California",
+        "keywords": [
+            "yosemite falls",
+            "yosemite national park",
+            "black and white",
+            "waterfall",
+            "snowmelt"
+        ]
+    },
+    "/photos/yosemite/_DSC9228.jpg": {
+        "title": "The Fisherman",
+        "alt": "Black and white photo of a distant fisherman standing in the Merced River below granite peaks, Yosemite National Park.",
+        "story": "Ninety-six millimetres, because he was a long way off and I wanted that distance compressed rather than described — anything wider and he would have been a speck in a lot of empty river. He is hard to find at first, which is deliberate. Once you have him the frame reorganises around him, and he becomes the only reliable indication of how big any of this is.",
+        "location": "Merced River, Yosemite National Park, California",
+        "keywords": [
+            "merced river",
+            "yosemite national park",
+            "black and white",
+            "telephoto",
+            "scale"
+        ]
+    },
+    "/photos/yosemite/_DSC9410.jpg": {
+        "title": "His Spot",
+        "alt": "Black and white photo of a tent on the granite summit of Clouds Rest above Yosemite Valley, Yosemite National Park.",
+        "story": "I asked the hikers how they had settled on this spot. One of them told me he had camped up here twenty times and that it was 'his spot' — a very funny thing to hear said about the summit of Clouds Rest. I framed it with the drop behind rather than the sky, so the tent reads as perched rather than merely pitched.",
+        "location": "Clouds Rest, Yosemite National Park, California",
+        "keywords": [
+            "clouds rest",
+            "yosemite national park",
+            "black and white",
+            "camping",
+            "summit"
+        ]
+    },
+    "/photos/yosemite/_DSC9497-HDR-Edit-2.jpg": {
+        "title": "Dawn on Tresidder",
+        "alt": "Sunrise light on Tresidder Peak seen from the summit of Clouds Rest, Yosemite National Park.",
+        "story": "Sunrise from the top of Clouds Rest, looking across at Tresidder Peak. This one is an exposure stack — the range was taking first light while everything below it was still holding night, and no single frame covers that spread without surrendering one end or the other. Stacked, the peak keeps its colour and the forest underneath keeps detail instead of falling to black.",
+        "location": "Clouds Rest, Yosemite National Park, California",
+        "keywords": [
+            "clouds rest",
+            "tresidder peak",
+            "yosemite national park",
+            "sunrise",
+            "exposure stack"
+        ]
+    },
+    "/photos/yosemite/_DSC9604-HDR-Edit.jpg": {
+        "title": "Above the Fall",
+        "alt": "The Merced River winding below heavy grey cloud above Nevada Fall near Little Yosemite Valley, Yosemite National Park.",
+        "story": "The Merced a little way above Nevada Fall, near the Little Yosemite Valley camp. The cloud had gone flat and metallic, which is normally a reason to put the camera away. Here it was the whole point — river, fall, trees and sky all landed within about a stop of each other, so the picture holds on arrangement rather than on contrast between any of them.",
+        "location": "Little Yosemite Valley, Yosemite National Park, California",
+        "keywords": [
+            "little yosemite valley",
+            "merced river",
+            "yosemite national park",
+            "long exposure",
+            "overcast"
+        ]
+    },
+    "/photos/yosemite/_DSC9663-HDR-Edit.jpg": {
+        "title": "Below the Bridge",
+        "alt": "The Vernal Fall footbridge seen from a rock below it, the Merced River filling the foreground, Yosemite National Park.",
+        "story": "The classic view of the Vernal Fall footbridge, which means the only decision left to make is where to stand. I worked down onto a rock slightly below bridge level. From there the water fills the bottom of the frame instead of draining out of it, and the bridge sits high enough to read as something people cross rather than as a line ruled across the picture.",
+        "location": "Vernal Fall, Yosemite National Park, California",
+        "keywords": [
+            "vernal fall",
+            "merced river",
+            "yosemite national park",
+            "long exposure",
+            "mist trail"
         ]
     }
 }

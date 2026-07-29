@@ -40,10 +40,6 @@ export const heroAlt = {
         'The mouth of a sea cave at Leo Carrillo State Beach, Malibu, framing a star-filled night sky above the shoreline.',
     '/photos/landscapes/_DSC2014.jpg':
         'Cumulus clouds building over the alpine lakes below Kearsarge Pass in the Sierra Nevada, California.',
-    '/photos/JMT/_DSC3788-Enhanced-NR.jpg':
-        'Sunset light on granite domes reflected in a still river, lodgepole pines along the bank on the John Muir Trail.',
-    '/photos/JMT/_DSC4063-Enhanced-NR.jpg':
-        'Star trails wheeling above the granite walls at Mirror Lake, Yosemite Valley, California.',
     '/photos/landscapes/_DSC4277-Edit.jpg':
         'The Malibu coastline at night seen from Point Dume, city lights tracing the shore under a magenta sky.',
     '/photos/events/_DSC4592.jpg':
