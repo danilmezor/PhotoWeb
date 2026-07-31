@@ -108,7 +108,7 @@ I spent the evening standing in the lake — on a half-submerged log, with the t
 
 ### Robert's theory about the fish
 
-Robert — who I hiked the John Muir Trail with the year before, and who comes out from the East Coast to walk these trails the way I come out to photograph them — fishes in the hours the rest of us spend sitting around. He caught exactly one trout at Hamilton Lake. One, in an alpine lake, in a place that should be full of them.
+Robert — who I hiked the [John Muir Trail](/blog/john-muir-trail-photography) with the year before, and who comes out from the East Coast to walk these trails the way I come out to photograph them — fishes in the hours the rest of us spend sitting around. He caught exactly one trout at Hamilton Lake. One, in an alpine lake, in a place that should be full of them.
 
 His explanation: Hamilton is 17 miles in and 17 miles back out, which makes it the perfect target for people who want to see a glacier-fed alpine lake without committing to a thru-hike. So a steady stream of anglers arrives, fishes the same accessible water, and leaves. The lakes deeper in the trail don't get that pressure.
 

@@ -17,6 +17,24 @@
     "lens": "NIKKOR Z 24-120mm f/4 S",
     "shutter": "1/3"
   },
+  "/blog/john-muir-trail-photography/tyndall-creek-last-light.jpg": {
+    "aperture": "f/5",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2025-07-01",
+    "focalLength": "30mm",
+    "iso": 80,
+    "lens": "17-35mm f/2.8D",
+    "shutter": "2/5"
+  },
+  "/blog/john-muir-trail-photography/tyndall-creek-marmot.jpg": {
+    "aperture": "f/5",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2025-07-01",
+    "focalLength": "35mm",
+    "iso": 100,
+    "lens": "17-35mm f/2.8D",
+    "shutter": "1/250"
+  },
   "/photos/HST/_DSC0054-Edit.jpg": {
     "aperture": "f/11",
     "camera": "Nikon Z 7_2",

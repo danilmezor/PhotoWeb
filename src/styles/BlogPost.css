@@ -213,7 +213,8 @@
 }
 
 .blog-post-gallery-link {
-    margin: 2rem 0;
+    max-width: 760px;
+    margin: 2rem auto;
     font-family: var(--font-serif);
     font-size: 1.1rem;
 }
@@ -226,4 +227,48 @@
 
 .blog-post-gallery-link a:hover {
     border-bottom-color: var(--text-primary);
+}
+
+/* ---- Tables (itinerary, gear lists) ---- */
+
+.blog-prose table {
+    width: 100%;
+    margin: 1.6em 0 2em;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.blog-prose th {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.55em 1em 0.55em 0;
+    border-bottom: 1px solid var(--text-secondary);
+    white-space: nowrap;
+}
+
+.blog-prose td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6em 1em 0.6em 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--text-secondary) 25%, transparent);
+}
+
+.blog-prose th:last-child,
+.blog-prose td:last-child {
+    padding-right: 0;
+}
+
+/* Keep short label columns (days, item names, weights) on one line. */
+.blog-prose td:first-child {
+    white-space: nowrap;
+}
+
+/* On narrow screens let the table scroll instead of crushing columns. */
+@media (max-width: 640px) {
+    .blog-prose table {
+        display: block;
+        overflow-x: auto;
+    }
 }
