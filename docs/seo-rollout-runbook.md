@@ -134,6 +134,14 @@ Related local template:
    - `https://danilzanozin.com/sitemap.xml`
    - `https://danilzanozin.com/image-sitemap.xml`
 5. Confirm sitemap URLs reference `https://danilzanozin.com` (not `example.com`).
+6. Run `npm run seo:indexnow` — pings Bing/IndexNow with the URLs whose `lastmod` changed since the last submission (Bing's index grounds Copilot and ChatGPT Search). Must run after the deploy is live. First-ever run: `npm run seo:indexnow -- --all`.
+
+## Bing Webmaster Tools Checklist (one-time)
+
+1. Sign in at https://www.bing.com/webmasters and use "Import from Google Search Console" (reuses the verified GSC property — no DNS record needed).
+2. Submit `sitemap.xml` and `image-sitemap.xml`.
+3. Confirm the IndexNow key file is live: `https://danilzanozin.com/025337d476131b080390421b4f7bb18f.txt`.
+4. After a few weeks, check Search Performance and the AI Performance report (Copilot/AI citations + grounding queries).
 
 ## Google Search Console Checklist
 

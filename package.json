@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "seo:generate": "node scripts/generate-seo-files.mjs",
+    "seo:indexnow": "node scripts/seo/indexnow-submit.mjs",
     "prerender": "node scripts/prerender.mjs",
     "build": "npm run seo:generate && vite build && npm run prerender",
     "lint": "eslint .",
