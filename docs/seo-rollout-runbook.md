@@ -135,6 +135,7 @@ Related local template:
    - `https://danilzanozin.com/image-sitemap.xml`
 5. Confirm sitemap URLs reference `https://danilzanozin.com` (not `example.com`).
 6. Run `npm run seo:indexnow` — pings Bing/IndexNow with the URLs whose `lastmod` changed since the last submission (Bing's index grounds Copilot and ChatGPT Search). Must run after the deploy is live. First-ever run: `npm run seo:indexnow -- --all`.
+7. Commit the updated `scripts/seo/indexnow-submitted.generated.json`. Safe to push directly: `vercel.json`'s `ignoreCommand` skips the Vercel build for commits that only touch `docs/` or the IndexNow snapshot.
 
 ## Bing Webmaster Tools Checklist (one-time)
 
