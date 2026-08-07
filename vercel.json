@@ -1,5 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/stats/script.js", "destination": "https://umami-zeta-gray.vercel.app/script.js" },
+    { "source": "/stats/api/send", "destination": "https://umami-zeta-gray.vercel.app/api/send" }
+  ],
   "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ':!docs' ':!scripts/seo/indexnow-submitted.generated.json'"
 }

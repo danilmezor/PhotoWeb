@@ -12,6 +12,10 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="canonical" href="https://danilzanozin.com/" />
   <link rel="alternate" type="application/rss+xml" title="Danil Zanozin Photography" href="/feed.xml" />
+  <!-- Self-hosted Umami analytics, proxied through /stats (vercel.json rewrites).
+       data-domains keeps localhost/preview traffic out of the stats. -->
+  <script defer src="/stats/script.js" data-website-id="9587c211-10b3-4600-8b97-f8561830f475"
+    data-domains="danilzanozin.com"></script>
   <!-- Self-hosted fonts (src/styles/fonts.css, bundled into the main CSS).
        Preload the three above-the-fold faces: body text (Inter 400) and the
        serif headings/accents (Playfair 400 regular + italic). -->
