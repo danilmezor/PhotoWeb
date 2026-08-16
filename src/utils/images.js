@@ -55,11 +55,10 @@ const mapCategoryFiles = (category, files, label) =>
 
 const landscapeFiles = [
   "_AC11398-Edit.JPG",
-  "_AC14997.jpg",
   "_AC15794-HDR-2.jpg",
   "_AC16043.jpg",
   "_AC16126.jpg",
-  "_AC16128-HDR.jpg",
+  "_AC16158-HDR.jpg",
   "_DSC0519.jpg",
   "_DSC0869.jpg",
   "_DSC1471-Enhanced-NR.jpg",
@@ -71,7 +70,15 @@ const landscapeFiles = [
   "_DSC8109-Edit.jpg",
   "_DSC8268-Edit-Edit.jpg",
   "njcRmx4hCQA.jpg",
-  "uFZYpJ8oVJQ.jpg"
+  "uFZYpJ8oVJQ.jpg",
+  "_DSC0454-Edit.jpg",
+  "_DSC0500-Edit.jpg",
+  "_DSC0540-Edit.jpg",
+  "_DSC0671-HDR-Edit.jpg",
+  "_DSC0833-Edit.jpg",
+  "_DSC0844-Edit.jpg",
+  "_DSC0874-Edit.jpg",
+  "_DSC0951-Edit.jpg"
 ];
 const cityFiles = [
   "_sGN2QO7P6c.jpg",

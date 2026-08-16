@@ -935,15 +935,6 @@
     "lens": "24.0-70.0 mm f/2.8",
     "shutter": "1/250"
   },
-  "/photos/landscapes/_AC14997.jpg": {
-    "aperture": "f/5.6",
-    "camera": "Nikon D3",
-    "capturedAt": "2008-08-02",
-    "focalLength": "50mm",
-    "iso": 400,
-    "lens": "50.0 mm f/1.8",
-    "shutter": "30s"
-  },
   "/photos/landscapes/_AC15794-HDR-2.jpg": {
     "aperture": "f/22",
     "camera": "Nikon D3",
@@ -971,14 +962,14 @@
     "lens": "17.0-35.0 mm f/2.8",
     "shutter": "30s"
   },
-  "/photos/landscapes/_AC16128-HDR.jpg": {
-    "aperture": "f/16",
+  "/photos/landscapes/_AC16158-HDR.jpg": {
+    "aperture": "f/11",
     "camera": "Nikon D3",
     "capturedAt": "2015-01-08",
-    "focalLength": "26mm",
+    "focalLength": "19mm",
     "iso": 100,
     "lens": "17.0-35.0 mm f/2.8",
-    "shutter": "1/250"
+    "shutter": "1/200"
   },
   "/photos/landscapes/_AC16437-HDR.jpg": {
     "aperture": "f/10",
@@ -989,6 +980,24 @@
     "lens": "17.0-35.0 mm f/2.8",
     "shutter": "1/250"
   },
+  "/photos/landscapes/_DSC0454-Edit.jpg": {
+    "aperture": "f/2.8",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-09",
+    "focalLength": "14mm",
+    "iso": 400,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "25s"
+  },
+  "/photos/landscapes/_DSC0500-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-10",
+    "focalLength": "15mm",
+    "iso": 400,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "60s"
+  },
   "/photos/landscapes/_DSC0519.jpg": {
     "aperture": "f/9",
     "camera": "Nikon Z 7_2",
@@ -997,6 +1006,42 @@
     "iso": 64,
     "lens": "17-35mm f/2.8D",
     "shutter": "1/6"
+  },
+  "/photos/landscapes/_DSC0540-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-11",
+    "focalLength": "14mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "900s"
+  },
+  "/photos/landscapes/_DSC0671-HDR-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-12",
+    "focalLength": "34mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1.6s"
+  },
+  "/photos/landscapes/_DSC0833-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-12",
+    "focalLength": "19mm",
+    "iso": 500,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "13s"
+  },
+  "/photos/landscapes/_DSC0844-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-13",
+    "focalLength": "14mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "60s"
   },
   "/photos/landscapes/_DSC0869.jpg": {
     "aperture": "f/5.6",
@@ -1015,6 +1060,24 @@
     "iso": 560,
     "lens": "17-35mm f/2.8D",
     "shutter": "1/125"
+  },
+  "/photos/landscapes/_DSC0874-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-13",
+    "focalLength": "14mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "480s"
+  },
+  "/photos/landscapes/_DSC0951-Edit.jpg": {
+    "aperture": "f/2.8",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-08-13",
+    "focalLength": "14mm",
+    "iso": 500,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "480s"
   },
   "/photos/landscapes/_DSC1471-Enhanced-NR.jpg": {
     "aperture": "f/2.8",

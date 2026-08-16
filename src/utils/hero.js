@@ -7,8 +7,9 @@
 import { largestWebp } from './imageVariants.js';
 
 export const heroPhotos = [
-    '/photos/landscapes/_AC14997.jpg',
+    '/photos/landscapes/_DSC0874-Edit.jpg',
     '/photos/cities/_AC16368-Pano.jpg',
+    '/photos/landscapes/_DSC0454-Edit.jpg',
     '/photos/landscapes/_DSC1471-Enhanced-NR.jpg',
     '/photos/landscapes/_DSC2014.jpg',
     '/photos/JMT/_DSC3788-Enhanced-NR.jpg',
@@ -32,8 +33,10 @@ export const heroPhotos = [
 // here gets annotated via /annotate, its entry below becomes dead weight and
 // can be dropped.
 export const heroAlt = {
-    '/photos/landscapes/_AC14997.jpg':
-        'Long-exposure surf smoothing to mist on a Florida beach at dusk, beachfront buildings lit under a storm-dark sky.',
+    '/photos/landscapes/_DSC0874-Edit.jpg':
+        'Tufa towers at Mono Lake, California, at sunset — long exposure smoothing the water to glass, pink and orange clouds reflected among the limestone spires.',
+    '/photos/landscapes/_DSC0454-Edit.jpg':
+        'Mobius Arch in the Alabama Hills, California, framing the Milky Way at night — the granite arch lit warm against a star-filled sky near Lone Pine.',
     '/photos/cities/_AC16368-Pano.jpg':
         'The Golden Gate Bridge lit at twilight, seen from the Marin Headlands with the San Francisco skyline across the bay.',
     '/photos/landscapes/_DSC1471-Enhanced-NR.jpg':

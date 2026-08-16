@@ -3,10 +3,13 @@
   <url>
     <loc>https://danilzanozin.com/</loc>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC14997.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0874-Edit.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/cities/_AC16368-Pano.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC1471-Enhanced-NR.jpg</image:loc>
@@ -22,9 +25,6 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC4277-Edit.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/events/_DSC4592.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
@@ -58,6 +58,15 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC5401.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0874-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0500-Edit.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/death-valley/_DSC6068.jpg</image:loc>
@@ -104,9 +113,6 @@
     <image:image>
       <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9663-HDR-Edit.jpg</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://danilzanozin.com/photos/yosemite/_DSC9497-HDR-Edit-2.jpg</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://danilzanozin.com/galleries</loc>
@@ -147,9 +153,6 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC11398-Edit.JPG</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC14997.jpg</image:loc>
-    </image:image>
-    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC15794-HDR-2.jpg</image:loc>
     </image:image>
     <image:image>
@@ -159,7 +162,7 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_AC16126.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16128-HDR.jpg</image:loc>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_AC16158-HDR.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0519.jpg</image:loc>
@@ -196,6 +199,30 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/uFZYpJ8oVJQ.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0500-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0540-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0671-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0833-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0844-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0874-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0951-Edit.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1006,6 +1033,54 @@
     <loc>https://danilzanozin.com/photo/landscapes-dsc8109</loc>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC8109-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0454</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0500</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0500-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0540</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0540-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0671</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0671-HDR-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0833</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0833-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0844</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0844-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0874</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0874-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0951</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0951-Edit.jpg</image:loc>
     </image:image>
   </url>
   <url>

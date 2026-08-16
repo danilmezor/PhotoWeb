@@ -11,6 +11,9 @@ export const favorites = [
     { src: '/photos/yosemite/_AC16711.jpg' },
     { src: '/photos/landscapes/_DSC8109-Edit.jpg' },
     { src: '/photos/landscapes/_DSC5401.jpg' },
+    { src: '/photos/landscapes/_DSC0454-Edit.jpg' },
+    { src: '/photos/landscapes/_DSC0874-Edit.jpg' },
+    { src: '/photos/landscapes/_DSC0500-Edit.jpg' },
     { src: '/photos/death-valley/_DSC6068.jpg' },
     { src: '/photos/death-valley/_DSC6099.jpg' },
     { src: '/photos/grand-canyon/_DSC6639.jpg' },
@@ -26,7 +29,6 @@ export const favorites = [
     { src: '/photos/HST/_DSC0054-Edit.jpg' },
     { src: '/photos/HST/_DSC0263-Edit.jpg' },
     { src: '/photos/yosemite/_DSC9663-HDR-Edit.jpg' },
-    { src: '/photos/yosemite/_DSC9497-HDR-Edit-2.jpg' },
 ].map((photo, index) => {
     const meta = metaFor(photo.src);
     const serial = titleFromSrc(photo.src);

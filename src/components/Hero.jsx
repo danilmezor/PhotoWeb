@@ -62,15 +62,6 @@ const Hero = () => {
                     CAPTURING <br />
                     <span className="hero-title-accent">MOMENTS</span>
                 </motion.h1>
-
-                <motion.p
-                    initial={{ y: 20 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.15 }}
-                    className="hero-subtitle"
-                >
-                    since 2011
-                </motion.p>
             </div>
 
             <motion.div

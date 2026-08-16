@@ -63,13 +63,6 @@
     font-weight: 400;
 }
 
-.hero-subtitle {
-    font-size: 1.2rem;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-}
-
 .scroll-indicator {
     position: absolute;
     bottom: 40px;

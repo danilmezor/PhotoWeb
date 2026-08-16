@@ -719,12 +719,6 @@
     "fov": 65.5,
     "sog": "/splats/landscapes/_AC11398-Edit.sog"
   },
-  "/photos/landscapes/_AC14997.jpg": {
-    "bytes": 6425114,
-    "depth": "/depth/landscapes/_AC14997.png",
-    "fov": 25.8,
-    "sog": "/splats/landscapes/_AC14997.sog"
-  },
   "/photos/landscapes/_AC15794-HDR-2.jpg": {
     "bytes": 6763802,
     "depth": "/depth/landscapes/_AC15794-HDR-2.png",
@@ -743,11 +737,11 @@
     "fov": 49.5,
     "sog": "/splats/landscapes/_AC16126.sog"
   },
-  "/photos/landscapes/_AC16128-HDR.jpg": {
-    "bytes": 6606977,
-    "depth": "/depth/landscapes/_AC16128-HDR.png",
-    "fov": 69.4,
-    "sog": "/splats/landscapes/_AC16128-HDR.sog"
+  "/photos/landscapes/_AC16158-HDR.jpg": {
+    "bytes": 6479317,
+    "depth": "/depth/landscapes/_AC16158-HDR.png",
+    "fov": 86.9,
+    "sog": "/splats/landscapes/_AC16158-HDR.sog"
   },
   "/photos/landscapes/_AC16437-HDR.jpg": {
     "bytes": 6624508,
@@ -755,11 +749,47 @@
     "fov": 54.5,
     "sog": "/splats/landscapes/_AC16437-HDR.sog"
   },
+  "/photos/landscapes/_DSC0454-Edit.jpg": {
+    "bytes": 6525865,
+    "depth": "/depth/landscapes/_DSC0454-Edit.png",
+    "fov": 81.2,
+    "sog": "/splats/landscapes/_DSC0454-Edit.sog"
+  },
+  "/photos/landscapes/_DSC0500-Edit.jpg": {
+    "bytes": 6392718,
+    "depth": "/depth/landscapes/_DSC0500-Edit.png",
+    "fov": 98.2,
+    "sog": "/splats/landscapes/_DSC0500-Edit.sog"
+  },
   "/photos/landscapes/_DSC0519.jpg": {
     "bytes": 6175827,
     "depth": "/depth/landscapes/_DSC0519.png",
     "fov": 91.0,
     "sog": "/splats/landscapes/_DSC0519.sog"
+  },
+  "/photos/landscapes/_DSC0540-Edit.jpg": {
+    "bytes": 6559591,
+    "depth": "/depth/landscapes/_DSC0540-Edit.png",
+    "fov": 81.5,
+    "sog": "/splats/landscapes/_DSC0540-Edit.sog"
+  },
+  "/photos/landscapes/_DSC0671-HDR-Edit.jpg": {
+    "bytes": 6738576,
+    "depth": "/depth/landscapes/_DSC0671-HDR-Edit.png",
+    "fov": 55.7,
+    "sog": "/splats/landscapes/_DSC0671-HDR-Edit.sog"
+  },
+  "/photos/landscapes/_DSC0833-Edit.jpg": {
+    "bytes": 6486053,
+    "depth": "/depth/landscapes/_DSC0833-Edit.png",
+    "fov": 84.7,
+    "sog": "/splats/landscapes/_DSC0833-Edit.sog"
+  },
+  "/photos/landscapes/_DSC0844-Edit.jpg": {
+    "bytes": 6039100,
+    "depth": "/depth/landscapes/_DSC0844-Edit.png",
+    "fov": 85.7,
+    "sog": "/splats/landscapes/_DSC0844-Edit.sog"
   },
   "/photos/landscapes/_DSC0869.jpg": {
     "bytes": 6574674,
@@ -772,6 +802,18 @@
     "depth": "/depth/landscapes/_DSC0871.png",
     "fov": 57.2,
     "sog": "/splats/landscapes/_DSC0871.sog"
+  },
+  "/photos/landscapes/_DSC0874-Edit.jpg": {
+    "bytes": 6233338,
+    "depth": "/depth/landscapes/_DSC0874-Edit.png",
+    "fov": 74.3,
+    "sog": "/splats/landscapes/_DSC0874-Edit.sog"
+  },
+  "/photos/landscapes/_DSC0951-Edit.jpg": {
+    "bytes": 6545357,
+    "depth": "/depth/landscapes/_DSC0951-Edit.png",
+    "fov": 104.2,
+    "sog": "/splats/landscapes/_DSC0951-Edit.sog"
   },
   "/photos/landscapes/_DSC1471-Enhanced-NR.jpg": {
     "bytes": 6450122,
