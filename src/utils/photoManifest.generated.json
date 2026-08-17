@@ -183,6 +183,109 @@
     ],
     "w": 2048
   },
+  "/blog/highway-395-lone-pine-to-mono-lake/alabama-hills-evening-sierra-crest.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/convict-lake-campground-hail-storm.jpg": {
+    "h": 1169,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1169
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/convict-lake-shore-tripod-evening.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/flat-tire-sidewall-cut-white-mountain-road.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/flatbed-tow-truck-highway-395.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/highway-395-route-map.jpg": {
+    "h": 2980,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1738
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/hot-creek-sunrise-selfie-tripod.jpg": {
+    "h": 1280,
+    "variants": [
+      480
+    ],
+    "w": 960
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/lone-pine-campground-tent-mount-whitney.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-django-wagon.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-theater.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/mobius-arch-alabama-hills-tripod-setup.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/mono-lake-south-tufa-sunset-selfie.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
+  "/blog/highway-395-lone-pine-to-mono-lake/schulman-grove-bristlecone-pine-tripod.jpg": {
+    "h": 1280,
+    "variants": [
+      480,
+      1080
+    ],
+    "w": 1280
+  },
   "/blog/john-muir-trail-photography/capture-clip-muir-pass-climb.jpg": {
     "h": 1280,
     "variants": [
@@ -1458,6 +1561,15 @@
       1920
     ],
     "w": 5338
+  },
+  "/photos/landscapes/_DSC0801-Edit-2.jpg": {
+    "h": 5420,
+    "variants": [
+      480,
+      1080,
+      1920
+    ],
+    "w": 4336
   },
   "/photos/landscapes/_DSC0833-Edit.jpg": {
     "h": 6258,

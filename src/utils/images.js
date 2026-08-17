@@ -75,6 +75,7 @@ const landscapeFiles = [
   "_DSC0500-Edit.jpg",
   "_DSC0540-Edit.jpg",
   "_DSC0671-HDR-Edit.jpg",
+  "_DSC0801-Edit-2.jpg",
   "_DSC0833-Edit.jpg",
   "_DSC0844-Edit.jpg",
   "_DSC0874-Edit.jpg",

@@ -148,6 +148,14 @@ function BlogMap({ src, href, alt, children }) {
 
 // Internal links use the router; external links open in a new tab.
 function MarkdownLink({ href = '', children }) {
+    if (href.startsWith('#')) {
+        // In-page jump link (to a heading id) — plain anchor, same tab.
+        return (
+            <a href={href} className="blog-link">
+                {children}
+            </a>
+        );
+    }
     if (href.startsWith('/')) {
         return (
             <Link to={href} className="blog-link">
@@ -162,8 +170,24 @@ function MarkdownLink({ href = '', children }) {
     );
 }
 
+// Headings get a stable, GitHub-style id so posts can jump-link to their own
+// sections (e.g. "[the two-day plan](#the-one-day-and-two-day-plans)").
+const slugifyHeading = (nodes) =>
+    textOf(nodes)
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-');
+
+const makeHeading = (tag) =>
+    function MarkdownHeading({ node, children, ...rest }) {
+        return React.createElement(tag, { id: slugifyHeading(node?.children), ...rest }, children);
+    };
+
 const COMPONENTS = {
     a: MarkdownLink,
+    h2: makeHeading('h2'),
+    h3: makeHeading('h3'),
     blogphoto: BlogPhoto,
     blogimage: BlogImage,
     blogmap: BlogMap,

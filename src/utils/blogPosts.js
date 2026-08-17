@@ -11,6 +11,60 @@
 
 export const blogPosts = [
     {
+        slug: 'highway-395-lone-pine-to-mono-lake',
+        title: 'Highway 395 Road Trip: Lone Pine to Mono Lake in 1–2 Days — Stops, Camping, Photo Spots',
+        description:
+            'A Highway 395 road trip guide from Lone Pine to Mono Lake for people with one or two days — the stops worth making (Alabama Hills and Mobius Arch, the Ancient Bristlecone Pine Forest, Convict Lake, Hot Creek, South Tufa), where to camp and what it costs, drive times, and a landscape photographer’s notes on sunrise, sunset and the Milky Way at each one.',
+        excerpt:
+            'Five days northbound on 395 in August — thunderstorms on four of them, hail on one, a tire cut open below the bristlecones — and the best week of photographs I’ve made. Here’s what to see between Lone Pine and Mono Lake if you only have a day or two, where to camp, and where to stand.',
+        datePublished: '2026-08-17',
+        dateModified: '2026-08-17',
+        heroImage: '/photos/landscapes/_DSC0454-Edit.jpg',
+        heroSlug: 'landscapes-dsc0454',
+        ogImage: '/photos/landscapes/_DSC0454-Edit.jpg',
+        tags: [
+            'Highway 395',
+            'Eastern Sierra',
+            'Alabama Hills',
+            'Mono Lake',
+            'Ancient Bristlecone Pine Forest',
+            'Convict Lake',
+            'Hot Creek',
+            'road trip',
+            'camping',
+            'landscape photography',
+            'astrophotography',
+            'Milky Way',
+        ],
+        assetBase: '/blog/highway-395-lone-pine-to-mono-lake',
+        images: [
+            // Gallery frames embedded via :photo (link through to their /photo pages)
+            '/photos/landscapes/_DSC0454-Edit.jpg',
+            '/photos/landscapes/_DSC0500-Edit.jpg',
+            '/photos/landscapes/_DSC0540-Edit.jpg',
+            '/photos/landscapes/_DSC0671-HDR-Edit.jpg',
+            '/photos/landscapes/_DSC0801-Edit-2.jpg',
+            '/photos/landscapes/_DSC0833-Edit.jpg',
+            '/photos/landscapes/_DSC0844-Edit.jpg',
+            '/photos/landscapes/_DSC0874-Edit.jpg',
+            '/photos/landscapes/_DSC0951-Edit.jpg',
+            // Blog-local images (phone shots + route map)
+            '/blog/highway-395-lone-pine-to-mono-lake/highway-395-route-map.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/lone-pine-campground-tent-mount-whitney.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/alabama-hills-evening-sierra-crest.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/mobius-arch-alabama-hills-tripod-setup.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-django-wagon.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-theater.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/flat-tire-sidewall-cut-white-mountain-road.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/flatbed-tow-truck-highway-395.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/schulman-grove-bristlecone-pine-tripod.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/convict-lake-shore-tripod-evening.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/hot-creek-sunrise-selfie-tripod.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/mono-lake-south-tufa-sunset-selfie.jpg',
+            '/blog/highway-395-lone-pine-to-mono-lake/convict-lake-campground-hail-storm.jpg',
+        ],
+    },
+    {
         slug: 'john-muir-trail-photography',
         title: 'John Muir Trail Photography: 22 Days from Whitney to Yosemite with One Lens',
         description:
@@ -202,11 +256,19 @@ const galleryOfImage = (src) => {
     return match ? match[1].toLowerCase() : null;
 };
 
+// General-purpose galleries mix many trips and locations, so "posts that
+// draw on this gallery" is a meaningless association there (a Zion frame has
+// nothing to do with a Highway 395 guide). Gallery-level post links are
+// suppressed for these; exact-photo "Featured in" links still apply.
+const MIXED_GALLERIES = new Set(['landscapes', 'cities', 'people', 'events']);
+
 // Posts that embed at least one photo from the given gallery slug.
 export const getPostsForGallery = (slug) =>
-    getAllPosts().filter((post) =>
-        (post.images || []).some((src) => galleryOfImage(src) === slug)
-    );
+    MIXED_GALLERIES.has(slug)
+        ? []
+        : getAllPosts().filter((post) =>
+              (post.images || []).some((src) => galleryOfImage(src) === slug)
+          );
 
 // Posts that embed this exact photo (for "Featured in" links on photo pages).
 export const getPostsForPhoto = (src) =>

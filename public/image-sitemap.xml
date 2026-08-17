@@ -213,6 +213,9 @@
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0671-HDR-Edit.jpg</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0801-Edit-2.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0833-Edit.jpg</image:loc>
     </image:image>
     <image:image>
@@ -711,6 +714,9 @@
   <url>
     <loc>https://danilzanozin.com/blog</loc>
     <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://danilzanozin.com/photos/JMT/_DSC1616.jpg</image:loc>
     </image:image>
     <image:image>
@@ -718,6 +724,75 @@
     </image:image>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/grand-canyon/_DSC6909.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0454-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0500-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0540-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0671-HDR-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0801-Edit-2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0833-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0844-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0874-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0951-Edit.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/highway-395-route-map.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/lone-pine-campground-tent-mount-whitney.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/alabama-hills-evening-sierra-crest.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/mobius-arch-alabama-hills-tripod-setup.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-django-wagon.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/lone-pine-film-history-museum-theater.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/flat-tire-sidewall-cut-white-mountain-road.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/flatbed-tow-truck-highway-395.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/schulman-grove-bristlecone-pine-tripod.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/convict-lake-shore-tripod-evening.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/hot-creek-sunrise-selfie-tripod.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/mono-lake-south-tufa-sunset-selfie.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://danilzanozin.com/blog/highway-395-lone-pine-to-mono-lake/convict-lake-campground-hail-storm.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1057,6 +1132,12 @@
     <loc>https://danilzanozin.com/photo/landscapes-dsc0671</loc>
     <image:image>
       <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0671-HDR-Edit.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc0801</loc>
+    <image:image>
+      <image:loc>https://danilzanozin.com/photos/landscapes/_DSC0801-Edit-2.jpg</image:loc>
     </image:image>
   </url>
   <url>
