@@ -214,3 +214,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Sits with the EXIF/date metadata under the photo — the point where someone
+   looking at an image decides they want it. This is also the on-page
+   counterpart to the acquireLicensePage URL in the photo's JSON-LD. */
+.photo-license {
+    margin-top: var(--space-sm);
+    font-size: 0.875rem;
+}
+
+.photo-license a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.photo-license a:hover,
+.photo-license a:focus-visible {
+    color: var(--text-primary);
+    border-bottom-color: currentColor;
+}

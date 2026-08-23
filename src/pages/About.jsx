@@ -1,15 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import SEO from '../components/SEO';
+import ContactForm from '../components/ContactForm';
 import { SITE_AUTHOR, SITE_NAME, SOCIAL_PROFILES, buildBreadcrumbs, toAbsoluteUrl } from '../utils/site';
 import '../styles/About.css';
 
 const About = () => {
-    const form = useRef();
-    const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState(false);
-    const [error, setError] = useState(false);
     const portraitImage = '/photos/000245650034.jpg';
     const aboutDescription = 'Learn more about Danil Zanozin, a photographer and machine learning engineer sharing personal work across landscapes, cities, events, and people.';
     const personJsonLd = {
@@ -29,29 +25,6 @@ const About = () => {
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
     ]);
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-        setLoading(true);
-        setError(false);
-        setSuccess(false);
-
-        // REPLACE THESE WITH YOUR ACTUAL KEYS FROM EMAILJS
-        const SERVICE_ID = 'service_e5sxeph';
-        const TEMPLATE_ID = 'template_rv5wo28';
-        const PUBLIC_KEY = 'cdSKJ_oUwCU1ORaor';
-
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-            .then(() => {
-                setSuccess(true);
-                setLoading(false);
-                form.current.reset();
-            }, (error) => {
-                console.error(error.text);
-                setError(true);
-                setLoading(false);
-            });
-    };
 
     return (
         <motion.div
@@ -97,25 +70,7 @@ const About = () => {
                     </p>
 
 
-                    <div className="contact-section">
-                        <h2>Get in Touch</h2>
-                        <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                            <div className="form-group">
-                                <input type="text" name="user_name" placeholder="Name" required />
-                            </div>
-                            <div className="form-group">
-                                <input type="email" name="user_email" placeholder="Email" required />
-                            </div>
-                            <div className="form-group">
-                                <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" className="submit-btn" disabled={loading}>
-                                {loading ? 'Sending...' : 'Send Message'}
-                            </button>
-                            {success && <p className="form-status success">Message sent successfully!</p>}
-                            {error && <p className="form-status error">Failed to send message. Please try again.</p>}
-                        </form>
-                    </div>
+                    <ContactForm source="About page" />
 
                 </motion.div>
 

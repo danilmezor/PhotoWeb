@@ -101,8 +101,8 @@ const PhotoPage = () => {
         dateCreated: photo.exif?.capturedAt || undefined,
         copyrightYear: photo.exif?.capturedAt?.slice(0, 4),
         copyrightNotice: `© ${photo.exif?.capturedAt?.slice(0, 4) || new Date().getFullYear()} ${SITE_AUTHOR}. All rights reserved.`,
-        license: toAbsoluteUrl('/about'),
-        acquireLicensePage: toAbsoluteUrl('/about'),
+        license: toAbsoluteUrl('/license'),
+        acquireLicensePage: toAbsoluteUrl('/license'),
         isPartOf: {
             '@type': 'CollectionPage',
             name: `${photo.gallery.title} Photography`,
@@ -168,6 +168,9 @@ const PhotoPage = () => {
                         : photo.caption && <p className="photo-caption">{photo.caption}</p>}
                     {exifLine && <p className="photo-exif">{exifLine}</p>}
                     {captureDate && <p className="photo-date">{captureDate}</p>}
+                    <p className="photo-license">
+                        <Link to="/license">Want to use this photograph?</Link>
+                    </p>
                     <RelatedReading posts={galleryPosts} heading={relatedHeading} />
                 </div>
 

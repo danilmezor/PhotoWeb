@@ -1,0 +1,76 @@
+/* Shared contact form (/about and /license).
+   Moved out of About.css when the form was extracted into a component so the
+   two pages can't drift apart. */
+
+.contact-section {
+    margin-top: var(--space-lg);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid #333;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.submit-btn:hover {
+    background: #ccc;
+    transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: progress;
+    transform: none;
+}
+
+/* .form-status was referenced in the markup but never had any rules — the
+   send/fail feedback rendered as unstyled body text. */
+.form-status {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.form-status.success {
+    color: var(--accent, #7bb661);
+}
+
+.form-status.error {
+    color: #d97070;
+}

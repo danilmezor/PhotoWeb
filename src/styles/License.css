@@ -1,0 +1,96 @@
+.license-page {
+    padding-top: var(--navbar-height);
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+/* Single measured column — this is a page people read start to finish, not a
+   grid to scan, so it holds a comfortable line length rather than filling the
+   viewport the way the gallery pages do. */
+.license-content {
+    max-width: 46rem;
+    margin: 0 auto;
+}
+
+.license-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-md);
+    letter-spacing: -1px;
+}
+
+.license-lede {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.license-content h2 {
+    font-size: 1.4rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.2px;
+}
+
+.license-content p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+    line-height: 1.8;
+}
+
+.license-terms {
+    list-style: decimal;
+    padding-left: 1.4rem;
+    margin-bottom: var(--space-sm);
+}
+
+.license-terms li {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+    padding-left: 0.3rem;
+}
+
+.license-terms strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.license-content code {
+    font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+    font-size: 0.9em;
+    background: var(--bg-secondary);
+    border: 1px solid #333;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    color: var(--text-primary);
+}
+
+/* The credit line is meant to be copied verbatim, so it gets its own block
+   rather than sitting inline where a line break could split it. */
+.license-credit {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    user-select: all;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .license-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Closing copyright line — deliberately quiet. The welcome goes at the top of
+   the page; the legal statement sits at the bottom where it doesn't have to do
+   any persuading. */
+.license-notice {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-sm);
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.75;
+}

@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import About from './pages/About';
+import License from './pages/License';
 import JMTPage from './pages/JMTPage';
 import HSTPage from './pages/HSTPage';
 import GrandCanyonPage from './pages/GrandCanyonPage';
@@ -55,6 +56,7 @@ const AnimatedRoutes = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/about" element={<About />} />
+          <Route path="/license" element={<License />} />
           {Annotate && <Route path="/annotate" element={<Annotate />} />}
         </Routes>
       </Suspense>

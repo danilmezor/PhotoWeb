@@ -83,3 +83,18 @@
         height: 18px;
     }
 }
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    /* Underlined at rest. An earlier version used a transparent border that
+       only appeared on hover, which made this pixel-identical to the text
+       around it — the link was there but nobody could find it. */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: var(--text-primary);
+    border-bottom-color: currentColor;
+}

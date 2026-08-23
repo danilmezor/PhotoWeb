@@ -22,6 +22,7 @@ export const NESTED_ROUTES = [
     { path: '/jmt', changefreq: 'monthly', priority: '0.9' },
     { path: '/hst', changefreq: 'monthly', priority: '0.9' },
     { path: '/about', changefreq: 'monthly', priority: '0.7' },
+    { path: '/license', changefreq: 'yearly', priority: '0.4' },
 ];
 
 // Blog: the index plus one route per post, derived from the post registry.

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 const Footer = () => {
@@ -53,7 +54,10 @@ const Footer = () => {
                         </svg>
                     </a>
                 </div>
-                <p className="footer-text">© {new Date().getFullYear()} Danil Zanozin. All rights reserved.</p>
+                <p className="footer-text">
+                    © {new Date().getFullYear()} Danil Zanozin.{' '}
+                    <Link className="footer-link" to="/license">All rights reserved</Link>.
+                </p>
             </div>
         </footer>
     );
