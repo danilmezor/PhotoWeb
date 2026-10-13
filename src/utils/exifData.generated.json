@@ -1088,6 +1088,60 @@
     "lens": "NIKKOR Z 14-24mm f/2.8 S",
     "shutter": "480s"
   },
+  "/photos/landscapes/_DSC1095-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "28mm",
+    "iso": 200,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "720s"
+  },
+  "/photos/landscapes/_DSC1131-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "14mm",
+    "iso": 31,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "120s"
+  },
+  "/photos/landscapes/_DSC1172-HDR.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "14mm",
+    "iso": 200,
+    "lens": "NIKKOR Z 14-24mm f/2.8 S",
+    "shutter": "1/1000"
+  },
+  "/photos/landscapes/_DSC1188.jpg": {
+    "aperture": "f/6.3",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "150mm",
+    "iso": 800,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/1600"
+  },
+  "/photos/landscapes/_DSC1208-Edit.jpg": {
+    "aperture": "f/9",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "150mm",
+    "iso": 250,
+    "lens": "TAMRON 150-500mm F/5-6.7 Di III VC VXD A057Z",
+    "shutter": "1/2500"
+  },
+  "/photos/landscapes/_DSC1266-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-09",
+    "focalLength": "24mm",
+    "iso": 160,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "900s"
+  },
   "/photos/landscapes/_DSC1471-Enhanced-NR.jpg": {
     "aperture": "f/2.8",
     "camera": "Nikon Z 7_2",
@@ -1096,6 +1150,24 @@
     "iso": 800,
     "lens": "17-35mm f/2.8D",
     "shutter": "30s"
+  },
+  "/photos/landscapes/_DSC1475-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-11",
+    "focalLength": "24mm",
+    "iso": 320,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "10s"
+  },
+  "/photos/landscapes/_DSC1519-HDR-Edit.jpg": {
+    "aperture": "f/11",
+    "camera": "Nikon Z 7_2",
+    "capturedAt": "2026-10-11",
+    "focalLength": "92mm",
+    "iso": 125,
+    "lens": "NIKKOR Z 24-120mm f/4 S",
+    "shutter": "1/1250"
   },
   "/photos/landscapes/_DSC2014.jpg": {
     "aperture": "f/5",

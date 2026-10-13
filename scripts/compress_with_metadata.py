@@ -59,6 +59,7 @@ SOURCE_DIRS_BY_CATEGORY: dict[str, list[Path]] = {
                      Path.home() / 'Pictures/Truckee',
                      Path.home() / 'Pictures/HW395',
                      Path.home() / 'Pictures/photo_export3',
+                     Path.home() / 'Pictures/FallSierra',
                      PROJECT_ROOT / 'pictures/hero'],
     'cities':       [PROJECT_ROOT / 'pictures/cities'],
     'people':       [PROJECT_ROOT / 'pictures/people'],

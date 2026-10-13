@@ -1228,6 +1228,112 @@
             "night photography"
         ]
     },
+    "/photos/landscapes/_DSC1095-Edit.jpg": {
+        "title": "Gone Fishing",
+        "alt": "Long exposure of Lake Sabrina from a hillside, a rocky island in still water below fall color and streaking clouds.",
+        "story": "There's no trail to this spot above the boat landing — I scrambled up over rock until the little island sat clear of the shoreline with the basin peaks lined up behind it. It was morning, and the clouds were moving fast over the crest, so I went to a long exposure: the sky pulls into streaks and the lake goes flat and quiet. On top there's a bench and a small memorial sign that reads \"Gone Fishing.\" Hard to think of a better place for one.",
+        "location": "Lake Sabrina, Bishop Creek Canyon, California",
+        "keywords": [
+            "lake sabrina",
+            "bishop creek canyon",
+            "long exposure",
+            "fall color",
+            "eastern sierra"
+        ]
+    },
+    "/photos/landscapes/_DSC1131-Edit.jpg": {
+        "title": "Far Bank",
+        "alt": "South Fork Bishop Creek running beneath a fallen log, golden aspens and a sunstar against blue sky, California.",
+        "story": "From the road side of the South Fork, the fallen log and the aspens never line up. To get this angle I pushed through a tight thicket and waded across the creek, then set up low on the far bank so the log runs straight across the frame as a base for the trees. It was late morning, which is usually the wrong light for aspens, but with the sun pinned behind the branches the leaves lit up from behind instead of going flat.",
+        "location": "South Fork Bishop Creek, Bishop Creek Canyon, California",
+        "keywords": [
+            "south fork bishop creek",
+            "bishop creek canyon",
+            "aspens",
+            "fall color",
+            "eastern sierra"
+        ]
+    },
+    "/photos/landscapes/_DSC1172-HDR.jpg": {
+        "title": "Golden Vault",
+        "alt": "Looking straight up through white-barked aspens with yellow fall leaves against blue sky, Bishop Creek Canyon, California.",
+        "story": "Same stretch of the South Fork as Far Bank, a little higher. I climbed up from the water through the brush into an aspen grove and found a big flat rock in the middle of it. Lying on my back was the only way to get the trunks converging like this — standing, the wide lens pointed up just tilts everything sideways. With the camera flat to the sky, every trunk becomes a line into the same point.",
+        "location": "South Fork Bishop Creek, Bishop Creek Canyon, California",
+        "keywords": [
+            "aspen grove",
+            "bishop creek canyon",
+            "fall color",
+            "aspens",
+            "eastern sierra"
+        ]
+    },
+    "/photos/landscapes/_DSC1188.jpg": {
+        "title": "Small Talk",
+        "alt": "Hillside of aspens in yellow, orange, red and green fall color, pale trunks against shaded forest, Bishop Creek, California.",
+        "story": "I was standing by the car, ready to leave, and got into a long conversation about the landscapes back in Pennsylvania. The whole time I was scanning the slope across the creek for something that would hold together as a frame. A long lens let me cut a single patch out of the hillside — no sky, no horizon, just the mix of yellow, orange, red and the last few green trees still holding on.",
+        "location": "Bishop Creek, Bishop Creek Canyon, California",
+        "keywords": [
+            "bishop creek canyon",
+            "aspens",
+            "fall color",
+            "telephoto",
+            "eastern sierra"
+        ]
+    },
+    "/photos/landscapes/_DSC1208-Edit.jpg": {
+        "title": "The Gap",
+        "alt": "Sunlight breaking through storm clouds onto a grove of yellow aspens below jagged granite peaks near Aspendell, California.",
+        "story": "This is from a roadside turnout on the way up to Lake Sabrina, just past Aspendell. The clouds were heavy and moving, and every few minutes a gap opened and dropped light somewhere on the slope. I set up on the aspen grove and waited for the gap to land on it. When it did, it lit the trees and nothing else — the peaks stayed in shadow, which is what makes the yellow jump.",
+        "location": "Aspendell, Bishop Creek Canyon, California",
+        "keywords": [
+            "aspendell",
+            "bishop creek canyon",
+            "aspens",
+            "fall color",
+            "storm light"
+        ]
+    },
+    "/photos/landscapes/_DSC1266-Edit.jpg": {
+        "title": "Dress Rehearsal",
+        "alt": "Rush Creek at blue hour, autumn willows along the water and granite peaks under streaked clouds near Silver Lake, CA.",
+        "story": "The sun was already down and I was only scouting — walking Rush Creek looking for a composition to come back to the next day. I set up on this bend to see how it would read, and in the blue hour the willows held their color against the cold water and sky. The frame I meant as a test ended up being the one I kept.",
+        "location": "Rush Creek, June Lake Loop, California",
+        "keywords": [
+            "rush creek",
+            "june lake loop",
+            "silver lake",
+            "blue hour",
+            "fall color"
+        ]
+    },
+    "/photos/landscapes/_DSC1475-Edit.jpg": {
+        "title": "Leaf Drift",
+        "alt": "Long exposure from water level on Rush Creek, aspens and peaks reflected, drifting leaves streaking gold, California.",
+        "story": "I waded into Rush Creek to get the camera right down at the surface, and the creek was a lot deeper than it looked — I was nearly up to my chest by the time the tripod was where I wanted it. The yellow streaks along the bottom of the frame are aspen leaves. The wind was stripping them off the trees and they were floating downstream, and a long exposure turns each one into a line of gold.",
+        "location": "Rush Creek, June Lake Loop, California",
+        "keywords": [
+            "rush creek",
+            "june lake loop",
+            "long exposure",
+            "aspens",
+            "fall color",
+            "reflection"
+        ]
+    },
+    "/photos/landscapes/_DSC1519-HDR-Edit.jpg": {
+        "title": "Last Call",
+        "alt": "Low sun lighting a stand of golden aspens below shadowed granite slopes near Silver Lake and Carson Peak, California.",
+        "story": "The sun was almost behind the ridge to the west, and for a few minutes it was raking straight across the valley onto this stand of aspens while the mountains above had already gone into shade. There was no time to set up a tripod — I shot it handheld as the light slid up the trees and went out.",
+        "location": "Silver Lake, June Lake Loop, California",
+        "keywords": [
+            "silver lake",
+            "june lake loop",
+            "carson peak",
+            "aspens",
+            "fall color",
+            "golden hour"
+        ]
+    },
     "/photos/landscapes/_DSC8109-Edit.jpg": {
         "title": "Light in the Hollow",
         "alt": "Early-morning light streaming through the sea cave at El Matador Beach, god rays catching in the fog above a low-tide shoreline.",

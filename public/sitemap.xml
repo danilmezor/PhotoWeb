@@ -80,13 +80,13 @@
   </url>
   <url>
     <loc>https://danilzanozin.com/about</loc>
-    <lastmod>2026-06-08T16:39:51-07:00</lastmod>
+    <lastmod>2026-08-23T11:40:34-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://danilzanozin.com/license</loc>
-    <lastmod>2026-08-23T18:36:14.825Z</lastmod>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -123,6 +123,54 @@
   <url>
     <loc>https://danilzanozin.com/photo/landscapes-dsc8109</loc>
     <lastmod>2026-06-20T15:27:38-07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1095</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1131</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1172</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1188</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1208</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1266</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1475</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://danilzanozin.com/photo/landscapes-dsc1519</loc>
+    <lastmod>2026-10-13T04:58:24.476Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
